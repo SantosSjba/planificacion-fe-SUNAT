@@ -1,0 +1,1074 @@
+{
+  "sprint": {
+    "n": 11,
+    "name": "S11-console-ops",
+    "title": "Consola: documentos, GRE, desarrolladores",
+    "goal": "Console docs/GRE/devs + DoD producto."
+  },
+  "epics": [
+    {
+      "id": "S11",
+      "title": "Sprint 11",
+      "childIds": [
+        "S11-DOC-01",
+        "S11-DOC-02",
+        "S11-DOC-03",
+        "S11-DOC-04",
+        "S11-DOC-05",
+        "S11-DOC-06",
+        "S11-DOC-07",
+        "S11-GRE-01",
+        "S11-GRE-02",
+        "S11-GRE-03",
+        "S11-DEV-01",
+        "S11-DEV-02",
+        "S11-DEV-03",
+        "S11-DEV-04",
+        "S11-QA-01",
+        "S11-QA-02",
+        "S11-QA-03",
+        "S0-scaffold",
+        "S1-sign-ubl",
+        "S2-sendbill",
+        "S3-platform",
+        "S4-invoice-api",
+        "S5-boleta-notas",
+        "S6-ra-rc",
+        "S7-gre",
+        "S8-notify-pdf-valid",
+        "S9-api-mvp",
+        "S10-console-auth",
+        "S11-console-ops"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "S11-DOC-01",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Lista comprobantes",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "§P-DOC-LIST"
+      ],
+      "dod": [
+        "`documents:read`"
+      ],
+      "refs": [],
+      "permission": "documents:read",
+      "screenId": "P-DOC-LIST",
+      "screenFieldsMarkdown": "### P-DOC-LIST\n| Filtro/columna | Notas |\n| --- | --- |\n| filtros | company_id, document_type, status, date_from/to, serie_number q |\n| columnas | type, serie_number, issue_date, customer_name, status, sunat_code, created_at |\n| acciones | Ver; Emitir (si write) |",
+      "howToMarkdown": [
+        "Implementar UI: **Lista comprobantes** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-DOC-01.1",
+          "summary": "§P-DOC-LIST",
+          "descriptionMarkdown": "## Subtarea de `S11-DOC-01`\n\n- **Padre:** S11-DOC-01 — Lista comprobantes\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-DOC-LIST\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Lista comprobantes** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- `documents:read`\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-DOC-01\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nLista comprobantes\n\n## Cómo hacerlo\n1. Implementar UI: **Lista comprobantes** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-DOC-01.1` — §P-DOC-LIST\n\n## Definition of Done\n- `documents:read`\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] `documents:read`\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Permiso:** `documents:read`\n- **Pantalla(s):** `P-DOC-LIST`\n- **Campos (doc 33):**\n### P-DOC-LIST\n| Filtro/columna | Notas |\n| --- | --- |\n| filtros | company_id, document_type, status, date_from/to, serie_number q |\n| columnas | type, serie_number, issue_date, customer_name, status, sunat_code, created_at |\n| acciones | Ver; Emitir (si write) |\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Permiso:** `documents:read`\n- **Pantalla(s):** `P-DOC-LIST`\n- **Campos (doc 33):**\n### P-DOC-LIST\n| Filtro/columna | Notas |\n| --- | --- |\n| filtros | company_id, document_type, status, date_from/to, serie_number q |\n| columnas | type, serie_number, issue_date, customer_name, status, sunat_code, created_at |\n| acciones | Ver; Emitir (si write) |",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-DOC-02",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Detalle comprobante",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "§P-DOC-DETAIL"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": "P-DOC-DETAIL",
+      "screenFieldsMarkdown": "### P-DOC-DETAIL\n| Bloque | Campos |\n| --- | --- |\n| header | type, serie_number, status badge, environment |\n| parties | customer identity_type/number/name |\n| totals | currency, payable, igv summary JSON |\n| sunat | ticket, response_code, message |\n| timeline | at, status, detail, source |\n| artifacts | botones XML / CDR / PDF (perm read) |\n| error | code, message, sunat_code, details[] |",
+      "howToMarkdown": [
+        "Implementar UI: **Detalle comprobante** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-DOC-02.1",
+          "summary": "§P-DOC-DETAIL",
+          "descriptionMarkdown": "## Subtarea de `S11-DOC-02`\n\n- **Padre:** S11-DOC-02 — Detalle comprobante\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-DOC-DETAIL\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Detalle comprobante** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-DOC-02\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nDetalle comprobante\n\n## Cómo hacerlo\n1. Implementar UI: **Detalle comprobante** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-DOC-02.1` — §P-DOC-DETAIL\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Pantalla(s):** `P-DOC-DETAIL`\n- **Campos (doc 33):**\n### P-DOC-DETAIL\n| Bloque | Campos |\n| --- | --- |\n| header | type, serie_number, status badge, environment |\n| parties | customer identity_type/number/name |\n| totals | currency, payable, igv summary JSON |\n| sunat | ticket, response_code, message |\n| timeline | at, status, detail, source |\n| artifacts | botones XML / CDR / PDF (perm read) |\n| error | code, message, sunat_code, details[] |\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Pantalla(s):** `P-DOC-DETAIL`\n- **Campos (doc 33):**\n### P-DOC-DETAIL\n| Bloque | Campos |\n| --- | --- |\n| header | type, serie_number, status badge, environment |\n| parties | customer identity_type/number/name |\n| totals | currency, payable, igv summary JSON |\n| sunat | ticket, response_code, message |\n| timeline | at, status, detail, source |\n| artifacts | botones XML / CDR / PDF (perm read) |\n| error | code, message, sunat_code, details[] |",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-DOC-03",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Wizard Factura",
+      "estimate": "L",
+      "type": "console",
+      "subtasks": [
+        "steps §P-INV-WIZARD"
+      ],
+      "dod": [
+        "`documents:write`"
+      ],
+      "refs": [],
+      "permission": "documents:write",
+      "screenId": "P-INV-WIZARD",
+      "screenFieldsMarkdown": "### P-INV-WIZARD\n**Step 1 Cabecera:** company_id (RO si contexto), serie (select), number O, operation_type R, issue_date R, issue_time O, currency R (PEN default), due_date O, purchase_order O, totals_mode auto/strict, Idempotency-Key auto-uuid RO copyable\n\n**Step 2 Cliente:** identity_type R, identity_number R, name R, email O, address.ubigeo/line/district/province/department/country O\n\n**Step 3 Líneas (1..n):** id, quantity, unit_code, description, unit_value, unit_price O, tax_affectation R, igv_percent O, tax_scheme_id R, product_code O — CTA add/remove line\n\n**Step 4 Extras O:** legends[], detraction{code,percent,amount,currency,bank_account}, payment_means[]\n\n**Step 5 Review:** JSON preview + Validar (local) + Emitir\n\nValidación UI: schema invoice-create + matriz 07×05 antes de POST.",
+      "howToMarkdown": [
+        "Implementar UI: **Wizard Factura** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-DOC-03.1",
+          "summary": "steps §P-INV-WIZARD",
+          "descriptionMarkdown": "## Subtarea de `S11-DOC-03`\n\n- **Padre:** S11-DOC-03 — Wizard Factura\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nsteps §P-INV-WIZARD\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Wizard Factura** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- `documents:write`\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-DOC-03\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** L\n- **Type:** console\n\n## Objetivo\nWizard Factura\n\n## Cómo hacerlo\n1. Implementar UI: **Wizard Factura** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-DOC-03.1` — steps §P-INV-WIZARD\n\n## Definition of Done\n- `documents:write`\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] `documents:write`\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Permiso:** `documents:write`\n- **Pantalla(s):** `P-INV-WIZARD`\n- **Campos (doc 33):**\n### P-INV-WIZARD\n**Step 1 Cabecera:** company_id (RO si contexto), serie (select), number O, operation_type R, issue_date R, issue_time O, currency R (PEN default), due_date O, purchase_order O, totals_mode auto/strict, Idempotency-Key auto-uuid RO copyable\n\n**Step 2 Cliente:** identity_type R, identity_number R, name R, email O, address.ubigeo/line/district/province/department/country O\n\n**Step 3 Líneas (1..n):** id, quantity, unit_code, description, unit_value, unit_price O, tax_affectation R, igv_percent O, tax_scheme_id R, product_code O — CTA add/remove line\n\n**Step 4 Extras O:** legends[], detraction{code,percent,amount,currency,bank_account}, payment_means[]\n\n**Step 5 Review:** JSON preview + Validar (local) + Emitir\n\nValidación UI: schema invoice-create + matriz 07×05 antes de POST.\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Permiso:** `documents:write`\n- **Pantalla(s):** `P-INV-WIZARD`\n- **Campos (doc 33):**\n### P-INV-WIZARD\n**Step 1 Cabecera:** company_id (RO si contexto), serie (select), number O, operation_type R, issue_date R, issue_time O, currency R (PEN default), due_date O, purchase_order O, totals_mode auto/strict, Idempotency-Key auto-uuid RO copyable\n\n**Step 2 Cliente:** identity_type R, identity_number R, name R, email O, address.ubigeo/line/district/province/department/country O\n\n**Step 3 Líneas (1..n):** id, quantity, unit_code, description, unit_value, unit_price O, tax_affectation R, igv_percent O, tax_scheme_id R, product_code O — CTA add/remove line\n\n**Step 4 Extras O:** legends[], detraction{code,percent,amount,currency,bank_account}, payment_means[]\n\n**Step 5 Review:** JSON preview + Validar (local) + Emitir\n\nValidación UI: schema invoice-create + matriz 07×05 antes de POST.",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-DOC-04",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Wizard Boleta",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "§P-BOL-WIZARD (delta)"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": "P-BOL-WIZARD",
+      "screenFieldsMarkdown": "### P-BOL-WIZARD\nIgual Invoice con: document implícito 03, serie B*, customer tip. DNI/etc, `include_in_daily_summary` toggle default true, `send_individually` O",
+      "howToMarkdown": [
+        "Implementar UI: **Wizard Boleta** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-DOC-04.1",
+          "summary": "§P-BOL-WIZARD (delta)",
+          "descriptionMarkdown": "## Subtarea de `S11-DOC-04`\n\n- **Padre:** S11-DOC-04 — Wizard Boleta\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-BOL-WIZARD (delta)\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Wizard Boleta** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-DOC-04\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nWizard Boleta\n\n## Cómo hacerlo\n1. Implementar UI: **Wizard Boleta** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-DOC-04.1` — §P-BOL-WIZARD (delta)\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Pantalla(s):** `P-BOL-WIZARD`\n- **Campos (doc 33):**\n### P-BOL-WIZARD\nIgual Invoice con: document implícito 03, serie B*, customer tip. DNI/etc, `include_in_daily_summary` toggle default true, `send_individually` O\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Pantalla(s):** `P-BOL-WIZARD`\n- **Campos (doc 33):**\n### P-BOL-WIZARD\nIgual Invoice con: document implícito 03, serie B*, customer tip. DNI/etc, `include_in_daily_summary` toggle default true, `send_individually` O",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-DOC-05",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Wizard NC / ND",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "§P-NC-WIZARD / §P-ND-WIZARD"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": "P-NC-WIZARD",
+      "screenFieldsMarkdown": "### P-NC-WIZARD\nCabecera + cliente + líneas + **affected_document**{document_type, serie_number} R + **note_type** (cat 09/10) R + motivo/description R\n\n### P-ND-WIZARD\nCabecera + cliente + líneas + **affected_document**{document_type, serie_number} R + **note_type** (cat 09/10) R + motivo/description R",
+      "howToMarkdown": [
+        "Implementar UI: **Wizard NC / ND** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-DOC-05.1",
+          "summary": "§P-NC-WIZARD / §P-ND-WIZARD",
+          "descriptionMarkdown": "## Subtarea de `S11-DOC-05`\n\n- **Padre:** S11-DOC-05 — Wizard NC / ND\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-NC-WIZARD / §P-ND-WIZARD\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Wizard NC / ND** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-DOC-05\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nWizard NC / ND\n\n## Cómo hacerlo\n1. Implementar UI: **Wizard NC / ND** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-DOC-05.1` — §P-NC-WIZARD / §P-ND-WIZARD\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Pantalla(s):** `P-NC-WIZARD`, `P-ND-WIZARD`\n- **Campos (doc 33):**\n### P-NC-WIZARD\nCabecera + cliente + líneas + **affected_document**{document_type, serie_number} R + **note_type** (cat 09/10) R + motivo/description R\n\n### P-ND-WIZARD\nCabecera + cliente + líneas + **affected_document**{document_type, serie_number} R + **note_type** (cat 09/10) R + motivo/description R\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Pantalla(s):** `P-NC-WIZARD`, `P-ND-WIZARD`\n- **Campos (doc 33):**\n### P-NC-WIZARD\nCabecera + cliente + líneas + **affected_document**{document_type, serie_number} R + **note_type** (cat 09/10) R + motivo/description R\n\n### P-ND-WIZARD\nCabecera + cliente + líneas + **affected_document**{document_type, serie_number} R + **note_type** (cat 09/10) R + motivo/description R",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-DOC-06",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Form RA",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "§P-RA-FORM"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": "P-RA-FORM",
+      "screenFieldsMarkdown": "### P-RA-FORM\n| Campo | Regla |\n| --- | --- |\n| company_id | R |\n| reference_date | R |\n| issue_date | O |\n| documents[] | R min1: document_type, serie_number\\|serie+number, reason R |",
+      "howToMarkdown": [
+        "Implementar UI: **Form RA** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-DOC-06.1",
+          "summary": "§P-RA-FORM",
+          "descriptionMarkdown": "## Subtarea de `S11-DOC-06`\n\n- **Padre:** S11-DOC-06 — Form RA\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-RA-FORM\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Form RA** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-DOC-06\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nForm RA\n\n## Cómo hacerlo\n1. Implementar UI: **Form RA** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-DOC-06.1` — §P-RA-FORM\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Pantalla(s):** `P-RA-FORM`\n- **Campos (doc 33):**\n### P-RA-FORM\n| Campo | Regla |\n| --- | --- |\n| company_id | R |\n| reference_date | R |\n| issue_date | O |\n| documents[] | R min1: document_type, serie_number\\|serie+number, reason R |\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Pantalla(s):** `P-RA-FORM`\n- **Campos (doc 33):**\n### P-RA-FORM\n| Campo | Regla |\n| --- | --- |\n| company_id | R |\n| reference_date | R |\n| issue_date | O |\n| documents[] | R min1: document_type, serie_number\\|serie+number, reason R |",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-DOC-07",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Form RC",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "§P-RC-FORM"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": "P-RC-FORM",
+      "screenFieldsMarkdown": "### P-RC-FORM\n| Campo | Regla |\n| --- | --- |\n| company_id | R |\n| reference_date | R |\n| mode | auto (default) \\| manual lines |\n| document_ids[] | O si auto |\n| lines[] | si manual: document_id\\|serie_number, status 1\\|2\\|3 |",
+      "howToMarkdown": [
+        "Implementar UI: **Form RC** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-DOC-07.1",
+          "summary": "§P-RC-FORM",
+          "descriptionMarkdown": "## Subtarea de `S11-DOC-07`\n\n- **Padre:** S11-DOC-07 — Form RC\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-RC-FORM\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Form RC** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-DOC-07\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nForm RC\n\n## Cómo hacerlo\n1. Implementar UI: **Form RC** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-DOC-07.1` — §P-RC-FORM\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Pantalla(s):** `P-RC-FORM`\n- **Campos (doc 33):**\n### P-RC-FORM\n| Campo | Regla |\n| --- | --- |\n| company_id | R |\n| reference_date | R |\n| mode | auto (default) \\| manual lines |\n| document_ids[] | O si auto |\n| lines[] | si manual: document_id\\|serie_number, status 1\\|2\\|3 |\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Pantalla(s):** `P-RC-FORM`\n- **Campos (doc 33):**\n### P-RC-FORM\n| Campo | Regla |\n| --- | --- |\n| company_id | R |\n| reference_date | R |\n| mode | auto (default) \\| manual lines |\n| document_ids[] | O si auto |\n| lines[] | si manual: document_id\\|serie_number, status 1\\|2\\|3 |",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-GRE-01",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Lista/detalle GRE",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "§P-GRE-LIST / §P-GRE-DETAIL"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": "P-GRE-LIST",
+      "screenFieldsMarkdown": "### P-GRE-LIST\nAnalog P-DOC-* con document_type 09/31; sin montos",
+      "howToMarkdown": [
+        "Implementar UI: **Lista/detalle GRE** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-GRE-01.1",
+          "summary": "§P-GRE-LIST / §P-GRE-DETAIL",
+          "descriptionMarkdown": "## Subtarea de `S11-GRE-01`\n\n- **Padre:** S11-GRE-01 — Lista/detalle GRE\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-GRE-LIST / §P-GRE-DETAIL\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Lista/detalle GRE** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-GRE-01\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nLista/detalle GRE\n\n## Cómo hacerlo\n1. Implementar UI: **Lista/detalle GRE** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-GRE-01.1` — §P-GRE-LIST / §P-GRE-DETAIL\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Pantalla(s):** `P-GRE-LIST`, `P-GRE-DETAIL`\n- **Campos (doc 33):**\n### P-GRE-LIST\nAnalog P-DOC-* con document_type 09/31; sin montos\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Pantalla(s):** `P-GRE-LIST`, `P-GRE-DETAIL`\n- **Campos (doc 33):**\n### P-GRE-LIST\nAnalog P-DOC-* con document_type 09/31; sin montos",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-GRE-02",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Wizard GRE 09",
+      "estimate": "L",
+      "type": "console",
+      "subtasks": [
+        "§P-GRE-WIZARD-09"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": "P-GRE-WIZARD-09",
+      "screenFieldsMarkdown": "### P-GRE-WIZARD-09\n| Bloque | Campos |\n| --- | --- |\n| header | document_type=09 RO, serie T*, issue_date R, issue_time O, notes O |\n| delivery_customer | identity_type/number/name R |\n| shipment | transfer_reason_code R, transfer_reason_text C, transport_mode_code R, gross_weight+unit R, start_date R, total_packages O |\n| carrier | si mode público: identity_* + name (shipment.carrier) |\n| vehicles/drivers | si mode privado: plate R; driver identity+name+license C |\n| origin/destination | ubigeo+address R; establishment_code O |\n| related_documents[] | document_type + serie_number |\n| lines[] | id, quantity, unit_code, description R |",
+      "howToMarkdown": [
+        "Implementar UI: **Wizard GRE 09** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-GRE-02.1",
+          "summary": "§P-GRE-WIZARD-09",
+          "descriptionMarkdown": "## Subtarea de `S11-GRE-02`\n\n- **Padre:** S11-GRE-02 — Wizard GRE 09\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-GRE-WIZARD-09\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Wizard GRE 09** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-GRE-02\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** L\n- **Type:** console\n\n## Objetivo\nWizard GRE 09\n\n## Cómo hacerlo\n1. Implementar UI: **Wizard GRE 09** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-GRE-02.1` — §P-GRE-WIZARD-09\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Pantalla(s):** `P-GRE-WIZARD-09`\n- **Campos (doc 33):**\n### P-GRE-WIZARD-09\n| Bloque | Campos |\n| --- | --- |\n| header | document_type=09 RO, serie T*, issue_date R, issue_time O, notes O |\n| delivery_customer | identity_type/number/name R |\n| shipment | transfer_reason_code R, transfer_reason_text C, transport_mode_code R, gross_weight+unit R, start_date R, total_packages O |\n| carrier | si mode público: identity_* + name (shipment.carrier) |\n| vehicles/drivers | si mode privado: plate R; driver identity+name+license C |\n| origin/destination | ubigeo+address R; establishment_code O |\n| related_documents[] | document_type + serie_number |\n| lines[] | id, quantity, unit_code, description R |\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Pantalla(s):** `P-GRE-WIZARD-09`\n- **Campos (doc 33):**\n### P-GRE-WIZARD-09\n| Bloque | Campos |\n| --- | --- |\n| header | document_type=09 RO, serie T*, issue_date R, issue_time O, notes O |\n| delivery_customer | identity_type/number/name R |\n| shipment | transfer_reason_code R, transfer_reason_text C, transport_mode_code R, gross_weight+unit R, start_date R, total_packages O |\n| carrier | si mode público: identity_* + name (shipment.carrier) |\n| vehicles/drivers | si mode privado: plate R; driver identity+name+license C |\n| origin/destination | ubigeo+address R; establishment_code O |\n| related_documents[] | document_type + serie_number |\n| lines[] | id, quantity, unit_code, description R |",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-GRE-03",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Wizard GRE 31 básico",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "§P-GRE-WIZARD-31"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": "P-GRE-WIZARD-31",
+      "screenFieldsMarkdown": "### P-GRE-WIZARD-31\nComo 09 + **shipper** R (remitente) + vehicles/drivers **license R** + serie V*; related a GRE 09 O",
+      "howToMarkdown": [
+        "Implementar UI: **Wizard GRE 31 básico** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-GRE-03.1",
+          "summary": "§P-GRE-WIZARD-31",
+          "descriptionMarkdown": "## Subtarea de `S11-GRE-03`\n\n- **Padre:** S11-GRE-03 — Wizard GRE 31 básico\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-GRE-WIZARD-31\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Wizard GRE 31 básico** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-GRE-03\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nWizard GRE 31 básico\n\n## Cómo hacerlo\n1. Implementar UI: **Wizard GRE 31 básico** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-GRE-03.1` — §P-GRE-WIZARD-31\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Pantalla(s):** `P-GRE-WIZARD-31`\n- **Campos (doc 33):**\n### P-GRE-WIZARD-31\nComo 09 + **shipper** R (remitente) + vehicles/drivers **license R** + serie V*; related a GRE 09 O\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Pantalla(s):** `P-GRE-WIZARD-31`\n- **Campos (doc 33):**\n### P-GRE-WIZARD-31\nComo 09 + **shipper** R (remitente) + vehicles/drivers **license R** + serie V*; related a GRE 09 O",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-DEV-01",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "API keys",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "§P-KEYS"
+      ],
+      "dod": [
+        "`apikeys:manage`"
+      ],
+      "refs": [],
+      "permission": "apikeys:manage",
+      "screenId": "P-KEYS",
+      "screenFieldsMarkdown": "### P-KEYS\n| Campo | Regla |\n| --- | --- |\n| name | R |\n| scopes | multi-select documents:read/write, credentials:manage, webhooks:manage, validations:cpe |\n| environment_constraint | O sandbox/production/both |\n| secret | mostrado **una vez** al crear WO |\n| lista | prefix, scopes, status, last_used_at, revoke CTA |",
+      "howToMarkdown": [
+        "Implementar UI: **API keys** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-DEV-01.1",
+          "summary": "§P-KEYS",
+          "descriptionMarkdown": "## Subtarea de `S11-DEV-01`\n\n- **Padre:** S11-DEV-01 — API keys\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-KEYS\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **API keys** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- `apikeys:manage`\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-DEV-01\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nAPI keys\n\n## Cómo hacerlo\n1. Implementar UI: **API keys** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-DEV-01.1` — §P-KEYS\n\n## Definition of Done\n- `apikeys:manage`\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] `apikeys:manage`\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Permiso:** `apikeys:manage`\n- **Pantalla(s):** `P-KEYS`\n- **Campos (doc 33):**\n### P-KEYS\n| Campo | Regla |\n| --- | --- |\n| name | R |\n| scopes | multi-select documents:read/write, credentials:manage, webhooks:manage, validations:cpe |\n| environment_constraint | O sandbox/production/both |\n| secret | mostrado **una vez** al crear WO |\n| lista | prefix, scopes, status, last_used_at, revoke CTA |\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Permiso:** `apikeys:manage`\n- **Pantalla(s):** `P-KEYS`\n- **Campos (doc 33):**\n### P-KEYS\n| Campo | Regla |\n| --- | --- |\n| name | R |\n| scopes | multi-select documents:read/write, credentials:manage, webhooks:manage, validations:cpe |\n| environment_constraint | O sandbox/production/both |\n| secret | mostrado **una vez** al crear WO |\n| lista | prefix, scopes, status, last_used_at, revoke CTA |",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-DEV-02",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Webhooks",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "§P-HOOKS + deliveries"
+      ],
+      "dod": [
+        "`webhooks:manage`"
+      ],
+      "refs": [],
+      "permission": "webhooks:manage",
+      "screenId": "P-HOOKS",
+      "screenFieldsMarkdown": "### P-HOOKS\n| Campo | Regla |\n| --- | --- |\n| url | https R |\n| events | checklist document.status_changed |\n| secret | una vez + rotate |\n| status | active/disabled |\n| deliveries table | id, status, attempt_count, http_status, created_at |",
+      "howToMarkdown": [
+        "Implementar UI: **Webhooks** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-DEV-02.1",
+          "summary": "§P-HOOKS + deliveries",
+          "descriptionMarkdown": "## Subtarea de `S11-DEV-02`\n\n- **Padre:** S11-DEV-02 — Webhooks\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-HOOKS + deliveries\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Webhooks** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- `webhooks:manage`\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-DEV-02\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nWebhooks\n\n## Cómo hacerlo\n1. Implementar UI: **Webhooks** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-DEV-02.1` — §P-HOOKS + deliveries\n\n## Definition of Done\n- `webhooks:manage`\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] `webhooks:manage`\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Permiso:** `webhooks:manage`\n- **Pantalla(s):** `P-HOOKS`\n- **Campos (doc 33):**\n### P-HOOKS\n| Campo | Regla |\n| --- | --- |\n| url | https R |\n| events | checklist document.status_changed |\n| secret | una vez + rotate |\n| status | active/disabled |\n| deliveries table | id, status, attempt_count, http_status, created_at |\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Permiso:** `webhooks:manage`\n- **Pantalla(s):** `P-HOOKS`\n- **Campos (doc 33):**\n### P-HOOKS\n| Campo | Regla |\n| --- | --- |\n| url | https R |\n| events | checklist document.status_changed |\n| secret | una vez + rotate |\n| status | active/disabled |\n| deliveries table | id, status, attempt_count, http_status, created_at |",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-DEV-03",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Auditoría",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "§P-AUDIT"
+      ],
+      "dod": [
+        "`audit:read`"
+      ],
+      "refs": [],
+      "permission": "audit:read",
+      "screenId": "P-AUDIT",
+      "screenFieldsMarkdown": "### P-AUDIT\nfiltros action, actor, date; columnas created_at, actor, action, resource_type/id; detail drawer data redactado",
+      "howToMarkdown": [
+        "Implementar UI: **Auditoría** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-DEV-03.1",
+          "summary": "§P-AUDIT",
+          "descriptionMarkdown": "## Subtarea de `S11-DEV-03`\n\n- **Padre:** S11-DEV-03 — Auditoría\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-AUDIT\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Auditoría** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- `audit:read`\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-DEV-03\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nAuditoría\n\n## Cómo hacerlo\n1. Implementar UI: **Auditoría** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-DEV-03.1` — §P-AUDIT\n\n## Definition of Done\n- `audit:read`\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] `audit:read`\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Permiso:** `audit:read`\n- **Pantalla(s):** `P-AUDIT`\n- **Campos (doc 33):**\n### P-AUDIT\nfiltros action, actor, date; columnas created_at, actor, action, resource_type/id; detail drawer data redactado\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Permiso:** `audit:read`\n- **Pantalla(s):** `P-AUDIT`\n- **Campos (doc 33):**\n### P-AUDIT\nfiltros action, actor, date; columnas created_at, actor, action, resource_type/id; detail drawer data redactado",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-DEV-04",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "Validez CPE",
+      "estimate": "S",
+      "type": "console",
+      "subtasks": [
+        "§P-VALID"
+      ],
+      "dod": [
+        "`validations:cpe`"
+      ],
+      "refs": [],
+      "permission": "validations:cpe",
+      "screenId": "P-VALID",
+      "screenFieldsMarkdown": "### P-VALID\n| Campo | Regla |\n| --- | --- |\n| company_id | R (credenciales consulta) |\n| ruc | R emisor |\n| document_type | R |\n| serie | R |\n| number | R |\n| issue_date | R |\n| total_amount | R |\n| resultado | cpe_status + labels + cached + checked_at |\n\n---\n\n## 4. Navegación y permisos de menú\n\n| Ítem nav | Permiso mínimo |\n| --- | --- |\n| Empresas | companies:read |\n| Usuarios | users:read |\n| Comprobantes | documents:read |\n| GRE | gre:read (o documents:read) |\n| API keys | apikeys:manage |\n| Webhooks | webhooks:manage |\n| Auditoría | audit:read |\n| Validez CPE | validations:cpe |\n\nOcultar ítems sin permiso (no solo deshabilitar).\n\n## 5. Fuera de MVP console\n\nSSO/SAML, forgot-password self-service, permisos custom por UI, RBAC por-company (solo org-level en MVP), POS/inventario.",
+      "howToMarkdown": [
+        "Implementar UI: **Validez CPE** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-DEV-04.1",
+          "summary": "§P-VALID",
+          "descriptionMarkdown": "## Subtarea de `S11-DEV-04`\n\n- **Padre:** S11-DEV-04 — Validez CPE\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n§P-VALID\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **Validez CPE** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- `validations:cpe`\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-DEV-04\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** S\n- **Type:** console\n\n## Objetivo\nValidez CPE\n\n## Cómo hacerlo\n1. Implementar UI: **Validez CPE** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-DEV-04.1` — §P-VALID\n\n## Definition of Done\n- `validations:cpe`\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] `validations:cpe`\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Consola / RBAC\n- **Permiso:** `validations:cpe`\n- **Pantalla(s):** `P-VALID`\n- **Campos (doc 33):**\n### P-VALID\n| Campo | Regla |\n| --- | --- |\n| company_id | R (credenciales consulta) |\n| ruc | R emisor |\n| document_type | R |\n| serie | R |\n| number | R |\n| issue_date | R |\n| total_amount | R |\n| resultado | cpe_status + labels + cached + checked_at |\n\n---\n\n## 4. Navegación y permisos de menú\n\n| Ítem nav | Permiso mínimo |\n| --- | --- |\n| Empresas | companies:read |\n| Usuarios | users:read |\n| Comprobantes | documents:read |\n| GRE | gre:read (o documents:read) |\n| API keys | apikeys:manage |\n| Webhooks | webhooks:manage |\n| Auditoría | audit:read |\n| Validez CPE | validations:cpe |\n\nOcultar ítems sin permiso (no solo deshabilitar).\n\n## 5. Fuera de MVP console\n\nSSO/SAML, forgot-password self-service, permisos custom por UI, RBAC por-company (solo org-level en MVP), POS/inventario.\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": "- **Permiso:** `validations:cpe`\n- **Pantalla(s):** `P-VALID`\n- **Campos (doc 33):**\n### P-VALID\n| Campo | Regla |\n| --- | --- |\n| company_id | R (credenciales consulta) |\n| ruc | R emisor |\n| document_type | R |\n| serie | R |\n| number | R |\n| issue_date | R |\n| total_amount | R |\n| resultado | cpe_status + labels + cached + checked_at |\n\n---\n\n## 4. Navegación y permisos de menú\n\n| Ítem nav | Permiso mínimo |\n| --- | --- |\n| Empresas | companies:read |\n| Usuarios | users:read |\n| Comprobantes | documents:read |\n| GRE | gre:read (o documents:read) |\n| API keys | apikeys:manage |\n| Webhooks | webhooks:manage |\n| Auditoría | audit:read |\n| Validez CPE | validations:cpe |\n\nOcultar ítems sin permiso (no solo deshabilitar).\n\n## 5. Fuera de MVP console\n\nSSO/SAML, forgot-password self-service, permisos custom por UI, RBAC por-company (solo org-level en MVP), POS/inventario.",
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-QA-01",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "E2E por rol",
+      "estimate": "L",
+      "type": "console",
+      "subtasks": [
+        "owner vs viewer (403 UI)"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **E2E por rol** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-QA-01.1",
+          "summary": "owner vs viewer (403 UI)",
+          "descriptionMarkdown": "## Subtarea de `S11-QA-01`\n\n- **Padre:** S11-QA-01 — E2E por rol\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nowner vs viewer (403 UI)\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **E2E por rol** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-QA-01\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** L\n- **Type:** console\n\n## Objetivo\nE2E por rol\n\n## Cómo hacerlo\n1. Implementar UI: **E2E por rol** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-QA-01.1` — owner vs viewer (403 UI)\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-QA-02",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "E2E emit mock",
+      "estimate": "L",
+      "type": "console",
+      "subtasks": [
+        "login→factura→accepted"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **E2E emit mock** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-QA-02.1",
+          "summary": "login→factura→accepted",
+          "descriptionMarkdown": "## Subtarea de `S11-QA-02`\n\n- **Padre:** S11-QA-02 — E2E emit mock\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nlogin→factura→accepted\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **E2E emit mock** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-QA-02\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** L\n- **Type:** console\n\n## Objetivo\nE2E emit mock\n\n## Cómo hacerlo\n1. Implementar UI: **E2E emit mock** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-QA-02.1` — login→factura→accepted\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-QA-03",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "DoD producto",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "03§3 API + consola"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **DoD producto** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-QA-03.1",
+          "summary": "03§3 API + consola",
+          "descriptionMarkdown": "## Subtarea de `S11-QA-03`\n\n- **Padre:** S11-QA-03 — DoD producto\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\n03§3 API + consola\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **DoD producto** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-QA-03\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nDoD producto\n\n## Cómo hacerlo\n1. Implementar UI: **DoD producto** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-QA-03.1` — 03§3 API + consola\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-scaffold",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "S0",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "Monorepo Nest + Docker + CI"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **S0** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-scaffold.1",
+          "summary": "Monorepo Nest + Docker + CI",
+          "descriptionMarkdown": "## Subtarea de `S0-scaffold`\n\n- **Padre:** S0-scaffold — S0\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nMonorepo Nest + Docker + CI\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **S0** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-scaffold\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nS0\n\n## Cómo hacerlo\n1. Implementar UI: **S0** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S0-scaffold.1` — Monorepo Nest + Docker + CI\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-sign-ubl",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "S1",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "Firma + Invoice UBL + XSD gate"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **S1** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-sign-ubl.1",
+          "summary": "Firma + Invoice UBL + XSD gate",
+          "descriptionMarkdown": "## Subtarea de `S1-sign-ubl`\n\n- **Padre:** S1-sign-ubl — S1\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nFirma + Invoice UBL + XSD gate\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **S1** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-sign-ubl\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nS1\n\n## Cómo hacerlo\n1. Implementar UI: **S1** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S1-sign-ubl.1` — Firma + Invoice UBL + XSD gate\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S2-sendbill",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "S2",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "SendBill + Excel P0 + XSL nightly"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **S2** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S2-sendbill.1",
+          "summary": "SendBill + Excel P0 + XSL nightly",
+          "descriptionMarkdown": "## Subtarea de `S2-sendbill`\n\n- **Padre:** S2-sendbill — S2\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nSendBill + Excel P0 + XSL nightly\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **S2** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S2-sendbill\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nS2\n\n## Cómo hacerlo\n1. Implementar UI: **S2** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S2-sendbill.1` — SendBill + Excel P0 + XSL nightly\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-platform",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "S3",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "DB, tenancy, RBAC, credenciales, colas"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **S3** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-platform.1",
+          "summary": "DB, tenancy, RBAC, credenciales, colas",
+          "descriptionMarkdown": "## Subtarea de `S3-platform`\n\n- **Padre:** S3-platform — S3\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nDB, tenancy, RBAC, credenciales, colas\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **S3** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-platform\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nS3\n\n## Cómo hacerlo\n1. Implementar UI: **S3** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S3-platform.1` — DB, tenancy, RBAC, credenciales, colas\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S4-invoice-api",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "S4",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "POST invoices E2E"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **S4** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S4-invoice-api.1",
+          "summary": "POST invoices E2E",
+          "descriptionMarkdown": "## Subtarea de `S4-invoice-api`\n\n- **Padre:** S4-invoice-api — S4\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nPOST invoices E2E\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **S4** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S4-invoice-api\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nS4\n\n## Cómo hacerlo\n1. Implementar UI: **S4** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S4-invoice-api.1` — POST invoices E2E\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S5-boleta-notas",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "S5",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "Boleta + NC + ND"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **S5** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S5-boleta-notas.1",
+          "summary": "Boleta + NC + ND",
+          "descriptionMarkdown": "## Subtarea de `S5-boleta-notas`\n\n- **Padre:** S5-boleta-notas — S5\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nBoleta + NC + ND\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **S5** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S5-boleta-notas\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nS5\n\n## Cómo hacerlo\n1. Implementar UI: **S5** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S5-boleta-notas.1` — Boleta + NC + ND\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S6-ra-rc",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "S6",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "RA + RC async"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **S6** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S6-ra-rc.1",
+          "summary": "RA + RC async",
+          "descriptionMarkdown": "## Subtarea de `S6-ra-rc`\n\n- **Padre:** S6-ra-rc — S6\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nRA + RC async\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **S6** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S6-ra-rc\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nS6\n\n## Cómo hacerlo\n1. Implementar UI: **S6** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S6-ra-rc.1` — RA + RC async\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S7-gre",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "S7",
+      "estimate": "M",
+      "type": "sunat",
+      "subtasks": [
+        "GRE REST"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **S7** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S7-gre.1",
+          "summary": "GRE REST",
+          "descriptionMarkdown": "## Subtarea de `S7-gre`\n\n- **Padre:** S7-gre — S7\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nGRE REST\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **S7** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S7-gre\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** sunat\n\n## Objetivo\nS7\n\n## Cómo hacerlo\n1. Implementar UI: **S7** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S7-gre.1` — GRE REST\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S8-notify-pdf-valid",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "S8",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "Webhooks + PDF + validez"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **S8** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S8-notify-pdf-valid.1",
+          "summary": "Webhooks + PDF + validez",
+          "descriptionMarkdown": "## Subtarea de `S8-notify-pdf-valid`\n\n- **Padre:** S8-notify-pdf-valid — S8\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nWebhooks + PDF + validez\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **S8** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S8-notify-pdf-valid\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nS8\n\n## Cómo hacerlo\n1. Implementar UI: **S8** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S8-notify-pdf-valid.1` — Webhooks + PDF + validez\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S9-api-mvp",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "S9",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "DoD API MVP"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **S9** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S9-api-mvp.1",
+          "summary": "DoD API MVP",
+          "descriptionMarkdown": "## Subtarea de `S9-api-mvp`\n\n- **Padre:** S9-api-mvp — S9\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nDoD API MVP\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **S9** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S9-api-mvp\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nS9\n\n## Cómo hacerlo\n1. Implementar UI: **S9** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S9-api-mvp.1` — DoD API MVP\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S10-console-auth",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "S10",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "Console auth + RBAC UI + empresas"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **S10** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S10-console-auth.1",
+          "summary": "Console auth + RBAC UI + empresas",
+          "descriptionMarkdown": "## Subtarea de `S10-console-auth`\n\n- **Padre:** S10-console-auth — S10\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nConsole auth + RBAC UI + empresas\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **S10** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S10-console-auth\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nS10\n\n## Cómo hacerlo\n1. Implementar UI: **S10** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S10-console-auth.1` — Console auth + RBAC UI + empresas\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S11-console-ops",
+      "sprint": "S11",
+      "sprintName": "S11-console-ops",
+      "epic": "S11",
+      "epicTitle": "Sprint 11",
+      "summary": "S11",
+      "estimate": "M",
+      "type": "console",
+      "subtasks": [
+        "Console docs/GRE/devs + DoD producto"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar UI: **S11** según [[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)).",
+        "Respetar permisos RBAC y campos P-* de la descripción."
+      ],
+      "childTasks": [
+        {
+          "key": "S11-console-ops.1",
+          "summary": "Console docs/GRE/devs + DoD producto",
+          "descriptionMarkdown": "## Subtarea de `S11-console-ops`\n\n- **Padre:** S11-console-ops — S11\n- **Sprint:** S11 (`S11-console-ops`)\n- **Epic:** S11\n\n## Qué hacer\nConsole docs/GRE/devs + DoD producto\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar UI: **S11** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S11-console-ops\n- **Sprint:** S11 — Consola: documentos, GRE, desarrolladores (`S11-console-ops`)\n- **Epic:** S11 — Sprint 11\n- **Estimación:** M\n- **Type:** console\n\n## Objetivo\nS11\n\n## Cómo hacerlo\n1. Implementar UI: **S11** según [[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md))).\n2. Respetar permisos RBAC y campos P-* de la descripción.\n\n## Subtareas (issues)\n- [ ] `S11-console-ops.1` — Console docs/GRE/devs + DoD producto\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Console docs/GRE/devs + DoD producto.\n\n## Verificar\n- [ ] Meta sprint: Console docs/GRE/devs + DoD producto.\n\n## Referencias\n- [docs/planificacion/33-console-ui-y-rbac.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/33-console-ui-y-rbac.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    }
+  ]
+}

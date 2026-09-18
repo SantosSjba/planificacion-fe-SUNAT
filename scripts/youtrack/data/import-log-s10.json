@@ -1,0 +1,216 @@
+{
+  "when": "2026-09-18T23:28:33.735Z",
+  "dryRun": false,
+  "withSubtasks": true,
+  "log": [
+    {
+      "backlogId": "EPIC-S10-APP",
+      "youtrack": "FE-243",
+      "kind": "epic"
+    },
+    {
+      "backlogId": "EPIC-S10-RBAC-UI",
+      "youtrack": "FE-244",
+      "kind": "epic"
+    },
+    {
+      "backlogId": "EPIC-S10-EMP",
+      "youtrack": "FE-245",
+      "kind": "epic"
+    },
+    {
+      "backlogId": "S10-APP-01",
+      "youtrack": "FE-246",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-APP-01.1",
+      "youtrack": "FE-247",
+      "kind": "subtask",
+      "parent": "FE-246"
+    },
+    {
+      "backlogId": "S10-APP-01.2",
+      "youtrack": "FE-248",
+      "kind": "subtask",
+      "parent": "FE-246"
+    },
+    {
+      "backlogId": "S10-APP-02",
+      "youtrack": "FE-249",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-APP-02.1",
+      "youtrack": "FE-250",
+      "kind": "subtask",
+      "parent": "FE-249"
+    },
+    {
+      "backlogId": "S10-APP-03",
+      "youtrack": "FE-251",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-APP-03.1",
+      "youtrack": "FE-252",
+      "kind": "subtask",
+      "parent": "FE-251"
+    },
+    {
+      "backlogId": "S10-APP-04",
+      "youtrack": "FE-253",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-APP-04.1",
+      "youtrack": "FE-254",
+      "kind": "subtask",
+      "parent": "FE-253"
+    },
+    {
+      "backlogId": "S10-APP-04.2",
+      "youtrack": "FE-255",
+      "kind": "subtask",
+      "parent": "FE-253"
+    },
+    {
+      "backlogId": "S10-APP-05",
+      "youtrack": "FE-256",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-APP-05.1",
+      "youtrack": "FE-257",
+      "kind": "subtask",
+      "parent": "FE-256"
+    },
+    {
+      "backlogId": "S10-APP-05.2",
+      "youtrack": "FE-258",
+      "kind": "subtask",
+      "parent": "FE-256"
+    },
+    {
+      "backlogId": "S10-APP-06",
+      "youtrack": "FE-259",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-APP-06.1",
+      "youtrack": "FE-260",
+      "kind": "subtask",
+      "parent": "FE-259"
+    },
+    {
+      "backlogId": "S10-RBAC-01",
+      "youtrack": "FE-261",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-RBAC-01.1",
+      "youtrack": "FE-262",
+      "kind": "subtask",
+      "parent": "FE-261"
+    },
+    {
+      "backlogId": "S10-RBAC-02",
+      "youtrack": "FE-263",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-RBAC-02.1",
+      "youtrack": "FE-264",
+      "kind": "subtask",
+      "parent": "FE-263"
+    },
+    {
+      "backlogId": "S10-RBAC-03",
+      "youtrack": "FE-265",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-RBAC-03.1",
+      "youtrack": "FE-266",
+      "kind": "subtask",
+      "parent": "FE-265"
+    },
+    {
+      "backlogId": "S10-RBAC-04",
+      "youtrack": "FE-267",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-RBAC-04.1",
+      "youtrack": "FE-268",
+      "kind": "subtask",
+      "parent": "FE-267"
+    },
+    {
+      "backlogId": "S10-EMP-01",
+      "youtrack": "FE-269",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-EMP-01.1",
+      "youtrack": "FE-270",
+      "kind": "subtask",
+      "parent": "FE-269"
+    },
+    {
+      "backlogId": "S10-EMP-02",
+      "youtrack": "FE-271",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-EMP-02.1",
+      "youtrack": "FE-272",
+      "kind": "subtask",
+      "parent": "FE-271"
+    },
+    {
+      "backlogId": "S10-EMP-03",
+      "youtrack": "FE-273",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-EMP-03.1",
+      "youtrack": "FE-274",
+      "kind": "subtask",
+      "parent": "FE-273"
+    },
+    {
+      "backlogId": "S10-EMP-04",
+      "youtrack": "FE-275",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-EMP-04.1",
+      "youtrack": "FE-276",
+      "kind": "subtask",
+      "parent": "FE-275"
+    },
+    {
+      "backlogId": "S10-EMP-05",
+      "youtrack": "FE-277",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-EMP-05.1",
+      "youtrack": "FE-278",
+      "kind": "subtask",
+      "parent": "FE-277"
+    },
+    {
+      "backlogId": "S10-EMP-06",
+      "youtrack": "FE-279",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-EMP-06.1",
+      "youtrack": "FE-280",
+      "kind": "subtask",
+      "parent": "FE-279"
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "sprint": {
+    "n": 1,
+    "name": "S1-sign-ubl",
+    "title": "Spike A firma + Spike B Invoice UBL",
+    "goal": "golden unsigned pasa XSD; firma verify; ADR-002 cerrado."
+  },
+  "epics": [
+    {
+      "id": "S1-SIGN",
+      "title": "S1-SIGN",
+      "childIds": [
+        "S1-SIGN-01",
+        "S1-SIGN-02",
+        "S1-SIGN-03",
+        "S1-SIGN-04",
+        "S1-SIGN-05"
+      ]
+    },
+    {
+      "id": "S1-UBL",
+      "title": "S1-UBL",
+      "childIds": [
+        "S1-UBL-01",
+        "S1-UBL-02",
+        "S1-UBL-03",
+        "S1-UBL-04",
+        "S1-UBL-05",
+        "S1-UBL-06"
+      ]
+    },
+    {
+      "id": "S1-GATE",
+      "title": "S1-GATE",
+      "childIds": [
+        "S1-GATE-01",
+        "S1-GATE-02"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "S1-SIGN-01",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-SIGN",
+      "epicTitle": "S1-SIGN",
+      "summary": "Port `SignXmlPort`",
+      "estimate": "S",
+      "type": "spike",
+      "subtasks": [
+        "interface + DI token"
+      ],
+      "dod": [
+        "tipos"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Port `SignXmlPort`** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-SIGN-01.1",
+          "summary": "interface + DI token",
+          "descriptionMarkdown": "## Subtarea de `S1-SIGN-01`\n\n- **Padre:** S1-SIGN-01 — Port `SignXmlPort`\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-SIGN\n\n## Qué hacer\ninterface + DI token\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Port `SignXmlPort`** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- tipos\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-SIGN-01\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-SIGN — S1-SIGN\n- **Estimación:** S\n- **Type:** spike\n\n## Objetivo\nPort `SignXmlPort`\n\n## Cómo hacerlo\n1. Implementar: **Port `SignXmlPort`** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-SIGN-01.1` — interface + DI token\n\n## Definition of Done\n- tipos\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] tipos\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-SIGN-02",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-SIGN",
+      "epicTitle": "S1-SIGN",
+      "summary": "Cargar PFX",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "env password",
+        "cert gitignored"
+      ],
+      "dod": [
+        "log redactado"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Cargar PFX** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-SIGN-02.1",
+          "summary": "env password",
+          "descriptionMarkdown": "## Subtarea de `S1-SIGN-02`\n\n- **Padre:** S1-SIGN-02 — Cargar PFX\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-SIGN\n\n## Qué hacer\nenv password\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Cargar PFX** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- log redactado\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S1-SIGN-02.2",
+          "summary": "cert gitignored",
+          "descriptionMarkdown": "## Subtarea de `S1-SIGN-02`\n\n- **Padre:** S1-SIGN-02 — Cargar PFX\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-SIGN\n\n## Qué hacer\ncert gitignored\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Cargar PFX** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- log redactado\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-SIGN-02\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-SIGN — S1-SIGN\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nCargar PFX\n\n## Cómo hacerlo\n1. Implementar: **Cargar PFX** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-SIGN-02.1` — env password\n- [ ] `S1-SIGN-02.2` — cert gitignored\n\n## Definition of Done\n- log redactado\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] log redactado\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-SIGN-03",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-SIGN",
+      "epicTitle": "S1-SIGN",
+      "summary": "Impl `xml-crypto`",
+      "estimate": "L",
+      "type": "spike",
+      "subtasks": [
+        "C14N, Reference, KeyInfo, UBLExtensions"
+      ],
+      "dod": [
+        "A2+A3 [24§A](docs/planificacion/24-plan-spikes-emision.md)"
+      ],
+      "refs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Impl `xml-crypto`** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-SIGN-03.1",
+          "summary": "C14N, Reference, KeyInfo, UBLExtensions",
+          "descriptionMarkdown": "## Subtarea de `S1-SIGN-03`\n\n- **Padre:** S1-SIGN-03 — Impl `xml-crypto`\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-SIGN\n\n## Qué hacer\nC14N, Reference, KeyInfo, UBLExtensions\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Impl `xml-crypto`** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- A2+A3 [24§A](docs/planificacion/24-plan-spikes-emision.md)\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-SIGN-03\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-SIGN — S1-SIGN\n- **Estimación:** L\n- **Type:** spike\n\n## Objetivo\nImpl `xml-crypto`\n\n## Cómo hacerlo\n1. Implementar: **Impl `xml-crypto`** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-SIGN-03.1` — C14N, Reference, KeyInfo, UBLExtensions\n\n## Definition of Done\n- A2+A3 [24§A](docs/planificacion/24-plan-spikes-emision.md)\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] A2+A3 [24§A](docs/planificacion/24-plan-spikes-emision.md)\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-SIGN-04",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-SIGN",
+      "epicTitle": "S1-SIGN",
+      "summary": "Verify + nota validador",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "in-process",
+        "SFS opcional"
+      ],
+      "dod": [
+        "A4 o doc"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Verify + nota validador** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-SIGN-04.1",
+          "summary": "in-process",
+          "descriptionMarkdown": "## Subtarea de `S1-SIGN-04`\n\n- **Padre:** S1-SIGN-04 — Verify + nota validador\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-SIGN\n\n## Qué hacer\nin-process\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Verify + nota validador** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- A4 o doc\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S1-SIGN-04.2",
+          "summary": "SFS opcional",
+          "descriptionMarkdown": "## Subtarea de `S1-SIGN-04`\n\n- **Padre:** S1-SIGN-04 — Verify + nota validador\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-SIGN\n\n## Qué hacer\nSFS opcional\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Verify + nota validador** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- A4 o doc\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-SIGN-04\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-SIGN — S1-SIGN\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nVerify + nota validador\n\n## Cómo hacerlo\n1. Implementar: **Verify + nota validador** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-SIGN-04.1` — in-process\n- [ ] `S1-SIGN-04.2` — SFS opcional\n\n## Definition of Done\n- A4 o doc\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] A4 o doc\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-SIGN-05",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-SIGN",
+      "epicTitle": "S1-SIGN",
+      "summary": "Cerrar ADR-002",
+      "estimate": "S",
+      "type": "spike",
+      "subtasks": [
+        "Aceptado o pivot"
+      ],
+      "dod": [
+        "ADR"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Cerrar ADR-002** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-SIGN-05.1",
+          "summary": "Aceptado o pivot",
+          "descriptionMarkdown": "## Subtarea de `S1-SIGN-05`\n\n- **Padre:** S1-SIGN-05 — Cerrar ADR-002\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-SIGN\n\n## Qué hacer\nAceptado o pivot\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Cerrar ADR-002** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- ADR\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-SIGN-05\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-SIGN — S1-SIGN\n- **Estimación:** S\n- **Type:** spike\n\n## Objetivo\nCerrar ADR-002\n\n## Cómo hacerlo\n1. Implementar: **Cerrar ADR-002** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-SIGN-05.1` — Aceptado o pivot\n\n## Definition of Done\n- ADR\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] ADR\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-UBL-01",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-UBL",
+      "epicTitle": "S1-UBL",
+      "summary": "Tipos Invoice canónicos",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "dict [11](docs/planificacion/11-diccionario-json-ubl-factura.md) + schema"
+      ],
+      "dod": [
+        "compile"
+      ],
+      "refs": [
+        "docs/planificacion/11-diccionario-json-ubl-factura.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Tipos Invoice canónicos** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-UBL-01.1",
+          "summary": "dict [11](docs/planificacion/11-diccionario-json-ubl-factura.md) + schema",
+          "descriptionMarkdown": "## Subtarea de `S1-UBL-01`\n\n- **Padre:** S1-UBL-01 — Tipos Invoice canónicos\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-UBL\n\n## Qué hacer\ndict [11](docs/planificacion/11-diccionario-json-ubl-factura.md) + schema\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Tipos Invoice canónicos** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- compile\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-UBL-01\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-UBL — S1-UBL\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nTipos Invoice canónicos\n\n## Cómo hacerlo\n1. Implementar: **Tipos Invoice canónicos** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-UBL-01.1` — dict [11](docs/planificacion/11-diccionario-json-ubl-factura.md) + schema\n\n## Definition of Done\n- compile\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] compile\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/11-diccionario-json-ubl-factura.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/11-diccionario-json-ubl-factura.md)\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-UBL-02",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-UBL",
+      "epicTitle": "S1-UBL",
+      "summary": "Builder unsigned",
+      "estimate": "L",
+      "type": "spike",
+      "subtasks": [
+        "fixture `01-invoice-gravada`"
+      ],
+      "dod": [
+        "well-formed"
+      ],
+      "refs": [
+        "docs/planificacion/11-diccionario-json-ubl-factura.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Builder unsigned** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-UBL-02.1",
+          "summary": "fixture 01-invoice-gravada",
+          "descriptionMarkdown": "## Subtarea de `S1-UBL-02`\n\n- **Padre:** S1-UBL-02 — Builder unsigned\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-UBL\n\n## Qué hacer\nfixture `01-invoice-gravada`\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Builder unsigned** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- well-formed\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-UBL-02\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-UBL — S1-UBL\n- **Estimación:** L\n- **Type:** spike\n\n## Objetivo\nBuilder unsigned\n\n## Cómo hacerlo\n1. Implementar: **Builder unsigned** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-UBL-02.1` — fixture 01-invoice-gravada\n\n## Definition of Done\n- well-formed\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] well-formed\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/11-diccionario-json-ubl-factura.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/11-diccionario-json-ubl-factura.md)\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-UBL-03",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-UBL",
+      "epicTitle": "S1-UBL",
+      "summary": "listURI injector",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "[invoice-listuri-schemes.json](docs/planificacion/artifacts/ubl-attributes/invoice-listuri-schemes.json)"
+      ],
+      "dod": [
+        "attrs críticos"
+      ],
+      "refs": [
+        "docs/planificacion/artifacts/ubl-attributes/invoice-listuri-schemes.json",
+        "docs/planificacion/11-diccionario-json-ubl-factura.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **listURI injector** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-UBL-03.1",
+          "summary": "[invoice-listuri-schemes.json](docs/planificacion/artifacts/ubl-attributes/invoice-listuri-schemes.json)",
+          "descriptionMarkdown": "## Subtarea de `S1-UBL-03`\n\n- **Padre:** S1-UBL-03 — listURI injector\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-UBL\n\n## Qué hacer\n[invoice-listuri-schemes.json](docs/planificacion/artifacts/ubl-attributes/invoice-listuri-schemes.json)\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **listURI injector** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- attrs críticos\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-UBL-03\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-UBL — S1-UBL\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nlistURI injector\n\n## Cómo hacerlo\n1. Implementar: **listURI injector** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-UBL-03.1` — [invoice-listuri-schemes.json](docs/planificacion/artifacts/ubl-attributes/invoice-listuri-schemes.json)\n\n## Definition of Done\n- attrs críticos\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] attrs críticos\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/artifacts/ubl-attributes/invoice-listuri-schemes.json](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/artifacts/ubl-attributes/invoice-listuri-schemes.json)\n- [docs/planificacion/11-diccionario-json-ubl-factura.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/11-diccionario-json-ubl-factura.md)\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-UBL-04",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-UBL",
+      "epicTitle": "S1-UBL",
+      "summary": "Totales auto + matriz 07×05",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "[matrix-07-x-05-igv.json](docs/planificacion/artifacts/catalogs/matrix-07-x-05-igv.json)"
+      ],
+      "dod": [
+        "montos OK"
+      ],
+      "refs": [
+        "docs/planificacion/artifacts/catalogs/matrix-07-x-05-igv.json",
+        "docs/planificacion/11-diccionario-json-ubl-factura.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Totales auto + matriz 07×05** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-UBL-04.1",
+          "summary": "[matrix-07-x-05-igv.json](docs/planificacion/artifacts/catalogs/matrix-07-x-05-igv.json)",
+          "descriptionMarkdown": "## Subtarea de `S1-UBL-04`\n\n- **Padre:** S1-UBL-04 — Totales auto + matriz 07×05\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-UBL\n\n## Qué hacer\n[matrix-07-x-05-igv.json](docs/planificacion/artifacts/catalogs/matrix-07-x-05-igv.json)\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Totales auto + matriz 07×05** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- montos OK\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-UBL-04\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-UBL — S1-UBL\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nTotales auto + matriz 07×05\n\n## Cómo hacerlo\n1. Implementar: **Totales auto + matriz 07×05** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-UBL-04.1` — [matrix-07-x-05-igv.json](docs/planificacion/artifacts/catalogs/matrix-07-x-05-igv.json)\n\n## Definition of Done\n- montos OK\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] montos OK\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/artifacts/catalogs/matrix-07-x-05-igv.json](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/artifacts/catalogs/matrix-07-x-05-igv.json)\n- [docs/planificacion/11-diccionario-json-ubl-factura.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/11-diccionario-json-ubl-factura.md)\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-UBL-05",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-UBL",
+      "epicTitle": "S1-UBL",
+      "summary": "Golden unsigned",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "testdata + diff test"
+      ],
+      "dod": [
+        "B3"
+      ],
+      "refs": [
+        "docs/planificacion/11-diccionario-json-ubl-factura.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Golden unsigned** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-UBL-05.1",
+          "summary": "testdata + diff test",
+          "descriptionMarkdown": "## Subtarea de `S1-UBL-05`\n\n- **Padre:** S1-UBL-05 — Golden unsigned\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-UBL\n\n## Qué hacer\ntestdata + diff test\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Golden unsigned** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- B3\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-UBL-05\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-UBL — S1-UBL\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nGolden unsigned\n\n## Cómo hacerlo\n1. Implementar: **Golden unsigned** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-UBL-05.1` — testdata + diff test\n\n## Definition of Done\n- B3\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] B3\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/11-diccionario-json-ubl-factura.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/11-diccionario-json-ubl-factura.md)\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-UBL-06",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-UBL",
+      "epicTitle": "S1-UBL",
+      "summary": "Pipeline B→A",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "`pnpm spike:sign` → `tmp/spikes/`"
+      ],
+      "dod": [
+        "signed local"
+      ],
+      "refs": [
+        "docs/planificacion/11-diccionario-json-ubl-factura.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Pipeline B→A** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-UBL-06.1",
+          "summary": "pnpm spike:sign → tmp/spikes/",
+          "descriptionMarkdown": "## Subtarea de `S1-UBL-06`\n\n- **Padre:** S1-UBL-06 — Pipeline B→A\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-UBL\n\n## Qué hacer\n`pnpm spike:sign` → `tmp/spikes/`\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Pipeline B→A** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- signed local\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-UBL-06\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-UBL — S1-UBL\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nPipeline B→A\n\n## Cómo hacerlo\n1. Implementar: **Pipeline B→A** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-UBL-06.1` — pnpm spike:sign → tmp/spikes/\n\n## Definition of Done\n- signed local\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] signed local\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/11-diccionario-json-ubl-factura.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/11-diccionario-json-ubl-factura.md)\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-GATE-01",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-GATE",
+      "epicTitle": "S1-GATE",
+      "summary": "Unpack XSD",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "checksum `xsd-ubl.zip`",
+        "cache"
+      ],
+      "dod": [
+        "reproducible"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Unpack XSD** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-GATE-01.1",
+          "summary": "checksum xsd-ubl.zip",
+          "descriptionMarkdown": "## Subtarea de `S1-GATE-01`\n\n- **Padre:** S1-GATE-01 — Unpack XSD\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-GATE\n\n## Qué hacer\nchecksum `xsd-ubl.zip`\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Unpack XSD** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- reproducible\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S1-GATE-01.2",
+          "summary": "cache",
+          "descriptionMarkdown": "## Subtarea de `S1-GATE-01`\n\n- **Padre:** S1-GATE-01 — Unpack XSD\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-GATE\n\n## Qué hacer\ncache\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Unpack XSD** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- reproducible\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-GATE-01\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-GATE — S1-GATE\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nUnpack XSD\n\n## Cómo hacerlo\n1. Implementar: **Unpack XSD** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-GATE-01.1` — checksum xsd-ubl.zip\n- [ ] `S1-GATE-01.2` — cache\n\n## Definition of Done\n- reproducible\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] reproducible\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S1-GATE-02",
+      "sprint": "S1",
+      "sprintName": "S1-sign-ubl",
+      "epic": "S1-GATE",
+      "epicTitle": "S1-GATE",
+      "summary": "XSD validate CI block",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "port validation stage xsd"
+      ],
+      "dod": [
+        "[29](docs/planificacion/29-plan-gate-xsd-xsl.md)/[31](docs/planificacion/31-ci-quality-gates.md)"
+      ],
+      "refs": [
+        "docs/planificacion/29-plan-gate-xsd-xsl.md",
+        "docs/planificacion/31-ci-quality-gates.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **XSD validate CI block** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S1-GATE-02.1",
+          "summary": "port validation stage xsd",
+          "descriptionMarkdown": "## Subtarea de `S1-GATE-02`\n\n- **Padre:** S1-GATE-02 — XSD validate CI block\n- **Sprint:** S1 (`S1-sign-ubl`)\n- **Epic:** S1-GATE\n\n## Qué hacer\nport validation stage xsd\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **XSD validate CI block** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- [29](docs/planificacion/29-plan-gate-xsd-xsl.md)/[31](docs/planificacion/31-ci-quality-gates.md)\n- Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S1-GATE-02\n- **Sprint:** S1 — Spike A firma + Spike B Invoice UBL (`S1-sign-ubl`)\n- **Epic:** S1-GATE — S1-GATE\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nXSD validate CI block\n\n## Cómo hacerlo\n1. Implementar: **XSD validate CI block** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S1-GATE-02.1` — port validation stage xsd\n\n## Definition of Done\n- [29](docs/planificacion/29-plan-gate-xsd-xsl.md)/[31](docs/planificacion/31-ci-quality-gates.md)\n- [ ] Cumple DoD del sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Verificar\n- [ ] [29](docs/planificacion/29-plan-gate-xsd-xsl.md)/[31](docs/planificacion/31-ci-quality-gates.md)\n- [ ] Meta sprint: golden unsigned pasa XSD; firma verify; ADR-002 cerrado.\n\n## Referencias\n- [docs/planificacion/29-plan-gate-xsd-xsl.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/29-plan-gate-xsd-xsl.md)\n- [docs/planificacion/31-ci-quality-gates.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/31-ci-quality-gates.md)\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    }
+  ]
+}

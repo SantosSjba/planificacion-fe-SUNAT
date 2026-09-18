@@ -1,0 +1,296 @@
+{
+  "when": "2026-09-18T23:16:46.949Z",
+  "dryRun": false,
+  "withSubtasks": true,
+  "log": [
+    {
+      "backlogId": "EPIC-S0-TOOL",
+      "youtrack": "FE-1",
+      "kind": "epic"
+    },
+    {
+      "backlogId": "EPIC-S0-API",
+      "youtrack": "FE-2",
+      "kind": "epic"
+    },
+    {
+      "backlogId": "EPIC-S0-PKG",
+      "youtrack": "FE-3",
+      "kind": "epic"
+    },
+    {
+      "backlogId": "EPIC-S0-DEV",
+      "youtrack": "FE-4",
+      "kind": "epic"
+    },
+    {
+      "backlogId": "S0-TOOL-01",
+      "youtrack": "FE-5",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-TOOL-01.1",
+      "youtrack": "FE-24",
+      "kind": "subtask",
+      "parent": "FE-5"
+    },
+    {
+      "backlogId": "S0-TOOL-01.2",
+      "youtrack": "FE-25",
+      "kind": "subtask",
+      "parent": "FE-5"
+    },
+    {
+      "backlogId": "S0-TOOL-01.3",
+      "youtrack": "FE-26",
+      "kind": "subtask",
+      "parent": "FE-5"
+    },
+    {
+      "backlogId": "S0-TOOL-02",
+      "youtrack": "FE-6",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-TOOL-02.1",
+      "youtrack": "FE-27",
+      "kind": "subtask",
+      "parent": "FE-6"
+    },
+    {
+      "backlogId": "S0-TOOL-02.2",
+      "youtrack": "FE-28",
+      "kind": "subtask",
+      "parent": "FE-6"
+    },
+    {
+      "backlogId": "S0-TOOL-03",
+      "youtrack": "FE-7",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-TOOL-03.1",
+      "youtrack": "FE-29",
+      "kind": "subtask",
+      "parent": "FE-7"
+    },
+    {
+      "backlogId": "S0-TOOL-04",
+      "youtrack": "FE-8",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-TOOL-04.1",
+      "youtrack": "FE-30",
+      "kind": "subtask",
+      "parent": "FE-8"
+    },
+    {
+      "backlogId": "S0-TOOL-05",
+      "youtrack": "FE-9",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-TOOL-05.1",
+      "youtrack": "FE-31",
+      "kind": "subtask",
+      "parent": "FE-9"
+    },
+    {
+      "backlogId": "S0-TOOL-06",
+      "youtrack": "FE-10",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-TOOL-06.1",
+      "youtrack": "FE-32",
+      "kind": "subtask",
+      "parent": "FE-10"
+    },
+    {
+      "backlogId": "S0-API-01",
+      "youtrack": "FE-11",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-API-01.1",
+      "youtrack": "FE-33",
+      "kind": "subtask",
+      "parent": "FE-11"
+    },
+    {
+      "backlogId": "S0-API-01.2",
+      "youtrack": "FE-34",
+      "kind": "subtask",
+      "parent": "FE-11"
+    },
+    {
+      "backlogId": "S0-API-02",
+      "youtrack": "FE-12",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-API-02.1",
+      "youtrack": "FE-35",
+      "kind": "subtask",
+      "parent": "FE-12"
+    },
+    {
+      "backlogId": "S0-API-02.2",
+      "youtrack": "FE-36",
+      "kind": "subtask",
+      "parent": "FE-12"
+    },
+    {
+      "backlogId": "S0-API-03",
+      "youtrack": "FE-13",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-API-03.1",
+      "youtrack": "FE-37",
+      "kind": "subtask",
+      "parent": "FE-13"
+    },
+    {
+      "backlogId": "S0-API-03.2",
+      "youtrack": "FE-38",
+      "kind": "subtask",
+      "parent": "FE-13"
+    },
+    {
+      "backlogId": "S0-API-04",
+      "youtrack": "FE-14",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-API-04.1",
+      "youtrack": "FE-39",
+      "kind": "subtask",
+      "parent": "FE-14"
+    },
+    {
+      "backlogId": "S0-API-05",
+      "youtrack": "FE-15",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-API-05.1",
+      "youtrack": "FE-40",
+      "kind": "subtask",
+      "parent": "FE-15"
+    },
+    {
+      "backlogId": "S0-API-05.2",
+      "youtrack": "FE-41",
+      "kind": "subtask",
+      "parent": "FE-15"
+    },
+    {
+      "backlogId": "S0-API-06",
+      "youtrack": "FE-16",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-API-06.1",
+      "youtrack": "FE-42",
+      "kind": "subtask",
+      "parent": "FE-16"
+    },
+    {
+      "backlogId": "S0-PKG-01",
+      "youtrack": "FE-17",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-PKG-01.1",
+      "youtrack": "FE-43",
+      "kind": "subtask",
+      "parent": "FE-17"
+    },
+    {
+      "backlogId": "S0-PKG-02",
+      "youtrack": "FE-18",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-PKG-02.1",
+      "youtrack": "FE-44",
+      "kind": "subtask",
+      "parent": "FE-18"
+    },
+    {
+      "backlogId": "S0-PKG-02.2",
+      "youtrack": "FE-45",
+      "kind": "subtask",
+      "parent": "FE-18"
+    },
+    {
+      "backlogId": "S0-PKG-03",
+      "youtrack": "FE-19",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-PKG-03.1",
+      "youtrack": "FE-46",
+      "kind": "subtask",
+      "parent": "FE-19"
+    },
+    {
+      "backlogId": "S0-DEV-01",
+      "youtrack": "FE-20",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-DEV-01.1",
+      "youtrack": "FE-47",
+      "kind": "subtask",
+      "parent": "FE-20"
+    },
+    {
+      "backlogId": "S0-DEV-01.2",
+      "youtrack": "FE-48",
+      "kind": "subtask",
+      "parent": "FE-20"
+    },
+    {
+      "backlogId": "S0-DEV-02",
+      "youtrack": "FE-21",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-DEV-02.1",
+      "youtrack": "FE-49",
+      "kind": "subtask",
+      "parent": "FE-21"
+    },
+    {
+      "backlogId": "S0-DEV-03",
+      "youtrack": "FE-22",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-DEV-03.1",
+      "youtrack": "FE-50",
+      "kind": "subtask",
+      "parent": "FE-22"
+    },
+    {
+      "backlogId": "S0-DEV-03.2",
+      "youtrack": "FE-51",
+      "kind": "subtask",
+      "parent": "FE-22"
+    },
+    {
+      "backlogId": "S0-DEV-04",
+      "youtrack": "FE-23",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-DEV-04.1",
+      "youtrack": "FE-52",
+      "kind": "subtask",
+      "parent": "FE-23"
+    }
+  ]
+}

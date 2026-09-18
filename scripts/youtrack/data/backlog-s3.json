@@ -1,0 +1,756 @@
+{
+  "sprint": {
+    "n": 3,
+    "name": "S3-platform",
+    "title": "DB, tenancy, credenciales, colas",
+    "goal": "DB Drizzle, tenancy, RBAC, credenciales, BullMQ."
+  },
+  "epics": [
+    {
+      "id": "S3-DB",
+      "title": "S3-DB",
+      "childIds": [
+        "S3-DB-01",
+        "S3-DB-02",
+        "S3-DB-03"
+      ]
+    },
+    {
+      "id": "S3-AUTH",
+      "title": "S3-AUTH",
+      "childIds": [
+        "S3-AUTH-01",
+        "S3-AUTH-02",
+        "S3-AUTH-03",
+        "S3-AUTH-04",
+        "S3-AUTH-05",
+        "S3-AUTH-06",
+        "S3-AUTH-07",
+        "S3-AUTH-08"
+      ]
+    },
+    {
+      "id": "S3-COMP",
+      "title": "S3-COMP",
+      "childIds": [
+        "S3-COMP-01",
+        "S3-COMP-02",
+        "S3-COMP-03",
+        "S3-COMP-04",
+        "S3-COMP-05"
+      ]
+    },
+    {
+      "id": "S3-INFRA",
+      "title": "S3-INFRA",
+      "childIds": [
+        "S3-INFRA-01",
+        "S3-INFRA-02",
+        "S3-INFRA-03"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "S3-DB-01",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-DB",
+      "epicTitle": "S3-DB",
+      "summary": "Drizzle + migraciones",
+      "estimate": "L",
+      "type": "api",
+      "subtasks": [
+        "orden [26 §6](docs/planificacion/26-modelo-datos-postgres.md)"
+      ],
+      "dod": [
+        "up/down CI"
+      ],
+      "refs": [
+        "docs/planificacion/26-modelo-datos-postgres.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Drizzle + migraciones** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-DB-01.1",
+          "summary": "orden [26 §6](docs/planificacion/26-modelo-datos-postgres.md)",
+          "descriptionMarkdown": "## Subtarea de `S3-DB-01`\n\n- **Padre:** S3-DB-01 — Drizzle + migraciones\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-DB\n\n## Qué hacer\norden [26 §6](docs/planificacion/26-modelo-datos-postgres.md)\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Drizzle + migraciones** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- up/down CI\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-DB-01\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-DB — S3-DB\n- **Estimación:** L\n- **Type:** api\n\n## Objetivo\nDrizzle + migraciones\n\n## Cómo hacerlo\n1. Implementar: **Drizzle + migraciones** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-DB-01.1` — orden [26 §6](docs/planificacion/26-modelo-datos-postgres.md)\n\n## Definition of Done\n- up/down CI\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] up/down CI\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/26-modelo-datos-postgres.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/26-modelo-datos-postgres.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-DB-02",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-DB",
+      "epicTitle": "S3-DB",
+      "summary": "Todas las tablas núcleo",
+      "estimate": "L",
+      "type": "api",
+      "subtasks": [
+        "orgs…audit_events"
+      ],
+      "dod": [
+        "schema = doc"
+      ],
+      "refs": [
+        "docs/planificacion/26-modelo-datos-postgres.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Todas las tablas núcleo** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-DB-02.1",
+          "summary": "orgs…audit_events",
+          "descriptionMarkdown": "## Subtarea de `S3-DB-02`\n\n- **Padre:** S3-DB-02 — Todas las tablas núcleo\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-DB\n\n## Qué hacer\norgs…audit_events\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Todas las tablas núcleo** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- schema = doc\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-DB-02\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-DB — S3-DB\n- **Estimación:** L\n- **Type:** api\n\n## Objetivo\nTodas las tablas núcleo\n\n## Cómo hacerlo\n1. Implementar: **Todas las tablas núcleo** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-DB-02.1` — orgs…audit_events\n\n## Definition of Done\n- schema = doc\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] schema = doc\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/26-modelo-datos-postgres.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/26-modelo-datos-postgres.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-DB-03",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-DB",
+      "epicTitle": "S3-DB",
+      "summary": "Seeds",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "org demo + catalog_versions `2026-08-26`"
+      ],
+      "dod": [
+        "script"
+      ],
+      "refs": [
+        "docs/planificacion/26-modelo-datos-postgres.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Seeds** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-DB-03.1",
+          "summary": "org demo + catalog_versions 2026-08-26",
+          "descriptionMarkdown": "## Subtarea de `S3-DB-03`\n\n- **Padre:** S3-DB-03 — Seeds\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-DB\n\n## Qué hacer\norg demo + catalog_versions `2026-08-26`\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Seeds** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- script\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-DB-03\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-DB — S3-DB\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nSeeds\n\n## Cómo hacerlo\n1. Implementar: **Seeds** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-DB-03.1` — org demo + catalog_versions 2026-08-26\n\n## Definition of Done\n- script\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] script\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/26-modelo-datos-postgres.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/26-modelo-datos-postgres.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-AUTH-01",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-AUTH",
+      "epicTitle": "S3-AUTH",
+      "summary": "API keys",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "create once, hash, scopes, revoke"
+      ],
+      "dod": [
+        "OpenAPI"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **API keys** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-AUTH-01.1",
+          "summary": "create once, hash, scopes, revoke",
+          "descriptionMarkdown": "## Subtarea de `S3-AUTH-01`\n\n- **Padre:** S3-AUTH-01 — API keys\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-AUTH\n\n## Qué hacer\ncreate once, hash, scopes, revoke\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **API keys** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- OpenAPI\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-AUTH-01\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-AUTH — S3-AUTH\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nAPI keys\n\n## Cómo hacerlo\n1. Implementar: **API keys** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-AUTH-01.1` — create once, hash, scopes, revoke\n\n## Definition of Done\n- OpenAPI\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] OpenAPI\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-AUTH-02",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-AUTH",
+      "epicTitle": "S3-AUTH",
+      "summary": "Auth guard API key",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "Bearer",
+        "org context"
+      ],
+      "dod": [
+        "401/403"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Auth guard API key** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-AUTH-02.1",
+          "summary": "Bearer",
+          "descriptionMarkdown": "## Subtarea de `S3-AUTH-02`\n\n- **Padre:** S3-AUTH-02 — Auth guard API key\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-AUTH\n\n## Qué hacer\nBearer\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Auth guard API key** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- 401/403\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S3-AUTH-02.2",
+          "summary": "org context",
+          "descriptionMarkdown": "## Subtarea de `S3-AUTH-02`\n\n- **Padre:** S3-AUTH-02 — Auth guard API key\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-AUTH\n\n## Qué hacer\norg context\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Auth guard API key** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- 401/403\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-AUTH-02\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-AUTH — S3-AUTH\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nAuth guard API key\n\n## Cómo hacerlo\n1. Implementar: **Auth guard API key** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-AUTH-02.1` — Bearer\n- [ ] `S3-AUTH-02.2` — org context\n\n## Definition of Done\n- 401/403\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] 401/403\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-AUTH-03",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-AUTH",
+      "epicTitle": "S3-AUTH",
+      "summary": "Rate limit Redis",
+      "estimate": "S",
+      "type": "api",
+      "subtasks": [
+        "por org"
+      ],
+      "dod": [
+        "429"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Rate limit Redis** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-AUTH-03.1",
+          "summary": "por org",
+          "descriptionMarkdown": "## Subtarea de `S3-AUTH-03`\n\n- **Padre:** S3-AUTH-03 — Rate limit Redis\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-AUTH\n\n## Qué hacer\npor org\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Rate limit Redis** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- 429\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-AUTH-03\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-AUTH — S3-AUTH\n- **Estimación:** S\n- **Type:** api\n\n## Objetivo\nRate limit Redis\n\n## Cómo hacerlo\n1. Implementar: **Rate limit Redis** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-AUTH-03.1` — por org\n\n## Definition of Done\n- 429\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] 429\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-AUTH-04",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-AUTH",
+      "epicTitle": "S3-AUTH",
+      "summary": "Tablas RBAC",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "`users`, `roles`, `permissions`, `user_roles`, `role_permissions` (ver §RBAC abajo)"
+      ],
+      "dod": [
+        "migrate"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Tablas RBAC** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-AUTH-04.1",
+          "summary": "users, roles, permissions, user_roles, role_permissions (ver §RBAC abajo)",
+          "descriptionMarkdown": "## Subtarea de `S3-AUTH-04`\n\n- **Padre:** S3-AUTH-04 — Tablas RBAC\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-AUTH\n\n## Qué hacer\n`users`, `roles`, `permissions`, `user_roles`, `role_permissions` (ver §RBAC abajo)\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Tablas RBAC** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- migrate\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-AUTH-04\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-AUTH — S3-AUTH\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nTablas RBAC\n\n## Cómo hacerlo\n1. Implementar: **Tablas RBAC** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-AUTH-04.1` — users, roles, permissions, user_roles, role_permissions (ver §RBAC abajo)\n\n## Definition of Done\n- migrate\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] migrate\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## RBAC (resumen doc 33 §1)\n### Roles MVP\n\n| Rol | Descripción |\n| --- | --- |\n| `owner` | Dueño org; todo + transfer/billing futuro |\n| `admin` | Opera empresas, users (no borrar owner), credenciales |\n| `operator` | Emitir/consultar CPE/GRE/RA/RC; no keys/secrets |\n| `developer` | API keys, webhooks, validez, lectura docs; no credenciales SOL/pfx |\n| `viewer` | Solo lectura documentos/empresas (sin secretos) |\n\n### Permisos atómicos\n\n`users:read|write` · `companies:read|write` · `credentials:manage` · `series:read|write` · `documents:read|write` · `gre:read|write` · `apikeys:manage` · `webhooks:manage` · `validations:cpe` · `audit:read` · `catalog:read`\n\n### Matriz (R=read implícito donde write)\n\n| Permiso | owner | admin | operator | developer | viewer |\n| --- | --- | --- | --- | --- | --- |\n| users:* | sí | sí | no | no | read-only no |\n| companies:write | sí | sí | no | no | no |\n| credentials:manage | sí | sí | no | no | no |\n| series:write | sí | sí | sí | no | no |\n| documents:write | sí | sí | sí | no | no |\n| gre:write | sí | sí | sí | no | no |\n| apikeys:manage | sí | sí | no | sí | no |\n| webhooks:manage | sí | sí | no | sí | no |\n| validations:cpe | sí | sí | sí | sí | no |\n| audit:read | sí | sí | no | sí | no |\n| *:read docs/companies | sí | sí | sí | sí | sí |\n\n### API consola (además de API keys máquina)\n\n| Método | Path | Permiso |\n| --- | --- | --- |\n| POST | `/auth/login` | público |\n| POST | `/auth/refresh` | refresh token |\n| POST | `/auth/logout` | sesión |\n| GET/POST | `/organizations/me/users` | users:read/write |\n| PATCH | `/organizations/me/users/{id}` | users:write |\n| GET | `/organizations/me/roles` | users:read |\n\nPrimer usuario org = `owner` en seed/signup. API keys siguen con **scopes** OpenAPI (máquina); JWT usa **permissions** RBAC (humano).\n\n---\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": "### Roles MVP\n\n| Rol | Descripción |\n| --- | --- |\n| `owner` | Dueño org; todo + transfer/billing futuro |\n| `admin` | Opera empresas, users (no borrar owner), credenciales |\n| `operator` | Emitir/consultar CPE/GRE/RA/RC; no keys/secrets |\n| `developer` | API keys, webhooks, validez, lectura docs; no credenciales SOL/pfx |\n| `viewer` | Solo lectura documentos/empresas (sin secretos) |\n\n### Permisos atómicos\n\n`users:read|write` · `companies:read|write` · `credentials:manage` · `series:read|write` · `documents:read|write` · `gre:read|write` · `apikeys:manage` · `webhooks:manage` · `validations:cpe` · `audit:read` · `catalog:read`\n\n### Matriz (R=read implícito donde write)\n\n| Permiso | owner | admin | operator | developer | viewer |\n| --- | --- | --- | --- | --- | --- |\n| users:* | sí | sí | no | no | read-only no |\n| companies:write | sí | sí | no | no | no |\n| credentials:manage | sí | sí | no | no | no |\n| series:write | sí | sí | sí | no | no |\n| documents:write | sí | sí | sí | no | no |\n| gre:write | sí | sí | sí | no | no |\n| apikeys:manage | sí | sí | no | sí | no |\n| webhooks:manage | sí | sí | no | sí | no |\n| validations:cpe | sí | sí | sí | sí | no |\n| audit:read | sí | sí | no | sí | no |\n| *:read docs/companies | sí | sí | sí | sí | sí |\n\n### API consola (además de API keys máquina)\n\n| Método | Path | Permiso |\n| --- | --- | --- |\n| POST | `/auth/login` | público |\n| POST | `/auth/refresh` | refresh token |\n| POST | `/auth/logout` | sesión |\n| GET/POST | `/organizations/me/users` | users:read/write |\n| PATCH | `/organizations/me/users/{id}` | users:write |\n| GET | `/organizations/me/roles` | users:read |\n\nPrimer usuario org = `owner` en seed/signup. API keys siguen con **scopes** OpenAPI (máquina); JWT usa **permissions** RBAC (humano).\n\n---"
+    },
+    {
+      "id": "S3-AUTH-05",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-AUTH",
+      "epicTitle": "S3-AUTH",
+      "summary": "Seed roles",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "`owner`, `admin`, `operator`, `developer`, `viewer` + permission matrix"
+      ],
+      "dod": [
+        "seed"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Seed roles** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-AUTH-05.1",
+          "summary": "owner, admin, operator, developer, viewer + permission matrix",
+          "descriptionMarkdown": "## Subtarea de `S3-AUTH-05`\n\n- **Padre:** S3-AUTH-05 — Seed roles\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-AUTH\n\n## Qué hacer\n`owner`, `admin`, `operator`, `developer`, `viewer` + permission matrix\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Seed roles** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- seed\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-AUTH-05\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-AUTH — S3-AUTH\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nSeed roles\n\n## Cómo hacerlo\n1. Implementar: **Seed roles** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-AUTH-05.1` — owner, admin, operator, developer, viewer + permission matrix\n\n## Definition of Done\n- seed\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] seed\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## RBAC (resumen doc 33 §1)\n### Roles MVP\n\n| Rol | Descripción |\n| --- | --- |\n| `owner` | Dueño org; todo + transfer/billing futuro |\n| `admin` | Opera empresas, users (no borrar owner), credenciales |\n| `operator` | Emitir/consultar CPE/GRE/RA/RC; no keys/secrets |\n| `developer` | API keys, webhooks, validez, lectura docs; no credenciales SOL/pfx |\n| `viewer` | Solo lectura documentos/empresas (sin secretos) |\n\n### Permisos atómicos\n\n`users:read|write` · `companies:read|write` · `credentials:manage` · `series:read|write` · `documents:read|write` · `gre:read|write` · `apikeys:manage` · `webhooks:manage` · `validations:cpe` · `audit:read` · `catalog:read`\n\n### Matriz (R=read implícito donde write)\n\n| Permiso | owner | admin | operator | developer | viewer |\n| --- | --- | --- | --- | --- | --- |\n| users:* | sí | sí | no | no | read-only no |\n| companies:write | sí | sí | no | no | no |\n| credentials:manage | sí | sí | no | no | no |\n| series:write | sí | sí | sí | no | no |\n| documents:write | sí | sí | sí | no | no |\n| gre:write | sí | sí | sí | no | no |\n| apikeys:manage | sí | sí | no | sí | no |\n| webhooks:manage | sí | sí | no | sí | no |\n| validations:cpe | sí | sí | sí | sí | no |\n| audit:read | sí | sí | no | sí | no |\n| *:read docs/companies | sí | sí | sí | sí | sí |\n\n### API consola (además de API keys máquina)\n\n| Método | Path | Permiso |\n| --- | --- | --- |\n| POST | `/auth/login` | público |\n| POST | `/auth/refresh` | refresh token |\n| POST | `/auth/logout` | sesión |\n| GET/POST | `/organizations/me/users` | users:read/write |\n| PATCH | `/organizations/me/users/{id}` | users:write |\n| GET | `/organizations/me/roles` | users:read |\n\nPrimer usuario org = `owner` en seed/signup. API keys siguen con **scopes** OpenAPI (máquina); JWT usa **permissions** RBAC (humano).\n\n---\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": "### Roles MVP\n\n| Rol | Descripción |\n| --- | --- |\n| `owner` | Dueño org; todo + transfer/billing futuro |\n| `admin` | Opera empresas, users (no borrar owner), credenciales |\n| `operator` | Emitir/consultar CPE/GRE/RA/RC; no keys/secrets |\n| `developer` | API keys, webhooks, validez, lectura docs; no credenciales SOL/pfx |\n| `viewer` | Solo lectura documentos/empresas (sin secretos) |\n\n### Permisos atómicos\n\n`users:read|write` · `companies:read|write` · `credentials:manage` · `series:read|write` · `documents:read|write` · `gre:read|write` · `apikeys:manage` · `webhooks:manage` · `validations:cpe` · `audit:read` · `catalog:read`\n\n### Matriz (R=read implícito donde write)\n\n| Permiso | owner | admin | operator | developer | viewer |\n| --- | --- | --- | --- | --- | --- |\n| users:* | sí | sí | no | no | read-only no |\n| companies:write | sí | sí | no | no | no |\n| credentials:manage | sí | sí | no | no | no |\n| series:write | sí | sí | sí | no | no |\n| documents:write | sí | sí | sí | no | no |\n| gre:write | sí | sí | sí | no | no |\n| apikeys:manage | sí | sí | no | sí | no |\n| webhooks:manage | sí | sí | no | sí | no |\n| validations:cpe | sí | sí | sí | sí | no |\n| audit:read | sí | sí | no | sí | no |\n| *:read docs/companies | sí | sí | sí | sí | sí |\n\n### API consola (además de API keys máquina)\n\n| Método | Path | Permiso |\n| --- | --- | --- |\n| POST | `/auth/login` | público |\n| POST | `/auth/refresh` | refresh token |\n| POST | `/auth/logout` | sesión |\n| GET/POST | `/organizations/me/users` | users:read/write |\n| PATCH | `/organizations/me/users/{id}` | users:write |\n| GET | `/organizations/me/roles` | users:read |\n\nPrimer usuario org = `owner` en seed/signup. API keys siguen con **scopes** OpenAPI (máquina); JWT usa **permissions** RBAC (humano).\n\n---"
+    },
+    {
+      "id": "S3-AUTH-06",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-AUTH",
+      "epicTitle": "S3-AUTH",
+      "summary": "JWT session consola",
+      "estimate": "L",
+      "type": "api",
+      "subtasks": [
+        "login/refresh/logout",
+        "password hash Argon2id"
+      ],
+      "dod": [
+        "tokens"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **JWT session consola** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-AUTH-06.1",
+          "summary": "login/refresh/logout",
+          "descriptionMarkdown": "## Subtarea de `S3-AUTH-06`\n\n- **Padre:** S3-AUTH-06 — JWT session consola\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-AUTH\n\n## Qué hacer\nlogin/refresh/logout\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **JWT session consola** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- tokens\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S3-AUTH-06.2",
+          "summary": "password hash Argon2id",
+          "descriptionMarkdown": "## Subtarea de `S3-AUTH-06`\n\n- **Padre:** S3-AUTH-06 — JWT session consola\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-AUTH\n\n## Qué hacer\npassword hash Argon2id\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **JWT session consola** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- tokens\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-AUTH-06\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-AUTH — S3-AUTH\n- **Estimación:** L\n- **Type:** api\n\n## Objetivo\nJWT session consola\n\n## Cómo hacerlo\n1. Implementar: **JWT session consola** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-AUTH-06.1` — login/refresh/logout\n- [ ] `S3-AUTH-06.2` — password hash Argon2id\n\n## Definition of Done\n- tokens\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] tokens\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## RBAC (resumen doc 33 §1)\n### Roles MVP\n\n| Rol | Descripción |\n| --- | --- |\n| `owner` | Dueño org; todo + transfer/billing futuro |\n| `admin` | Opera empresas, users (no borrar owner), credenciales |\n| `operator` | Emitir/consultar CPE/GRE/RA/RC; no keys/secrets |\n| `developer` | API keys, webhooks, validez, lectura docs; no credenciales SOL/pfx |\n| `viewer` | Solo lectura documentos/empresas (sin secretos) |\n\n### Permisos atómicos\n\n`users:read|write` · `companies:read|write` · `credentials:manage` · `series:read|write` · `documents:read|write` · `gre:read|write` · `apikeys:manage` · `webhooks:manage` · `validations:cpe` · `audit:read` · `catalog:read`\n\n### Matriz (R=read implícito donde write)\n\n| Permiso | owner | admin | operator | developer | viewer |\n| --- | --- | --- | --- | --- | --- |\n| users:* | sí | sí | no | no | read-only no |\n| companies:write | sí | sí | no | no | no |\n| credentials:manage | sí | sí | no | no | no |\n| series:write | sí | sí | sí | no | no |\n| documents:write | sí | sí | sí | no | no |\n| gre:write | sí | sí | sí | no | no |\n| apikeys:manage | sí | sí | no | sí | no |\n| webhooks:manage | sí | sí | no | sí | no |\n| validations:cpe | sí | sí | sí | sí | no |\n| audit:read | sí | sí | no | sí | no |\n| *:read docs/companies | sí | sí | sí | sí | sí |\n\n### API consola (además de API keys máquina)\n\n| Método | Path | Permiso |\n| --- | --- | --- |\n| POST | `/auth/login` | público |\n| POST | `/auth/refresh` | refresh token |\n| POST | `/auth/logout` | sesión |\n| GET/POST | `/organizations/me/users` | users:read/write |\n| PATCH | `/organizations/me/users/{id}` | users:write |\n| GET | `/organizations/me/roles` | users:read |\n\nPrimer usuario org = `owner` en seed/signup. API keys siguen con **scopes** OpenAPI (máquina); JWT usa **permissions** RBAC (humano).\n\n---\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": "### Roles MVP\n\n| Rol | Descripción |\n| --- | --- |\n| `owner` | Dueño org; todo + transfer/billing futuro |\n| `admin` | Opera empresas, users (no borrar owner), credenciales |\n| `operator` | Emitir/consultar CPE/GRE/RA/RC; no keys/secrets |\n| `developer` | API keys, webhooks, validez, lectura docs; no credenciales SOL/pfx |\n| `viewer` | Solo lectura documentos/empresas (sin secretos) |\n\n### Permisos atómicos\n\n`users:read|write` · `companies:read|write` · `credentials:manage` · `series:read|write` · `documents:read|write` · `gre:read|write` · `apikeys:manage` · `webhooks:manage` · `validations:cpe` · `audit:read` · `catalog:read`\n\n### Matriz (R=read implícito donde write)\n\n| Permiso | owner | admin | operator | developer | viewer |\n| --- | --- | --- | --- | --- | --- |\n| users:* | sí | sí | no | no | read-only no |\n| companies:write | sí | sí | no | no | no |\n| credentials:manage | sí | sí | no | no | no |\n| series:write | sí | sí | sí | no | no |\n| documents:write | sí | sí | sí | no | no |\n| gre:write | sí | sí | sí | no | no |\n| apikeys:manage | sí | sí | no | sí | no |\n| webhooks:manage | sí | sí | no | sí | no |\n| validations:cpe | sí | sí | sí | sí | no |\n| audit:read | sí | sí | no | sí | no |\n| *:read docs/companies | sí | sí | sí | sí | sí |\n\n### API consola (además de API keys máquina)\n\n| Método | Path | Permiso |\n| --- | --- | --- |\n| POST | `/auth/login` | público |\n| POST | `/auth/refresh` | refresh token |\n| POST | `/auth/logout` | sesión |\n| GET/POST | `/organizations/me/users` | users:read/write |\n| PATCH | `/organizations/me/users/{id}` | users:write |\n| GET | `/organizations/me/roles` | users:read |\n\nPrimer usuario org = `owner` en seed/signup. API keys siguen con **scopes** OpenAPI (máquina); JWT usa **permissions** RBAC (humano).\n\n---"
+    },
+    {
+      "id": "S3-AUTH-07",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-AUTH",
+      "epicTitle": "S3-AUTH",
+      "summary": "Guards RBAC",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "decorator `@RequirePermissions(...)`",
+        "403"
+      ],
+      "dod": [
+        "tests"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Guards RBAC** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-AUTH-07.1",
+          "summary": "decorator @RequirePermissions(...)",
+          "descriptionMarkdown": "## Subtarea de `S3-AUTH-07`\n\n- **Padre:** S3-AUTH-07 — Guards RBAC\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-AUTH\n\n## Qué hacer\ndecorator `@RequirePermissions(...)`\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Guards RBAC** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- tests\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S3-AUTH-07.2",
+          "summary": "403",
+          "descriptionMarkdown": "## Subtarea de `S3-AUTH-07`\n\n- **Padre:** S3-AUTH-07 — Guards RBAC\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-AUTH\n\n## Qué hacer\n403\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Guards RBAC** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- tests\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-AUTH-07\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-AUTH — S3-AUTH\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nGuards RBAC\n\n## Cómo hacerlo\n1. Implementar: **Guards RBAC** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-AUTH-07.1` — decorator @RequirePermissions(...)\n- [ ] `S3-AUTH-07.2` — 403\n\n## Definition of Done\n- tests\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] tests\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## RBAC (resumen doc 33 §1)\n### Roles MVP\n\n| Rol | Descripción |\n| --- | --- |\n| `owner` | Dueño org; todo + transfer/billing futuro |\n| `admin` | Opera empresas, users (no borrar owner), credenciales |\n| `operator` | Emitir/consultar CPE/GRE/RA/RC; no keys/secrets |\n| `developer` | API keys, webhooks, validez, lectura docs; no credenciales SOL/pfx |\n| `viewer` | Solo lectura documentos/empresas (sin secretos) |\n\n### Permisos atómicos\n\n`users:read|write` · `companies:read|write` · `credentials:manage` · `series:read|write` · `documents:read|write` · `gre:read|write` · `apikeys:manage` · `webhooks:manage` · `validations:cpe` · `audit:read` · `catalog:read`\n\n### Matriz (R=read implícito donde write)\n\n| Permiso | owner | admin | operator | developer | viewer |\n| --- | --- | --- | --- | --- | --- |\n| users:* | sí | sí | no | no | read-only no |\n| companies:write | sí | sí | no | no | no |\n| credentials:manage | sí | sí | no | no | no |\n| series:write | sí | sí | sí | no | no |\n| documents:write | sí | sí | sí | no | no |\n| gre:write | sí | sí | sí | no | no |\n| apikeys:manage | sí | sí | no | sí | no |\n| webhooks:manage | sí | sí | no | sí | no |\n| validations:cpe | sí | sí | sí | sí | no |\n| audit:read | sí | sí | no | sí | no |\n| *:read docs/companies | sí | sí | sí | sí | sí |\n\n### API consola (además de API keys máquina)\n\n| Método | Path | Permiso |\n| --- | --- | --- |\n| POST | `/auth/login` | público |\n| POST | `/auth/refresh` | refresh token |\n| POST | `/auth/logout` | sesión |\n| GET/POST | `/organizations/me/users` | users:read/write |\n| PATCH | `/organizations/me/users/{id}` | users:write |\n| GET | `/organizations/me/roles` | users:read |\n\nPrimer usuario org = `owner` en seed/signup. API keys siguen con **scopes** OpenAPI (máquina); JWT usa **permissions** RBAC (humano).\n\n---\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": "### Roles MVP\n\n| Rol | Descripción |\n| --- | --- |\n| `owner` | Dueño org; todo + transfer/billing futuro |\n| `admin` | Opera empresas, users (no borrar owner), credenciales |\n| `operator` | Emitir/consultar CPE/GRE/RA/RC; no keys/secrets |\n| `developer` | API keys, webhooks, validez, lectura docs; no credenciales SOL/pfx |\n| `viewer` | Solo lectura documentos/empresas (sin secretos) |\n\n### Permisos atómicos\n\n`users:read|write` · `companies:read|write` · `credentials:manage` · `series:read|write` · `documents:read|write` · `gre:read|write` · `apikeys:manage` · `webhooks:manage` · `validations:cpe` · `audit:read` · `catalog:read`\n\n### Matriz (R=read implícito donde write)\n\n| Permiso | owner | admin | operator | developer | viewer |\n| --- | --- | --- | --- | --- | --- |\n| users:* | sí | sí | no | no | read-only no |\n| companies:write | sí | sí | no | no | no |\n| credentials:manage | sí | sí | no | no | no |\n| series:write | sí | sí | sí | no | no |\n| documents:write | sí | sí | sí | no | no |\n| gre:write | sí | sí | sí | no | no |\n| apikeys:manage | sí | sí | no | sí | no |\n| webhooks:manage | sí | sí | no | sí | no |\n| validations:cpe | sí | sí | sí | sí | no |\n| audit:read | sí | sí | no | sí | no |\n| *:read docs/companies | sí | sí | sí | sí | sí |\n\n### API consola (además de API keys máquina)\n\n| Método | Path | Permiso |\n| --- | --- | --- |\n| POST | `/auth/login` | público |\n| POST | `/auth/refresh` | refresh token |\n| POST | `/auth/logout` | sesión |\n| GET/POST | `/organizations/me/users` | users:read/write |\n| PATCH | `/organizations/me/users/{id}` | users:write |\n| GET | `/organizations/me/roles` | users:read |\n\nPrimer usuario org = `owner` en seed/signup. API keys siguen con **scopes** OpenAPI (máquina); JWT usa **permissions** RBAC (humano).\n\n---"
+    },
+    {
+      "id": "S3-AUTH-08",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-AUTH",
+      "epicTitle": "S3-AUTH",
+      "summary": "API Users admin",
+      "estimate": "L",
+      "type": "api",
+      "subtasks": [
+        "CRUD users org",
+        "assign roles (solo owner/admin)"
+      ],
+      "dod": [
+        "OpenAPI"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **API Users admin** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-AUTH-08.1",
+          "summary": "CRUD users org",
+          "descriptionMarkdown": "## Subtarea de `S3-AUTH-08`\n\n- **Padre:** S3-AUTH-08 — API Users admin\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-AUTH\n\n## Qué hacer\nCRUD users org\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **API Users admin** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- OpenAPI\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S3-AUTH-08.2",
+          "summary": "assign roles (solo owner/admin)",
+          "descriptionMarkdown": "## Subtarea de `S3-AUTH-08`\n\n- **Padre:** S3-AUTH-08 — API Users admin\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-AUTH\n\n## Qué hacer\nassign roles (solo owner/admin)\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **API Users admin** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- OpenAPI\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-AUTH-08\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-AUTH — S3-AUTH\n- **Estimación:** L\n- **Type:** api\n\n## Objetivo\nAPI Users admin\n\n## Cómo hacerlo\n1. Implementar: **API Users admin** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-AUTH-08.1` — CRUD users org\n- [ ] `S3-AUTH-08.2` — assign roles (solo owner/admin)\n\n## Definition of Done\n- OpenAPI\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] OpenAPI\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## RBAC (resumen doc 33 §1)\n### Roles MVP\n\n| Rol | Descripción |\n| --- | --- |\n| `owner` | Dueño org; todo + transfer/billing futuro |\n| `admin` | Opera empresas, users (no borrar owner), credenciales |\n| `operator` | Emitir/consultar CPE/GRE/RA/RC; no keys/secrets |\n| `developer` | API keys, webhooks, validez, lectura docs; no credenciales SOL/pfx |\n| `viewer` | Solo lectura documentos/empresas (sin secretos) |\n\n### Permisos atómicos\n\n`users:read|write` · `companies:read|write` · `credentials:manage` · `series:read|write` · `documents:read|write` · `gre:read|write` · `apikeys:manage` · `webhooks:manage` · `validations:cpe` · `audit:read` · `catalog:read`\n\n### Matriz (R=read implícito donde write)\n\n| Permiso | owner | admin | operator | developer | viewer |\n| --- | --- | --- | --- | --- | --- |\n| users:* | sí | sí | no | no | read-only no |\n| companies:write | sí | sí | no | no | no |\n| credentials:manage | sí | sí | no | no | no |\n| series:write | sí | sí | sí | no | no |\n| documents:write | sí | sí | sí | no | no |\n| gre:write | sí | sí | sí | no | no |\n| apikeys:manage | sí | sí | no | sí | no |\n| webhooks:manage | sí | sí | no | sí | no |\n| validations:cpe | sí | sí | sí | sí | no |\n| audit:read | sí | sí | no | sí | no |\n| *:read docs/companies | sí | sí | sí | sí | sí |\n\n### API consola (además de API keys máquina)\n\n| Método | Path | Permiso |\n| --- | --- | --- |\n| POST | `/auth/login` | público |\n| POST | `/auth/refresh` | refresh token |\n| POST | `/auth/logout` | sesión |\n| GET/POST | `/organizations/me/users` | users:read/write |\n| PATCH | `/organizations/me/users/{id}` | users:write |\n| GET | `/organizations/me/roles` | users:read |\n\nPrimer usuario org = `owner` en seed/signup. API keys siguen con **scopes** OpenAPI (máquina); JWT usa **permissions** RBAC (humano).\n\n---\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": "### Roles MVP\n\n| Rol | Descripción |\n| --- | --- |\n| `owner` | Dueño org; todo + transfer/billing futuro |\n| `admin` | Opera empresas, users (no borrar owner), credenciales |\n| `operator` | Emitir/consultar CPE/GRE/RA/RC; no keys/secrets |\n| `developer` | API keys, webhooks, validez, lectura docs; no credenciales SOL/pfx |\n| `viewer` | Solo lectura documentos/empresas (sin secretos) |\n\n### Permisos atómicos\n\n`users:read|write` · `companies:read|write` · `credentials:manage` · `series:read|write` · `documents:read|write` · `gre:read|write` · `apikeys:manage` · `webhooks:manage` · `validations:cpe` · `audit:read` · `catalog:read`\n\n### Matriz (R=read implícito donde write)\n\n| Permiso | owner | admin | operator | developer | viewer |\n| --- | --- | --- | --- | --- | --- |\n| users:* | sí | sí | no | no | read-only no |\n| companies:write | sí | sí | no | no | no |\n| credentials:manage | sí | sí | no | no | no |\n| series:write | sí | sí | sí | no | no |\n| documents:write | sí | sí | sí | no | no |\n| gre:write | sí | sí | sí | no | no |\n| apikeys:manage | sí | sí | no | sí | no |\n| webhooks:manage | sí | sí | no | sí | no |\n| validations:cpe | sí | sí | sí | sí | no |\n| audit:read | sí | sí | no | sí | no |\n| *:read docs/companies | sí | sí | sí | sí | sí |\n\n### API consola (además de API keys máquina)\n\n| Método | Path | Permiso |\n| --- | --- | --- |\n| POST | `/auth/login` | público |\n| POST | `/auth/refresh` | refresh token |\n| POST | `/auth/logout` | sesión |\n| GET/POST | `/organizations/me/users` | users:read/write |\n| PATCH | `/organizations/me/users/{id}` | users:write |\n| GET | `/organizations/me/roles` | users:read |\n\nPrimer usuario org = `owner` en seed/signup. API keys siguen con **scopes** OpenAPI (máquina); JWT usa **permissions** RBAC (humano).\n\n---"
+    },
+    {
+      "id": "S3-COMP-01",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-COMP",
+      "epicTitle": "S3-COMP",
+      "summary": "Companies CRUD",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "sandbox/prod"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Companies CRUD** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-COMP-01.1",
+          "summary": "sandbox/prod",
+          "descriptionMarkdown": "## Subtarea de `S3-COMP-01`\n\n- **Padre:** S3-COMP-01 — Companies CRUD\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-COMP\n\n## Qué hacer\nsandbox/prod\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Companies CRUD** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-COMP-01\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-COMP — S3-COMP\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nCompanies CRUD\n\n## Cómo hacerlo\n1. Implementar: **Companies CRUD** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-COMP-01.1` — sandbox/prod\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-COMP-02",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-COMP",
+      "epicTitle": "S3-COMP",
+      "summary": "Upload certificado",
+      "estimate": "L",
+      "type": "api",
+      "subtasks": [
+        "S3 cifrado + secret_ref",
+        "not_after"
+      ],
+      "dod": [
+        "no plaintext GET"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Upload certificado** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-COMP-02.1",
+          "summary": "S3 cifrado + secret_ref",
+          "descriptionMarkdown": "## Subtarea de `S3-COMP-02`\n\n- **Padre:** S3-COMP-02 — Upload certificado\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-COMP\n\n## Qué hacer\nS3 cifrado + secret_ref\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Upload certificado** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- no plaintext GET\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S3-COMP-02.2",
+          "summary": "not_after",
+          "descriptionMarkdown": "## Subtarea de `S3-COMP-02`\n\n- **Padre:** S3-COMP-02 — Upload certificado\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-COMP\n\n## Qué hacer\nnot_after\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Upload certificado** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- no plaintext GET\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-COMP-02\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-COMP — S3-COMP\n- **Estimación:** L\n- **Type:** api\n\n## Objetivo\nUpload certificado\n\n## Cómo hacerlo\n1. Implementar: **Upload certificado** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-COMP-02.1` — S3 cifrado + secret_ref\n- [ ] `S3-COMP-02.2` — not_after\n\n## Definition of Done\n- no plaintext GET\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] no plaintext GET\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-COMP-03",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-COMP",
+      "epicTitle": "S3-COMP",
+      "summary": "SOL credentials",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "encrypted put"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **SOL credentials** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-COMP-03.1",
+          "summary": "encrypted put",
+          "descriptionMarkdown": "## Subtarea de `S3-COMP-03`\n\n- **Padre:** S3-COMP-03 — SOL credentials\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-COMP\n\n## Qué hacer\nencrypted put\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **SOL credentials** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-COMP-03\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-COMP — S3-COMP\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nSOL credentials\n\n## Cómo hacerlo\n1. Implementar: **SOL credentials** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-COMP-03.1` — encrypted put\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-COMP-04",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-COMP",
+      "epicTitle": "S3-COMP",
+      "summary": "GRE credentials storage",
+      "estimate": "S",
+      "type": "api",
+      "subtasks": [
+        "client_id/secret"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **GRE credentials storage** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-COMP-04.1",
+          "summary": "client_id/secret",
+          "descriptionMarkdown": "## Subtarea de `S3-COMP-04`\n\n- **Padre:** S3-COMP-04 — GRE credentials storage\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-COMP\n\n## Qué hacer\nclient_id/secret\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **GRE credentials storage** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-COMP-04\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-COMP — S3-COMP\n- **Estimación:** S\n- **Type:** api\n\n## Objetivo\nGRE credentials storage\n\n## Cómo hacerlo\n1. Implementar: **GRE credentials storage** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-COMP-04.1` — client_id/secret\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-COMP-05",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-COMP",
+      "epicTitle": "S3-COMP",
+      "summary": "Series + correlativo",
+      "estimate": "L",
+      "type": "api",
+      "subtasks": [
+        "FOR UPDATE",
+        "tests ADR-001"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Series + correlativo** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-COMP-05.1",
+          "summary": "FOR UPDATE",
+          "descriptionMarkdown": "## Subtarea de `S3-COMP-05`\n\n- **Padre:** S3-COMP-05 — Series + correlativo\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-COMP\n\n## Qué hacer\nFOR UPDATE\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Series + correlativo** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S3-COMP-05.2",
+          "summary": "tests ADR-001",
+          "descriptionMarkdown": "## Subtarea de `S3-COMP-05`\n\n- **Padre:** S3-COMP-05 — Series + correlativo\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-COMP\n\n## Qué hacer\ntests ADR-001\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Series + correlativo** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-COMP-05\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-COMP — S3-COMP\n- **Estimación:** L\n- **Type:** api\n\n## Objetivo\nSeries + correlativo\n\n## Cómo hacerlo\n1. Implementar: **Series + correlativo** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-COMP-05.1` — FOR UPDATE\n- [ ] `S3-COMP-05.2` — tests ADR-001\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-INFRA-01",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-INFRA",
+      "epicTitle": "S3-INFRA",
+      "summary": "MinIO client",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "put/get",
+        "URLs cortas"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **MinIO client** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-INFRA-01.1",
+          "summary": "put/get",
+          "descriptionMarkdown": "## Subtarea de `S3-INFRA-01`\n\n- **Padre:** S3-INFRA-01 — MinIO client\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-INFRA\n\n## Qué hacer\nput/get\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **MinIO client** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S3-INFRA-01.2",
+          "summary": "URLs cortas",
+          "descriptionMarkdown": "## Subtarea de `S3-INFRA-01`\n\n- **Padre:** S3-INFRA-01 — MinIO client\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-INFRA\n\n## Qué hacer\nURLs cortas\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **MinIO client** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-INFRA-01\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-INFRA — S3-INFRA\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nMinIO client\n\n## Cómo hacerlo\n1. Implementar: **MinIO client** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-INFRA-01.1` — put/get\n- [ ] `S3-INFRA-01.2` — URLs cortas\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-INFRA-02",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-INFRA",
+      "epicTitle": "S3-INFRA",
+      "summary": "BullMQ",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "colas `sunat-send`, `sunat-poll`, `webhooks`, `pdf-render`"
+      ],
+      "dod": [
+        "workers noop"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **BullMQ** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-INFRA-02.1",
+          "summary": "colas sunat-send, sunat-poll, webhooks, pdf-render",
+          "descriptionMarkdown": "## Subtarea de `S3-INFRA-02`\n\n- **Padre:** S3-INFRA-02 — BullMQ\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-INFRA\n\n## Qué hacer\ncolas `sunat-send`, `sunat-poll`, `webhooks`, `pdf-render`\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **BullMQ** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- workers noop\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-INFRA-02\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-INFRA — S3-INFRA\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nBullMQ\n\n## Cómo hacerlo\n1. Implementar: **BullMQ** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-INFRA-02.1` — colas sunat-send, sunat-poll, webhooks, pdf-render\n\n## Definition of Done\n- workers noop\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] workers noop\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S3-INFRA-03",
+      "sprint": "S3",
+      "sprintName": "S3-platform",
+      "epic": "S3-INFRA",
+      "epicTitle": "S3-INFRA",
+      "summary": "Idempotency",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "Redis NX + tabla"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Idempotency** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S3-INFRA-03.1",
+          "summary": "Redis NX + tabla",
+          "descriptionMarkdown": "## Subtarea de `S3-INFRA-03`\n\n- **Padre:** S3-INFRA-03 — Idempotency\n- **Sprint:** S3 (`S3-platform`)\n- **Epic:** S3-INFRA\n\n## Qué hacer\nRedis NX + tabla\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Idempotency** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S3-INFRA-03\n- **Sprint:** S3 — DB, tenancy, credenciales, colas (`S3-platform`)\n- **Epic:** S3-INFRA — S3-INFRA\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nIdempotency\n\n## Cómo hacerlo\n1. Implementar: **Idempotency** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S3-INFRA-03.1` — Redis NX + tabla\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Verificar\n- [ ] Meta sprint: DB Drizzle, tenancy, RBAC, credenciales, BullMQ.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    }
+  ]
+}

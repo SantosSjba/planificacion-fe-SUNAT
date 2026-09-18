@@ -1,0 +1,192 @@
+{
+  "sprint": {
+    "n": 6,
+    "name": "S6-ra-rc",
+    "title": "RA + RC",
+    "goal": "RA + RC async con poll."
+  },
+  "epics": [
+    {
+      "id": "S6",
+      "title": "Sprint 6",
+      "childIds": [
+        "S6-01",
+        "S6-02",
+        "S6-03",
+        "S6-04",
+        "S6-05"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "S6-01",
+      "sprint": "S6",
+      "sprintName": "S6-ra-rc",
+      "epic": "S6",
+      "epicTitle": "Sprint 6",
+      "summary": "SendSummary + getStatus",
+      "estimate": "L",
+      "type": "api",
+      "subtasks": [
+        "port fake+real"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **SendSummary + getStatus** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S6-01.1",
+          "summary": "port fake+real",
+          "descriptionMarkdown": "## Subtarea de `S6-01`\n\n- **Padre:** S6-01 — SendSummary + getStatus\n- **Sprint:** S6 (`S6-ra-rc`)\n- **Epic:** S6\n\n## Qué hacer\nport fake+real\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **SendSummary + getStatus** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: RA + RC async con poll.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S6-01\n- **Sprint:** S6 — RA + RC (`S6-ra-rc`)\n- **Epic:** S6 — Sprint 6\n- **Estimación:** L\n- **Type:** api\n\n## Objetivo\nSendSummary + getStatus\n\n## Cómo hacerlo\n1. Implementar: **SendSummary + getStatus** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S6-01.1` — port fake+real\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: RA + RC async con poll.\n\n## Verificar\n- [ ] Meta sprint: RA + RC async con poll.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S6-02",
+      "sprint": "S6",
+      "sprintName": "S6-ra-rc",
+      "epic": "S6",
+      "epicTitle": "Sprint 6",
+      "summary": "Worker sunat-poll",
+      "estimate": "L",
+      "type": "worker",
+      "subtasks": [
+        "tickets"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Worker sunat-poll** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S6-02.1",
+          "summary": "tickets",
+          "descriptionMarkdown": "## Subtarea de `S6-02`\n\n- **Padre:** S6-02 — Worker sunat-poll\n- **Sprint:** S6 (`S6-ra-rc`)\n- **Epic:** S6\n\n## Qué hacer\ntickets\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Worker sunat-poll** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: RA + RC async con poll.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S6-02\n- **Sprint:** S6 — RA + RC (`S6-ra-rc`)\n- **Epic:** S6 — Sprint 6\n- **Estimación:** L\n- **Type:** worker\n\n## Objetivo\nWorker sunat-poll\n\n## Cómo hacerlo\n1. Implementar: **Worker sunat-poll** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S6-02.1` — tickets\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: RA + RC async con poll.\n\n## Verificar\n- [ ] Meta sprint: RA + RC async con poll.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S6-03",
+      "sprint": "S6",
+      "sprintName": "S6-ra-rc",
+      "epic": "S6",
+      "epicTitle": "Sprint 6",
+      "summary": "RA API + builder",
+      "estimate": "L",
+      "type": "api",
+      "subtasks": [
+        "dict 19",
+        "cancelled"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **RA API + builder** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S6-03.1",
+          "summary": "dict 19",
+          "descriptionMarkdown": "## Subtarea de `S6-03`\n\n- **Padre:** S6-03 — RA API + builder\n- **Sprint:** S6 (`S6-ra-rc`)\n- **Epic:** S6\n\n## Qué hacer\ndict 19\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **RA API + builder** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: RA + RC async con poll.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S6-03.2",
+          "summary": "cancelled",
+          "descriptionMarkdown": "## Subtarea de `S6-03`\n\n- **Padre:** S6-03 — RA API + builder\n- **Sprint:** S6 (`S6-ra-rc`)\n- **Epic:** S6\n\n## Qué hacer\ncancelled\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **RA API + builder** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: RA + RC async con poll.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S6-03\n- **Sprint:** S6 — RA + RC (`S6-ra-rc`)\n- **Epic:** S6 — Sprint 6\n- **Estimación:** L\n- **Type:** api\n\n## Objetivo\nRA API + builder\n\n## Cómo hacerlo\n1. Implementar: **RA API + builder** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S6-03.1` — dict 19\n- [ ] `S6-03.2` — cancelled\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: RA + RC async con poll.\n\n## Verificar\n- [ ] Meta sprint: RA + RC async con poll.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S6-04",
+      "sprint": "S6",
+      "sprintName": "S6-ra-rc",
+      "epic": "S6",
+      "epicTitle": "Sprint 6",
+      "summary": "RC API + auto-pool",
+      "estimate": "L",
+      "type": "api",
+      "subtasks": [
+        "dict 20"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **RC API + auto-pool** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S6-04.1",
+          "summary": "dict 20",
+          "descriptionMarkdown": "## Subtarea de `S6-04`\n\n- **Padre:** S6-04 — RC API + auto-pool\n- **Sprint:** S6 (`S6-ra-rc`)\n- **Epic:** S6\n\n## Qué hacer\ndict 20\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **RC API + auto-pool** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: RA + RC async con poll.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S6-04\n- **Sprint:** S6 — RA + RC (`S6-ra-rc`)\n- **Epic:** S6 — Sprint 6\n- **Estimación:** L\n- **Type:** api\n\n## Objetivo\nRC API + auto-pool\n\n## Cómo hacerlo\n1. Implementar: **RC API + auto-pool** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S6-04.1` — dict 20\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: RA + RC async con poll.\n\n## Verificar\n- [ ] Meta sprint: RA + RC async con poll.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S6-05",
+      "sprint": "S6",
+      "sprintName": "S6-ra-rc",
+      "epic": "S6",
+      "epicTitle": "Sprint 6",
+      "summary": "Fixtures ra/rc",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Fixtures ra/rc** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S6-05.1",
+          "summary": "Implementar objetivo + cumplir DoD: Fixtures ra/rc",
+          "descriptionMarkdown": "## Subtarea de `S6-05`\n\n- **Padre:** S6-05 — Fixtures ra/rc\n- **Sprint:** S6 (`S6-ra-rc`)\n- **Epic:** S6\n\n## Qué hacer\nImplementar objetivo + cumplir DoD: Fixtures ra/rc\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Fixtures ra/rc** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: RA + RC async con poll.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S6-05\n- **Sprint:** S6 — RA + RC (`S6-ra-rc`)\n- **Epic:** S6 — Sprint 6\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nFixtures ra/rc\n\n## Cómo hacerlo\n1. Implementar: **Fixtures ra/rc** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S6-05.1` — Implementar objetivo + cumplir DoD: Fixtures ra/rc\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: RA + RC async con poll.\n\n## Verificar\n- [ ] Meta sprint: RA + RC async con poll.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    }
+  ]
+}

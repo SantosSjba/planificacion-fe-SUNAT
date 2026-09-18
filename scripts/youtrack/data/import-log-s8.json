@@ -1,0 +1,95 @@
+{
+  "when": "2026-09-18T23:27:06.253Z",
+  "dryRun": false,
+  "withSubtasks": true,
+  "log": [
+    {
+      "backlogId": "EPIC-S8",
+      "youtrack": "FE-213",
+      "kind": "epic"
+    },
+    {
+      "backlogId": "S8-01",
+      "youtrack": "FE-214",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S8-01.1",
+      "youtrack": "FE-215",
+      "kind": "subtask",
+      "parent": "FE-214"
+    },
+    {
+      "backlogId": "S8-02",
+      "youtrack": "FE-216",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S8-02.1",
+      "youtrack": "FE-217",
+      "kind": "subtask",
+      "parent": "FE-216"
+    },
+    {
+      "backlogId": "S8-03",
+      "youtrack": "FE-218",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S8-03.1",
+      "youtrack": "FE-219",
+      "kind": "subtask",
+      "parent": "FE-218"
+    },
+    {
+      "backlogId": "S8-04",
+      "youtrack": "FE-220",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S8-04.1",
+      "youtrack": "FE-221",
+      "kind": "subtask",
+      "parent": "FE-220"
+    },
+    {
+      "backlogId": "S8-04.2",
+      "youtrack": "FE-222",
+      "kind": "subtask",
+      "parent": "FE-220"
+    },
+    {
+      "backlogId": "S8-05",
+      "youtrack": "FE-223",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S8-05.1",
+      "youtrack": "FE-224",
+      "kind": "subtask",
+      "parent": "FE-223"
+    },
+    {
+      "backlogId": "S8-06",
+      "youtrack": "FE-225",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S8-06.1",
+      "youtrack": "FE-226",
+      "kind": "subtask",
+      "parent": "FE-225"
+    },
+    {
+      "backlogId": "S8-07",
+      "youtrack": "FE-227",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S8-07.1",
+      "youtrack": "FE-228",
+      "kind": "subtask",
+      "parent": "FE-227"
+    }
+  ]
+}

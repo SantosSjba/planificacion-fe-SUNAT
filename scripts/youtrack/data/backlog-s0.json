@@ -1,0 +1,843 @@
+{
+  "sprint": {
+    "n": 0,
+    "name": "S0-scaffold",
+    "title": "Scaffolding monorepo + NestJS + Docker",
+    "goal": "`pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT."
+  },
+  "epics": [
+    {
+      "id": "S0-TOOL",
+      "title": "Tooling root",
+      "childIds": [
+        "S0-TOOL-01",
+        "S0-TOOL-02",
+        "S0-TOOL-03",
+        "S0-TOOL-04",
+        "S0-TOOL-05",
+        "S0-TOOL-06"
+      ]
+    },
+    {
+      "id": "S0-API",
+      "title": "Crear NestJS `apps/api`",
+      "childIds": [
+        "S0-API-01",
+        "S0-API-02",
+        "S0-API-03",
+        "S0-API-04",
+        "S0-API-05",
+        "S0-API-06"
+      ]
+    },
+    {
+      "id": "S0-PKG",
+      "title": "Packages esqueleto",
+      "childIds": [
+        "S0-PKG-01",
+        "S0-PKG-02",
+        "S0-PKG-03"
+      ]
+    },
+    {
+      "id": "S0-DEV",
+      "title": "Docker + CI + hygiene",
+      "childIds": [
+        "S0-DEV-01",
+        "S0-DEV-02",
+        "S0-DEV-03",
+        "S0-DEV-04"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "S0-TOOL-01",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-TOOL",
+      "epicTitle": "Tooling root",
+      "summary": "Inicializar monorepo pnpm",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "`package.json` private",
+        "`pnpm-workspace.yaml`",
+        "Node 20 `.nvmrc`"
+      ],
+      "dod": [
+        "workspace list OK"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Crear en la raíz del repo `package.json` con `\"private\": true` y name del monorepo.",
+        "Crear `pnpm-workspace.yaml` con globs `apps/*` y `packages/*` (doc 23 §2 / §9).",
+        "Crear `.nvmrc` con `20` (Node 20+).",
+        "Verificar: `pnpm -v` y `pnpm list -r --depth -1` (o `pnpm m ls`) lista el workspace."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-TOOL-01.1",
+          "summary": "package.json private",
+          "descriptionMarkdown": "## Subtarea de `S0-TOOL-01`\n\n- **Padre:** S0-TOOL-01 — Inicializar monorepo pnpm\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-TOOL\n\n## Qué hacer\n`package.json` private\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear en la raíz del repo `package.json` con `\"private\": true` y name del monorepo.\n2. Crear `pnpm-workspace.yaml` con globs `apps/*` y `packages/*` (doc 23 §2 / §9).\n3. Crear `.nvmrc` con `20` (Node 20+).\n4. Verificar: `pnpm -v` y `pnpm list -r --depth -1` (o `pnpm m ls`) lista el workspace.\n\n## DoD del padre\n- workspace list OK\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S0-TOOL-01.2",
+          "summary": "pnpm-workspace.yaml",
+          "descriptionMarkdown": "## Subtarea de `S0-TOOL-01`\n\n- **Padre:** S0-TOOL-01 — Inicializar monorepo pnpm\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-TOOL\n\n## Qué hacer\n`pnpm-workspace.yaml`\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear en la raíz del repo `package.json` con `\"private\": true` y name del monorepo.\n2. Crear `pnpm-workspace.yaml` con globs `apps/*` y `packages/*` (doc 23 §2 / §9).\n3. Crear `.nvmrc` con `20` (Node 20+).\n4. Verificar: `pnpm -v` y `pnpm list -r --depth -1` (o `pnpm m ls`) lista el workspace.\n\n## DoD del padre\n- workspace list OK\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S0-TOOL-01.3",
+          "summary": "Node 20 .nvmrc",
+          "descriptionMarkdown": "## Subtarea de `S0-TOOL-01`\n\n- **Padre:** S0-TOOL-01 — Inicializar monorepo pnpm\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-TOOL\n\n## Qué hacer\nNode 20 `.nvmrc`\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear en la raíz del repo `package.json` con `\"private\": true` y name del monorepo.\n2. Crear `pnpm-workspace.yaml` con globs `apps/*` y `packages/*` (doc 23 §2 / §9).\n3. Crear `.nvmrc` con `20` (Node 20+).\n4. Verificar: `pnpm -v` y `pnpm list -r --depth -1` (o `pnpm m ls`) lista el workspace.\n\n## DoD del padre\n- workspace list OK\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-TOOL-01\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-TOOL — Tooling root\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\nInicializar monorepo pnpm\n\n## Cómo hacerlo\n1. Crear en la raíz del repo `package.json` con `\"private\": true` y name del monorepo.\n2. Crear `pnpm-workspace.yaml` con globs `apps/*` y `packages/*` (doc 23 §2 / §9).\n3. Crear `.nvmrc` con `20` (Node 20+).\n4. Verificar: `pnpm -v` y `pnpm list -r --depth -1` (o `pnpm m ls`) lista el workspace.\n\n## Subtareas (issues)\n- [ ] `S0-TOOL-01.1` — package.json private\n- [ ] `S0-TOOL-01.2` — pnpm-workspace.yaml\n- [ ] `S0-TOOL-01.3` — Node 20 .nvmrc\n\n## Definition of Done\n- workspace list OK\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] workspace list OK\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-TOOL-02",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-TOOL",
+      "epicTitle": "Tooling root",
+      "summary": "TypeScript base",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "`tsconfig.base.json` strict",
+        "paths `@factosys/*`"
+      ],
+      "dod": [
+        "compile vacío"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Crear `tsconfig.base.json` con `strict: true` y paths `@factosys/*` → `packages/*/src`.",
+        "Cada package/app extenderá este base; no compilar lógica SUNAT aún.",
+        "Verificar: `tsc -b` o compile vacío sin errores."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-TOOL-02.1",
+          "summary": "tsconfig.base.json strict",
+          "descriptionMarkdown": "## Subtarea de `S0-TOOL-02`\n\n- **Padre:** S0-TOOL-02 — TypeScript base\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-TOOL\n\n## Qué hacer\n`tsconfig.base.json` strict\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear `tsconfig.base.json` con `strict: true` y paths `@factosys/*` → `packages/*/src`.\n2. Cada package/app extenderá este base; no compilar lógica SUNAT aún.\n3. Verificar: `tsc -b` o compile vacío sin errores.\n\n## DoD del padre\n- compile vacío\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S0-TOOL-02.2",
+          "summary": "paths @factosys/*",
+          "descriptionMarkdown": "## Subtarea de `S0-TOOL-02`\n\n- **Padre:** S0-TOOL-02 — TypeScript base\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-TOOL\n\n## Qué hacer\npaths `@factosys/*`\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear `tsconfig.base.json` con `strict: true` y paths `@factosys/*` → `packages/*/src`.\n2. Cada package/app extenderá este base; no compilar lógica SUNAT aún.\n3. Verificar: `tsc -b` o compile vacío sin errores.\n\n## DoD del padre\n- compile vacío\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-TOOL-02\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-TOOL — Tooling root\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\nTypeScript base\n\n## Cómo hacerlo\n1. Crear `tsconfig.base.json` con `strict: true` y paths `@factosys/*` → `packages/*/src`.\n2. Cada package/app extenderá este base; no compilar lógica SUNAT aún.\n3. Verificar: `tsc -b` o compile vacío sin errores.\n\n## Subtareas (issues)\n- [ ] `S0-TOOL-02.1` — tsconfig.base.json strict\n- [ ] `S0-TOOL-02.2` — paths @factosys/*\n\n## Definition of Done\n- compile vacío\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] compile vacío\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-TOOL-03",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-TOOL",
+      "epicTitle": "Tooling root",
+      "summary": "ESLint flat + Prettier",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "ignore `dist`, `docs/sunat-oficial`"
+      ],
+      "dod": [
+        "`pnpm lint`"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Configurar ESLint flat config en raíz; Prettier alineado.",
+        "Ignore: `dist`, `node_modules`, `docs/sunat-oficial`.",
+        "Script root `pnpm lint` debe pasar."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-TOOL-03.1",
+          "summary": "ignore dist, docs/sunat-oficial",
+          "descriptionMarkdown": "## Subtarea de `S0-TOOL-03`\n\n- **Padre:** S0-TOOL-03 — ESLint flat + Prettier\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-TOOL\n\n## Qué hacer\nignore `dist`, `docs/sunat-oficial`\n\n## Contexto del padre (Cómo hacerlo)\n1. Configurar ESLint flat config en raíz; Prettier alineado.\n2. Ignore: `dist`, `node_modules`, `docs/sunat-oficial`.\n3. Script root `pnpm lint` debe pasar.\n\n## DoD del padre\n- `pnpm lint`\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-TOOL-03\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-TOOL — Tooling root\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\nESLint flat + Prettier\n\n## Cómo hacerlo\n1. Configurar ESLint flat config en raíz; Prettier alineado.\n2. Ignore: `dist`, `node_modules`, `docs/sunat-oficial`.\n3. Script root `pnpm lint` debe pasar.\n\n## Subtareas (issues)\n- [ ] `S0-TOOL-03.1` — ignore dist, docs/sunat-oficial\n\n## Definition of Done\n- `pnpm lint`\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] `pnpm lint`\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-TOOL-04",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-TOOL",
+      "epicTitle": "Tooling root",
+      "summary": "Vitest",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "smoke test shared"
+      ],
+      "dod": [
+        "`pnpm test`"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Añadir Vitest en workspace; smoke test en `packages/shared` (o placeholder).",
+        "Script root `pnpm test` debe pasar al menos 1 test."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-TOOL-04.1",
+          "summary": "smoke test shared",
+          "descriptionMarkdown": "## Subtarea de `S0-TOOL-04`\n\n- **Padre:** S0-TOOL-04 — Vitest\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-TOOL\n\n## Qué hacer\nsmoke test shared\n\n## Contexto del padre (Cómo hacerlo)\n1. Añadir Vitest en workspace; smoke test en `packages/shared` (o placeholder).\n2. Script root `pnpm test` debe pasar al menos 1 test.\n\n## DoD del padre\n- `pnpm test`\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-TOOL-04\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-TOOL — Tooling root\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\nVitest\n\n## Cómo hacerlo\n1. Añadir Vitest en workspace; smoke test en `packages/shared` (o placeholder).\n2. Script root `pnpm test` debe pasar al menos 1 test.\n\n## Subtareas (issues)\n- [ ] `S0-TOOL-04.1` — smoke test shared\n\n## Definition of Done\n- `pnpm test`\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] `pnpm test`\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-TOOL-05",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-TOOL",
+      "epicTitle": "Tooling root",
+      "summary": "Scripts contrato",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "`build`, `test`, `lint`, `dev:api`, stubs `spike:*`"
+      ],
+      "dod": [
+        "README root"
+      ],
+      "refs": [],
+      "permission": "dev:api",
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Definir en root `package.json` scripts: `build`, `test`, `lint`, `dev:api`.",
+        "Stubs `spike:sign`, `spike:ubl`, `spike:sendbill` (doc 23 §5) aunque fallen hasta S1–S2.",
+        "Documentar en README root."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-TOOL-05.1",
+          "summary": "build, test, lint, dev:api, stubs spike:*",
+          "descriptionMarkdown": "## Subtarea de `S0-TOOL-05`\n\n- **Padre:** S0-TOOL-05 — Scripts contrato\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-TOOL\n\n## Qué hacer\n`build`, `test`, `lint`, `dev:api`, stubs `spike:*`\n\n## Contexto del padre (Cómo hacerlo)\n1. Definir en root `package.json` scripts: `build`, `test`, `lint`, `dev:api`.\n2. Stubs `spike:sign`, `spike:ubl`, `spike:sendbill` (doc 23 §5) aunque fallen hasta S1–S2.\n3. Documentar en README root.\n\n## DoD del padre\n- README root\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-TOOL-05\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-TOOL — Tooling root\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\nScripts contrato\n\n## Cómo hacerlo\n1. Definir en root `package.json` scripts: `build`, `test`, `lint`, `dev:api`.\n2. Stubs `spike:sign`, `spike:ubl`, `spike:sendbill` (doc 23 §5) aunque fallen hasta S1–S2.\n3. Documentar en README root.\n\n## Subtareas (issues)\n- [ ] `S0-TOOL-05.1` — build, test, lint, dev:api, stubs spike:*\n\n## Definition of Done\n- README root\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] README root\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-TOOL-06",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-TOOL",
+      "epicTitle": "Tooling root",
+      "summary": "Turbo opcional",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "pipeline build/test/lint"
+      ],
+      "dod": [
+        "cache local"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Opcional: `turbo.json` con pipeline build/test/lint y cache local.",
+        "Si no se usa Turbo, dejar nota en README y cerrar tarea como “omitido a propósito”."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-TOOL-06.1",
+          "summary": "pipeline build/test/lint",
+          "descriptionMarkdown": "## Subtarea de `S0-TOOL-06`\n\n- **Padre:** S0-TOOL-06 — Turbo opcional\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-TOOL\n\n## Qué hacer\npipeline build/test/lint\n\n## Contexto del padre (Cómo hacerlo)\n1. Opcional: `turbo.json` con pipeline build/test/lint y cache local.\n2. Si no se usa Turbo, dejar nota en README y cerrar tarea como “omitido a propósito”.\n\n## DoD del padre\n- cache local\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-TOOL-06\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-TOOL — Tooling root\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\nTurbo opcional\n\n## Cómo hacerlo\n1. Opcional: `turbo.json` con pipeline build/test/lint y cache local.\n2. Si no se usa Turbo, dejar nota en README y cerrar tarea como “omitido a propósito”.\n\n## Subtareas (issues)\n- [ ] `S0-TOOL-06.1` — pipeline build/test/lint\n\n## Definition of Done\n- cache local\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] cache local\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-API-01",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-API",
+      "epicTitle": "Crear NestJS `apps/api`",
+      "summary": "Scaffold Nest 10+",
+      "estimate": "M",
+      "type": "infra",
+      "subtasks": [
+        "CLI en `apps/api`",
+        "deps workspace"
+      ],
+      "dod": [
+        "app arranca"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Scaffold NestJS 10+ en `apps/api` (CLI o plantilla mínima).",
+        "Dependencias vía workspace; arranque con `pnpm dev:api` / `pnpm --filter api start`.",
+        "Sin endpoints de negocio SUNAT."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-API-01.1",
+          "summary": "CLI en apps/api",
+          "descriptionMarkdown": "## Subtarea de `S0-API-01`\n\n- **Padre:** S0-API-01 — Scaffold Nest 10+\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-API\n\n## Qué hacer\nCLI en `apps/api`\n\n## Contexto del padre (Cómo hacerlo)\n1. Scaffold NestJS 10+ en `apps/api` (CLI o plantilla mínima).\n2. Dependencias vía workspace; arranque con `pnpm dev:api` / `pnpm --filter api start`.\n3. Sin endpoints de negocio SUNAT.\n\n## DoD del padre\n- app arranca\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S0-API-01.2",
+          "summary": "deps workspace",
+          "descriptionMarkdown": "## Subtarea de `S0-API-01`\n\n- **Padre:** S0-API-01 — Scaffold Nest 10+\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-API\n\n## Qué hacer\ndeps workspace\n\n## Contexto del padre (Cómo hacerlo)\n1. Scaffold NestJS 10+ en `apps/api` (CLI o plantilla mínima).\n2. Dependencias vía workspace; arranque con `pnpm dev:api` / `pnpm --filter api start`.\n3. Sin endpoints de negocio SUNAT.\n\n## DoD del padre\n- app arranca\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-API-01\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-API — Crear NestJS `apps/api`\n- **Estimación:** M\n- **Type:** infra\n\n## Objetivo\nScaffold Nest 10+\n\n## Cómo hacerlo\n1. Scaffold NestJS 10+ en `apps/api` (CLI o plantilla mínima).\n2. Dependencias vía workspace; arranque con `pnpm dev:api` / `pnpm --filter api start`.\n3. Sin endpoints de negocio SUNAT.\n\n## Subtareas (issues)\n- [ ] `S0-API-01.1` — CLI en apps/api\n- [ ] `S0-API-01.2` — deps workspace\n\n## Definition of Done\n- app arranca\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] app arranca\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-API-02",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-API",
+      "epicTitle": "Crear NestJS `apps/api`",
+      "summary": "Clean architecture folders",
+      "estimate": "M",
+      "type": "infra",
+      "subtasks": [
+        "`interfaces/http`, `application`, `infrastructure`",
+        "ban Nest imports en `packages/domain`"
+      ],
+      "dod": [
+        "estructura + nota"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Crear carpetas `apps/api/src/interfaces/http`, `application`, `infrastructure` (doc 23 §3).",
+        "Regla: `packages/domain` y `application` no importan `@nestjs/*`.",
+        "Dejar nota/README de capas en `apps/api`."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-API-02.1",
+          "summary": "interfaces/http, application, infrastructure",
+          "descriptionMarkdown": "## Subtarea de `S0-API-02`\n\n- **Padre:** S0-API-02 — Clean architecture folders\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-API\n\n## Qué hacer\n`interfaces/http`, `application`, `infrastructure`\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear carpetas `apps/api/src/interfaces/http`, `application`, `infrastructure` (doc 23 §3).\n2. Regla: `packages/domain` y `application` no importan `@nestjs/*`.\n3. Dejar nota/README de capas en `apps/api`.\n\n## DoD del padre\n- estructura + nota\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S0-API-02.2",
+          "summary": "ban Nest imports en packages/domain",
+          "descriptionMarkdown": "## Subtarea de `S0-API-02`\n\n- **Padre:** S0-API-02 — Clean architecture folders\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-API\n\n## Qué hacer\nban Nest imports en `packages/domain`\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear carpetas `apps/api/src/interfaces/http`, `application`, `infrastructure` (doc 23 §3).\n2. Regla: `packages/domain` y `application` no importan `@nestjs/*`.\n3. Dejar nota/README de capas en `apps/api`.\n\n## DoD del padre\n- estructura + nota\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-API-02\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-API — Crear NestJS `apps/api`\n- **Estimación:** M\n- **Type:** infra\n\n## Objetivo\nClean architecture folders\n\n## Cómo hacerlo\n1. Crear carpetas `apps/api/src/interfaces/http`, `application`, `infrastructure` (doc 23 §3).\n2. Regla: `packages/domain` y `application` no importan `@nestjs/*`.\n3. Dejar nota/README de capas en `apps/api`.\n\n## Subtareas (issues)\n- [ ] `S0-API-02.1` — interfaces/http, application, infrastructure\n- [ ] `S0-API-02.2` — ban Nest imports en packages/domain\n\n## Definition of Done\n- estructura + nota\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] estructura + nota\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-API-03",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-API",
+      "epicTitle": "Crear NestJS `apps/api`",
+      "summary": "Config + Zod env",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "`@nestjs/config`",
+        "`.env.example`"
+      ],
+      "dod": [
+        "falla clara sin vars"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Integrar `@nestjs/config` + validación Zod de env.",
+        "Crear `.env.example` sin secretos reales (doc 23 §1 / §9).",
+        "La app debe fallar con mensaje claro si faltan vars requeridas."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-API-03.1",
+          "summary": "@nestjs/config",
+          "descriptionMarkdown": "## Subtarea de `S0-API-03`\n\n- **Padre:** S0-API-03 — Config + Zod env\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-API\n\n## Qué hacer\n`@nestjs/config`\n\n## Contexto del padre (Cómo hacerlo)\n1. Integrar `@nestjs/config` + validación Zod de env.\n2. Crear `.env.example` sin secretos reales (doc 23 §1 / §9).\n3. La app debe fallar con mensaje claro si faltan vars requeridas.\n\n## DoD del padre\n- falla clara sin vars\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S0-API-03.2",
+          "summary": ".env.example",
+          "descriptionMarkdown": "## Subtarea de `S0-API-03`\n\n- **Padre:** S0-API-03 — Config + Zod env\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-API\n\n## Qué hacer\n`.env.example`\n\n## Contexto del padre (Cómo hacerlo)\n1. Integrar `@nestjs/config` + validación Zod de env.\n2. Crear `.env.example` sin secretos reales (doc 23 §1 / §9).\n3. La app debe fallar con mensaje claro si faltan vars requeridas.\n\n## DoD del padre\n- falla clara sin vars\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-API-03\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-API — Crear NestJS `apps/api`\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\nConfig + Zod env\n\n## Cómo hacerlo\n1. Integrar `@nestjs/config` + validación Zod de env.\n2. Crear `.env.example` sin secretos reales (doc 23 §1 / §9).\n3. La app debe fallar con mensaje claro si faltan vars requeridas.\n\n## Subtareas (issues)\n- [ ] `S0-API-03.1` — @nestjs/config\n- [ ] `S0-API-03.2` — .env.example\n\n## Definition of Done\n- falla clara sin vars\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] falla clara sin vars\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-API-04",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-API",
+      "epicTitle": "Crear NestJS `apps/api`",
+      "summary": "Health",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "`GET /health`, `GET /ready` stub"
+      ],
+      "dod": [
+        "200 JSON"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar `GET /health` y `GET /ready` (stub) devolviendo JSON 200.",
+        "Sin dependencias a Postgres/Redis aún (ready puede ser stub)."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-API-04.1",
+          "summary": "GET /health, GET /ready stub",
+          "descriptionMarkdown": "## Subtarea de `S0-API-04`\n\n- **Padre:** S0-API-04 — Health\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-API\n\n## Qué hacer\n`GET /health`, `GET /ready` stub\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar `GET /health` y `GET /ready` (stub) devolviendo JSON 200.\n2. Sin dependencias a Postgres/Redis aún (ready puede ser stub).\n\n## DoD del padre\n- 200 JSON\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-API-04\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-API — Crear NestJS `apps/api`\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\nHealth\n\n## Cómo hacerlo\n1. Implementar `GET /health` y `GET /ready` (stub) devolviendo JSON 200.\n2. Sin dependencias a Postgres/Redis aún (ready puede ser stub).\n\n## Subtareas (issues)\n- [ ] `S0-API-04.1` — GET /health, GET /ready stub\n\n## Definition of Done\n- 200 JSON\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] 200 JSON\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-API-05",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-API",
+      "epicTitle": "Crear NestJS `apps/api`",
+      "summary": "Logger JSON + request-id",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "Pino o Nest logger",
+        "redact secrets"
+      ],
+      "dod": [
+        "middleware"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Logger JSON (Pino o Nest logger) + middleware `request-id`.",
+        "Redactar secrets en logs."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-API-05.1",
+          "summary": "Pino o Nest logger",
+          "descriptionMarkdown": "## Subtarea de `S0-API-05`\n\n- **Padre:** S0-API-05 — Logger JSON + request-id\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-API\n\n## Qué hacer\nPino o Nest logger\n\n## Contexto del padre (Cómo hacerlo)\n1. Logger JSON (Pino o Nest logger) + middleware `request-id`.\n2. Redactar secrets en logs.\n\n## DoD del padre\n- middleware\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S0-API-05.2",
+          "summary": "redact secrets",
+          "descriptionMarkdown": "## Subtarea de `S0-API-05`\n\n- **Padre:** S0-API-05 — Logger JSON + request-id\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-API\n\n## Qué hacer\nredact secrets\n\n## Contexto del padre (Cómo hacerlo)\n1. Logger JSON (Pino o Nest logger) + middleware `request-id`.\n2. Redactar secrets en logs.\n\n## DoD del padre\n- middleware\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-API-05\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-API — Crear NestJS `apps/api`\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\nLogger JSON + request-id\n\n## Cómo hacerlo\n1. Logger JSON (Pino o Nest logger) + middleware `request-id`.\n2. Redactar secrets en logs.\n\n## Subtareas (issues)\n- [ ] `S0-API-05.1` — Pino o Nest logger\n- [ ] `S0-API-05.2` — redact secrets\n\n## Definition of Done\n- middleware\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] middleware\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-API-06",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-API",
+      "epicTitle": "Crear NestJS `apps/api`",
+      "summary": "Exception filter",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "`AppError` → HTTP alineado OpenAPI Error"
+      ],
+      "dod": [
+        "test e2e health"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Exception filter: `AppError` → HTTP alineado al shape Error de OpenAPI (cuando exista).",
+        "Test e2e mínimo de health + error tipado."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-API-06.1",
+          "summary": "AppError → HTTP alineado OpenAPI Error",
+          "descriptionMarkdown": "## Subtarea de `S0-API-06`\n\n- **Padre:** S0-API-06 — Exception filter\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-API\n\n## Qué hacer\n`AppError` → HTTP alineado OpenAPI Error\n\n## Contexto del padre (Cómo hacerlo)\n1. Exception filter: `AppError` → HTTP alineado al shape Error de OpenAPI (cuando exista).\n2. Test e2e mínimo de health + error tipado.\n\n## DoD del padre\n- test e2e health\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-API-06\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-API — Crear NestJS `apps/api`\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\nException filter\n\n## Cómo hacerlo\n1. Exception filter: `AppError` → HTTP alineado al shape Error de OpenAPI (cuando exista).\n2. Test e2e mínimo de health + error tipado.\n\n## Subtareas (issues)\n- [ ] `S0-API-06.1` — AppError → HTTP alineado OpenAPI Error\n\n## Definition of Done\n- test e2e health\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] test e2e health\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-PKG-01",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-PKG",
+      "epicTitle": "Packages esqueleto",
+      "summary": "`packages/shared`",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "Result, AppError codes stub"
+      ],
+      "dod": [
+        "export"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Crear `packages/shared` con export de `Result` y códigos `AppError` stub.",
+        "Debe compilar y exportarse vía workspace."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-PKG-01.1",
+          "summary": "Result, AppError codes stub",
+          "descriptionMarkdown": "## Subtarea de `S0-PKG-01`\n\n- **Padre:** S0-PKG-01 — `packages/shared`\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-PKG\n\n## Qué hacer\nResult, AppError codes stub\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear `packages/shared` con export de `Result` y códigos `AppError` stub.\n2. Debe compilar y exportarse vía workspace.\n\n## DoD del padre\n- export\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-PKG-01\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-PKG — Packages esqueleto\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\n`packages/shared`\n\n## Cómo hacerlo\n1. Crear `packages/shared` con export de `Result` y códigos `AppError` stub.\n2. Debe compilar y exportarse vía workspace.\n\n## Subtareas (issues)\n- [ ] `S0-PKG-01.1` — Result, AppError codes stub\n\n## Definition of Done\n- export\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] export\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-PKG-02",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-PKG",
+      "epicTitle": "Packages esqueleto",
+      "summary": "`packages/domain`",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "DocumentStatus enum",
+        "VOs vacíos"
+      ],
+      "dod": [
+        "sin Nest"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Crear `packages/domain` con `DocumentStatus` enum y VOs vacíos.",
+        "Sin imports de Nest (doc 23 §3 / §8)."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-PKG-02.1",
+          "summary": "DocumentStatus enum",
+          "descriptionMarkdown": "## Subtarea de `S0-PKG-02`\n\n- **Padre:** S0-PKG-02 — `packages/domain`\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-PKG\n\n## Qué hacer\nDocumentStatus enum\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear `packages/domain` con `DocumentStatus` enum y VOs vacíos.\n2. Sin imports de Nest (doc 23 §3 / §8).\n\n## DoD del padre\n- sin Nest\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S0-PKG-02.2",
+          "summary": "VOs vacíos",
+          "descriptionMarkdown": "## Subtarea de `S0-PKG-02`\n\n- **Padre:** S0-PKG-02 — `packages/domain`\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-PKG\n\n## Qué hacer\nVOs vacíos\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear `packages/domain` con `DocumentStatus` enum y VOs vacíos.\n2. Sin imports de Nest (doc 23 §3 / §8).\n\n## DoD del padre\n- sin Nest\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-PKG-02\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-PKG — Packages esqueleto\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\n`packages/domain`\n\n## Cómo hacerlo\n1. Crear `packages/domain` con `DocumentStatus` enum y VOs vacíos.\n2. Sin imports de Nest (doc 23 §3 / §8).\n\n## Subtareas (issues)\n- [ ] `S0-PKG-02.1` — DocumentStatus enum\n- [ ] `S0-PKG-02.2` — VOs vacíos\n\n## Definition of Done\n- sin Nest\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] sin Nest\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-PKG-03",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-PKG",
+      "epicTitle": "Packages esqueleto",
+      "summary": "Packages SUNAT stubs",
+      "estimate": "M",
+      "type": "infra",
+      "subtasks": [
+        "`sunat-ubl`, `sunat-sign`, `sunat-soap`, `sunat-validation`, `sunat-catalogs`, `sunat-gre`, `pdf-ri`"
+      ],
+      "dod": [
+        "`pnpm build` todos"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Crear stubs: `sunat-ubl`, `sunat-sign`, `sunat-soap`, `sunat-validation`, `sunat-catalogs`, `sunat-gre`, `pdf-ri`.",
+        "Cada uno: `package.json` + `tsconfig` + export vacío (árbol doc 23 §2).",
+        "`pnpm build` debe pasar en todos."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-PKG-03.1",
+          "summary": "sunat-ubl, sunat-sign, sunat-soap, sunat-validation, sunat-catalogs, sunat-gre, pdf-ri",
+          "descriptionMarkdown": "## Subtarea de `S0-PKG-03`\n\n- **Padre:** S0-PKG-03 — Packages SUNAT stubs\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-PKG\n\n## Qué hacer\n`sunat-ubl`, `sunat-sign`, `sunat-soap`, `sunat-validation`, `sunat-catalogs`, `sunat-gre`, `pdf-ri`\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear stubs: `sunat-ubl`, `sunat-sign`, `sunat-soap`, `sunat-validation`, `sunat-catalogs`, `sunat-gre`, `pdf-ri`.\n2. Cada uno: `package.json` + `tsconfig` + export vacío (árbol doc 23 §2).\n3. `pnpm build` debe pasar en todos.\n\n## DoD del padre\n- `pnpm build` todos\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-PKG-03\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-PKG — Packages esqueleto\n- **Estimación:** M\n- **Type:** infra\n\n## Objetivo\nPackages SUNAT stubs\n\n## Cómo hacerlo\n1. Crear stubs: `sunat-ubl`, `sunat-sign`, `sunat-soap`, `sunat-validation`, `sunat-catalogs`, `sunat-gre`, `pdf-ri`.\n2. Cada uno: `package.json` + `tsconfig` + export vacío (árbol doc 23 §2).\n3. `pnpm build` debe pasar en todos.\n\n## Subtareas (issues)\n- [ ] `S0-PKG-03.1` — sunat-ubl, sunat-sign, sunat-soap, sunat-validation, sunat-catalogs, sunat-gre, pdf-ri\n\n## Definition of Done\n- `pnpm build` todos\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] `pnpm build` todos\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-DEV-01",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-DEV",
+      "epicTitle": "Docker + CI + hygiene",
+      "summary": "`docker-compose.yml`",
+      "estimate": "M",
+      "type": "infra",
+      "subtasks": [
+        "Postgres 16, Redis 7, MinIO",
+        "healthchecks"
+      ],
+      "dod": [
+        "`compose up -d`"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Crear `docker-compose.yml` con Postgres 16, Redis 7, MinIO + healthchecks.",
+        "Verificar: `docker compose up -d` levanta servicios."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-DEV-01.1",
+          "summary": "Postgres 16, Redis 7, MinIO",
+          "descriptionMarkdown": "## Subtarea de `S0-DEV-01`\n\n- **Padre:** S0-DEV-01 — `docker-compose.yml`\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-DEV\n\n## Qué hacer\nPostgres 16, Redis 7, MinIO\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear `docker-compose.yml` con Postgres 16, Redis 7, MinIO + healthchecks.\n2. Verificar: `docker compose up -d` levanta servicios.\n\n## DoD del padre\n- `compose up -d`\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S0-DEV-01.2",
+          "summary": "healthchecks",
+          "descriptionMarkdown": "## Subtarea de `S0-DEV-01`\n\n- **Padre:** S0-DEV-01 — `docker-compose.yml`\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-DEV\n\n## Qué hacer\nhealthchecks\n\n## Contexto del padre (Cómo hacerlo)\n1. Crear `docker-compose.yml` con Postgres 16, Redis 7, MinIO + healthchecks.\n2. Verificar: `docker compose up -d` levanta servicios.\n\n## DoD del padre\n- `compose up -d`\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-DEV-01\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-DEV — Docker + CI + hygiene\n- **Estimación:** M\n- **Type:** infra\n\n## Objetivo\n`docker-compose.yml`\n\n## Cómo hacerlo\n1. Crear `docker-compose.yml` con Postgres 16, Redis 7, MinIO + healthchecks.\n2. Verificar: `docker compose up -d` levanta servicios.\n\n## Subtareas (issues)\n- [ ] `S0-DEV-01.1` — Postgres 16, Redis 7, MinIO\n- [ ] `S0-DEV-01.2` — healthchecks\n\n## Definition of Done\n- `compose up -d`\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] `compose up -d`\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-DEV-02",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-DEV",
+      "epicTitle": "Docker + CI + hygiene",
+      "summary": "Gitignore secrets",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "`.env`, `*.pfx`, `certs/`, `tmp/spikes/`"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Actualizar `.gitignore`: `.env`, `*.pfx`, `certs/`, `tmp/spikes/`, `node_modules`, `dist` (doc 23 §6)."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-DEV-02.1",
+          "summary": ".env, *.pfx, certs/, tmp/spikes/",
+          "descriptionMarkdown": "## Subtarea de `S0-DEV-02`\n\n- **Padre:** S0-DEV-02 — Gitignore secrets\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-DEV\n\n## Qué hacer\n`.env`, `*.pfx`, `certs/`, `tmp/spikes/`\n\n## Contexto del padre (Cómo hacerlo)\n1. Actualizar `.gitignore`: `.env`, `*.pfx`, `certs/`, `tmp/spikes/`, `node_modules`, `dist` (doc 23 §6).\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-DEV-02\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-DEV — Docker + CI + hygiene\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\nGitignore secrets\n\n## Cómo hacerlo\n1. Actualizar `.gitignore`: `.env`, `*.pfx`, `certs/`, `tmp/spikes/`, `node_modules`, `dist` (doc 23 §6).\n\n## Subtareas (issues)\n- [ ] `S0-DEV-02.1` — .env, *.pfx, certs/, tmp/spikes/\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-DEV-03",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-DEV",
+      "epicTitle": "Docker + CI + hygiene",
+      "summary": "GitHub Actions",
+      "estimate": "M",
+      "type": "infra",
+      "subtasks": [
+        "lint → test → build",
+        "cache pnpm"
+      ],
+      "dod": [
+        "CI verde"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "GitHub Actions: install pnpm → lint → test → build; cache pnpm.",
+        "Sin jobs SUNAT; CI verde en PR vacío de negocio."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-DEV-03.1",
+          "summary": "lint → test → build",
+          "descriptionMarkdown": "## Subtarea de `S0-DEV-03`\n\n- **Padre:** S0-DEV-03 — GitHub Actions\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-DEV\n\n## Qué hacer\nlint → test → build\n\n## Contexto del padre (Cómo hacerlo)\n1. GitHub Actions: install pnpm → lint → test → build; cache pnpm.\n2. Sin jobs SUNAT; CI verde en PR vacío de negocio.\n\n## DoD del padre\n- CI verde\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S0-DEV-03.2",
+          "summary": "cache pnpm",
+          "descriptionMarkdown": "## Subtarea de `S0-DEV-03`\n\n- **Padre:** S0-DEV-03 — GitHub Actions\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-DEV\n\n## Qué hacer\ncache pnpm\n\n## Contexto del padre (Cómo hacerlo)\n1. GitHub Actions: install pnpm → lint → test → build; cache pnpm.\n2. Sin jobs SUNAT; CI verde en PR vacío de negocio.\n\n## DoD del padre\n- CI verde\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-DEV-03\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-DEV — Docker + CI + hygiene\n- **Estimación:** M\n- **Type:** infra\n\n## Objetivo\nGitHub Actions\n\n## Cómo hacerlo\n1. GitHub Actions: install pnpm → lint → test → build; cache pnpm.\n2. Sin jobs SUNAT; CI verde en PR vacío de negocio.\n\n## Subtareas (issues)\n- [ ] `S0-DEV-03.1` — lint → test → build\n- [ ] `S0-DEV-03.2` — cache pnpm\n\n## Definition of Done\n- CI verde\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] CI verde\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S0-DEV-04",
+      "sprint": "S0",
+      "sprintName": "S0-scaffold",
+      "epic": "S0-DEV",
+      "epicTitle": "Docker + CI + hygiene",
+      "summary": "README desarrollo",
+      "estimate": "S",
+      "type": "infra",
+      "subtasks": [
+        "levantar api + compose"
+      ],
+      "dod": [
+        "onboarding corto"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "README desarrollo: cómo levantar compose + api; link a docs 23/24/32.",
+        "Onboarding corto para un nuevo clone."
+      ],
+      "childTasks": [
+        {
+          "key": "S0-DEV-04.1",
+          "summary": "levantar api + compose",
+          "descriptionMarkdown": "## Subtarea de `S0-DEV-04`\n\n- **Padre:** S0-DEV-04 — README desarrollo\n- **Sprint:** S0 (`S0-scaffold`)\n- **Epic:** S0-DEV\n\n## Qué hacer\nlevantar api + compose\n\n## Contexto del padre (Cómo hacerlo)\n1. README desarrollo: cómo levantar compose + api; link a docs 23/24/32.\n2. Onboarding corto para un nuevo clone.\n\n## DoD del padre\n- onboarding corto\n- Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S0-DEV-04\n- **Sprint:** S0 — Scaffolding monorepo + NestJS + Docker (`S0-scaffold`)\n- **Epic:** S0-DEV — Docker + CI + hygiene\n- **Estimación:** S\n- **Type:** infra\n\n## Objetivo\nREADME desarrollo\n\n## Cómo hacerlo\n1. README desarrollo: cómo levantar compose + api; link a docs 23/24/32.\n2. Onboarding corto para un nuevo clone.\n\n## Subtareas (issues)\n- [ ] `S0-DEV-04.1` — levantar api + compose\n\n## Definition of Done\n- onboarding corto\n- [ ] Cumple DoD del sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n\n## Verificar\n- [ ] onboarding corto\n- [ ] Meta sprint: `pnpm build/lint/test` verdes; `GET /health`; Compose local; cero lógica SUNAT.\n- [ ] `pnpm build` / `pnpm test` / `pnpm lint` no rompen por este cambio\n\n## Referencias\n- [docs/planificacion/23-monorepo-bootstrap.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md)\n- [docs/planificacion/06-stack-tecnologico.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/06-stack-tecnologico.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/23-monorepo-bootstrap.md",
+        "docs/planificacion/06-stack-tecnologico.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    }
+  ]
+}

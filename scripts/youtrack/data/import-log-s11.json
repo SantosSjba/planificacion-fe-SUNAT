@@ -1,0 +1,331 @@
+{
+  "when": "2026-09-18T23:30:17.680Z",
+  "dryRun": false,
+  "withSubtasks": true,
+  "log": [
+    {
+      "backlogId": "EPIC-S11",
+      "youtrack": "FE-281",
+      "kind": "epic"
+    },
+    {
+      "backlogId": "S11-DOC-01",
+      "youtrack": "FE-282",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-DOC-01.1",
+      "youtrack": "FE-283",
+      "kind": "subtask",
+      "parent": "FE-282"
+    },
+    {
+      "backlogId": "S11-DOC-02",
+      "youtrack": "FE-284",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-DOC-02.1",
+      "youtrack": "FE-285",
+      "kind": "subtask",
+      "parent": "FE-284"
+    },
+    {
+      "backlogId": "S11-DOC-03",
+      "youtrack": "FE-286",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-DOC-03.1",
+      "youtrack": "FE-287",
+      "kind": "subtask",
+      "parent": "FE-286"
+    },
+    {
+      "backlogId": "S11-DOC-04",
+      "youtrack": "FE-288",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-DOC-04.1",
+      "youtrack": "FE-289",
+      "kind": "subtask",
+      "parent": "FE-288"
+    },
+    {
+      "backlogId": "S11-DOC-05",
+      "youtrack": "FE-290",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-DOC-05.1",
+      "youtrack": "FE-291",
+      "kind": "subtask",
+      "parent": "FE-290"
+    },
+    {
+      "backlogId": "S11-DOC-06",
+      "youtrack": "FE-292",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-DOC-06.1",
+      "youtrack": "FE-293",
+      "kind": "subtask",
+      "parent": "FE-292"
+    },
+    {
+      "backlogId": "S11-DOC-07",
+      "youtrack": "FE-294",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-DOC-07.1",
+      "youtrack": "FE-295",
+      "kind": "subtask",
+      "parent": "FE-294"
+    },
+    {
+      "backlogId": "S11-GRE-01",
+      "youtrack": "FE-296",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-GRE-01.1",
+      "youtrack": "FE-297",
+      "kind": "subtask",
+      "parent": "FE-296"
+    },
+    {
+      "backlogId": "S11-GRE-02",
+      "youtrack": "FE-298",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-GRE-02.1",
+      "youtrack": "FE-299",
+      "kind": "subtask",
+      "parent": "FE-298"
+    },
+    {
+      "backlogId": "S11-GRE-03",
+      "youtrack": "FE-300",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-GRE-03.1",
+      "youtrack": "FE-301",
+      "kind": "subtask",
+      "parent": "FE-300"
+    },
+    {
+      "backlogId": "S11-DEV-01",
+      "youtrack": "FE-302",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-DEV-01.1",
+      "youtrack": "FE-303",
+      "kind": "subtask",
+      "parent": "FE-302"
+    },
+    {
+      "backlogId": "S11-DEV-02",
+      "youtrack": "FE-304",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-DEV-02.1",
+      "youtrack": "FE-305",
+      "kind": "subtask",
+      "parent": "FE-304"
+    },
+    {
+      "backlogId": "S11-DEV-03",
+      "youtrack": "FE-306",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-DEV-03.1",
+      "youtrack": "FE-307",
+      "kind": "subtask",
+      "parent": "FE-306"
+    },
+    {
+      "backlogId": "S11-DEV-04",
+      "youtrack": "FE-308",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-DEV-04.1",
+      "youtrack": "FE-309",
+      "kind": "subtask",
+      "parent": "FE-308"
+    },
+    {
+      "backlogId": "S11-QA-01",
+      "youtrack": "FE-310",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-QA-01.1",
+      "youtrack": "FE-311",
+      "kind": "subtask",
+      "parent": "FE-310"
+    },
+    {
+      "backlogId": "S11-QA-02",
+      "youtrack": "FE-312",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-QA-02.1",
+      "youtrack": "FE-313",
+      "kind": "subtask",
+      "parent": "FE-312"
+    },
+    {
+      "backlogId": "S11-QA-03",
+      "youtrack": "FE-314",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-QA-03.1",
+      "youtrack": "FE-315",
+      "kind": "subtask",
+      "parent": "FE-314"
+    },
+    {
+      "backlogId": "S0-scaffold",
+      "youtrack": "FE-316",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S0-scaffold.1",
+      "youtrack": "FE-317",
+      "kind": "subtask",
+      "parent": "FE-316"
+    },
+    {
+      "backlogId": "S1-sign-ubl",
+      "youtrack": "FE-318",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S1-sign-ubl.1",
+      "youtrack": "FE-319",
+      "kind": "subtask",
+      "parent": "FE-318"
+    },
+    {
+      "backlogId": "S2-sendbill",
+      "youtrack": "FE-320",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S2-sendbill.1",
+      "youtrack": "FE-321",
+      "kind": "subtask",
+      "parent": "FE-320"
+    },
+    {
+      "backlogId": "S3-platform",
+      "youtrack": "FE-322",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S3-platform.1",
+      "youtrack": "FE-323",
+      "kind": "subtask",
+      "parent": "FE-322"
+    },
+    {
+      "backlogId": "S4-invoice-api",
+      "youtrack": "FE-324",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S4-invoice-api.1",
+      "youtrack": "FE-325",
+      "kind": "subtask",
+      "parent": "FE-324"
+    },
+    {
+      "backlogId": "S5-boleta-notas",
+      "youtrack": "FE-326",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S5-boleta-notas.1",
+      "youtrack": "FE-327",
+      "kind": "subtask",
+      "parent": "FE-326"
+    },
+    {
+      "backlogId": "S6-ra-rc",
+      "youtrack": "FE-328",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S6-ra-rc.1",
+      "youtrack": "FE-329",
+      "kind": "subtask",
+      "parent": "FE-328"
+    },
+    {
+      "backlogId": "S7-gre",
+      "youtrack": "FE-330",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S7-gre.1",
+      "youtrack": "FE-331",
+      "kind": "subtask",
+      "parent": "FE-330"
+    },
+    {
+      "backlogId": "S8-notify-pdf-valid",
+      "youtrack": "FE-332",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S8-notify-pdf-valid.1",
+      "youtrack": "FE-333",
+      "kind": "subtask",
+      "parent": "FE-332"
+    },
+    {
+      "backlogId": "S9-api-mvp",
+      "youtrack": "FE-334",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S9-api-mvp.1",
+      "youtrack": "FE-335",
+      "kind": "subtask",
+      "parent": "FE-334"
+    },
+    {
+      "backlogId": "S10-console-auth",
+      "youtrack": "FE-336",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S10-console-auth.1",
+      "youtrack": "FE-337",
+      "kind": "subtask",
+      "parent": "FE-336"
+    },
+    {
+      "backlogId": "S11-console-ops",
+      "youtrack": "FE-338",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S11-console-ops.1",
+      "youtrack": "FE-339",
+      "kind": "subtask",
+      "parent": "FE-338"
+    }
+  ]
+}

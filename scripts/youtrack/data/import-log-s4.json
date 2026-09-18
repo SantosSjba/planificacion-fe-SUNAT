@@ -1,0 +1,100 @@
+{
+  "when": "2026-09-18T23:25:32.979Z",
+  "dryRun": false,
+  "withSubtasks": true,
+  "log": [
+    {
+      "backlogId": "EPIC-S4",
+      "youtrack": "FE-157",
+      "kind": "epic"
+    },
+    {
+      "backlogId": "S4-EMIT-01",
+      "youtrack": "FE-158",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S4-EMIT-01.1",
+      "youtrack": "FE-159",
+      "kind": "subtask",
+      "parent": "FE-158"
+    },
+    {
+      "backlogId": "S4-EMIT-02",
+      "youtrack": "FE-160",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S4-EMIT-02.1",
+      "youtrack": "FE-161",
+      "kind": "subtask",
+      "parent": "FE-160"
+    },
+    {
+      "backlogId": "S4-EMIT-03",
+      "youtrack": "FE-162",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S4-EMIT-03.1",
+      "youtrack": "FE-163",
+      "kind": "subtask",
+      "parent": "FE-162"
+    },
+    {
+      "backlogId": "S4-EMIT-04",
+      "youtrack": "FE-164",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S4-EMIT-04.1",
+      "youtrack": "FE-165",
+      "kind": "subtask",
+      "parent": "FE-164"
+    },
+    {
+      "backlogId": "S4-EMIT-05",
+      "youtrack": "FE-166",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S4-EMIT-05.1",
+      "youtrack": "FE-167",
+      "kind": "subtask",
+      "parent": "FE-166"
+    },
+    {
+      "backlogId": "S4-EMIT-06",
+      "youtrack": "FE-168",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S4-EMIT-06.1",
+      "youtrack": "FE-169",
+      "kind": "subtask",
+      "parent": "FE-168"
+    },
+    {
+      "backlogId": "S4-EMIT-07",
+      "youtrack": "FE-170",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S4-EMIT-07.1",
+      "youtrack": "FE-171",
+      "kind": "subtask",
+      "parent": "FE-170"
+    },
+    {
+      "backlogId": "S4-EMIT-08",
+      "youtrack": "FE-172",
+      "kind": "parent"
+    },
+    {
+      "backlogId": "S4-EMIT-08.1",
+      "youtrack": "FE-173",
+      "kind": "subtask",
+      "parent": "FE-172"
+    }
+  ]
+}

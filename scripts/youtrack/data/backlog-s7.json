@@ -1,0 +1,232 @@
+{
+  "sprint": {
+    "n": 7,
+    "name": "S7-gre",
+    "title": "GRE",
+    "goal": "GRE REST (09/31) con OAuth + tickets."
+  },
+  "epics": [
+    {
+      "id": "S7",
+      "title": "Sprint 7",
+      "childIds": [
+        "S7-01",
+        "S7-02",
+        "S7-03",
+        "S7-04",
+        "S7-05",
+        "S7-06"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "S7-01",
+      "sprint": "S7",
+      "sprintName": "S7-gre",
+      "epic": "S7",
+      "epicTitle": "Sprint 7",
+      "summary": "OAuth GRE + Redis token",
+      "estimate": "L",
+      "type": "sunat",
+      "subtasks": [
+        "Spike D"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **OAuth GRE + Redis token** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S7-01.1",
+          "summary": "Spike D",
+          "descriptionMarkdown": "## Subtarea de `S7-01`\n\n- **Padre:** S7-01 — OAuth GRE + Redis token\n- **Sprint:** S7 (`S7-gre`)\n- **Epic:** S7\n\n## Qué hacer\nSpike D\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **OAuth GRE + Redis token** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S7-01\n- **Sprint:** S7 — GRE (`S7-gre`)\n- **Epic:** S7 — Sprint 7\n- **Estimación:** L\n- **Type:** sunat\n\n## Objetivo\nOAuth GRE + Redis token\n\n## Cómo hacerlo\n1. Implementar: **OAuth GRE + Redis token** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S7-01.1` — Spike D\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Verificar\n- [ ] Meta sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S7-02",
+      "sprint": "S7",
+      "sprintName": "S7-gre",
+      "epic": "S7",
+      "epicTitle": "Sprint 7",
+      "summary": "Send + consultarTicket",
+      "estimate": "L",
+      "type": "sunat",
+      "subtasks": [
+        "Fake+real"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Send + consultarTicket** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S7-02.1",
+          "summary": "Fake+real",
+          "descriptionMarkdown": "## Subtarea de `S7-02`\n\n- **Padre:** S7-02 — Send + consultarTicket\n- **Sprint:** S7 (`S7-gre`)\n- **Epic:** S7\n\n## Qué hacer\nFake+real\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Send + consultarTicket** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S7-02\n- **Sprint:** S7 — GRE (`S7-gre`)\n- **Epic:** S7 — Sprint 7\n- **Estimación:** L\n- **Type:** sunat\n\n## Objetivo\nSend + consultarTicket\n\n## Cómo hacerlo\n1. Implementar: **Send + consultarTicket** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S7-02.1` — Fake+real\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Verificar\n- [ ] Meta sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S7-03",
+      "sprint": "S7",
+      "sprintName": "S7-gre",
+      "epic": "S7",
+      "epicTitle": "Sprint 7",
+      "summary": "Builder 09",
+      "estimate": "L",
+      "type": "sunat",
+      "subtasks": [
+        "dict 18"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Builder 09** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S7-03.1",
+          "summary": "dict 18",
+          "descriptionMarkdown": "## Subtarea de `S7-03`\n\n- **Padre:** S7-03 — Builder 09\n- **Sprint:** S7 (`S7-gre`)\n- **Epic:** S7\n\n## Qué hacer\ndict 18\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Builder 09** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S7-03\n- **Sprint:** S7 — GRE (`S7-gre`)\n- **Epic:** S7 — Sprint 7\n- **Estimación:** L\n- **Type:** sunat\n\n## Objetivo\nBuilder 09\n\n## Cómo hacerlo\n1. Implementar: **Builder 09** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S7-03.1` — dict 18\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Verificar\n- [ ] Meta sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S7-04",
+      "sprint": "S7",
+      "sprintName": "S7-gre",
+      "epic": "S7",
+      "epicTitle": "Sprint 7",
+      "summary": "Builder 31 básico",
+      "estimate": "M",
+      "type": "sunat",
+      "subtasks": [
+        "shipper/placa/license"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Builder 31 básico** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S7-04.1",
+          "summary": "shipper/placa/license",
+          "descriptionMarkdown": "## Subtarea de `S7-04`\n\n- **Padre:** S7-04 — Builder 31 básico\n- **Sprint:** S7 (`S7-gre`)\n- **Epic:** S7\n\n## Qué hacer\nshipper/placa/license\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Builder 31 básico** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S7-04\n- **Sprint:** S7 — GRE (`S7-gre`)\n- **Epic:** S7 — Sprint 7\n- **Estimación:** M\n- **Type:** sunat\n\n## Objetivo\nBuilder 31 básico\n\n## Cómo hacerlo\n1. Implementar: **Builder 31 básico** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S7-04.1` — shipper/placa/license\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Verificar\n- [ ] Meta sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S7-05",
+      "sprint": "S7",
+      "sprintName": "S7-gre",
+      "epic": "S7",
+      "epicTitle": "Sprint 7",
+      "summary": "`POST /despatch-advices`",
+      "estimate": "M",
+      "type": "sunat",
+      "subtasks": [
+        "poll ticket"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **`POST /despatch-advices`** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S7-05.1",
+          "summary": "poll ticket",
+          "descriptionMarkdown": "## Subtarea de `S7-05`\n\n- **Padre:** S7-05 — `POST /despatch-advices`\n- **Sprint:** S7 (`S7-gre`)\n- **Epic:** S7\n\n## Qué hacer\npoll ticket\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **`POST /despatch-advices`** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S7-05\n- **Sprint:** S7 — GRE (`S7-gre`)\n- **Epic:** S7 — Sprint 7\n- **Estimación:** M\n- **Type:** sunat\n\n## Objetivo\n`POST /despatch-advices`\n\n## Cómo hacerlo\n1. Implementar: **`POST /despatch-advices`** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S7-05.1` — poll ticket\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Verificar\n- [ ] Meta sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S7-06",
+      "sprint": "S7",
+      "sprintName": "S7-gre",
+      "epic": "S7",
+      "epicTitle": "Sprint 7",
+      "summary": "Fixtures 09/31 + Excel GRE",
+      "estimate": "M",
+      "type": "sunat",
+      "subtasks": [],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Fixtures 09/31 + Excel GRE** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S7-06.1",
+          "summary": "Implementar objetivo + cumplir DoD: Fixtures 09/31 + Excel GRE",
+          "descriptionMarkdown": "## Subtarea de `S7-06`\n\n- **Padre:** S7-06 — Fixtures 09/31 + Excel GRE\n- **Sprint:** S7 (`S7-gre`)\n- **Epic:** S7\n\n## Qué hacer\nImplementar objetivo + cumplir DoD: Fixtures 09/31 + Excel GRE\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Fixtures 09/31 + Excel GRE** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S7-06\n- **Sprint:** S7 — GRE (`S7-gre`)\n- **Epic:** S7 — Sprint 7\n- **Estimación:** M\n- **Type:** sunat\n\n## Objetivo\nFixtures 09/31 + Excel GRE\n\n## Cómo hacerlo\n1. Implementar: **Fixtures 09/31 + Excel GRE** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S7-06.1` — Implementar objetivo + cumplir DoD: Fixtures 09/31 + Excel GRE\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Verificar\n- [ ] Meta sprint: GRE REST (09/31) con OAuth + tickets.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    }
+  ]
+}

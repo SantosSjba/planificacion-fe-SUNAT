@@ -1,0 +1,230 @@
+{
+  "sprint": {
+    "n": 9,
+    "name": "S9-api-mvp",
+    "title": "Hardening DX / SDK (DoD API MVP)",
+    "goal": "DoD API MVP + SDK mínimo."
+  },
+  "epics": [
+    {
+      "id": "S9",
+      "title": "Sprint 9",
+      "childIds": [
+        "S9-01",
+        "S9-02",
+        "S9-03",
+        "S9-04",
+        "S9-05",
+        "S9-06"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "S9-01",
+      "sprint": "S9",
+      "sprintName": "S9-api-mvp",
+      "epic": "S9",
+      "epicTitle": "Sprint 9",
+      "summary": "catalog_pin + `/meta/ruleset`",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "ADR-005"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **catalog_pin + `/meta/ruleset`** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S9-01.1",
+          "summary": "ADR-005",
+          "descriptionMarkdown": "## Subtarea de `S9-01`\n\n- **Padre:** S9-01 — catalog_pin + `/meta/ruleset`\n- **Sprint:** S9 (`S9-api-mvp`)\n- **Epic:** S9\n\n## Qué hacer\nADR-005\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **catalog_pin + `/meta/ruleset`** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DoD API MVP + SDK mínimo.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S9-01\n- **Sprint:** S9 — Hardening DX / SDK (DoD API MVP) (`S9-api-mvp`)\n- **Epic:** S9 — Sprint 9\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\ncatalog_pin + `/meta/ruleset`\n\n## Cómo hacerlo\n1. Implementar: **catalog_pin + `/meta/ruleset`** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S9-01.1` — ADR-005\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: DoD API MVP + SDK mínimo.\n\n## Verificar\n- [ ] Meta sprint: DoD API MVP + SDK mínimo.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S9-02",
+      "sprint": "S9",
+      "sprintName": "S9-api-mvp",
+      "epic": "S9",
+      "epicTitle": "Sprint 9",
+      "summary": "Errores tipados E2E",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "catálogo 16"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Errores tipados E2E** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S9-02.1",
+          "summary": "catálogo 16",
+          "descriptionMarkdown": "## Subtarea de `S9-02`\n\n- **Padre:** S9-02 — Errores tipados E2E\n- **Sprint:** S9 (`S9-api-mvp`)\n- **Epic:** S9\n\n## Qué hacer\ncatálogo 16\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Errores tipados E2E** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DoD API MVP + SDK mínimo.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S9-02\n- **Sprint:** S9 — Hardening DX / SDK (DoD API MVP) (`S9-api-mvp`)\n- **Epic:** S9 — Sprint 9\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nErrores tipados E2E\n\n## Cómo hacerlo\n1. Implementar: **Errores tipados E2E** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S9-02.1` — catálogo 16\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: DoD API MVP + SDK mínimo.\n\n## Verificar\n- [ ] Meta sprint: DoD API MVP + SDK mínimo.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S9-03",
+      "sprint": "S9",
+      "sprintName": "S9-api-mvp",
+      "epic": "S9",
+      "epicTitle": "Sprint 9",
+      "summary": "SDK TypeScript mínimo",
+      "estimate": "L",
+      "type": "dx",
+      "subtasks": [
+        "[17](docs/planificacion/17-spec-sdks.md)",
+        "README gravada"
+      ],
+      "dod": [],
+      "refs": [
+        "docs/planificacion/17-spec-sdks.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **SDK TypeScript mínimo** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S9-03.1",
+          "summary": "[17](docs/planificacion/17-spec-sdks.md)",
+          "descriptionMarkdown": "## Subtarea de `S9-03`\n\n- **Padre:** S9-03 — SDK TypeScript mínimo\n- **Sprint:** S9 (`S9-api-mvp`)\n- **Epic:** S9\n\n## Qué hacer\n[17](docs/planificacion/17-spec-sdks.md)\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **SDK TypeScript mínimo** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DoD API MVP + SDK mínimo.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S9-03.2",
+          "summary": "README gravada",
+          "descriptionMarkdown": "## Subtarea de `S9-03`\n\n- **Padre:** S9-03 — SDK TypeScript mínimo\n- **Sprint:** S9 (`S9-api-mvp`)\n- **Epic:** S9\n\n## Qué hacer\nREADME gravada\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **SDK TypeScript mínimo** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DoD API MVP + SDK mínimo.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S9-03\n- **Sprint:** S9 — Hardening DX / SDK (DoD API MVP) (`S9-api-mvp`)\n- **Epic:** S9 — Sprint 9\n- **Estimación:** L\n- **Type:** dx\n\n## Objetivo\nSDK TypeScript mínimo\n\n## Cómo hacerlo\n1. Implementar: **SDK TypeScript mínimo** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S9-03.1` — [17](docs/planificacion/17-spec-sdks.md)\n- [ ] `S9-03.2` — README gravada\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: DoD API MVP + SDK mínimo.\n\n## Verificar\n- [ ] Meta sprint: DoD API MVP + SDK mínimo.\n\n## Referencias\n- [docs/planificacion/17-spec-sdks.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/17-spec-sdks.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S9-04",
+      "sprint": "S9",
+      "sprintName": "S9-api-mvp",
+      "epic": "S9",
+      "epicTitle": "Sprint 9",
+      "summary": "OpenTelemetry traces emisión",
+      "estimate": "M",
+      "type": "dx",
+      "subtasks": [],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **OpenTelemetry traces emisión** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S9-04.1",
+          "summary": "Implementar objetivo + cumplir DoD: OpenTelemetry traces emisión",
+          "descriptionMarkdown": "## Subtarea de `S9-04`\n\n- **Padre:** S9-04 — OpenTelemetry traces emisión\n- **Sprint:** S9 (`S9-api-mvp`)\n- **Epic:** S9\n\n## Qué hacer\nImplementar objetivo + cumplir DoD: OpenTelemetry traces emisión\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **OpenTelemetry traces emisión** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DoD API MVP + SDK mínimo.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S9-04\n- **Sprint:** S9 — Hardening DX / SDK (DoD API MVP) (`S9-api-mvp`)\n- **Epic:** S9 — Sprint 9\n- **Estimación:** M\n- **Type:** dx\n\n## Objetivo\nOpenTelemetry traces emisión\n\n## Cómo hacerlo\n1. Implementar: **OpenTelemetry traces emisión** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S9-04.1` — Implementar objetivo + cumplir DoD: OpenTelemetry traces emisión\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: DoD API MVP + SDK mínimo.\n\n## Verificar\n- [ ] Meta sprint: DoD API MVP + SDK mínimo.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S9-05",
+      "sprint": "S9",
+      "sprintName": "S9-api-mvp",
+      "epic": "S9",
+      "epicTitle": "Sprint 9",
+      "summary": "Script demo 03§3 vía API",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "mock-cdr"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Script demo 03§3 vía API** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S9-05.1",
+          "summary": "mock-cdr",
+          "descriptionMarkdown": "## Subtarea de `S9-05`\n\n- **Padre:** S9-05 — Script demo 03§3 vía API\n- **Sprint:** S9 (`S9-api-mvp`)\n- **Epic:** S9\n\n## Qué hacer\nmock-cdr\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Script demo 03§3 vía API** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DoD API MVP + SDK mínimo.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S9-05\n- **Sprint:** S9 — Hardening DX / SDK (DoD API MVP) (`S9-api-mvp`)\n- **Epic:** S9 — Sprint 9\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nScript demo 03§3 vía API\n\n## Cómo hacerlo\n1. Implementar: **Script demo 03§3 vía API** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S9-05.1` — mock-cdr\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: DoD API MVP + SDK mínimo.\n\n## Verificar\n- [ ] Meta sprint: DoD API MVP + SDK mínimo.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S9-06",
+      "sprint": "S9",
+      "sprintName": "S9-api-mvp",
+      "epic": "S9",
+      "epicTitle": "Sprint 9",
+      "summary": "Checklist beta live",
+      "estimate": "S",
+      "type": "api",
+      "subtasks": [
+        "[22](docs/planificacion/22-sandbox-setup.md)"
+      ],
+      "dod": [],
+      "refs": [
+        "docs/planificacion/22-sandbox-setup.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Checklist beta live** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S9-06.1",
+          "summary": "[22](docs/planificacion/22-sandbox-setup.md)",
+          "descriptionMarkdown": "## Subtarea de `S9-06`\n\n- **Padre:** S9-06 — Checklist beta live\n- **Sprint:** S9 (`S9-api-mvp`)\n- **Epic:** S9\n\n## Qué hacer\n[22](docs/planificacion/22-sandbox-setup.md)\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Checklist beta live** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: DoD API MVP + SDK mínimo.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S9-06\n- **Sprint:** S9 — Hardening DX / SDK (DoD API MVP) (`S9-api-mvp`)\n- **Epic:** S9 — Sprint 9\n- **Estimación:** S\n- **Type:** api\n\n## Objetivo\nChecklist beta live\n\n## Cómo hacerlo\n1. Implementar: **Checklist beta live** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S9-06.1` — [22](docs/planificacion/22-sandbox-setup.md)\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: DoD API MVP + SDK mínimo.\n\n## Verificar\n- [ ] Meta sprint: DoD API MVP + SDK mínimo.\n\n## Referencias\n- [docs/planificacion/22-sandbox-setup.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/22-sandbox-setup.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    }
+  ]
+}

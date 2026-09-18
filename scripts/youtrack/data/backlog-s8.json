@@ -1,0 +1,276 @@
+{
+  "sprint": {
+    "n": 8,
+    "name": "S8-notify-pdf-valid",
+    "title": "Webhooks + PDF + validez",
+    "goal": "Webhooks + PDF RI + consulta validez."
+  },
+  "epics": [
+    {
+      "id": "S8",
+      "title": "Sprint 8",
+      "childIds": [
+        "S8-01",
+        "S8-02",
+        "S8-03",
+        "S8-04",
+        "S8-05",
+        "S8-06",
+        "S8-07"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "S8-01",
+      "sprint": "S8",
+      "sprintName": "S8-notify-pdf-valid",
+      "epic": "S8",
+      "epicTitle": "Sprint 8",
+      "summary": "Webhooks CRUD + rotate",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "[ADR-004](docs/planificacion/adr/004-webhooks.md)"
+      ],
+      "dod": [],
+      "refs": [
+        "docs/planificacion/adr/004-webhooks.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Webhooks CRUD + rotate** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S8-01.1",
+          "summary": "[ADR-004](docs/planificacion/adr/004-webhooks.md)",
+          "descriptionMarkdown": "## Subtarea de `S8-01`\n\n- **Padre:** S8-01 — Webhooks CRUD + rotate\n- **Sprint:** S8 (`S8-notify-pdf-valid`)\n- **Epic:** S8\n\n## Qué hacer\n[ADR-004](docs/planificacion/adr/004-webhooks.md)\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Webhooks CRUD + rotate** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S8-01\n- **Sprint:** S8 — Webhooks + PDF + validez (`S8-notify-pdf-valid`)\n- **Epic:** S8 — Sprint 8\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nWebhooks CRUD + rotate\n\n## Cómo hacerlo\n1. Implementar: **Webhooks CRUD + rotate** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S8-01.1` — [ADR-004](docs/planificacion/adr/004-webhooks.md)\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Webhooks + PDF RI + consulta validez.\n\n## Verificar\n- [ ] Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Referencias\n- [docs/planificacion/adr/004-webhooks.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/adr/004-webhooks.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S8-02",
+      "sprint": "S8",
+      "sprintName": "S8-notify-pdf-valid",
+      "epic": "S8",
+      "epicTitle": "Sprint 8",
+      "summary": "Delivery worker",
+      "estimate": "L",
+      "type": "worker",
+      "subtasks": [
+        "HMAC, retries, disable"
+      ],
+      "dod": [],
+      "refs": [
+        "docs/planificacion/adr/004-webhooks.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Delivery worker** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S8-02.1",
+          "summary": "HMAC, retries, disable",
+          "descriptionMarkdown": "## Subtarea de `S8-02`\n\n- **Padre:** S8-02 — Delivery worker\n- **Sprint:** S8 (`S8-notify-pdf-valid`)\n- **Epic:** S8\n\n## Qué hacer\nHMAC, retries, disable\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Delivery worker** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S8-02\n- **Sprint:** S8 — Webhooks + PDF + validez (`S8-notify-pdf-valid`)\n- **Epic:** S8 — Sprint 8\n- **Estimación:** L\n- **Type:** worker\n\n## Objetivo\nDelivery worker\n\n## Cómo hacerlo\n1. Implementar: **Delivery worker** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S8-02.1` — HMAC, retries, disable\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Webhooks + PDF RI + consulta validez.\n\n## Verificar\n- [ ] Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Referencias\n- [docs/planificacion/adr/004-webhooks.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/adr/004-webhooks.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S8-03",
+      "sprint": "S8",
+      "sprintName": "S8-notify-pdf-valid",
+      "epic": "S8",
+      "epicTitle": "Sprint 8",
+      "summary": "Hook en cambios de status",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "enqueue"
+      ],
+      "dod": [],
+      "refs": [
+        "docs/planificacion/adr/004-webhooks.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Hook en cambios de status** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S8-03.1",
+          "summary": "enqueue",
+          "descriptionMarkdown": "## Subtarea de `S8-03`\n\n- **Padre:** S8-03 — Hook en cambios de status\n- **Sprint:** S8 (`S8-notify-pdf-valid`)\n- **Epic:** S8\n\n## Qué hacer\nenqueue\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Hook en cambios de status** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S8-03\n- **Sprint:** S8 — Webhooks + PDF + validez (`S8-notify-pdf-valid`)\n- **Epic:** S8 — Sprint 8\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nHook en cambios de status\n\n## Cómo hacerlo\n1. Implementar: **Hook en cambios de status** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S8-03.1` — enqueue\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Webhooks + PDF RI + consulta validez.\n\n## Verificar\n- [ ] Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Referencias\n- [docs/planificacion/adr/004-webhooks.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/adr/004-webhooks.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S8-04",
+      "sprint": "S8",
+      "sprintName": "S8-notify-pdf-valid",
+      "epic": "S8",
+      "epicTitle": "Sprint 8",
+      "summary": "PDF RI Playwright",
+      "estimate": "L",
+      "type": "api",
+      "subtasks": [
+        "QR+DigestValue",
+        "01/03/07/08 [27](docs/planificacion/27-spec-pdf-ri.md)"
+      ],
+      "dod": [],
+      "refs": [
+        "docs/planificacion/27-spec-pdf-ri.md",
+        "docs/planificacion/adr/004-webhooks.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **PDF RI Playwright** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S8-04.1",
+          "summary": "QR+DigestValue",
+          "descriptionMarkdown": "## Subtarea de `S8-04`\n\n- **Padre:** S8-04 — PDF RI Playwright\n- **Sprint:** S8 (`S8-notify-pdf-valid`)\n- **Epic:** S8\n\n## Qué hacer\nQR+DigestValue\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **PDF RI Playwright** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S8-04.2",
+          "summary": "01/03/07/08 [27](docs/planificacion/27-spec-pdf-ri.md)",
+          "descriptionMarkdown": "## Subtarea de `S8-04`\n\n- **Padre:** S8-04 — PDF RI Playwright\n- **Sprint:** S8 (`S8-notify-pdf-valid`)\n- **Epic:** S8\n\n## Qué hacer\n01/03/07/08 [27](docs/planificacion/27-spec-pdf-ri.md)\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **PDF RI Playwright** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S8-04\n- **Sprint:** S8 — Webhooks + PDF + validez (`S8-notify-pdf-valid`)\n- **Epic:** S8 — Sprint 8\n- **Estimación:** L\n- **Type:** api\n\n## Objetivo\nPDF RI Playwright\n\n## Cómo hacerlo\n1. Implementar: **PDF RI Playwright** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S8-04.1` — QR+DigestValue\n- [ ] `S8-04.2` — 01/03/07/08 [27](docs/planificacion/27-spec-pdf-ri.md)\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Webhooks + PDF RI + consulta validez.\n\n## Verificar\n- [ ] Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Referencias\n- [docs/planificacion/27-spec-pdf-ri.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/27-spec-pdf-ri.md)\n- [docs/planificacion/adr/004-webhooks.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/adr/004-webhooks.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S8-05",
+      "sprint": "S8",
+      "sprintName": "S8-notify-pdf-valid",
+      "epic": "S8",
+      "epicTitle": "Sprint 8",
+      "summary": "Worker pdf + GET pdf",
+      "estimate": "M",
+      "type": "worker",
+      "subtasks": [
+        "lazy"
+      ],
+      "dod": [],
+      "refs": [
+        "docs/planificacion/adr/004-webhooks.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Worker pdf + GET pdf** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S8-05.1",
+          "summary": "lazy",
+          "descriptionMarkdown": "## Subtarea de `S8-05`\n\n- **Padre:** S8-05 — Worker pdf + GET pdf\n- **Sprint:** S8 (`S8-notify-pdf-valid`)\n- **Epic:** S8\n\n## Qué hacer\nlazy\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Worker pdf + GET pdf** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S8-05\n- **Sprint:** S8 — Webhooks + PDF + validez (`S8-notify-pdf-valid`)\n- **Epic:** S8 — Sprint 8\n- **Estimación:** M\n- **Type:** worker\n\n## Objetivo\nWorker pdf + GET pdf\n\n## Cómo hacerlo\n1. Implementar: **Worker pdf + GET pdf** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S8-05.1` — lazy\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Webhooks + PDF RI + consulta validez.\n\n## Verificar\n- [ ] Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Referencias\n- [docs/planificacion/adr/004-webhooks.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/adr/004-webhooks.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S8-06",
+      "sprint": "S8",
+      "sprintName": "S8-notify-pdf-valid",
+      "epic": "S8",
+      "epicTitle": "Sprint 8",
+      "summary": "Validez CPE",
+      "estimate": "L",
+      "type": "api",
+      "subtasks": [
+        "[28](docs/planificacion/28-spec-consulta-validez.md) Fake+cache"
+      ],
+      "dod": [],
+      "refs": [
+        "docs/planificacion/28-spec-consulta-validez.md",
+        "docs/planificacion/adr/004-webhooks.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Validez CPE** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S8-06.1",
+          "summary": "[28](docs/planificacion/28-spec-consulta-validez.md) Fake+cache",
+          "descriptionMarkdown": "## Subtarea de `S8-06`\n\n- **Padre:** S8-06 — Validez CPE\n- **Sprint:** S8 (`S8-notify-pdf-valid`)\n- **Epic:** S8\n\n## Qué hacer\n[28](docs/planificacion/28-spec-consulta-validez.md) Fake+cache\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Validez CPE** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S8-06\n- **Sprint:** S8 — Webhooks + PDF + validez (`S8-notify-pdf-valid`)\n- **Epic:** S8 — Sprint 8\n- **Estimación:** L\n- **Type:** api\n\n## Objetivo\nValidez CPE\n\n## Cómo hacerlo\n1. Implementar: **Validez CPE** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S8-06.1` — [28](docs/planificacion/28-spec-consulta-validez.md) Fake+cache\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Webhooks + PDF RI + consulta validez.\n\n## Verificar\n- [ ] Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Referencias\n- [docs/planificacion/28-spec-consulta-validez.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/28-spec-consulta-validez.md)\n- [docs/planificacion/adr/004-webhooks.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/adr/004-webhooks.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S8-07",
+      "sprint": "S8",
+      "sprintName": "S8-notify-pdf-valid",
+      "epic": "S8",
+      "epicTitle": "Sprint 8",
+      "summary": "Fixtures validation + webhook test",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [],
+      "dod": [],
+      "refs": [
+        "docs/planificacion/adr/004-webhooks.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Fixtures validation + webhook test** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S8-07.1",
+          "summary": "Implementar objetivo + cumplir DoD: Fixtures validation + webhook test",
+          "descriptionMarkdown": "## Subtarea de `S8-07`\n\n- **Padre:** S8-07 — Fixtures validation + webhook test\n- **Sprint:** S8 (`S8-notify-pdf-valid`)\n- **Epic:** S8\n\n## Qué hacer\nImplementar objetivo + cumplir DoD: Fixtures validation + webhook test\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Fixtures validation + webhook test** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S8-07\n- **Sprint:** S8 — Webhooks + PDF + validez (`S8-notify-pdf-valid`)\n- **Epic:** S8 — Sprint 8\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nFixtures validation + webhook test\n\n## Cómo hacerlo\n1. Implementar: **Fixtures validation + webhook test** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S8-07.1` — Implementar objetivo + cumplir DoD: Fixtures validation + webhook test\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: Webhooks + PDF RI + consulta validez.\n\n## Verificar\n- [ ] Meta sprint: Webhooks + PDF RI + consulta validez.\n\n## Referencias\n- [docs/planificacion/adr/004-webhooks.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/adr/004-webhooks.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    }
+  ]
+}

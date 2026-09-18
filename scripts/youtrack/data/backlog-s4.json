@@ -1,0 +1,296 @@
+{
+  "sprint": {
+    "n": 4,
+    "name": "S4-invoice-api",
+    "title": "API emisión Factura 01",
+    "goal": "POST invoices E2E con pipeline emisión."
+  },
+  "epics": [
+    {
+      "id": "S4",
+      "title": "Sprint 4",
+      "childIds": [
+        "S4-EMIT-01",
+        "S4-EMIT-02",
+        "S4-EMIT-03",
+        "S4-EMIT-04",
+        "S4-EMIT-05",
+        "S4-EMIT-06",
+        "S4-EMIT-07",
+        "S4-EMIT-08"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "S4-EMIT-01",
+      "sprint": "S4",
+      "sprintName": "S4-invoice-api",
+      "epic": "S4",
+      "epicTitle": "Sprint 4",
+      "summary": "Zod InvoiceCreate",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "desde schema artifact"
+      ],
+      "dod": [
+        "422"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Zod InvoiceCreate** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S4-EMIT-01.1",
+          "summary": "desde schema artifact",
+          "descriptionMarkdown": "## Subtarea de `S4-EMIT-01`\n\n- **Padre:** S4-EMIT-01 — Zod InvoiceCreate\n- **Sprint:** S4 (`S4-invoice-api`)\n- **Epic:** S4\n\n## Qué hacer\ndesde schema artifact\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Zod InvoiceCreate** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- 422\n- Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S4-EMIT-01\n- **Sprint:** S4 — API emisión Factura 01 (`S4-invoice-api`)\n- **Epic:** S4 — Sprint 4\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nZod InvoiceCreate\n\n## Cómo hacerlo\n1. Implementar: **Zod InvoiceCreate** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S4-EMIT-01.1` — desde schema artifact\n\n## Definition of Done\n- 422\n- [ ] Cumple DoD del sprint: POST invoices E2E con pipeline emisión.\n\n## Verificar\n- [ ] 422\n- [ ] Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S4-EMIT-02",
+      "sprint": "S4",
+      "sprintName": "S4-invoice-api",
+      "epic": "S4",
+      "epicTitle": "Sprint 4",
+      "summary": "Use case EmitInvoice",
+      "estimate": "L",
+      "type": "api",
+      "subtasks": [
+        "validate→correlativo→build→sign→zip→send/queue→persist events/artifacts"
+      ],
+      "dod": [
+        "estados 03"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Use case EmitInvoice** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S4-EMIT-02.1",
+          "summary": "validate→correlativo→build→sign→zip→send/queue→persist events/artifacts",
+          "descriptionMarkdown": "## Subtarea de `S4-EMIT-02`\n\n- **Padre:** S4-EMIT-02 — Use case EmitInvoice\n- **Sprint:** S4 (`S4-invoice-api`)\n- **Epic:** S4\n\n## Qué hacer\nvalidate→correlativo→build→sign→zip→send/queue→persist events/artifacts\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Use case EmitInvoice** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- estados 03\n- Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S4-EMIT-02\n- **Sprint:** S4 — API emisión Factura 01 (`S4-invoice-api`)\n- **Epic:** S4 — Sprint 4\n- **Estimación:** L\n- **Type:** api\n\n## Objetivo\nUse case EmitInvoice\n\n## Cómo hacerlo\n1. Implementar: **Use case EmitInvoice** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S4-EMIT-02.1` — validate→correlativo→build→sign→zip→send/queue→persist events/artifacts\n\n## Definition of Done\n- estados 03\n- [ ] Cumple DoD del sprint: POST invoices E2E con pipeline emisión.\n\n## Verificar\n- [ ] estados 03\n- [ ] Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S4-EMIT-03",
+      "sprint": "S4",
+      "sprintName": "S4-invoice-api",
+      "epic": "S4",
+      "epicTitle": "Sprint 4",
+      "summary": "Worker sunat-send",
+      "estimate": "L",
+      "type": "worker",
+      "subtasks": [
+        "fake/beta"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Worker sunat-send** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S4-EMIT-03.1",
+          "summary": "fake/beta",
+          "descriptionMarkdown": "## Subtarea de `S4-EMIT-03`\n\n- **Padre:** S4-EMIT-03 — Worker sunat-send\n- **Sprint:** S4 (`S4-invoice-api`)\n- **Epic:** S4\n\n## Qué hacer\nfake/beta\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Worker sunat-send** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S4-EMIT-03\n- **Sprint:** S4 — API emisión Factura 01 (`S4-invoice-api`)\n- **Epic:** S4 — Sprint 4\n- **Estimación:** L\n- **Type:** worker\n\n## Objetivo\nWorker sunat-send\n\n## Cómo hacerlo\n1. Implementar: **Worker sunat-send** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S4-EMIT-03.1` — fake/beta\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: POST invoices E2E con pipeline emisión.\n\n## Verificar\n- [ ] Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S4-EMIT-04",
+      "sprint": "S4",
+      "sprintName": "S4-invoice-api",
+      "epic": "S4",
+      "epicTitle": "Sprint 4",
+      "summary": "`POST .../invoices`",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "Idempotency-Key"
+      ],
+      "dod": [
+        "OpenAPI"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **`POST .../invoices`** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S4-EMIT-04.1",
+          "summary": "Idempotency-Key",
+          "descriptionMarkdown": "## Subtarea de `S4-EMIT-04`\n\n- **Padre:** S4-EMIT-04 — `POST .../invoices`\n- **Sprint:** S4 (`S4-invoice-api`)\n- **Epic:** S4\n\n## Qué hacer\nIdempotency-Key\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **`POST .../invoices`** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- OpenAPI\n- Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S4-EMIT-04\n- **Sprint:** S4 — API emisión Factura 01 (`S4-invoice-api`)\n- **Epic:** S4 — Sprint 4\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\n`POST .../invoices`\n\n## Cómo hacerlo\n1. Implementar: **`POST .../invoices`** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S4-EMIT-04.1` — Idempotency-Key\n\n## Definition of Done\n- OpenAPI\n- [ ] Cumple DoD del sprint: POST invoices E2E con pipeline emisión.\n\n## Verificar\n- [ ] OpenAPI\n- [ ] Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S4-EMIT-05",
+      "sprint": "S4",
+      "sprintName": "S4-invoice-api",
+      "epic": "S4",
+      "epicTitle": "Sprint 4",
+      "summary": "GET document + timeline",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **GET document + timeline** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S4-EMIT-05.1",
+          "summary": "Implementar objetivo + cumplir DoD: GET document + timeline",
+          "descriptionMarkdown": "## Subtarea de `S4-EMIT-05`\n\n- **Padre:** S4-EMIT-05 — GET document + timeline\n- **Sprint:** S4 (`S4-invoice-api`)\n- **Epic:** S4\n\n## Qué hacer\nImplementar objetivo + cumplir DoD: GET document + timeline\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **GET document + timeline** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S4-EMIT-05\n- **Sprint:** S4 — API emisión Factura 01 (`S4-invoice-api`)\n- **Epic:** S4 — Sprint 4\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nGET document + timeline\n\n## Cómo hacerlo\n1. Implementar: **GET document + timeline** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S4-EMIT-05.1` — Implementar objetivo + cumplir DoD: GET document + timeline\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: POST invoices E2E con pipeline emisión.\n\n## Verificar\n- [ ] Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S4-EMIT-06",
+      "sprint": "S4",
+      "sprintName": "S4-invoice-api",
+      "epic": "S4",
+      "epicTitle": "Sprint 4",
+      "summary": "GET xml / cdr",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "S3 stream"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **GET xml / cdr** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S4-EMIT-06.1",
+          "summary": "S3 stream",
+          "descriptionMarkdown": "## Subtarea de `S4-EMIT-06`\n\n- **Padre:** S4-EMIT-06 — GET xml / cdr\n- **Sprint:** S4 (`S4-invoice-api`)\n- **Epic:** S4\n\n## Qué hacer\nS3 stream\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **GET xml / cdr** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S4-EMIT-06\n- **Sprint:** S4 — API emisión Factura 01 (`S4-invoice-api`)\n- **Epic:** S4 — Sprint 4\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nGET xml / cdr\n\n## Cómo hacerlo\n1. Implementar: **GET xml / cdr** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S4-EMIT-06.1` — S3 stream\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: POST invoices E2E con pipeline emisión.\n\n## Verificar\n- [ ] Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S4-EMIT-07",
+      "sprint": "S4",
+      "sprintName": "S4-invoice-api",
+      "epic": "S4",
+      "epicTitle": "Sprint 4",
+      "summary": "Fixture runner mock",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "`01-invoice-gravada`"
+      ],
+      "dod": [
+        "CI verde"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Fixture runner mock** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S4-EMIT-07.1",
+          "summary": "01-invoice-gravada",
+          "descriptionMarkdown": "## Subtarea de `S4-EMIT-07`\n\n- **Padre:** S4-EMIT-07 — Fixture runner mock\n- **Sprint:** S4 (`S4-invoice-api`)\n- **Epic:** S4\n\n## Qué hacer\n`01-invoice-gravada`\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Fixture runner mock** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- CI verde\n- Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S4-EMIT-07\n- **Sprint:** S4 — API emisión Factura 01 (`S4-invoice-api`)\n- **Epic:** S4 — Sprint 4\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nFixture runner mock\n\n## Cómo hacerlo\n1. Implementar: **Fixture runner mock** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S4-EMIT-07.1` — 01-invoice-gravada\n\n## Definition of Done\n- CI verde\n- [ ] Cumple DoD del sprint: POST invoices E2E con pipeline emisión.\n\n## Verificar\n- [ ] CI verde\n- [ ] Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S4-EMIT-08",
+      "sprint": "S4",
+      "sprintName": "S4-invoice-api",
+      "epic": "S4",
+      "epicTitle": "Sprint 4",
+      "summary": "Swagger/OpenAPI serve",
+      "estimate": "M",
+      "type": "api",
+      "subtasks": [
+        "`/docs`"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Swagger/OpenAPI serve** según [[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)) y refs de la issue.",
+        "Cumplir DoD de la fila y meta del sprint."
+      ],
+      "childTasks": [
+        {
+          "key": "S4-EMIT-08.1",
+          "summary": "/docs",
+          "descriptionMarkdown": "## Subtarea de `S4-EMIT-08`\n\n- **Padre:** S4-EMIT-08 — Swagger/OpenAPI serve\n- **Sprint:** S4 (`S4-invoice-api`)\n- **Epic:** S4\n\n## Qué hacer\n`/docs`\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Swagger/OpenAPI serve** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S4-EMIT-08\n- **Sprint:** S4 — API emisión Factura 01 (`S4-invoice-api`)\n- **Epic:** S4 — Sprint 4\n- **Estimación:** M\n- **Type:** api\n\n## Objetivo\nSwagger/OpenAPI serve\n\n## Cómo hacerlo\n1. Implementar: **Swagger/OpenAPI serve** según [[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md))) y refs de la issue.\n2. Cumplir DoD de la fila y meta del sprint.\n\n## Subtareas (issues)\n- [ ] `S4-EMIT-08.1` — /docs\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: POST invoices E2E con pipeline emisión.\n\n## Verificar\n- [ ] Meta sprint: POST invoices E2E con pipeline emisión.\n\n## Referencias\n- [docs/planificacion/32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    }
+  ]
+}

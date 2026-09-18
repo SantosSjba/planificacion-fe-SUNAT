@@ -1,0 +1,389 @@
+{
+  "sprint": {
+    "n": 2,
+    "name": "S2-sendbill",
+    "title": "Spike C SendBill + Excel P0 + XSL nightly",
+    "goal": "SendBill (fake/beta) + Excel P0 + XSL nightly."
+  },
+  "epics": [
+    {
+      "id": "S2-SOAP",
+      "title": "S2-SOAP",
+      "childIds": [
+        "S2-SOAP-01",
+        "S2-SOAP-02",
+        "S2-SOAP-03",
+        "S2-SOAP-04",
+        "S2-SOAP-05",
+        "S2-SOAP-06"
+      ]
+    },
+    {
+      "id": "S2-VAL",
+      "title": "S2-VAL",
+      "childIds": [
+        "S2-VAL-01",
+        "S2-VAL-02",
+        "S2-VAL-03"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "S2-SOAP-01",
+      "sprint": "S2",
+      "sprintName": "S2-sendbill",
+      "epic": "S2-SOAP",
+      "epicTitle": "S2-SOAP",
+      "summary": "ZIP packer",
+      "estimate": "S",
+      "type": "spike",
+      "subtasks": [
+        "nombre `RUC-01-SERIE-N`"
+      ],
+      "dod": [
+        "bytes"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **ZIP packer** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S2-SOAP-01.1",
+          "summary": "nombre RUC-01-SERIE-N",
+          "descriptionMarkdown": "## Subtarea de `S2-SOAP-01`\n\n- **Padre:** S2-SOAP-01 — ZIP packer\n- **Sprint:** S2 (`S2-sendbill`)\n- **Epic:** S2-SOAP\n\n## Qué hacer\nnombre `RUC-01-SERIE-N`\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **ZIP packer** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- bytes\n- Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S2-SOAP-01\n- **Sprint:** S2 — Spike C SendBill + Excel P0 + XSL nightly (`S2-sendbill`)\n- **Epic:** S2-SOAP — S2-SOAP\n- **Estimación:** S\n- **Type:** spike\n\n## Objetivo\nZIP packer\n\n## Cómo hacerlo\n1. Implementar: **ZIP packer** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S2-SOAP-01.1` — nombre RUC-01-SERIE-N\n\n## Definition of Done\n- bytes\n- [ ] Cumple DoD del sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Verificar\n- [ ] bytes\n- [ ] Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S2-SOAP-02",
+      "sprint": "S2",
+      "sprintName": "S2-sendbill",
+      "epic": "S2-SOAP",
+      "epicTitle": "S2-SOAP",
+      "summary": "`BillServicePort`",
+      "estimate": "S",
+      "type": "spike",
+      "subtasks": [
+        "interface"
+      ],
+      "dod": [],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **`BillServicePort`** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S2-SOAP-02.1",
+          "summary": "interface",
+          "descriptionMarkdown": "## Subtarea de `S2-SOAP-02`\n\n- **Padre:** S2-SOAP-02 — `BillServicePort`\n- **Sprint:** S2 (`S2-sendbill`)\n- **Epic:** S2-SOAP\n\n## Qué hacer\ninterface\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **`BillServicePort`** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S2-SOAP-02\n- **Sprint:** S2 — Spike C SendBill + Excel P0 + XSL nightly (`S2-sendbill`)\n- **Epic:** S2-SOAP — S2-SOAP\n- **Estimación:** S\n- **Type:** spike\n\n## Objetivo\n`BillServicePort`\n\n## Cómo hacerlo\n1. Implementar: **`BillServicePort`** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S2-SOAP-02.1` — interface\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Verificar\n- [ ] Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S2-SOAP-03",
+      "sprint": "S2",
+      "sprintName": "S2-sendbill",
+      "epic": "S2-SOAP",
+      "epicTitle": "S2-SOAP",
+      "summary": "`FakeBillService`",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "CDR accept/reject"
+      ],
+      "dod": [
+        "sin red"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **`FakeBillService`** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S2-SOAP-03.1",
+          "summary": "CDR accept/reject",
+          "descriptionMarkdown": "## Subtarea de `S2-SOAP-03`\n\n- **Padre:** S2-SOAP-03 — `FakeBillService`\n- **Sprint:** S2 (`S2-sendbill`)\n- **Epic:** S2-SOAP\n\n## Qué hacer\nCDR accept/reject\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **`FakeBillService`** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- sin red\n- Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S2-SOAP-03\n- **Sprint:** S2 — Spike C SendBill + Excel P0 + XSL nightly (`S2-sendbill`)\n- **Epic:** S2-SOAP — S2-SOAP\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\n`FakeBillService`\n\n## Cómo hacerlo\n1. Implementar: **`FakeBillService`** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S2-SOAP-03.1` — CDR accept/reject\n\n## Definition of Done\n- sin red\n- [ ] Cumple DoD del sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Verificar\n- [ ] sin red\n- [ ] Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S2-SOAP-04",
+      "sprint": "S2",
+      "sprintName": "S2-sendbill",
+      "epic": "S2-SOAP",
+      "epicTitle": "S2-SOAP",
+      "summary": "SOAP real",
+      "estimate": "L",
+      "type": "spike",
+      "subtasks": [
+        "WS-Security",
+        "WSDL [sunat-endpoints](docs/planificacion/artifacts/sunat-endpoints.md)",
+        "flag fake/beta"
+      ],
+      "dod": [],
+      "refs": [
+        "docs/planificacion/artifacts/sunat-endpoints.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **SOAP real** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S2-SOAP-04.1",
+          "summary": "WS-Security",
+          "descriptionMarkdown": "## Subtarea de `S2-SOAP-04`\n\n- **Padre:** S2-SOAP-04 — SOAP real\n- **Sprint:** S2 (`S2-sendbill`)\n- **Epic:** S2-SOAP\n\n## Qué hacer\nWS-Security\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **SOAP real** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S2-SOAP-04.2",
+          "summary": "WSDL [sunat-endpoints](docs/planificacion/artifacts/sunat-endpoints.md)",
+          "descriptionMarkdown": "## Subtarea de `S2-SOAP-04`\n\n- **Padre:** S2-SOAP-04 — SOAP real\n- **Sprint:** S2 (`S2-sendbill`)\n- **Epic:** S2-SOAP\n\n## Qué hacer\nWSDL [sunat-endpoints](docs/planificacion/artifacts/sunat-endpoints.md)\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **SOAP real** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S2-SOAP-04.3",
+          "summary": "flag fake/beta",
+          "descriptionMarkdown": "## Subtarea de `S2-SOAP-04`\n\n- **Padre:** S2-SOAP-04 — SOAP real\n- **Sprint:** S2 (`S2-sendbill`)\n- **Epic:** S2-SOAP\n\n## Qué hacer\nflag fake/beta\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **SOAP real** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S2-SOAP-04\n- **Sprint:** S2 — Spike C SendBill + Excel P0 + XSL nightly (`S2-sendbill`)\n- **Epic:** S2-SOAP — S2-SOAP\n- **Estimación:** L\n- **Type:** spike\n\n## Objetivo\nSOAP real\n\n## Cómo hacerlo\n1. Implementar: **SOAP real** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S2-SOAP-04.1` — WS-Security\n- [ ] `S2-SOAP-04.2` — WSDL [sunat-endpoints](docs/planificacion/artifacts/sunat-endpoints.md)\n- [ ] `S2-SOAP-04.3` — flag fake/beta\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Verificar\n- [ ] Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Referencias\n- [docs/planificacion/artifacts/sunat-endpoints.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/artifacts/sunat-endpoints.md)\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S2-SOAP-05",
+      "sprint": "S2",
+      "sprintName": "S2-sendbill",
+      "epic": "S2-SOAP",
+      "epicTitle": "S2-SOAP",
+      "summary": "Parse CDR",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "status + sunat_code ([16](docs/planificacion/16-catalogo-errores.md))"
+      ],
+      "dod": [],
+      "refs": [
+        "docs/planificacion/16-catalogo-errores.md"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Parse CDR** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S2-SOAP-05.1",
+          "summary": "status + sunat_code ([16](docs/planificacion/16-catalogo-errores.md))",
+          "descriptionMarkdown": "## Subtarea de `S2-SOAP-05`\n\n- **Padre:** S2-SOAP-05 — Parse CDR\n- **Sprint:** S2 (`S2-sendbill`)\n- **Epic:** S2-SOAP\n\n## Qué hacer\nstatus + sunat_code ([16](docs/planificacion/16-catalogo-errores.md))\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Parse CDR** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- Ver DoD del padre\n- Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S2-SOAP-05\n- **Sprint:** S2 — Spike C SendBill + Excel P0 + XSL nightly (`S2-sendbill`)\n- **Epic:** S2-SOAP — S2-SOAP\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nParse CDR\n\n## Cómo hacerlo\n1. Implementar: **Parse CDR** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S2-SOAP-05.1` — status + sunat_code ([16](docs/planificacion/16-catalogo-errores.md))\n\n## Definition of Done\n- (DoD vacío en fila; aplicar DoD del sprint)\n- [ ] Cumple DoD del sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Verificar\n- [ ] Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Referencias\n- [docs/planificacion/16-catalogo-errores.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/16-catalogo-errores.md)\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S2-SOAP-06",
+      "sprint": "S2",
+      "sprintName": "S2-sendbill",
+      "epic": "S2-SOAP",
+      "epicTitle": "S2-SOAP",
+      "summary": "Script E2E spike C",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "fixture→CDR"
+      ],
+      "dod": [
+        "C2 o mock"
+      ],
+      "refs": [],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Script E2E spike C** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S2-SOAP-06.1",
+          "summary": "fixture→CDR",
+          "descriptionMarkdown": "## Subtarea de `S2-SOAP-06`\n\n- **Padre:** S2-SOAP-06 — Script E2E spike C\n- **Sprint:** S2 (`S2-sendbill`)\n- **Epic:** S2-SOAP\n\n## Qué hacer\nfixture→CDR\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Script E2E spike C** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- C2 o mock\n- Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S2-SOAP-06\n- **Sprint:** S2 — Spike C SendBill + Excel P0 + XSL nightly (`S2-sendbill`)\n- **Epic:** S2-SOAP — S2-SOAP\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nScript E2E spike C\n\n## Cómo hacerlo\n1. Implementar: **Script E2E spike C** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S2-SOAP-06.1` — fixture→CDR\n\n## Definition of Done\n- C2 o mock\n- [ ] Cumple DoD del sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Verificar\n- [ ] C2 o mock\n- [ ] Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Referencias\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S2-VAL-01",
+      "sprint": "S2",
+      "sprintName": "S2-sendbill",
+      "epic": "S2-VAL",
+      "epicTitle": "S2-VAL",
+      "summary": "Package catalogs",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "load `artifacts/catalogs`"
+      ],
+      "dod": [
+        "lookup códigos"
+      ],
+      "refs": [
+        "artifacts/catalogs"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Package catalogs** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S2-VAL-01.1",
+          "summary": "load artifacts/catalogs",
+          "descriptionMarkdown": "## Subtarea de `S2-VAL-01`\n\n- **Padre:** S2-VAL-01 — Package catalogs\n- **Sprint:** S2 (`S2-sendbill`)\n- **Epic:** S2-VAL\n\n## Qué hacer\nload `artifacts/catalogs`\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Package catalogs** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- lookup códigos\n- Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S2-VAL-01\n- **Sprint:** S2 — Spike C SendBill + Excel P0 + XSL nightly (`S2-sendbill`)\n- **Epic:** S2-VAL — S2-VAL\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nPackage catalogs\n\n## Cómo hacerlo\n1. Implementar: **Package catalogs** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S2-VAL-01.1` — load artifacts/catalogs\n\n## Definition of Done\n- lookup códigos\n- [ ] Cumple DoD del sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Verificar\n- [ ] lookup códigos\n- [ ] Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Referencias\n- [artifacts/catalogs](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main/docs/planificacion/artifacts/catalogs)\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S2-VAL-02",
+      "sprint": "S2",
+      "sprintName": "S2-sendbill",
+      "epic": "S2-VAL",
+      "epicTitle": "S2-VAL",
+      "summary": "Excel P0",
+      "estimate": "L",
+      "type": "spike",
+      "subtasks": [
+        "totales, moneda, RUC, serie, TaxScheme",
+        "OBS→ERROR"
+      ],
+      "dod": [
+        "422"
+      ],
+      "refs": [
+        "artifacts/catalogs"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Excel P0** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S2-VAL-02.1",
+          "summary": "totales, moneda, RUC, serie, TaxScheme",
+          "descriptionMarkdown": "## Subtarea de `S2-VAL-02`\n\n- **Padre:** S2-VAL-02 — Excel P0\n- **Sprint:** S2 (`S2-sendbill`)\n- **Epic:** S2-VAL\n\n## Qué hacer\ntotales, moneda, RUC, serie, TaxScheme\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Excel P0** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- 422\n- Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        },
+        {
+          "key": "S2-VAL-02.2",
+          "summary": "OBS→ERROR",
+          "descriptionMarkdown": "## Subtarea de `S2-VAL-02`\n\n- **Padre:** S2-VAL-02 — Excel P0\n- **Sprint:** S2 (`S2-sendbill`)\n- **Epic:** S2-VAL\n\n## Qué hacer\nOBS→ERROR\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Excel P0** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- 422\n- Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S2-VAL-02\n- **Sprint:** S2 — Spike C SendBill + Excel P0 + XSL nightly (`S2-sendbill`)\n- **Epic:** S2-VAL — S2-VAL\n- **Estimación:** L\n- **Type:** spike\n\n## Objetivo\nExcel P0\n\n## Cómo hacerlo\n1. Implementar: **Excel P0** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S2-VAL-02.1` — totales, moneda, RUC, serie, TaxScheme\n- [ ] `S2-VAL-02.2` — OBS→ERROR\n\n## Definition of Done\n- 422\n- [ ] Cumple DoD del sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Verificar\n- [ ] 422\n- [ ] Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Referencias\n- [artifacts/catalogs](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main/docs/planificacion/artifacts/catalogs)\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    },
+    {
+      "id": "S2-VAL-03",
+      "sprint": "S2",
+      "sprintName": "S2-sendbill",
+      "epic": "S2-VAL",
+      "epicTitle": "S2-VAL",
+      "summary": "Nightly XSL warn",
+      "estimate": "M",
+      "type": "spike",
+      "subtasks": [
+        "GHA cron continue-on-error"
+      ],
+      "dod": [
+        "[31](docs/planificacion/31-ci-quality-gates.md)"
+      ],
+      "refs": [
+        "docs/planificacion/31-ci-quality-gates.md",
+        "artifacts/catalogs"
+      ],
+      "permission": null,
+      "screenId": null,
+      "screenFieldsMarkdown": null,
+      "howToMarkdown": [
+        "Implementar: **Nightly XSL warn** según [[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)).",
+        "Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica."
+      ],
+      "childTasks": [
+        {
+          "key": "S2-VAL-03.1",
+          "summary": "GHA cron continue-on-error",
+          "descriptionMarkdown": "## Subtarea de `S2-VAL-03`\n\n- **Padre:** S2-VAL-03 — Nightly XSL warn\n- **Sprint:** S2 (`S2-sendbill`)\n- **Epic:** S2-VAL\n\n## Qué hacer\nGHA cron continue-on-error\n\n## Contexto del padre (Cómo hacerlo)\n1. Implementar: **Nightly XSL warn** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## DoD del padre\n- [31](docs/planificacion/31-ci-quality-gates.md)\n- Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Notas\n- Tag `type:subtask`; asignar esta issue o el padre completo.\n- Fuente: [32-backlog-sprints-mvp.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md)\n- Repo docs: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)"
+        }
+      ],
+      "descriptionMarkdown": "## Backlog\n- **ID:** S2-VAL-03\n- **Sprint:** S2 — Spike C SendBill + Excel P0 + XSL nightly (`S2-sendbill`)\n- **Epic:** S2-VAL — S2-VAL\n- **Estimación:** M\n- **Type:** spike\n\n## Objetivo\nNightly XSL warn\n\n## Cómo hacerlo\n1. Implementar: **Nightly XSL warn** según [[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/[docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md))).\n2. Seguir DoD de la fila; dejar evidencias en `tmp/spikes/` si aplica.\n\n## Subtareas (issues)\n- [ ] `S2-VAL-03.1` — GHA cron continue-on-error\n\n## Definition of Done\n- [31](docs/planificacion/31-ci-quality-gates.md)\n- [ ] Cumple DoD del sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Verificar\n- [ ] [31](docs/planificacion/31-ci-quality-gates.md)\n- [ ] Meta sprint: SendBill (fake/beta) + Excel P0 + XSL nightly.\n\n## Referencias\n- [docs/planificacion/31-ci-quality-gates.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/31-ci-quality-gates.md)\n- [artifacts/catalogs](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main/docs/planificacion/artifacts/catalogs)\n- [docs/planificacion/24-plan-spikes-emision.md](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Repo: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n\n## Notas de importación\n- Fuente: [32](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/32-backlog-sprints-mvp.md) · [33](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/33-console-ui-y-rbac.md) · [23](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/23-monorepo-bootstrap.md) · [24](https://github.com/SantosSjba/planificacion-fe-SUNAT/blob/main/docs/planificacion/24-plan-spikes-emision.md)\n- Docs en GitHub: [https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main](https://github.com/SantosSjba/planificacion-fe-SUNAT/tree/main)\n- Asignar **hijas** para trabajo fino o el **padre** si una persona hace todo.\n- Importado vía API REST FACTOSYS",
+      "_extraRefs": [
+        "docs/planificacion/24-plan-spikes-emision.md"
+      ],
+      "_consoleBlock": null,
+      "_rbacBlock": null
+    }
+  ]
+}
