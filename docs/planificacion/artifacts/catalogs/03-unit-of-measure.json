@@ -1,0 +1,67 @@
+{
+  "catalog": "03",
+  "name": "Código de tipo de unidad de medida comercial",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "UN/ECE Recommendation 20 — Anexo N°8 only references the UN/ECE list (not enumerated). Seed = common UN/ECE codes used in CPE/GRE fixtures + guides.",
+  "exported_at": "2026-09-17",
+  "completeness": "seed",
+  "items": [
+    {
+      "code": "NIU",
+      "description": "Número de unidades (units)"
+    },
+    {
+      "code": "KGM",
+      "description": "Kilogramo"
+    },
+    {
+      "code": "LTR",
+      "description": "Litro"
+    },
+    {
+      "code": "MTR",
+      "description": "Metro"
+    },
+    {
+      "code": "MTK",
+      "description": "Metro cuadrado"
+    },
+    {
+      "code": "MTQ",
+      "description": "Metro cúbico"
+    },
+    {
+      "code": "BX",
+      "description": "Caja"
+    },
+    {
+      "code": "BG",
+      "description": "Bolsa"
+    },
+    {
+      "code": "BO",
+      "description": "Botella"
+    },
+    {
+      "code": "BJ",
+      "description": "Balde"
+    },
+    {
+      "code": "CT",
+      "description": "Cartón"
+    },
+    {
+      "code": "CS",
+      "description": "Caja / case"
+    },
+    {
+      "code": "DZN",
+      "description": "Docena"
+    },
+    {
+      "code": "ZZ",
+      "description": "Mutuamente definido"
+    }
+  ],
+  "notes": "seed-from-fixtures-pending-full-export. See also 65-gre-unit-of-measure.json for GRE DAM/DS unit subset."
+}

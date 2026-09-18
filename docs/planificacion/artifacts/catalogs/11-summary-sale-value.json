@@ -1,0 +1,46 @@
+{
+  "catalog": "11",
+  "name": "Códigos de tipo de valor de venta (Resumen diario de boletas y notas)",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "01",
+      "description": "Gravado"
+    },
+    {
+      "code": "02",
+      "description": "Exonerado"
+    },
+    {
+      "code": "03",
+      "description": "Inafecto"
+    },
+    {
+      "code": "04",
+      "description": "Exportación"
+    },
+    {
+      "code": "05",
+      "description": "Gratuitas"
+    },
+    {
+      "code": "06",
+      "description": "Gratuitas-Gravada"
+    },
+    {
+      "code": "07",
+      "description": "Gratuitas-Exoneradas"
+    },
+    {
+      "code": "08",
+      "description": "Gratuitas-Inafectas"
+    },
+    {
+      "code": "09",
+      "description": "Gratuitas-Exportación"
+    }
+  ]
+}

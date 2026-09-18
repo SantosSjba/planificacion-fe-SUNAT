@@ -1,0 +1,186 @@
+{
+  "catalog": "54",
+  "name": "Códigos de bienes y servicios sujetos a detracciones",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "001",
+      "description": "Azúcar y melaza de caña"
+    },
+    {
+      "code": "002",
+      "description": "Arroz"
+    },
+    {
+      "code": "003",
+      "description": "Alcohol etílico"
+    },
+    {
+      "code": "004",
+      "description": "Recursos hidrobiológicos"
+    },
+    {
+      "code": "005",
+      "description": "Maíz amarillo duro"
+    },
+    {
+      "code": "007",
+      "description": "Caña de azúcar"
+    },
+    {
+      "code": "008",
+      "description": "Madera"
+    },
+    {
+      "code": "009",
+      "description": "Arena y piedra."
+    },
+    {
+      "code": "010",
+      "description": "Residuos, subproductos, desechos, recortes y desperdicios"
+    },
+    {
+      "code": "011",
+      "description": "Bienes gravados con el IGV, o renuncia a la exoneración"
+    },
+    {
+      "code": "012",
+      "description": "Intermediación laboral y tercerización"
+    },
+    {
+      "code": "013",
+      "description": "Animales vivos"
+    },
+    {
+      "code": "014",
+      "description": "Carnes y despojos comestibles"
+    },
+    {
+      "code": "015",
+      "description": "Abonos, cueros y pieles de origen animal"
+    },
+    {
+      "code": "016",
+      "description": "Aceite de pescado"
+    },
+    {
+      "code": "017",
+      "description": "Harina, polvo y “pellets” de pescado, crustáceos, moluscos y demás invertebrados acuáticos"
+    },
+    {
+      "code": "019",
+      "description": "Arrendamiento de bienes muebles"
+    },
+    {
+      "code": "020",
+      "description": "Mantenimiento y reparación de bienes muebles"
+    },
+    {
+      "code": "021",
+      "description": "Movimiento de carga"
+    },
+    {
+      "code": "022",
+      "description": "Otros servicios empresariales"
+    },
+    {
+      "code": "023",
+      "description": "Leche"
+    },
+    {
+      "code": "024",
+      "description": "Comisión mercantil"
+    },
+    {
+      "code": "025",
+      "description": "Fabricación de bienes por encargo"
+    },
+    {
+      "code": "026",
+      "description": "Servicio de transporte de personas"
+    },
+    {
+      "code": "027",
+      "description": "Servicio de transporte de carga"
+    },
+    {
+      "code": "028",
+      "description": "Transporte de pasajeros"
+    },
+    {
+      "code": "030",
+      "description": "Contratos de construcción"
+    },
+    {
+      "code": "031",
+      "description": "Oro gravado con el IGV"
+    },
+    {
+      "code": "032",
+      "description": "Paprika y otros frutos de los generos capsicum o pimienta"
+    },
+    {
+      "code": "034",
+      "description": "Minerales metálicos no auríferos"
+    },
+    {
+      "code": "035",
+      "description": "Bienes exonerados del IGV"
+    },
+    {
+      "code": "036",
+      "description": "Oro y demás minerales metálicos exonerados del IGV"
+    },
+    {
+      "code": "037",
+      "description": "Demás servicios gravados con el IGV"
+    },
+    {
+      "code": "038",
+      "description": "Espectáculos públicos gravados con el IGV"
+    },
+    {
+      "code": "039",
+      "description": "Minerales no metálicos"
+    },
+    {
+      "code": "040",
+      "description": "Bien inmueble gravado con IGV"
+    },
+    {
+      "code": "041",
+      "description": "Plomo"
+    },
+    {
+      "code": "042",
+      "description": "Ladrillos de construcción, bovedillas, cubrevigas y artículos similares, de cerámica"
+    },
+    {
+      "code": "043",
+      "description": "Estructuras metálicas para la construcción"
+    },
+    {
+      "code": "044",
+      "description": "Servicio de beneficio de minerales metálicos gravado con el IGV"
+    },
+    {
+      "code": "045",
+      "description": "Minerales de oro y sus concentrados gravados con el IGV"
+    },
+    {
+      "code": "046",
+      "description": "Cobre gravado con el IGV"
+    },
+    {
+      "code": "047",
+      "description": "Plata gravada con el IGV"
+    },
+    {
+      "code": "099",
+      "description": "Ley 30737"
+    }
+  ]
+}

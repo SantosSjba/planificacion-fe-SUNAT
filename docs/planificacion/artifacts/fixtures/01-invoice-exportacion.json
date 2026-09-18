@@ -1,0 +1,39 @@
+{
+  "id": "01-invoice-exportacion",
+  "document_kind": "invoice",
+  "title": "Factura exportación — operation_type cat. 51 + tributo 9995",
+  "expects": {
+    "prevalidation": "pass",
+    "terminal_status": ["accepted", "accepted_with_observation"]
+  },
+  "notes": "Cliente no domiciliado; validar catálogos vigentes en motor",
+  "request": {
+    "company_id": "{{company_id}}",
+    "serie": "F001",
+    "operation_type": "0200",
+    "issue_date": "2026-09-17",
+    "currency": "USD",
+    "customer": {
+      "identity_type": "0",
+      "identity_number": "EXT123456",
+      "name": "FOREIGN BUYER LLC",
+      "address": {
+        "country": "US",
+        "line": "1 Market St"
+      }
+    },
+    "lines": [
+      {
+        "id": 1,
+        "quantity": 100,
+        "unit_code": "NIU",
+        "description": "Goods for export",
+        "unit_value": 10.0,
+        "unit_price": 10.0,
+        "tax_affectation": "40",
+        "tax_scheme_id": "9995"
+      }
+    ],
+    "totals_mode": "auto"
+  }
+}

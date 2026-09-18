@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://factosys.local/schemas/despatch-advice-create.json",
+  "title": "DespatchAdviceCreate",
+  "description": "Alineado a 18-diccionario-json-ubl-gre.md. Transportista solo en shipment.carrier (nunca top-level). Tipo 31: shipper (remitente) obligatorio a nivel de negocio; conductor principal exige license (Excel Guía-Transportista #44).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["company_id", "document_type", "serie", "issue_date", "delivery_customer", "shipment", "lines"],
+  "properties": {
+    "company_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Emisor: remitente si document_type=09; transportista si document_type=31"
+    },
+    "document_type": { "type": "string", "enum": ["09", "31"] },
+    "serie": { "type": "string", "minLength": 4, "maxLength": 4 },
+    "number": { "type": "integer", "minimum": 1 },
+    "issue_date": { "type": "string", "format": "date" },
+    "issue_time": {
+      "type": "string",
+      "description": "Excel GRE marca IssueTime como M; recomendado siempre (HH:MM:SS)"
+    },
+    "notes": { "type": "string" },
+    "shipper": {
+      "type": "object",
+      "description": "Remitente. Obligatorio cuando document_type=31 (DespatchParty). En 09 suele hidratarse desde company_id (DespatchSupplierParty).",
+      "required": ["identity_type", "identity_number", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "identity_type": { "type": "string" },
+        "identity_number": { "type": "string" },
+        "name": { "type": "string" }
+      }
+    },
+    "delivery_customer": {
+      "type": "object",
+      "required": ["identity_type", "identity_number", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "identity_type": { "type": "string" },
+        "identity_number": { "type": "string" },
+        "name": { "type": "string" }
+      }
+    },
+    "supplier": {
+      "type": "object",
+      "description": "Proveedor (SellerSupplierParty), condicional según motivo 09",
+      "properties": {
+        "identity_type": { "type": "string" },
+        "identity_number": { "type": "string" },
+        "name": { "type": "string" }
+      }
+    },
+    "buyer": {
+      "type": "object",
+      "description": "Comprador (BuyerCustomerParty), condicional",
+      "properties": {
+        "identity_type": { "type": "string" },
+        "identity_number": { "type": "string" },
+        "name": { "type": "string" }
+      }
+    },
+    "shipment": {
+      "type": "object",
+      "required": ["gross_weight", "gross_weight_unit", "start_date", "origin", "destination"],
+      "additionalProperties": false,
+      "description": "Traslado. 09: también transfer_reason_code + transport_mode_code (prevalidación). 31: vehicles[].plate + drivers con license (Excel M).",
+      "properties": {
+        "transfer_reason_code": {
+          "type": "string",
+          "description": "Cat. 20. Required en prevalidación document_type=09"
+        },
+        "transfer_reason_text": { "type": "string" },
+        "transport_mode_code": {
+          "type": "string",
+          "description": "Cat. 18. Required en prevalidación document_type=09"
+        },
+        "gross_weight": { "type": "number", "exclusiveMinimum": 0 },
+        "gross_weight_unit": { "type": "string" },
+        "total_packages": { "type": "number" },
+        "start_date": { "type": "string", "format": "date" },
+        "start_time": { "type": "string" },
+        "carrier": {
+          "type": "object",
+          "description": "Único path del transportista (CarrierParty en 09 modalidad pública). No usar carrier top-level. En 31 el emisor ya es transportista; aquí datos extra (p.ej. MTC).",
+          "additionalProperties": false,
+          "properties": {
+            "identity_type": { "type": "string" },
+            "identity_number": { "type": "string" },
+            "name": { "type": "string" },
+            "mtc_registration": {
+              "type": "string",
+              "description": "Número de registro MTC (CompanyID) si aplica"
+            }
+          }
+        },
+        "vehicles": {
+          "type": "array",
+          "description": "Required ≥1 con plate cuando document_type=31 o modalidad privada (02)",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["plate"],
+            "additionalProperties": false,
+            "properties": {
+              "plate": { "type": "string" },
+              "authority_code": {
+                "type": "string",
+                "description": "TUCE / certificado habilitación / autorización si aplica"
+              }
+            }
+          }
+        },
+        "drivers": {
+          "type": "array",
+          "description": "Required ≥1 cuando document_type=31 o modalidad privada. Conductor principal: license obligatorio (Excel 31 #44).",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["identity_type", "identity_number", "name"],
+            "additionalProperties": false,
+            "properties": {
+              "job_title": {
+                "type": "string",
+                "description": "Tipo de conductor (cbc:JobTitle). Principal: required en 31"
+              },
+              "identity_type": { "type": "string" },
+              "identity_number": { "type": "string" },
+              "name": { "type": "string" },
+              "license": {
+                "type": "string",
+                "description": "Número de licencia. Obligatorio para conductor principal en GRE 31 (y cuando reglas 09/privado lo exijan). DriverPerson/IdentityDocumentReference/cbc:ID"
+              }
+            }
+          }
+        },
+        "origin": {
+          "type": "object",
+          "required": ["ubigeo", "address"],
+          "additionalProperties": false,
+          "properties": {
+            "ubigeo": { "type": "string" },
+            "address": { "type": "string" },
+            "establishment_code": { "type": "string" }
+          }
+        },
+        "destination": {
+          "type": "object",
+          "required": ["ubigeo", "address"],
+          "additionalProperties": false,
+          "properties": {
+            "ubigeo": { "type": "string" },
+            "address": { "type": "string" },
+            "establishment_code": { "type": "string" }
+          }
+        },
+        "container_id": { "type": "string" },
+        "port_code": { "type": "string" }
+      }
+    },
+    "related_documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["document_type", "serie_number"],
+        "additionalProperties": false,
+        "properties": {
+          "document_type": { "type": "string" },
+          "serie_number": { "type": "string" }
+        }
+      }
+    },
+    "lines": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "quantity", "unit_code", "description"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "integer", "minimum": 1 },
+          "quantity": { "type": "number", "exclusiveMinimum": 0 },
+          "unit_code": { "type": "string" },
+          "description": { "type": "string" },
+          "product_code": { "type": "string" },
+          "sunat_product_code": { "type": "string" }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "document_type": { "const": "31" } },
+        "required": ["document_type"]
+      },
+      "then": {
+        "required": ["shipper"],
+        "properties": {
+          "shipment": {
+            "required": [
+              "gross_weight",
+              "gross_weight_unit",
+              "start_date",
+              "origin",
+              "destination",
+              "vehicles",
+              "drivers"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "document_type": { "const": "09" } },
+        "required": ["document_type"]
+      },
+      "then": {
+        "properties": {
+          "shipment": {
+            "required": [
+              "transfer_reason_code",
+              "transport_mode_code",
+              "gross_weight",
+              "gross_weight_unit",
+              "start_date",
+              "origin",
+              "destination"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

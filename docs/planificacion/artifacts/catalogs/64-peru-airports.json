@@ -1,0 +1,165 @@
+{
+  "catalog": "64",
+  "name": "Aeropuertos del Perú",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "AQP",
+      "description": "Rodríguez Ballón",
+      "ubigeo": "040104"
+    },
+    {
+      "code": "ANS",
+      "description": "Andahuaylas",
+      "ubigeo": "030201"
+    },
+    {
+      "code": "ATA",
+      "description": "Comandante FAP Germán Arias Graciani",
+      "ubigeo": "020604"
+    },
+    {
+      "code": "AYP",
+      "description": "Coronel FAP Alfredo Mendívil Duarte",
+      "ubigeo": "050113"
+    },
+    {
+      "code": "CJA",
+      "description": "Mayor Gral. FAP Armando Revoredo Iglesias",
+      "ubigeo": "060108"
+    },
+    {
+      "code": "CHM",
+      "description": "Tnte. FAP Jaime De Montruil M.",
+      "ubigeo": "021809"
+    },
+    {
+      "code": "CUZ",
+      "description": "Alejandro Velazco Astete",
+      "ubigeo": "080108"
+    },
+    {
+      "code": "CHH",
+      "description": "Chachapoyas",
+      "ubigeo": "010101"
+    },
+    {
+      "code": "CIX",
+      "description": "Capitán FAP José Quiñones G.",
+      "ubigeo": "140101"
+    },
+    {
+      "code": "HUU",
+      "description": "Alférez FAP David Figueroa Fernandini",
+      "ubigeo": "100101"
+    },
+    {
+      "code": "ILO",
+      "description": "Ilo",
+      "ubigeo": "180301"
+    },
+    {
+      "code": "IQT",
+      "description": "Coronel FAP Francisco Secada Vignetta",
+      "ubigeo": "160101"
+    },
+    {
+      "code": "JAE",
+      "description": "Jaén - Shumba",
+      "ubigeo": "060802"
+    },
+    {
+      "code": "JJI",
+      "description": "Juanjuí",
+      "ubigeo": "220601"
+    },
+    {
+      "code": "JUL",
+      "description": "Manco Cápac",
+      "ubigeo": "211101"
+    },
+    {
+      "code": "JAU",
+      "description": "Francisco Carlé",
+      "ubigeo": "120430"
+    },
+    {
+      "code": "LIM",
+      "description": "Internacional Jorge Chávez",
+      "ubigeo": "070101"
+    },
+    {
+      "code": "MBP",
+      "description": "Moyobamba",
+      "ubigeo": "220101"
+    },
+    {
+      "code": "PIO",
+      "description": "Capitán FAP Renán Elías Olivera",
+      "ubigeo": "110506"
+    },
+    {
+      "code": "PIU",
+      "description": "Capitán FAP Carlos Concha Iberico",
+      "ubigeo": "200104"
+    },
+    {
+      "code": "PCL",
+      "description": "Capitán FAP David Abensur Rengifo",
+      "ubigeo": "250105"
+    },
+    {
+      "code": "PEM",
+      "description": "Padre Aldamiz",
+      "ubigeo": "170101"
+    },
+    {
+      "code": "RIJ",
+      "description": "Juan Simons Vela - Rioja",
+      "ubigeo": "220801"
+    },
+    {
+      "code": "TCQ",
+      "description": "Coronel FAP Carlos Ciriani Santa Rosa",
+      "ubigeo": "230101"
+    },
+    {
+      "code": "TYL",
+      "description": "Capitán FAP Montes Arias",
+      "ubigeo": "200701"
+    },
+    {
+      "code": "TPP",
+      "description": "Cadete FAP Guillermo del Castillo Paredes",
+      "ubigeo": "220901"
+    },
+    {
+      "code": "TIG",
+      "description": "Tingo María",
+      "ubigeo": "100601"
+    },
+    {
+      "code": "TRU",
+      "description": "Capitán FAP Carlos Martínez Pinillos",
+      "ubigeo": "130104"
+    },
+    {
+      "code": "TBP",
+      "description": "Capitán FAP Pedro Canga Rodríguez",
+      "ubigeo": "240101"
+    },
+    {
+      "code": "ATG",
+      "description": "Atalaya - Tnte. Gral. Gerardo Pérez Pinedo",
+      "ubigeo": "250201"
+    },
+    {
+      "code": "YMS",
+      "description": "Moisés Benzaquen Rengifo",
+      "ubigeo": "160201"
+    }
+  ]
+}

@@ -1,0 +1,1182 @@
+openapi: 3.0.3
+info:
+  title: FACTOSYS API
+  version: 1.0.0
+  description: |
+    API de cumplimiento tributario electrónico (Perú).
+    El cliente envía JSON canónico; FACTOSYS genera UBL, firma, valida y envía a SUNAT.
+    Diccionarios: docs/planificacion/11–15 y 18–20.
+    Schemas: artifacts/schemas/. Catálogos: artifacts/catalogs/.
+    Errores: docs/planificacion/16-catalogo-errores.md.
+    Validez: docs/planificacion/28-spec-consulta-validez.md.
+    Webhooks: docs/planificacion/adr/004-webhooks.md.
+  contact:
+    name: FACTOSYS
+servers:
+  - url: https://api.factosys.pe/v1
+    description: Production (tentativo)
+  - url: https://sandbox.api.factosys.pe/v1
+    description: Sandbox / beta SUNAT
+tags:
+  - name: Companies
+  - name: Series
+  - name: Invoices
+  - name: Receipts
+  - name: CreditNotes
+  - name: DebitNotes
+  - name: Documents
+  - name: LifeCycle
+  - name: DespatchAdvices
+  - name: Validations
+  - name: Webhooks
+security:
+  - ApiKeyAuth: []
+paths:
+  /companies:
+    post:
+      tags: [Companies]
+      summary: Registrar empresa emisora (RUC)
+      operationId: createCompany
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CompanyCreate'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Company'
+        '422':
+          $ref: '#/components/responses/Error'
+  /companies/{companyId}:
+    get:
+      tags: [Companies]
+      summary: Obtener empresa (sin secretos)
+      operationId: getCompany
+      parameters:
+        - $ref: '#/components/parameters/CompanyId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Company'
+        '404':
+          $ref: '#/components/responses/Error'
+  /companies/{companyId}/certificate:
+    put:
+      tags: [Companies]
+      summary: Subir o activar certificado digital (.pfx)
+      operationId: putCertificate
+      parameters:
+        - $ref: '#/components/parameters/CompanyId'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [file, password]
+              properties:
+                file:
+                  type: string
+                  format: binary
+                password:
+                  type: string
+                  format: password
+      responses:
+        '204':
+          description: Stored
+        '422':
+          $ref: '#/components/responses/Error'
+  /companies/{companyId}/sol-credentials:
+    put:
+      tags: [Companies]
+      summary: Guardar usuario y clave SOL
+      operationId: putSolCredentials
+      parameters:
+        - $ref: '#/components/parameters/CompanyId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SolCredentials'
+      responses:
+        '204':
+          description: Stored
+  /companies/{companyId}/gre-credentials:
+    put:
+      tags: [Companies]
+      summary: Guardar client_id y client_secret GRE
+      operationId: putGreCredentials
+      parameters:
+        - $ref: '#/components/parameters/CompanyId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GreCredentials'
+      responses:
+        '204':
+          description: Stored
+  /companies/{companyId}/series:
+    get:
+      tags: [Series]
+      summary: Listar series
+      operationId: listSeries
+      parameters:
+        - $ref: '#/components/parameters/CompanyId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Series'
+    post:
+      tags: [Series]
+      summary: Crear serie
+      operationId: createSeries
+      parameters:
+        - $ref: '#/components/parameters/CompanyId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SeriesCreate'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Series'
+  /invoices:
+    post:
+      tags: [Invoices]
+      summary: Emitir factura electrónica (01)
+      operationId: createInvoice
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InvoiceCreate'
+      responses:
+        '201':
+          description: Emitida o en proceso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Document'
+        '409':
+          $ref: '#/components/responses/Error'
+        '422':
+          $ref: '#/components/responses/Error'
+        '503':
+          $ref: '#/components/responses/Error'
+  /receipts:
+    post:
+      tags: [Receipts]
+      summary: Emitir boleta electrónica (03)
+      operationId: createReceipt
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReceiptCreate'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Document'
+        '422':
+          $ref: '#/components/responses/Error'
+  /credit-notes:
+    post:
+      tags: [CreditNotes]
+      summary: Emitir nota de crédito (07)
+      operationId: createCreditNote
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreditNoteCreate'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Document'
+        '422':
+          $ref: '#/components/responses/Error'
+  /debit-notes:
+    post:
+      tags: [DebitNotes]
+      summary: Emitir nota de débito (08)
+      operationId: createDebitNote
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DebitNoteCreate'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Document'
+        '422':
+          $ref: '#/components/responses/Error'
+  /documents:
+    get:
+      tags: [Documents]
+      summary: Listar comprobantes
+      operationId: listDocuments
+      parameters:
+        - name: company_id
+          in: query
+          schema:
+            type: string
+            format: uuid
+        - name: document_type
+          in: query
+          schema:
+            type: string
+            enum: ['01', '03', '07', '08', '09', '31', 'RA', 'RC']
+        - name: status
+          in: query
+          schema:
+            $ref: '#/components/schemas/DocumentStatus'
+        - name: issue_date_from
+          in: query
+          schema:
+            type: string
+            format: date
+        - name: issue_date_to
+          in: query
+          schema:
+            type: string
+            format: date
+        - name: cursor
+          in: query
+          schema:
+            type: string
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DocumentList'
+  /documents/{documentId}:
+    get:
+      tags: [Documents]
+      summary: Detalle de comprobante
+      operationId: getDocument
+      parameters:
+        - $ref: '#/components/parameters/DocumentId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Document'
+        '404':
+          $ref: '#/components/responses/Error'
+  /documents/{documentId}/xml:
+    get:
+      tags: [Documents]
+      summary: Descargar XML firmado
+      operationId: getDocumentXml
+      parameters:
+        - $ref: '#/components/parameters/DocumentId'
+      responses:
+        '200':
+          description: XML
+          content:
+            application/xml:
+              schema:
+                type: string
+                format: binary
+  /documents/{documentId}/cdr:
+    get:
+      tags: [Documents]
+      summary: Descargar CDR
+      operationId: getDocumentCdr
+      parameters:
+        - $ref: '#/components/parameters/DocumentId'
+      responses:
+        '200':
+          description: CDR XML
+          content:
+            application/xml:
+              schema:
+                type: string
+                format: binary
+        '404':
+          $ref: '#/components/responses/Error'
+  /documents/{documentId}/pdf:
+    get:
+      tags: [Documents]
+      summary: Descargar representación impresa PDF
+      operationId: getDocumentPdf
+      parameters:
+        - $ref: '#/components/parameters/DocumentId'
+      responses:
+        '200':
+          description: PDF
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+  /documents/{documentId}/trace:
+    get:
+      tags: [Documents]
+      summary: Timeline de estados del comprobante
+      operationId: getDocumentTrace
+      parameters:
+        - $ref: '#/components/parameters/DocumentId'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DocumentTrace'
+  /voided-documents:
+    post:
+      tags: [LifeCycle]
+      summary: Comunicación de baja (RA)
+      operationId: createVoidedDocument
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VoidedDocumentCreate'
+      responses:
+        '201':
+          description: Created / ticket pending
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Document'
+  /daily-summaries:
+    post:
+      tags: [LifeCycle]
+      summary: Resumen diario de boletas y notas (RC)
+      operationId: createDailySummary
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DailySummaryCreate'
+      responses:
+        '201':
+          description: Created / ticket pending
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Document'
+  /despatch-advices:
+    post:
+      tags: [DespatchAdvices]
+      summary: Emitir GRE remitente (09) o transportista (31)
+      operationId: createDespatchAdvice
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DespatchAdviceCreate'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Document'
+  /validations/cpe:
+    post:
+      tags: [Validations]
+      summary: Consulta integrada de validez de CPE
+      operationId: validateCpe
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CpeValidationRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CpeValidationResponse'
+  /webhook-endpoints:
+    get:
+      tags: [Webhooks]
+      summary: Listar webhooks
+      operationId: listWebhooks
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/WebhookEndpoint'
+    post:
+      tags: [Webhooks]
+      summary: Registrar webhook
+      operationId: createWebhook
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WebhookEndpointCreate'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WebhookEndpoint'
+  /webhook-endpoints/{webhookId}/rotate-secret:
+    post:
+      tags: [Webhooks]
+      summary: Rotar secreto HMAC
+      operationId: rotateWebhookSecret
+      parameters:
+        - name: webhookId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: New secret (shown once)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  secret:
+                    type: string
+  /meta/ruleset:
+    get:
+      tags: [Validations]
+      summary: Versión del Excel de reglas SUNAT cargado
+      operationId: getRuleset
+      security: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ruleset_version:
+                    type: string
+                    example: '2026-08-26'
+                  source:
+                    type: string
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API_KEY
+      description: API key de la organization
+  parameters:
+    CompanyId:
+      name: companyId
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+    DocumentId:
+      name: documentId
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+    IdempotencyKey:
+      name: Idempotency-Key
+      in: header
+      required: true
+      schema:
+        type: string
+        minLength: 8
+        maxLength: 128
+  responses:
+    Error:
+      description: Error FACTOSYS
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+  schemas:
+    Error:
+      type: object
+      required: [code, message]
+      properties:
+        code:
+          type: string
+          example: FACTOSYS_VALIDATION
+        message:
+          type: string
+        sunat_code:
+          type: string
+          nullable: true
+          example: '1001'
+        sunat_message:
+          type: string
+          nullable: true
+        stage:
+          type: string
+          enum: [request, prevalidation, sign, transport, sunat_cdr, webhook]
+        retryable:
+          type: boolean
+        details:
+          type: array
+          items:
+            type: object
+            properties:
+              path:
+                type: string
+              issue:
+                type: string
+        request_id:
+          type: string
+          format: uuid
+        ruleset_version:
+          type: string
+    DocumentStatus:
+      type: string
+      enum:
+        - draft
+        - validated
+        - queued
+        - sent
+        - ticket_pending
+        - accepted
+        - accepted_with_observation
+        - rejected
+        - failed
+        - cancelled
+    Party:
+      type: object
+      required: [identity_type, identity_number, name]
+      properties:
+        identity_type:
+          type: string
+          description: Catálogo 06
+        identity_number:
+          type: string
+        name:
+          type: string
+        email:
+          type: string
+          format: email
+        address:
+          type: object
+          properties:
+            ubigeo:
+              type: string
+            line:
+              type: string
+            district:
+              type: string
+            province:
+              type: string
+            department:
+              type: string
+            country:
+              type: string
+              default: PE
+    InvoiceLine:
+      type: object
+      required:
+        - id
+        - quantity
+        - unit_code
+        - description
+        - unit_value
+        - unit_price
+        - tax_affectation
+        - tax_scheme_id
+      properties:
+        id:
+          oneOf:
+            - type: string
+            - type: integer
+        quantity:
+          type: number
+        unit_code:
+          type: string
+          description: Catálogo 03
+        description:
+          type: string
+        product_code:
+          type: string
+        sunat_product_code:
+          type: string
+        unit_value:
+          type: number
+        unit_price:
+          type: number
+        price_type:
+          type: string
+          default: '01'
+        tax_affectation:
+          type: string
+          description: Catálogo 07
+        igv_percent:
+          type: number
+        tax_scheme_id:
+          type: string
+          description: Catálogo 05
+    TotalsMode:
+      type: string
+      enum: [auto, strict]
+      default: auto
+    InvoiceCreate:
+      type: object
+      required: [company_id, serie, operation_type, issue_date, currency, customer, lines]
+      properties:
+        company_id:
+          type: string
+          format: uuid
+        serie:
+          type: string
+          example: F001
+        number:
+          type: integer
+          minimum: 1
+        operation_type:
+          type: string
+          description: Catálogo 51
+        issue_date:
+          type: string
+          format: date
+        issue_time:
+          type: string
+          example: '15:04:05'
+        due_date:
+          type: string
+          format: date
+        currency:
+          type: string
+          example: PEN
+        customer:
+          $ref: '#/components/schemas/Party'
+        lines:
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/InvoiceLine'
+        totals_mode:
+          $ref: '#/components/schemas/TotalsMode'
+        legends:
+          type: array
+          items:
+            type: object
+            properties:
+              code:
+                type: string
+              text:
+                type: string
+        detraction:
+          type: object
+          additionalProperties: true
+        despatch_documents:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              document_type:
+                type: string
+    ReceiptCreate:
+      allOf:
+        - $ref: '#/components/schemas/InvoiceCreate'
+        - type: object
+          properties:
+            include_in_daily_summary:
+              type: boolean
+              default: true
+            send_individually:
+              type: boolean
+              default: false
+    AffectedDocument:
+      type: object
+      required: [document_type, serie_number]
+      properties:
+        document_type:
+          type: string
+          enum: ['01', '03', '12']
+        serie_number:
+          type: string
+          example: F001-00000015
+    CreditNoteCreate:
+      type: object
+      required:
+        - company_id
+        - serie
+        - issue_date
+        - currency
+        - note_type
+        - reason
+        - affected_document
+        - customer
+        - lines
+      properties:
+        company_id:
+          type: string
+          format: uuid
+        serie:
+          type: string
+        number:
+          type: integer
+        issue_date:
+          type: string
+          format: date
+        currency:
+          type: string
+        note_type:
+          type: string
+          description: Catálogo 09
+        reason:
+          type: string
+        affected_document:
+          $ref: '#/components/schemas/AffectedDocument'
+        customer:
+          $ref: '#/components/schemas/Party'
+        lines:
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/InvoiceLine'
+        totals_mode:
+          $ref: '#/components/schemas/TotalsMode'
+        include_in_daily_summary:
+          type: boolean
+    DebitNoteCreate:
+      allOf:
+        - $ref: '#/components/schemas/CreditNoteCreate'
+        - type: object
+          properties:
+            note_type:
+              type: string
+              description: Catálogo 10
+    VoidedDocumentCreate:
+      type: object
+      required: [company_id, reference_date, documents]
+      description: RA — ver 19-diccionario-json-ubl-ra.md y schemas/voided-document-create.schema.json
+      properties:
+        company_id:
+          type: string
+          format: uuid
+        reference_date:
+          type: string
+          format: date
+          description: Fecha de emisión de los comprobantes a dar de baja
+        issue_date:
+          type: string
+          format: date
+        correlative:
+          type: integer
+        documents:
+          type: array
+          minItems: 1
+          items:
+            type: object
+            required: [document_type, reason]
+            properties:
+              document_type:
+                type: string
+              serie_number:
+                type: string
+                description: Alternativa a serie+number (ej. F001-00000015)
+              serie:
+                type: string
+              number:
+                type: integer
+              reason:
+                type: string
+    DailySummaryCreate:
+      type: object
+      required: [company_id, reference_date]
+      description: RC — ver 20-diccionario-json-ubl-rc.md y schemas/daily-summary-create.schema.json
+      properties:
+        company_id:
+          type: string
+          format: uuid
+        reference_date:
+          type: string
+          format: date
+        issue_date:
+          type: string
+          format: date
+        correlative:
+          type: integer
+        document_ids:
+          type: array
+          items:
+            type: string
+            format: uuid
+          description: Si se omite, incluye pendientes del día
+        lines:
+          type: array
+          description: Override avanzado; normal = auto desde pool pending_summary
+          items:
+            type: object
+            additionalProperties: true
+    DespatchAdviceCreate:
+      type: object
+      required: [company_id, serie, document_type, issue_date, delivery_customer, shipment, lines]
+      description: GRE — ver 18-diccionario y schemas/despatch-advice-create.schema.json
+      properties:
+        company_id:
+          type: string
+          format: uuid
+        serie:
+          type: string
+          example: T001
+        number:
+          type: integer
+        document_type:
+          type: string
+          enum: ['09', '31']
+        issue_date:
+          type: string
+          format: date
+        issue_time:
+          type: string
+        notes:
+          type: string
+        delivery_customer:
+          type: object
+          additionalProperties: true
+        shipment:
+          type: object
+          additionalProperties: true
+        related_documents:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        lines:
+          type: array
+          minItems: 1
+          items:
+            type: object
+            additionalProperties: true
+
+    CpeValidationRequest:
+      type: object
+      required: [company_id, ruc, document_type, serie, number, issue_date, total_amount]
+      description: Ver docs/planificacion/28-spec-consulta-validez.md
+      properties:
+        company_id:
+          type: string
+          format: uuid
+          description: Company cuyas credenciales extranet se usan para consultar
+        ruc:
+          type: string
+          description: RUC emisor del CPE consultado
+        document_type:
+          type: string
+        serie:
+          type: string
+        number:
+          type: string
+        issue_date:
+          type: string
+          format: date
+        total_amount:
+          type: number
+    CpeValidationResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        cpe_status:
+          type: string
+          description: estadoCp SUNAT (0–4)
+        cpe_status_label:
+          type: string
+        ruc_status:
+          type: string
+        ruc_status_label:
+          type: string
+        domicile_condition:
+          type: string
+        domicile_condition_label:
+          type: string
+        observations:
+          type: array
+          items:
+            type: string
+        sunat_error_code:
+          type: string
+          nullable: true
+        cached:
+          type: boolean
+        checked_at:
+          type: string
+          format: date-time
+        estado_cp:
+          type: string
+          description: Alias deprecado de cpe_status
+        estado_ruc:
+          type: string
+          description: Alias deprecado de ruc_status
+        cond_domi_ruc:
+          type: string
+          description: Alias deprecado de domicile_condition
+        raw:
+          type: object
+          additionalProperties: true
+    Document:
+      type: object
+      required: [id, company_id, document_type, status]
+      properties:
+        id:
+          type: string
+          format: uuid
+        company_id:
+          type: string
+          format: uuid
+        document_type:
+          type: string
+        serie_number:
+          type: string
+          example: F001-00000001
+        status:
+          $ref: '#/components/schemas/DocumentStatus'
+        sunat_ticket:
+          type: string
+          nullable: true
+        sunat_code:
+          type: string
+          nullable: true
+        summary_status:
+          type: string
+          nullable: true
+        links:
+          type: object
+          properties:
+            self:
+              type: string
+            xml:
+              type: string
+            cdr:
+              type: string
+            pdf:
+              type: string
+            trace:
+              type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+    DocumentList:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Document'
+        next_cursor:
+          type: string
+          nullable: true
+    DocumentTrace:
+      type: object
+      properties:
+        document_id:
+          type: string
+          format: uuid
+        events:
+          type: array
+          items:
+            type: object
+            properties:
+              at:
+                type: string
+                format: date-time
+              status:
+                $ref: '#/components/schemas/DocumentStatus'
+              detail:
+                type: string
+    CompanyCreate:
+      type: object
+      required: [ruc, legal_name]
+      properties:
+        ruc:
+          type: string
+          minLength: 11
+          maxLength: 11
+        legal_name:
+          type: string
+        trade_name:
+          type: string
+        environment:
+          type: string
+          enum: [sandbox, production]
+          default: sandbox
+    Company:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        ruc:
+          type: string
+        legal_name:
+          type: string
+        trade_name:
+          type: string
+        environment:
+          type: string
+        certificate_status:
+          type: string
+          enum: [missing, active, expired]
+        sol_configured:
+          type: boolean
+        gre_configured:
+          type: boolean
+    SolCredentials:
+      type: object
+      required: [username, password]
+      properties:
+        username:
+          type: string
+          description: Usuario SOL (sin RUC o según convención FACTOSYS documentada)
+        password:
+          type: string
+          format: password
+    GreCredentials:
+      type: object
+      required: [client_id, client_secret]
+      properties:
+        client_id:
+          type: string
+        client_secret:
+          type: string
+          format: password
+    SeriesCreate:
+      type: object
+      required: [document_type, serie]
+      properties:
+        document_type:
+          type: string
+        serie:
+          type: string
+        next_number:
+          type: integer
+          default: 1
+    Series:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        document_type:
+          type: string
+        serie:
+          type: string
+        next_number:
+          type: integer
+    WebhookEndpointCreate:
+      type: object
+      required: [url]
+      properties:
+        url:
+          type: string
+          format: uri
+        events:
+          type: array
+          items:
+            type: string
+            enum: [document.status_changed]
+          default: [document.status_changed]
+    WebhookEndpoint:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        url:
+          type: string
+        events:
+          type: array
+          items:
+            type: string
+        status:
+          type: string
+          enum: [active, disabled]
+        secret_hint:
+          type: string
+          description: Últimos 4 caracteres del secreto

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "ruleset_version": "2026-08-26",
+  "schemas_dir": "../schemas",
+  "placeholder": {
+    "company_id": "{{company_id}}"
+  },
+  "fixtures": [
+    { "id": "01-invoice-gravada", "file": "01-invoice-gravada.json", "schema": "invoice-create.schema.json" },
+    { "id": "01-invoice-exonerada", "file": "01-invoice-exonerada.json", "schema": "invoice-create.schema.json" },
+    { "id": "01-invoice-exportacion", "file": "01-invoice-exportacion.json", "schema": "invoice-create.schema.json" },
+    { "id": "01-invoice-detraccion", "file": "01-invoice-detraccion.json", "schema": "invoice-create.schema.json" },
+    { "id": "01-invoice-bad-totals", "file": "01-invoice-bad-totals.json", "schema": "invoice-create.schema.json" },
+    { "id": "01-invoice-serie-format", "file": "01-invoice-serie-format.json", "schema": "invoice-create.schema.json" },
+    { "id": "03-receipt-dni", "file": "03-receipt-dni.json" },
+    { "id": "07-credit-note-void", "file": "07-credit-note-void.json" },
+    { "id": "08-debit-note-interest", "file": "08-debit-note-interest.json" },
+    { "id": "ra-void-invoice", "file": "ra-void-invoice.json", "schema": "voided-document-create.schema.json" },
+    { "id": "rc-daily-auto", "file": "rc-daily-auto.json", "schema": "daily-summary-create.schema.json" },
+    { "id": "09-gre-remitente-min", "file": "09-gre-remitente-min.json", "schema": "despatch-advice-create.schema.json" },
+    { "id": "31-gre-transportista-min", "file": "31-gre-transportista-min.json", "schema": "despatch-advice-create.schema.json" },
+    { "id": "validation-cpe-accepted", "file": "validation-cpe-accepted.json" }
+  ]
+}

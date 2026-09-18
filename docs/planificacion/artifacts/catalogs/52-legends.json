@@ -1,0 +1,70 @@
+{
+  "catalog": "52",
+  "name": "Códigos de leyendas",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "1000",
+      "description": "Monto en Letras"
+    },
+    {
+      "code": "1002",
+      "description": "Leyenda \"TRANSFERENCIA GRATUITA DE UN BIEN Y/O SERVICIO PRESTADO GRATUITAMENTE\""
+    },
+    {
+      "code": "2000",
+      "description": "Leyenda “COMPROBANTE DE PERCEPCIÓN”"
+    },
+    {
+      "code": "2001",
+      "description": "Leyenda “BIENES TRANSFERIDOS EN LA AMAZONÍA REGIÓN SELVA PARA SER CONSUMIDOS EN LA MISMA\""
+    },
+    {
+      "code": "2002",
+      "description": "Leyenda “SERVICIOS PRESTADOS EN LA AMAZONÍA REGIÓN SELVA PARA SER CONSUMIDOS EN LA MISMA”"
+    },
+    {
+      "code": "2003",
+      "description": "Leyenda “CONTRATOS DE CONSTRUCCIÓN EJECUTADOS EN LA AMAZONÍA REGIÓN SELVA”"
+    },
+    {
+      "code": "2004",
+      "description": "Leyenda “Agencia de Viaje - Paquete turístico”"
+    },
+    {
+      "code": "2005",
+      "description": "Leyenda “Venta realizada por emisor itinerante”"
+    },
+    {
+      "code": "2006",
+      "description": "Leyenda \"Operación sujeta a detracción\""
+    },
+    {
+      "code": "2007",
+      "description": "Leyenda \"Operación sujeta al IVAP\""
+    },
+    {
+      "code": "2008",
+      "description": "Leyenda: “VENTA EXONERADA DEL IGV-ISC-IPM. PROHIBIDA LA VENTA FUERA DE LA ZONA COMERCIAL DE TACNA”"
+    },
+    {
+      "code": "2009",
+      "description": "Leyenda: “PRIMERA VENTA DE MERCANCÍA IDENTIFICABLE ENTRE USUARIOS DE LA ZONA COMERCIAL”"
+    },
+    {
+      "code": "2010",
+      "description": "Restitucion Simplificado de Derechos Arancelarios"
+    },
+    {
+      "code": "2011",
+      "description": "Leyenda “EXPORTACION DE SERVICIOS - DECRETO LEGISLATIVO Nº 919”"
+    },
+    {
+      "code": "2012",
+      "description": "Observaciones relacionadas con el traslado de mercaderías"
+    }
+  ]
+}

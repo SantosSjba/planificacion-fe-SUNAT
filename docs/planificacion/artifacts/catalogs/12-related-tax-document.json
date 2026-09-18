@@ -1,0 +1,54 @@
+{
+  "catalog": "12",
+  "name": "Código de documentos relacionados tributarios",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "01",
+      "description": "Factura – emitida para corregir error en el RUC"
+    },
+    {
+      "code": "02",
+      "description": "Factura – emitida por anticipos"
+    },
+    {
+      "code": "03",
+      "description": "Boleta de Venta – emitida por anticipos"
+    },
+    {
+      "code": "04",
+      "description": "Ticket de Salida - ENAPU"
+    },
+    {
+      "code": "05",
+      "description": "Código SCOP"
+    },
+    {
+      "code": "06",
+      "description": "Factura electrónica remitente"
+    },
+    {
+      "code": "07",
+      "description": "Guia de remisión remitente"
+    },
+    {
+      "code": "08",
+      "description": "Declaración de salida del depósito franco"
+    },
+    {
+      "code": "09",
+      "description": "Declaración simplificada de importación"
+    },
+    {
+      "code": "10",
+      "description": "Liquidación de compra - emitida por anticipos"
+    },
+    {
+      "code": "99",
+      "description": "Otros"
+    }
+  ]
+}

@@ -1,0 +1,636 @@
+---PAGE 1---
+~ 1 ~  
+ 
+Anexo VII 
+ 
+Anexo N° 8 – Catálogo de códigos  
+ 
+Catálogo No. 01: Código de Tipo de documento ........................................................................................ 2 
+Catálogo No. 02: Códigos de Tipo de Monedas ......................................................................................... 2 
+Catálogo No. 03: Códigos de Tipo de Unidad de Medida Comercial ............................................................ 2 
+Catálogo No. 04: Códigos de Países ........................................................................................................ 2 
+Catálogo No. 05: Códigos de Tipos de Tributos ......................................................................................... 3 
+Catálogo No. 06: Códigos de Tipos de Documentos de Identidad ............................................................... 3 
+Catálogo No. 07: Códigos de Tipo de Afectación del IGV ........................................................................... 3 
+Catálogo No. 08: Códigos de Tipos de Sistema de Cálculo del ISC ............................................................. 4 
+Catálogo No. 09: Códigos de Tipo de Nota de Crédito Electrónica .............................................................. 4 
+Catálogo No. 10: Códigos de Tipo de Nota de Débito Electrónica ............................................................... 5 
+Catálogo No. 11: Resumen Diario de Boletas de Ventas Electrónicas y Notas Electrónicas - Código de 
+Tipo de Valor de Venta ........................................................................................................................... 5 
+Catálogo No. 12: Códigos - Documentos Relacionados Tributarios ............................................................. 5 
+Catálogo No. 13: Ubicación Geográfica (UBIGEO) .................................................................................... 5 
+Catálogo No. 14: Códigos - Otros conceptos tributarios ............................................................................. 6 
+Catálogo No. 15:   Códigos  -  Elementos adicionales en la Factura Electrónica y/o Boleta de Venta 
+Electrónica ............................................................................................................................................. 6 
+Catálogo No. 16: Códigos – Tipo de Precio de Venta Unitario ..................................................................... 7 
+Catálogo No. 17: Códigos – Tipo de Operación ......................................................................................... 7 
+Catálogo No. 18: Códigos – Modalidad de Traslado................................................................................... 8 
+Catálogo No. 19: Resumen Diario de boletas de venta y notas electrónicas - Códigos de estado de ítem ....... 8 
+Catálogo No. 20: Códigos – Motivos de Traslado ...................................................................................... 8 
+Catálogo No. 21: Documentos Relacionados - aplicable solo para la Guía de remisión electrónica ................ 9 
+Catálogo No. 22: Regímenes de Percepción ............................................................................................. 9 
+Catálogo No. 23: Regímenes de Retención............................................................................................... 9 
+Catálogo No. 24: Recibo Electrónico por Servicios Públicos ....................................................................... 9 
+Catálogo No. 25: Código Producto SUNAT .............................................................................................10 
+Catálogo No. 51: Código de tipo de factura .............................................................................................10 
+Catálogo No. 52: Código de tipo de factura .............................................................................................10 
+Catálogo No. 53: Códigos de cargos o descuentos ..................................................................................11 
+Catálogo No. 54: Códigos de bienes y servicios sujetos a detracción ........................................................11 
+Catálogo No. 55: Código de identificación del ítem ..................................................................................12 
+Catálogo No. 56: Código de tipo de servicio público .................................................................................13 
+Catálogo No. 57: Código de tipo de servicios públicos - telecomunicaciones ..............................................13 
+Catálogo No. 58: Código de tipo de medidor – recibo de luz .....................................................................13 
+ 
+ 
+Nota: Los catálogos 51 al 58, deberán ser utilizados con la versión UBL 2.1
+---PAGE 2---
+~ 2 ~  
+ 
+Catálogo No. 01: Código de Tipo de documento  
+CATALOGO No. 01 
+Campo cbc:InvoiceTypeCode 
+Descripción Código de tipo de documento autorizado para efectos tributarios 
+Catálogo SUNAT 
+Código Descripción 
+01 FACTURA 
+03 BOLETA DE VENTA                                
+07 NOTA DE CREDITO                                
+08 NOTA DE DEBITO                             
+09 GUIA DE REMISIÓN REMITENTE  
+12 TICKET DE MAQUINA REGISTRADORA 
+13 DOCUMENTO EMITIDO POR BANCOS, INSTITUCIONES FINANCIERAS, CREDITICIAS Y DE SEGUROS QUE 
+SE ENCUENTREN BAJO EL CONTROL DE LA SUPERINTENDENCIA DE BANCA Y SEGUROS 
+14 RECIBO SERVICIOS PUBLICOS 
+16 BOLETO DE VIAJE EMITIDO POR LAS EMPRESAS DE TRANSPORTE PÚBLICO INTERPROVINCIAL DE 
+PASAJEROS 
+18 DOCUMENTOS EMITIDOS POR LAS AFP 
+20 COMPROBANTE DE RETENCION 
+31 GUIA DE REMISIÓN TRANSPORTISTA 
+40 COMPROBANTE DE PERCEPCION 
+41 COMPROBANTE DE PERCEPCION – VENTA INTERNA (FÍSICO-FORMATO IMPRESO 
+56 COMPROBANTE DE PAGO SEAE 
+71 GUIA DE REMISIÓN REMITENTE COMPLEMENTARIA 
+72 GUIA DE REMISION TRANSPORTISTA COMPLEMENTARIA 
+Catálogo No. 02: Códigos de Tipo de Monedas 
+CATALOGO No. 02 
+Campo cbc:DocumentCurrencyCode 
+Descripción Tipo de moneda 
+Catálogo ISO 4217 Alpha Version 2001 – Codes for the representation of currencies 
+and funds 
+Catálogo No. 03: Códigos de Tipo de Unidad de Medida Comercial 
+CATALOGO No. 03 
+Campo @UnitCode 
+Descripción Código del Tipo de unidad 
+Catálogo UN/ECE Recommendation 20 Revision 4 – Codes for Units of Measure 
+Used in International Trade 
+Catálogo No. 04: Códigos de Países 
+CATALOGO No. 04 
+Campo cac:Country/cbc:IdentificationCode  
+Descripción Código de País 
+Catálogo ISO 3166-1: 2006 – Codes for the representation of names of countries 
+and their subdivisions  Part. 1: country codes 
+ 
+---PAGE 3---
+~ 3 ~  
+ 
+Catálogo No. 05: Códigos de Tipos de Tributos 
+CATALOGO N° 05 
+Campo cbc:TaxTypeCode  
+Descripción Código de tipo de tributo 
+Catálogo SUNAT 
+Código Descripción UN/ECE 5153- Duty or tax 
+or fee type name code 
+UN/ECE 5305- Duty or tax 
+or fee category code* 
+1000 IGV    IMPUESTO GENERAL A 
+LAS VENTAS    
+VAT S 
+2000 ISC    IMPUESTO SELECTIVO AL 
+CONSUMO 
+EXC S 
+9995 EXPORTACIÓN FRE G 
+9996 GRATUITO FRE Z 
+9997 EXONERADO VAT E 
+9998 INAFECTO FRE O 
+9999 OTROS CONCEPTOS DE PAGO    OTH S 
+* Vigente para la versión UBL 2.1 
+Catálogo No. 06: Códigos de Tipos de Documentos de Identidad 
+CATALOGO No. 06 
+Campo cbc:AdditionalAccountID  
+Descripción Tipo de Documento de Identificación 
+Catálogo SUNAT 
+Código Descripción 
+0 DOC.TRIB.NO.DOM.SIN.RUC       
+1 DOC. NACIONAL DE IDENTIDAD    
+4 CARNET DE EXTRANJERIA         
+6 REG. UNICO DE CONTRIBUYENTES  
+7 PASAPORTE                     
+A  CED. DIPLOMATICA DE IDENTIDAD 
+B DOC.IDENT.PAIS.RESIDENCIA-NO.D 
+C Tax Identification Number - TIN – Doc Trib PP.NN 
+D Identification Number - IN – Doc Trib PP. JJ 
+Catálogo No. 07: Códigos de Tipo de Afectación del IGV 
+CATALOGO No. 07 
+Campo cbc:TaxExemptionReasonCode 
+Descripción Tipo de Afectación al IGV 
+Catálogo SUNAT 
+Código Descripción 
+10 Gravado -  Operación Onerosa 
+---PAGE 4---
+~ 4 ~  
+ 
+11 Gravado – Retiro por premio 
+12 Gravado – Retiro por donación 
+13 Gravado – Retiro  
+14 Gravado – Retiro por publicidad 
+15 Gravado – Bonificaciones 
+16 Gravado – Retiro por entrega a trabajadores 
+17 Gravado – IVAP 
+20 Exonerado - Operación Onerosa 
+21 Exonerado – Transferencia Gratuita 
+30 Inafecto - Operación Onerosa  
+31 Inafecto – Retiro por Bonificación 
+32 Inafecto – Retiro 
+33 Inafecto – Retiro por Muestras Médicas 
+34 Inafecto -  Retiro por Convenio Colectivo 
+35 Inafecto – Retiro por premio 
+36 Inafecto -  Retiro por publicidad 
+40 Exportación 
+Catálogo No. 08: Códigos de Tipos de Sistema de Cálculo del ISC 
+CATALOGO No. 08 
+Campo cbc: TierRange 
+Descripción Tipo de Sistema de Cálculo del ISC 
+Catálogo SUNAT 
+Código Descripción 
+01 Sistema al valor (Apéndice IV, lit. A – T.U.O IGV e ISC) 
+02 Aplicación del Monto Fijo (Apéndice IV, lit. B – T.U.O IGV e ISC) 
+03 Sistema de Precios de Venta al Público (Apéndice IV, lit. C – T.U.O IGV e ISC) 
+Catálogo No. 09: Códigos de Tipo de Nota de Crédito Electrónica 
+CATALOGO No. 09 
+Campo cbc:ResponseCode 
+Descripción Tipo de nota de crédito electrónica según motivo 
+Catálogo SUNAT 
+Código Descripción 
+01 Anulación de la operación 
+02 Anulación por error en el RUC 
+03 Corrección por error en la descripción 
+04 Descuento global 
+05 Descuento por ítem 
+06 Devolución total 
+07 Devolución por ítem 
+08 Bonificación 
+09 Disminución en el valor 
+10 Otros Conceptos  
+---PAGE 5---
+~ 5 ~  
+ 
+ 
+Catálogo No. 10: Códigos de Tipo de Nota de Débito Electrónica 
+CATALOGO No. 10 
+Campo cbc:ResponseCode 
+Descripción Tipo de nota de débito según motivo 
+Catálogo SUNAT 
+Código Descripción 
+01 Intereses por mora 
+02 Aumento en el valor 
+03 Penalidades/ otros conceptos 
+ 
+Catálogo No. 11: Resumen Diario de Boletas de Venta  y Notas Electrónicas - Código de Tipo de Valor 
+de Venta 
+  
+CATALOGO No. 11 
+Campo cbc:InstructionID 
+Descripción Tipo de importe de valor de venta registrado en el Resumen diario 
+Catálogo SUNAT 
+Código Descripción 
+01 Gravado 
+02 Exonerado 
+03 Inafecto 
+04 Exportación 
+05 Gratuitas 
+Catálogo No. 12: Códigos - Documentos Relacionados Tributarios 
+CATALOGO No. 12 
+Campo cbc:DocumentTypeCode// cac:PrepaidPayment/cbc:ID 
+Descripción Código del tipo de documentos tributarios de referencia 
+Catálogo SUNAT 
+Código Descripción 
+01 Factura – emitida para corregir error en el RUC 
+02 Factura – emitida por anticipos 
+03 Boleta de Venta – emitida por anticipos 
+04 Ticket de Salida - ENAPU  
+05 Código SCOP 
+99 Otros 
+Catálogo No. 13: Ubicación Geográfica (UBIGEO) 
+CATALOGO No. 13 
+Campo ./cac:RegistrationAddress/cbc:ID  
+Descripción Código de Ubicación Geográfica (UBIGEO)  
+Catálogo Utilizar el catálogo de ubigeos del INEI 
+---PAGE 6---
+~ 6 ~  
+ 
+Catálogo No. 14: Códigos - Otros conceptos tributarios  
+CATALOGO No. 14 
+Campo ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/sac: 
+AdditionalInformationInvoice/sac:AdditionalMonetaryTotal/cbc:ID  
+Descripción Códigos de otros conceptos tributarios  
+Catálogo SUNAT 
+Código Descripción 
+1000 Total valor de venta – Exportaciones  
+1001 Total valor de venta - operaciones gravadas 
+1002 Total valor de venta - operaciones inafectas 
+1003 Total valor de venta - operaciones exoneradas 
+1004 Total valor de venta – Operaciones gratuitas 
+1005 Sub total de venta 
+2001 Percepciones 
+2002 Retenciones 
+2003 Detracciones 
+2004 Bonificaciones 
+2005 Total descuentos 
+3001 FISE (Ley 29852) Fondo Inclusión Social Energético 
+ 
+ 
+Catálogo No. 15:   Códigos  -  Elementos adicionales en la Factura Electrónica y/o Boleta de Venta 
+Electrónica 
+CATALOGO No. 15 
+Descripción Códigos de elementos adicionales a la factura y/o boleta de venta 
+Catálogo SUNAT 
+Código Valor 
+1000 Monto en Letras 
+1002 Leyenda "TRANSFERENCIA GRATUITA DE UN BIEN Y/O SERVICIO PRESTADO GRATUITAMENTE" 
+2000 Leyenda “COMPROBANTE DE PERCEPCIÓN” 
+2001 Leyenda “BIENES TRANSFERIDOS EN LA AMAZONÍA REGIÓN SELVAPARA SER CONSUMIDOS EN LA 
+MISMA" 
+2002 Leyenda “SERVICIOS PRESTADOS EN LA AMAZONÍA  REGIÓN SELVA PARA SER CONSUMIDOS EN LA 
+MISMA” 
+2003 Leyenda “CONTRATOS DE CONSTRUCCIÓN EJECUTADOS  EN LA AMAZONÍA REGIÓN SELVA” 
+2004 Leyenda “Agencia de Viaje - Paquete turístico”  
+2005 Leyenda “Venta realizada por emisor itinerante”  
+2006 Leyenda: Operación sujeta a detracción 
+2007 Leyenda: Operación sujeta a IVAP 
+3000 Detracciones: CODIGO DE BB Y SS SUJETOS A DETRACCION 
+3001 Detracciones: NUMERO DE CTA EN EL BN 
+3002 Detracciones: Recursos Hidrobiológicos-Nombre y matrícula de la embarcación 
+3003 Detracciones: Recursos Hidrobiológicos-Tipo y cantidad de especie vendida 
+3004 Detracciones: Recursos Hidrobiológicos -Lugar de descarga 
+3005 Detracciones: Recursos Hidrobiológicos -Fecha de descarga 
+3006 Detracciones: Transporte Bienes vía terrestre – Numero Registro MTC 
+3007 Detracciones: Transporte Bienes vía terrestre – configuración vehicular 
+3008 Detracciones: Transporte Bienes vía terrestre – punto de origen 
+3009 Detracciones: Transporte Bienes vía terrestre – punto destino 
+3010 Detracciones: Transporte Bienes vía terrestre – valor referencial preliminar 
+4000 Beneficio hospedajes: Código País de emisión del pasaporte 
+---PAGE 7---
+~ 7 ~  
+ 
+4001 Beneficio hospedajes: Código País de residencia del sujeto no domiciliado 
+4002 Beneficio Hospedajes: Fecha de ingreso al país  
+4003 Beneficio Hospedajes: Fecha de ingreso al establecimiento 
+4004 Beneficio Hospedajes: Fecha de salida del establecimiento 
+4005 Beneficio Hospedajes: Número de días de permanencia 
+4006 Beneficio Hospedajes: Fecha de consumo  
+4007 Beneficio Hospedajes: Paquete turístico - Nombres y Apellidos del Huésped  
+4008 Beneficio Hospedajes: Paquete turístico – Tipo documento identidad del huésped   
+4009 Beneficio Hospedajes: Paquete turístico – Numero de documento identidad de huésped  
+5000 Proveedores Estado: Número de Expediente 
+5001 Proveedores Estado : Código de unidad ejecutora 
+5002 Proveedores Estado : N° de proceso de selección 
+5003 Proveedores Estado : N° de contrato 
+6000 Comercialización de Oro :  Código Unico Concesión Minera 
+6001 Comercialización de Oro :  N° declaración compromiso 
+6002 Comercialización de Oro :  N° Reg. Especial .Comerci. Oro 
+6003 Comercialización de Oro :  N° Resolución que autoriza Planta de Beneficio 
+6004 Comercialización de Oro : Ley Mineral (% concent. oro) 
+ 
+Observación: 
+ 
+Las siguientes leyendas a que se refieren los Anexos 1, 2, 3 y 4, “no se codifican”  y siempre deberán 
+consignarse en la representación impresa: 
+ 
+Leyenda: "Representación impresa de <la factura electrónica>, consulte en www.xxxxx.xxx>". Glosa 
+según se trate de factura electrónica, boleta de venta electrónica o notas electrónicas. 
+Catálogo No. 16: Códigos – Tipo de Precio de Venta Unitario 
+ 
+CATALOGO No. 16 
+Campo cac:AlternativeConditionPrice/cbc:PriceTypeCode 
+Descripción Tipo de precio de venta 
+Catálogo SUNAT 
+Código Descripción 
+01 Precio unitario (incluye el IGV) 
+02 Valor referencial unitario en operaciones no onerosas 
+Catálogo No. 17: Códigos – Tipo de Operación 
+CATALOGO No. 17 
+Campo ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/sac:AdditionalInformation/sac:SUNATTransa
+ction/cbc:ID  
+Descripció
+n 
+Tipo de Operación 
+Catálogo SUNAT 
+Código Descripción 
+01 Venta lnterna 
+02 Exportación 
+---PAGE 8---
+~ 8 ~  
+ 
+03 No Domiciliados 
+04 Venta Interna – Anticipos 
+05 Venta Itinerante  
+06 Factura Guía 
+07 Venta Arroz Pilado 
+08 Factura - Comprobante de Percepción 
+10 Factura - Guía remitente 
+11 Factura - Guía transportista 
+12 Boleta de venta – Comprobante de Percepción. 
+13 Gasto Deducible Persona Natural 
+Catálogo No. 18: Códigos – Modalidad de Traslado 
+CATALOGO No. 18 
+Campo /Invoice/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/sac:AdditionalInformation/sac:S
+UNATEmbededDespatchAdvice/cbc:TransportModeCode 
+Descripción Modalidad de traslado 
+Catálogo SUNAT 
+Código Descripción 
+01 Transporte público 
+02 Transporte privado 
+Catálogo No. 19: Resumen Diario de boletas de venta y notas electrónicas - Códigos de estado de ítem 
+CATALOGO No. 18 
+Campo /SummaryDocuments/sac:SummaryDocumentsLine/cac:Status/cbc:ConditionCode 
+Descripción Código de estado del ítem 
+Catálogo SUNAT 
+Código Descripción 
+1 
+2 
+3 
+ 
+ Adicionar 
+ Modificar 
+ Anulado 
+ 
+Catálogo No. 20: Códigos – Motivos de Traslado 
+CATALOGO No. 20 
+Campo ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/sac:AdditionalInformation/sac:SUNAT
+EmbededDespatchAdvice/cac:Shipment/cbc:ShippingPriorityLevelCode 
+Descripción Motivos de Traslado 
+Catálogo SUNAT 
+Código Descripción 
+01 VENTA 
+14 VENTA SUJETA A CONFIRMACION DEL COMPRADOR    
+02 COMPRA 
+04 TRASLADO ENTRE ESTABLECIMIENTOS DE LA MISMA EMPRESA 
+18 TRASLADO EMISOR ITINERANTE CP 
+08 IMPORTACION 
+09 
+19 
+EXPORTACION 
+TRASLADO A ZONA PRIMARIA 
+13 OTROS 
+---PAGE 9---
+~ 9 ~  
+ 
+ 
+Catálogo No. 21: Documentos Relacionados - aplicable solo para la Guía de remisión electrónica 
+CATALOGO No. 23 
+Campo cac:AdditionalDocumentReference/ cbc:DocumentTypeCode 
+Descripción  
+Catálogo  ISO 4217 Alpha Version 2001 – Codes for the representation of currencies and 
+funds 
+Código Descripción 
+01 NUMERACION DAM 
+02 NUMERO DE ORDEN DE ENTREGA 
+03 NUMERO SCOP 
+04 NUMERO DE MANIFIESTO DE CARGA 
+05 NUMERO DE CONSTANCIA DE DETRACCION 
+06 OTROS 
+ 
+Catálogo No. 22: Regímenes de Percepción 
+CATALOGO No. 22 
+Campo /Perception/sac:SUNATPerceptionSystemCode 
+Descripción Régimen de Percepción 
+Catálogo SUNAT 
+Código Descripción  
+01 PERCEPCION VENTA INTERNA TASA 2% 
+02 
+ 
+03 
+PERCEPCION A LA ADQUISICION DE 
+COMBUSTIBLE 
+PERCEPCION REALIZADA AL AGENTE DE 
+PERCEPCION CON TASA ESPECIAL 
+TASA 1% 
+ 
+TASA 0.5% 
+ 
+Catálogo No. 23: Regímenes de Retención 
+ 
+CATALOGO No. 23 
+Campo /Retention/sac:SUNATRetentionSystemCode 
+Descripción Régimen de Retención 
+Catálogo SUNAT 
+Código Descripción  
+01 TASA 3%  
+ 
+Catálogo No. 24: Recibo Electrónico por Servicios Públicos  
+ 
+CATALOGO No. 22 
+Campo  
+Descripción Código de tarifas de Servicios Públicos 
+Catálogo SUNAT 
+Código tarifa CODIGO SERVICIO 
+L001 AT LUZ 
+L002 MT2 LUZ 
+L003 MT3 LUZ 
+L004 MT4 LUZ 
+L005 BT2 LUZ 
+L006 BT3 LUZ 
+L009 BT5B NO RESIDENCIAL LUZ 
+L010 BT6 LUZ 
+A011 COMERCIAL AGUA 
+A012 INDUSTRIAL AGUA 
+---PAGE 10---
+~ 10 ~  
+ 
+A014 DOMESTICO AGUA 
+A015 SOCIAL AGUA 
+ 
+Catálogo No. 25: Código Producto SUNAT  
+ 
+CATALOGO No. 25 
+Campo  
+Descripción Código Producto SUNAT 
+Catálogo United Nations Standard Products and Services Code - Código de productos y 
+servicios estándar de las Naciones Unidas - UNSPSC v14_0801 
+ 
+Catálogo No. 51: Código de tipo de factura 
+ 
+No. 51 
+Catálogo Código de tipo de factura 
+Código Descripción 
+0101 Venta lnterna 
+0102 Exportación 
+0103 No Domiciliados 
+0104 Venta Interna – Anticipos 
+0105 Venta Itinerante  
+0106 Factura Guía 
+0107 Venta Arroz Pilado 
+0108 Factura - Comprobante de Percepción 
+0110 Factura - Guía remitente 
+0111 Factura - Guía transportista 
+ 
+Catálogo No. 52: Código de Leyendas 
+ 
+No. 52 
+Catálogo Códigos de leyendas 
+Código Descripción 
+1000 Monto en Letras 
+1002 
+Leyenda "TRANSFERENCIA GRATUITA DE UN BIEN Y/O SERVICIO PRESTADO 
+GRATUITAMENTE" 
+2000 Leyenda “COMPROBANTE DE PERCEPCIÓN” 
+2001 
+Leyenda “BIENES TRANSFERIDOS EN LA AMAZONÍA REGIÓN SELVAPARA SER CONSUMIDOS 
+EN LA MISMA" 
+2002 
+Leyenda “SERVICIOS PRESTADOS EN LA AMAZONÍA  REGIÓN SELVA PARA SER CONSUMIDOS 
+EN LA MISMA” 
+2003 Leyenda “CONTRATOS DE CONSTRUCCIÓN EJECUTADOS  EN LA AMAZONÍA REGIÓN SELVA” 
+2004 Leyenda “Agencia de Viaje - Paquete turístico”  
+2005 Leyenda “Venta realizada por emisor itinerante”  
+2006 Leyenda "Operación sujeta a detracción" 
+3000 Código interno generado por el software de Facturación  
+ 
+ 
+ 
+ 
+ 
+ 
+---PAGE 11---
+~ 11 ~  
+ 
+Catálogo No. 53: Códigos de cargos o descuentos 
+ 
+No. 53 
+Catálogo Códigos de cargos o descuentos 
+Código Descripción 
+00 OTROS DESCUENTOS 
+50 OTROS CARGOS 
+51 PERCEPCION VENTA INTERNA 
+52 PERCEPCION A LA ADQUISICION DE COMBUSTIBLE 
+53 PERCEPCION REALIZADA AL AGENTE DE PERCEPCION CON TASA ESPECIAL 
+54 OTROS CARGOS RELACIONADOS AL SERVICIO 
+55 OTROS CARGOS NO RELACIONADOS AL SERVICIO 
+ 
+Catálogo No. 54: Códigos de bienes y servicios sujetos a detracción  
+ 
+No. 54 
+Catálogo Códigos de bienes y servicios sujetos a detracciones 
+Código Descripción 
+001 Azúcar 
+003 Alcohol etílico 
+004 Recursos hidrobiológicos 
+005 Maíz amarillo duro 
+006 Algodón 
+007 Caña de azúcar 
+008 Madera 
+009 Arena y piedra. 
+010 Residuos, subproductos, desechos, recortes y desperdicios 
+011 Bienes del inciso A) del Apéndice I de la Ley del IGV 
+012 Intermediación laboral y tercerización 
+013 Animales vivos 
+014 Carnes y despojos comestibles 
+015 Abonos, cueros y pieles de origen animal 
+016 Aceite de pescado 
+017 Harina, polvo y “pellets” de pescado, crustáceos, moluscos y demás invertebrados acuáticos 
+018 Embarcaciones pesqueras 
+019 Arrendamiento de bienes muebles 
+020 Mantenimiento y reparación de bienes muebles 
+021 Movimiento de carga 
+022 Otros servicios empresariales 
+023 Leche 
+024 Comisión mercantil 
+025 Fabricación de bienes por encargo 
+026 Servicio de transporte de personas 
+029 Algodón en rama sin desmontar 
+030 Contratos de construcción 
+031 Oro gravado con el IGV 
+032 Páprika y otros frutos de los géneros capsicum o pimienta 
+---PAGE 12---
+~ 12 ~  
+ 
+033 Espárragos 
+034 Minerales metálicos no auríferos 
+035 Bienes exonerados del IGV 
+036 Oro y demás minerales metálicos exonerados del IGV 
+037 Demás servicios gravados con el IGV 
+039 Minerales no metálicos 
+040 Bien inmueble gravado con IGV 
+ 
+Catálogo No. 55: Código de identificación del ítem  
+ 
+No. 55 
+Catálogo Código de identificación del concepto tributario 
+Código Descripción 
+3002 Detracciones: Recursos Hidrobiológicos - Nombre y Matrícula de la Embarcación 
+3003 Detracciones: Cantidad de Especies Marinas 
+3004 Detracciones: Recursos Hidrobiológicos - Lugar de descarga 
+3005 Detracciones: Recursos Hidrobiológicos - Fecha de descarga 
+3006 Detracciones: Transporte Bienes vía terrestre – Numero Registro MTC 
+3007 Detracciones: Transporte Bienes vía terrestre – Configuración Vehicular 
+3008 Detracciones: Transporte Bienes vía terrestre – Punto de Origen 
+3009 Detracciones: Transporte Bienes vía terrestre – Punto Destino 
+3010 Detracciones: Transporte Bienes vía terrestre – Valor Referencial Preliminar por Viaje 
+3011 Detracciones: Transporte Bienes vía terrestre – Valor Referencial Preliminar por Vehículo 
+3012 Detracciones: Transporte Bienes vía terrestre – Valor Referencial Preliminar por TM en Viaje 
+3013 Detracciones: Transporte Bienes vía terrestre – Carga Efectiva en TM por Vehículo 
+3014 Detracciones: Transporte Bienes vía terrestre – Carga Útil en TM del Vehículo en Viaje 
+4002 Beneficio Hospedajes: Número de Días de Permanencia 
+4003 Beneficio Hospedajes: Fecha de Ingreso al Establecimiento 
+4004 Beneficio Hospedajes: Fecha de Salida del Establecimiento 
+4005 Beneficio Hospedajes: Número de Días de Permanencia 
+4006 Beneficio Hospedajes: Fecha de Consumo  
+5000 Proveedores Estado: Número de Expediente 
+5001 Proveedores Estado : Código de Unidad Ejecutora 
+5002 Proveedores Estado : N° de Proceso de Selección 
+5003 Proveedores Estado : N° de Contrato 
+6000 Comercialización de Oro :  Código Unico Concesión Minera 
+6001 Comercialización de Oro :  N° declaración compromiso 
+6002 Comercialización de Oro :  N° Reg. Especial .Comerci. Oro 
+6003 Comercialización de Oro :  N° Resolución que autoriza Planta de Beneficio 
+6004 Comercialización de Oro : Ley Mineral (% concent. oro) 
+7000 Gastos Art. 37 Renta: Número de Placa 
+8000 Gastos Intereses Hipotecarios: Número de Contrato 
+8001 Gastos Intereses Hipotecarios: Fecha de Otorgamiento del Crédito 
+ 
+ 
+ 
+ 
+ 
+---PAGE 13---
+~ 13 ~  
+ 
+Catálogo No. 56: Código de tipo de servicio público 
+ 
+No. 56 
+Catálogo Código de tipo de servicio público 
+Código Descripción 
+1 Energía eléctrica 
+2 Agua 
+3 Cable 
+4 Internet 
+5 Otros servicios regulados por OSIPTEL 
+ 
+Catálogo No. 57: Código de tipo de servicios públicos - telecomunicaciones 
+ 
+No. 57 
+Catálogo Código de tipo de servicio públicos - telecomunicaciones 
+Código Descripción 
+1 Servicios Portadores 
+2 Teleservicios o Servicios Finales 
+3 Servicios de Difusión 
+4 Servicios de valor añadido 
+ 
+Catálogo No. 58: Código de tipo de medidor – recibo de luz 
+ 
+No. 58 
+Catálogo Código de tipo de medidor (recibo de luz) 
+Código Descripción 
+1 Trifásico 
+2 Monofásico 
+ 

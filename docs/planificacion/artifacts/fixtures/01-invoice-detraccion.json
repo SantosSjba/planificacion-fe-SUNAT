@@ -1,0 +1,43 @@
+{
+  "id": "01-invoice-detraccion",
+  "document_kind": "invoice",
+  "title": "Factura gravada con detracción",
+  "expects": {
+    "prevalidation": "pass",
+    "terminal_status": ["accepted", "accepted_with_observation"]
+  },
+  "notes": "Montos de detracción ilustrativos; catálogo 54 según bien/servicio",
+  "request": {
+    "company_id": "{{company_id}}",
+    "serie": "F001",
+    "operation_type": "0101",
+    "issue_date": "2026-09-17",
+    "currency": "PEN",
+    "customer": {
+      "identity_type": "6",
+      "identity_number": "20123456789",
+      "name": "ACME SAC"
+    },
+    "lines": [
+      {
+        "id": 1,
+        "quantity": 1,
+        "unit_code": "NIU",
+        "description": "Servicio sujeto a detracción",
+        "unit_value": 1000.0,
+        "unit_price": 1180.0,
+        "tax_affectation": "10",
+        "igv_percent": 18,
+        "tax_scheme_id": "1000"
+      }
+    ],
+    "detraction": {
+      "code": "022",
+      "percent": 12,
+      "amount": 120.0,
+      "currency": "PEN",
+      "bank_account": "{{detraction_bank_account}}"
+    },
+    "totals_mode": "auto"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "catalog": "63",
+  "name": "Puertos del Perú",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "PUB",
+      "description": "Bayóvar",
+      "ubigeo": "200801"
+    },
+    {
+      "code": "CLL",
+      "description": "Callao",
+      "ubigeo": "070101"
+    },
+    {
+      "code": "CON",
+      "description": "Conchán",
+      "ubigeo": "150119"
+    },
+    {
+      "code": "CHY",
+      "description": "Chancay",
+      "ubigeo": "150605"
+    },
+    {
+      "code": "CHM",
+      "description": "Chimbote",
+      "ubigeo": "021801"
+    },
+    {
+      "code": "EEN",
+      "description": "Eten",
+      "ubigeo": "140113"
+    },
+    {
+      "code": "HCO",
+      "description": "Huacho",
+      "ubigeo": "150801"
+    },
+    {
+      "code": "HUY",
+      "description": "Huarmey",
+      "ubigeo": "021101"
+    },
+    {
+      "code": "ILQ",
+      "description": "Ilo",
+      "ubigeo": "180301"
+    },
+    {
+      "code": "IQT",
+      "description": "Iquitos",
+      "ubigeo": "160101"
+    },
+    {
+      "code": "MRI",
+      "description": "Matarani",
+      "ubigeo": "040701"
+    },
+    {
+      "code": "PAI",
+      "description": "Paita",
+      "ubigeo": "200501"
+    },
+    {
+      "code": "PIO",
+      "description": "Pisco",
+      "ubigeo": "110505"
+    },
+    {
+      "code": "PCL",
+      "description": "Pucallpa",
+      "ubigeo": "250101"
+    },
+    {
+      "code": "PUN",
+      "description": "Puno",
+      "ubigeo": "210101"
+    },
+    {
+      "code": "SVY",
+      "description": "Salaverry",
+      "ubigeo": "130109"
+    },
+    {
+      "code": "SNX",
+      "description": "San Nicolas",
+      "ubigeo": "110304"
+    },
+    {
+      "code": "SUP",
+      "description": "Supe",
+      "ubigeo": "150204"
+    },
+    {
+      "code": "TYL",
+      "description": "Talara",
+      "ubigeo": "200701"
+    },
+    {
+      "code": "YMS",
+      "description": "Yurimaguas",
+      "ubigeo": "160201"
+    },
+    {
+      "code": "ZOR",
+      "description": "Zorritos",
+      "ubigeo": "240103"
+    }
+  ]
+}

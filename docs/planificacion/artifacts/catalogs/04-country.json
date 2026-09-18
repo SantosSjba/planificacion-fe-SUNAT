@@ -1,0 +1,55 @@
+{
+  "catalog": "04",
+  "name": "Código de país",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "ISO 3166-1 — Anexo N°8 only references the ISO list (not enumerated). Seed for MVP.",
+  "exported_at": "2026-09-17",
+  "completeness": "seed",
+  "items": [
+    {
+      "code": "PE",
+      "description": "Perú"
+    },
+    {
+      "code": "US",
+      "description": "Estados Unidos"
+    },
+    {
+      "code": "CL",
+      "description": "Chile"
+    },
+    {
+      "code": "CO",
+      "description": "Colombia"
+    },
+    {
+      "code": "EC",
+      "description": "Ecuador"
+    },
+    {
+      "code": "BO",
+      "description": "Bolivia"
+    },
+    {
+      "code": "BR",
+      "description": "Brasil"
+    },
+    {
+      "code": "AR",
+      "description": "Argentina"
+    },
+    {
+      "code": "MX",
+      "description": "México"
+    },
+    {
+      "code": "ES",
+      "description": "España"
+    },
+    {
+      "code": "CN",
+      "description": "China"
+    }
+  ],
+  "notes": "seed-from-fixtures-pending-full-export (ISO 3166-1 not enumerated in SUNAT tables)"
+}

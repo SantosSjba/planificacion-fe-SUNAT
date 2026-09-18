@@ -1,0 +1,70 @@
+{
+  "catalog": "25.2",
+  "name": "Código de producto SUNAT",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "10171503",
+      "description": "Harina, polvo y \"pellets\" de pescado, crustáceos, moluscos y demás invertebrados acuáticos"
+    },
+    {
+      "code": "11101600",
+      "description": "Minerales metálicos no auríferos"
+    },
+    {
+      "code": "11101714",
+      "description": "Plomo"
+    },
+    {
+      "code": "11111600",
+      "description": "Piedra"
+    },
+    {
+      "code": "11111700",
+      "description": "Arena"
+    },
+    {
+      "code": "11121600",
+      "description": "Madera"
+    },
+    {
+      "code": "11140000",
+      "description": "Chatarra y materiales de desecho"
+    },
+    {
+      "code": "50111500",
+      "description": "Carnes y despojos comestibles"
+    },
+    {
+      "code": "50120000",
+      "description": "Recursos hidrobiológicos"
+    },
+    {
+      "code": "50151600",
+      "description": "Aceite de pescado"
+    },
+    {
+      "code": "50161509",
+      "description": "Caña de Azúcar"
+    },
+    {
+      "code": "50171500",
+      "description": "Páprika"
+    },
+    {
+      "code": "50203205",
+      "description": "Lecha cruda entera"
+    },
+    {
+      "code": "50403200",
+      "description": "Maíz amarillo"
+    },
+    {
+      "code": "11111111",
+      "description": "Bienes gravados con el IGV por renuncia a la exoneración"
+    }
+  ]
+}

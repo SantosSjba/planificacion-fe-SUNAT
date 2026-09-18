@@ -1,0 +1,10 @@
+{
+  "catalog": "62",
+  "name": "Bienes normalizados",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "missing",
+  "items": [],
+  "notes": "Bienes normalizados — list not embedded in validation XLSX Catálogos sheet."
+}

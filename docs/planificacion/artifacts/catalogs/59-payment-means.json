@@ -1,0 +1,98 @@
+{
+  "catalog": "59",
+  "name": "Medios de Pago",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "001",
+      "description": "Depósito en cuenta"
+    },
+    {
+      "code": "002",
+      "description": "Giro"
+    },
+    {
+      "code": "003",
+      "description": "Transferencia de fondos"
+    },
+    {
+      "code": "004",
+      "description": "Orden de pago"
+    },
+    {
+      "code": "005",
+      "description": "Tarjeta de débito"
+    },
+    {
+      "code": "006",
+      "description": "Tarjeta de crédito emitida en el país por una empresa del sistema financiero"
+    },
+    {
+      "code": "007",
+      "description": "Cheques con la cláusula de \"NO NEGOCIABLE\", \"INTRANSFERIBLES\", \"NO A LA ORDEN\" u otra equivalente, a que se refiere el inciso g) del artículo 5° de la ley"
+    },
+    {
+      "code": "008",
+      "description": "Efectivo, por operaciones en las que no existe obligación de utilizar medio de pago"
+    },
+    {
+      "code": "009",
+      "description": "Efectivo, en los demás casos"
+    },
+    {
+      "code": "010",
+      "description": "Medios de pago usados en comercio exterior"
+    },
+    {
+      "code": "011",
+      "description": "Documentos emitidos por las EDPYMES y las cooperativas de ahorro y crédito no autorizadas a captar depósitos del público"
+    },
+    {
+      "code": "012",
+      "description": "Tarjeta de crédito emitida en el país o en el exterior por una empresa no perteneciente al sistema financiero, cuyo objeto principal sea la emisión y administración de tarjetas de crédito"
+    },
+    {
+      "code": "013",
+      "description": "Tarjetas de crédito emitidas en el exterior por empresas bancarias o financieras no domiciliadas"
+    },
+    {
+      "code": "101",
+      "description": "Transferencias – Comercio exterior"
+    },
+    {
+      "code": "102",
+      "description": "Cheques bancarios - Comercio exterior"
+    },
+    {
+      "code": "103",
+      "description": "Orden de pago simple - Comercio exterior"
+    },
+    {
+      "code": "104",
+      "description": "Orden de pago documentario - Comercio exterior"
+    },
+    {
+      "code": "105",
+      "description": "Remesa simple - Comercio exterior"
+    },
+    {
+      "code": "106",
+      "description": "Remesa documentaria - Comercio exterior"
+    },
+    {
+      "code": "107",
+      "description": "Carta de crédito simple - Comercio exterior"
+    },
+    {
+      "code": "108",
+      "description": "Carta de crédito documentario - Comercio exterior"
+    },
+    {
+      "code": "999",
+      "description": "Otros medios de pago"
+    }
+  ]
+}

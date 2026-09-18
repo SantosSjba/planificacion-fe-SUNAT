@@ -1,0 +1,34 @@
+{
+  "catalog": "21",
+  "name": "Código de documentos relacionados (sólo guía de remisión electrónica)",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "01",
+      "description": "Numeración DAM"
+    },
+    {
+      "code": "02",
+      "description": "Número de orden de entrega"
+    },
+    {
+      "code": "03",
+      "description": "Número SCOP"
+    },
+    {
+      "code": "04",
+      "description": "Número de manifiesto de carga"
+    },
+    {
+      "code": "05",
+      "description": "Número de constancia de detracción"
+    },
+    {
+      "code": "06",
+      "description": "Otros"
+    }
+  ]
+}

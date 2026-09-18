@@ -1,0 +1,25 @@
+{
+  "catalog": "22",
+  "name": "Código de regimen de percepciones",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "01",
+      "description": "Percepción Venta Interna",
+      "porcentaje": "2"
+    },
+    {
+      "code": "02",
+      "description": "Percepción a la adquisición de combustible",
+      "porcentaje": "1"
+    },
+    {
+      "code": "03",
+      "description": "Percepción realizada al agente de percepción con tasa especial",
+      "porcentaje": "0.5"
+    }
+  ]
+}

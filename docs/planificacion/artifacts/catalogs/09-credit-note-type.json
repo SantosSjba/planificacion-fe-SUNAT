@@ -1,0 +1,62 @@
+{
+  "catalog": "09",
+  "name": "Códigos de tipo de nota de crédito electrónica",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "01",
+      "description": "Anulación de la operación"
+    },
+    {
+      "code": "02",
+      "description": "Anulación por error en el RUC"
+    },
+    {
+      "code": "03",
+      "description": "Corrección por error en la descripción o atención de reclamo respecto de bienes adquiridos o servicios prestados Corrección por error en la descripción y/o código de producto SUNAT"
+    },
+    {
+      "code": "04",
+      "description": "Descuento global"
+    },
+    {
+      "code": "05",
+      "description": "Descuento por ítem"
+    },
+    {
+      "code": "06",
+      "description": "Devolución total"
+    },
+    {
+      "code": "07",
+      "description": "Devolución por ítem"
+    },
+    {
+      "code": "08",
+      "description": "Bonificación"
+    },
+    {
+      "code": "09",
+      "description": "Disminución en el valor"
+    },
+    {
+      "code": "10",
+      "description": "Otros Conceptos"
+    },
+    {
+      "code": "11",
+      "description": "Ajustes de operaciones de exportación"
+    },
+    {
+      "code": "12",
+      "description": "Ajustes afectos al IVAP"
+    },
+    {
+      "code": "13",
+      "description": "Corrección o modificación del monto neto pendiente de pago y/o la(s) fechas(s) de vencimiento del pago único o de las cuotas y/o los montos correspondientes a cada cuota, de ser el caso"
+    }
+  ]
+}

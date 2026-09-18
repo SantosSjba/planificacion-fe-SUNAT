@@ -1,0 +1,511 @@
+---PAGE 1---
+d) Nota de crédito
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD FORMATO / VALOR TAG o Atributo UBL
+1 Versión del UBL Global M an3 "2.1" /CreditNote/cbc:UBLVersionID
+2 Versión de la estructura del 
+documento
+Global M an3 "2.0" /CreditNote/cbc:CustomizationID
+3 Numeración, conformada por 
+serie y número correlativo 
+Global M an..13 F###-NNNNNNNN
+B###-NNNNNNNN
+S###-NNNNNNNN
+/CreditNote/cbc:ID
+4 Fecha de emisión Global M an10 YYYY-MM-DD /CreditNote/cbc:IssueDate
+5 Hora de emisión Global C an8 hh:mm:ss /CreditNote/cbc:IssueTime
+M an2 (Catálogo No. 09) /CreditNote/cac:DiscrepancyResponse/cbc:ResponseCode
+"PE:SUNAT" @listAgencyName
+"Tipo de nota de credito" @listName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o09"
+@listURI
+7 Motivo o Sustento Global M an..500 /CreditNote/cac:DiscrepancyResponse/cbc:Description
+8 Tipo de moneda Global M an3 (Catálogo No. 02) /CreditNote/cbc:DocumentCurrencyCode
+9 Firma Digital Global M an..3000 - /CreditNote/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/ds:S
+ignature
+CreditNote/cac:Signature
+n11  /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/c
+bc:ID (Número de RUC)
+n1 "6" /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/c
+bc:ID@schemeID (Tipo de documento de identidad)
+"Documento de 
+Identidad"
+@schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o06"
+@schemeURI
+11 Nombre Comercial Global C an..1500 /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Na
+me
+12 Apellidos y nombres, 
+denominación o razón social
+Global M an..1500 /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc
+:RegistrationName
+an..200 /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac
+:RegistrationAddress/cac:AddressLine/cbc:Line
+(Dirección completa y detallada)
+an..25 /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac
+:RegistrationAddress/cbc:CitySubdivisionName (Urbanización)
+an..30 /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac
+:RegistrationAddress/cbc:CityName (Provincia)
+an6 (Catálogo No. 13) /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac
+:RegistrationAddress/cbc:ID (Código de ubigeo)
+"PE:INEI" @schemeAgencyName
+"Ubigeos" @schemeName
+an..30 /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac
+:RegistrationAddress/cbc:CountrySubentity (Departamento)
+an..30 /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac
+:RegistrationAddress/cbc:District (Distrito)
+an2 (Catálogo No. 04) /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac
+:RegistrationAddress/cac:Country/cbc:IdentificationCode (Código de país)
+"ISO 3166-1" @listID
+'"United Nations 
+Economic Commission 
+for Europe"
+@listAgencyName
+"Country" @listName
+M an4 n4 /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac
+:RegistrationAddress/cbc:AddressTypeCode
+"PE:SUNAT" @schemeAgencyName
+"Establecimientos 
+anexos"
+@schemeName
+an..15 /CreditNote/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification
+/cbc:ID (Número de documento)
+an1 (Catálogo No. 06) /CreditNote/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification
+/cbc:ID@schemeID (Tipo de documento de identidad)
+Datos de la Firma electrónica
+Datos del Emisor
+10 Número de RUC Global M
+C
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+Datos de la Nota de Credito
+6 Código de tipo de nota de 
+crédito
+Global
+C
+14 Código asignado por SUNAT 
+para el establecimiento anexo 
+declarado en el RUC
+Global
+C
+Datos del ciente o receptor
+13 Domicilio Fiscal Global C
+15 Tipo y número de documento 
+de identidad del adquirente o 
+usuario
+Global M
+Pág. 1
+---PAGE 2---
+d) Nota de crédito
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD FORMATO / VALOR TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+"Documento de 
+Identidad"
+@schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o06"
+@schemeURI
+16 Apellidos y nombres, 
+denominación o razón social del 
+adquirente o usuario 
+Global M an..1500 /CreditNote/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/c
+bc:RegistrationName
+17 Serie y número del documento 
+que modifica
+Global M n..13 <Serie>-<Número> /CreditNote/cac:BillingReference/cac:InvoiceDocumentReference/cbc:ID
+an2 (Catálogo No. 01) /CreditNote/cac:BillingReference/cac:InvoiceDocumentReference/cbc:Docu
+mentTypeCode
+"PE:SUNAT" @listAgencyName
+"Tipo de Documento" @listName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o01"
+@listURI
+an..30 /CreditNote/cac:DespatchDocumentReference/cbc:ID (Número de la guía de 
+remisión)
+an2 (Catálogo No. 01) /CreditNote/cac:DespatchDocumentReference/cbc:DocumentTypeCode 
+(Tipo de la guía de remisión)
+"PE:SUNAT" @listAgencyName
+"Tipo de Documento" @listName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o01"
+@listURI
+an..30 /CreditNote/cac:AdditionalDocumentReference/cbc:ID (Número de 
+documento)
+an2 (Catálogo No. 12) /CreditNote/cac:AdditionalDocumentReference/cbc:DocumentTypeCode 
+(Tipo de documento)
+"Documentos 
+Relacionados"
+@schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o12"
+@schemeURI
+21 Número de orden del Ítem Ítem M n..3 /CreditNote/cac:CreditNoteLine/cbc:ID
+M an..3 (Catálogo No. 03) /CreditNote/cac:CreditNoteLine/cbc:CreditedQuantity@unitCode
+"UN/ECE rec 20" @unitCodeListID
+"United Nations 
+Economic Commission 
+for Europe"
+@unitCodeListAgencyName
+23 Cantidad de unidades por ítem Ítem M an..23 n(12,10) /CreditNote/cac:CreditNoteLine/cbc:CreditedQuantity
+24 Código de producto Ítem C an..50 /CreditNote/cac:CreditNoteLine/cac:Item/cac:SellersItemIdentification/cbc:I
+D
+n..8 (Catálogo No. 25) /CreditNote/cac:CreditNoteLine/cac:Item/cac:CommodityClassification/cbc:I
+temClassificationCode
+"UNSPSC" @listID
+"GS1 US" @listAgencyName
+"Item Classification" @listName
+Ítem /CreditNote/cac:CreditNoteLine/cac:Item/cac:StandardItemIdentification/cb
+c:ID
+"GTIN" @schemeID
+27 Descripción detallada del 
+servicio prestado, bien vendido 
+o cedido en uso, indicando las 
+características.
+Ítem C an..500 /CreditNote/cac:CreditNoteLine/cac:Item/cbc:Description
+an..23 n(12,10) /CreditNote/cac:CreditNoteLine/cac:Price/cbc:PriceAmount
+an3 (Catálogo No. 02) @currencyID
+an..23 n(12,10) /CreditNote/cac:CreditNoteLine/cac:PricingReference/cac:AlternativeConditi
+onPrice/cbc:PriceAmount (Valor)
+an3 (Catálogo No. 02) @currencyID
+an2 (Catálogo No. 16) /CreditNote/cac:CreditNoteLine/cac:PricingReference/cac:AlternativeConditi
+onPrice/cbc:PriceTypeCode (Código de tipo de precio)
+"Tipo de Precio" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o16"
+@listURI
+Datos del documento que se modifica 
+18 Tipo de documento del 
+documento que modifica
+Global C
+15 Tipo y número de documento 
+de identidad del adquirente o 
+usuario
+Global
+C
+Datos del detalle o Ítem de la Nota de Crédito
+22 Unidad de medida por ítem Ítem
+C
+19 Tipo y número de la guía de 
+remisión relacionada
+Global C
+20 Tipo y número de otro 
+documento relacionado
+Global C
+25 Codigo producto de SUNAT Ítem C
+26 Código de producto GS1 C an..14
+28 Valor unitario por ítem Ítem M
+29
+30
+Precio de venta unitario por 
+item
+Valor referencial unitario por 
+ítem en operaciones no 
+onerosas
+Ítem M
+C
+Pág. 2
+---PAGE 3---
+d) Nota de crédito
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD FORMATO / VALOR TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+31 Monto total de impuestos del 
+ítem
+Ítem M an..15 n(12,2) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cbc:TaxAmount 
+(Monto total de impuestos por linea)
+an..15 n(12,2) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableA
+mount (Monto base)
+an3 (Catálogo No. 02) @currencyID (Moneda base)
+an..15 n(12,2) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmou
+nt (Monto de IGV de la línea)
+an3 (Catálogo No. 02) @currencyID
+an..9 n(3,5) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCateg
+ory/cbc:Percent (Tasa del IGV)
+an2 (Catálogo No. 07) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCateg
+ory/cbc:TaxExemptionReasonCode (Afectación al IGV e IVAP cuando 
+corresponda)
+"PE:SUNAT" @listAgencyName
+"Afectacion del IGV" @listName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo07"
+@listURI
+M an4 (Catálogo No. 05) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCateg
+ory/cac:TaxScheme/cbc:ID (Código del tributo)
+"Codigo de tributos" @schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo05"
+@schemeURI
+M an..6 (Catálogo No. 05) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCateg
+ory/cac:TaxScheme/cbc:Name (Nombre de tributo)
+M an3 (Catálogo No. 05) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCateg
+ory/cac:TaxScheme/cbc:TaxTypeCode (Código Internacional del Tributo)
+an..15 n(12,2) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableA
+mount (Monto base)
+an3 (Catálogo No. 02) @currencyID
+an..15 n(12,2) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmou
+nt (Monto de ISC de la línea)
+an3 (Catálogo No. 02) @currencyID
+an1 /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCateg
+ory/cbc:ID (Categoría de impuesto)
+"Codigo de tributos" @schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo05"
+@schemeURI
+an..9 n(3,5) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCateg
+ory/cbc:Percent (Tasa del tributo)
+an2 (Catálogo No. 08) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCateg
+ory/cbc:TierRange (Tipo de sistema de ISC)
+an..6 (Catálogo No. 05) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCateg
+ory/cac:TaxScheme/cbc:Name (Nombre de tributo)
+an3 (Catálogo No. 05) /CreditNote/cac:CreditNoteLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCateg
+ory/cac:TaxScheme/cbc:TaxTypeCode (Código Internacional del Tributo)
+an..15 n(12,2) /CreditNote/cac:CreditNoteLine/cbc:LineExtensionAmount 
+an3 (Catálogo No. 02) @currencyID
+35 Monto total de impuestos Global M an..15 n(12,2) /CreditNote/cac:TaxTotal/cbc:TaxAmount
+an..15 n(12,2) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableAmount (Total Valor 
+de Venta)
+an3 (Catálogo No. 02) @currencyID (Moneda base)
+an..15 "0.00" /CreditNote/cac:TaxTotal/cac:TaxSubtotal/
+cbc:TaxAmount (Monto Total del concepto)
+an3 (Catálogo No. 02) @currencyID
+an4 (Catálogo No. 05) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/
+cac:TaxCategory/cac:TaxScheme/cbc:ID (Código del tributo)
+"Codigo de tributos" @schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo05"
+@schemeURI
+32 Afectación al IGV por la línea
+Afectación IVAP por la línea
+Afectacion Otros Tributos
+Ítem M
+C
+C
+Totales de la Nota de Crédito
+36
+37
+38
+39
+Total valor de venta - 
+Exportación
+Total valor de venta - 
+operaciones inafectas
+Total valor de venta - 
+operaciones exoneradas
+Total valor de venta - 
+operaciones gratuitas
+Global C
+33 Afectación del ISC por la línea Ítem C
+34 Valor de venta por línea Ítem C
+Pág. 3
+---PAGE 4---
+d) Nota de crédito
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD FORMATO / VALOR TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+an..6 (Catálogo No. 05) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/
+cbc:Name (Nombre de tributo)
+an3 (Catálogo No. 05) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/
+cbc:TaxTypeCode 
+(Código Internacional del Tributo)
+an..15 n(12,2) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableAmount (Total valor 
+de venta de operaciones gravadas)
+an3 (Catálogo No. 02) @currencyID (Moneda base)
+an..15 n(12,2) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount (Monto del IGV o 
+IVAP, según corresponda )
+an3 (Catálogo No. 02) @currencyID
+an4 (Catálogo No. 05) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/
+cbc:ID (Código del tributo)
+"Codigo de tributos" @schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo05"
+@schemeURI
+M an..6 (Catálogo No. 05) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/
+cbc:Name (Nombre de tributo)
+M an3 (Catálogo No. 05) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/
+cbc:TaxTypeCode (Código Internacional del Tributo)
+an..15 n(12,2) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableAmount (Monto base)
+an3 (Catálogo No. 02) @currencyID
+an..15 n(12,2) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount (Monto del 
+Impuesto )
+an3 (Catálogo No. 02) @currencyID
+an4 (Catálogo No. 05) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/
+cbc:ID (Código del tributo)
+"Codigo de tributos" @schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo05"
+@schemeURI
+an..6 (Catálogo No. 05) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/
+cbc:Name (Nombre de tributo)
+an3 (Catálogo No. 05) /CreditNote/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/
+cbc:TaxTypeCode (Código Internacional del Tributo)
+an..15 n(12,2) /CreditNote/cac:LegalMonetaryTotal/cbc:ChargeTotalAmount
+an3 (Catálogo No. 02) @currencyID
+an..15 n(12,2) /CreditNote/cac:LegalMonetaryTotal/cbc:AllowanceTotalAmount
+an3 (Catálogo No. 02) @currencyID
+an..15 n(12,2) /CreditNote/cac:LegalMonetaryTotal/cbc:PayableAmount
+an3 (Catálogo No. 02) @currencyID
+an4 (Catálogo No. 52) /CreditNote/cbc:Note@languageLocaleID (Código de la leyenda)
+an..100 /CreditNote/cbc:Note  (Descripción de la leyenda)
+an..100 /CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:N
+ame (Nombre del concepto)
+an4 (Catálogo No. 55) /CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:N
+ameCode (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+36
+37
+38
+39
+Total valor de venta - 
+Exportación
+Total valor de venta - 
+operaciones inafectas
+Total valor de venta - 
+operaciones exoneradas
+Total valor de venta - 
+operaciones gratuitas
+Global C
+44 Sumatoria otros Cargos Global C
+40
+41
+Total valor de venta - 
+operaciones gravadas 
+(IGV o IVAP)
+Sumatoria IGV o IVAP
+Global M
+C
+45 Total descuentos Globales Global C
+46 Importe total Global M
+42
+43
+Sumatoria ISC
+Sumatoria Otros Tributos
+Global C
+48
+49
+50
+51
+52
+53
+N° de Contrato
+Fecha del otorgamiento del 
+crédito
+Tipo de préstamo
+Partida Regsitral
+Indicador de primera vivienda
+Dirección completa del predio
+Ítem C
+Información Adicional
+47 Leyendas Global C
+Información adicional  a nivel de ítem -  Gastos intereses hipotecarios primera vivienda
+Pág. 4
+---PAGE 5---
+d) Nota de crédito
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD FORMATO / VALOR TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+an..50
+an10
+an10
+an..50
+an1
+an6
+an..200
+an..25
+an..30
+an..30
+an..30
+YYYY-MM-DD
+(Catálogo No. 26)
+(Catálogo No. 27)
+(Catálogo No. 13)
+/CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:V
+alue (N° de Contrato)
+/CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:V
+alue (Fecha del otorgamiento del crédito)
+/CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:V
+alue (Código del tipo de préstamo)
+/CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:V
+alue (Número de la Partida Registral)
+/CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:V
+alue (Código de indicador de primera vivienda)
+/CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:V
+alue (Dirección - Código de ubigeo)
+/CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:V
+alue (Dirección - Dirección completa y detallada)
+/CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:V
+alue (Dirección - Urbanización)
+/CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:V
+alue (Dirección - Provincia)
+/CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:V
+alue (Dirección - Departamento)
+/CreditNote/cac:CreditNoteLine/cac:Item/cac:AdditionalItemProperty/cbc:V
+alue (Dirección - Distrito)
+48
+49
+50
+51
+52
+53
+N° de Contrato
+Fecha del otorgamiento del 
+crédito
+Tipo de préstamo
+Partida Regsitral
+Indicador de primera vivienda
+Dirección completa del predio
+Ítem C
+Pág. 5

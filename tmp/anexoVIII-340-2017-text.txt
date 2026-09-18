@@ -1,0 +1,142 @@
+---PAGE 1---
+CONDICIÓN 
+DE EMISIÓN 
+REQUISITO 
+MÍNIMO
+REPRESENTACIÓN 
+IMPRESA VALIDACIÓN DESCRIPCIÓN
+1 Fecha de emisión X X X Dato alfanumérico de 10 posiciones con
+formato yyyy-mm-dd.
+En la representacion impresa se podrá consignar
+"Fecha de emisión". 
+2 Ciclo de Facturación X X X Campo lleno
+3 Firma digital X X
+Que sea válida, se encuentre vigente y
+corresponda al emisor electrónico o a un
+proveedor de servicios electrónicos
+autorizado por aquel.
+4 Denominación o razón social X X X Campo lleno.
+5 Número de RUC X X X El número de RUC debe ser válido. En la representación impresa debe figurar la
+denominación "RUC" seguida del número.
+6 Tipo de documento X X X El tipo de documento será el inciado en el
+catálogo N.° 1 del Anexo N.° 14
+7 Numeración, conformada por serie y número 
+correlativo X X X
+La serie debe ser alfanumérica de cuatro (4)
+caracteres, siendo el primer caracter de la
+izquierda la letra S (Ejemplo:S001). El
+número correlativo podrá tener hasta ocho
+(8) caracteres y se iniciará en uno (1).  
+8 Tipo y número de documento X X X
+El tipo de documento será el que
+corresponda, según el catálogo N.° 6 del
+Anexo N.° 14, de no existir, consignar guión (-
+). 
+En la representación impresa debe sustituirse el código
+de tipo de documento por la denominación de éste y
+colocar a continuación  el número.
+9 Apellidos y nombres,  denominación o razón 
+social X X Campo lleno. 
+10 Código de distrito - Ubigeo, excepto cuando 
+tenga información en el campo 19. X Campo numerico de 6 posiciones
+11 Tipo de servicio público Númerico de una posición. 
+1 en el caso de energia electrica, 2 en el caso de agua, 3 
+para cable, 4 para internet y 5 para otros servicios
+regulados por OSIPTEL
+12 Número de suministro X X Numerico de 8 posiciones En caso de servicios de luz y agua
+13 Número de teléfono X X Numerico de hasta 9 posiciones En caso de servicios de telefonia
+14 Fecha de vencimiento X X X Dato alfanumérico de 10 posiciones con
+formato yyyy-mm-dd.
+dd/mm/aaaa. Igual o mayor a la fecha de emision. Aplica
+para los tipos de servicio, corresponde al último día de
+pago. 
+15 Código de Tipo de Tarifa contratada X X X alfanumericos de 2 posiciones En caso de tarifias de servicios publicos de luz y agua,
+que obra en el catálogo N.° 24 del anexo N.° 14
+16 Potencia contratada en kW X numérico 5 posiciones y dos decimales sólo para recibos de luz
+17 Tipo de medidor (trifásico, monofásico) X numérico de 1 posición solo para recibos de luz. 1= trifásico 2= monofásico
+18 Número de medidor X numérico de 6 posiciones Para servicios de luz y agua
+19
+Ubicación espacial del medidor (coordenadas 
+georeferenciales), cuando tenga el equipo para 
+ello
+X Solo para recibos de luz
+20 Consumo del periodo X Campo numérico de 10 posiciones  1= kwz en caso de luz /  2=  m3 en caso de agua, 
+DATOS DEL USUARIO DEL SERVICIO
+CARACTERISTICAS Y OTROS DATOS RELATIVOS AL SERVICIO 
+DATOS DEL EMISOR ELECTRÓNICO Y DEL DOCUMENTO
+Anexo VIII
+Anexo N° 23: Documento Autorizado Electrónico (Recibo por Servicios Públicos)
+CAMPOS DEFINIDOS
+DATOS DE CABECERA  
+Página 1
+---PAGE 2---
+CONDICIÓN 
+DE EMISIÓN 
+REQUISITO 
+MÍNIMO
+REPRESENTACIÓN 
+IMPRESA VALIDACIÓN DESCRIPCIÓN
+Anexo N° 23: Documento Autorizado Electrónico (Recibo por Servicios Públicos)
+CAMPOS DEFINIDOS
+21 Unidad de medida por ítem X X X Según el catálogo N.° 3 del Anexo N.°  8. Según catálogo N.° 3 del Anexo N.° 8.
+22 Cantidad de unidades  por ítem X X X Campo lleno.
+23 Descripción detallada del servicio prestado 
+por item, salvo las indicadas en el rubro 
+características  
+X X X Campo lleno.  Detallar los servicios prestados o complementarios de
+cada ítem a los que se refiere el campo 8 del rubro datos
+del emisor electrónico y del documento, salvo las
+indicadas en el rubro características.
+24 Valor unitario por ítem X X Campo lleno.
+25 Precio de venta unitario por ítem  y código X X X El código es el indicado en el catálogo 
+N.° 16 del Anexo N.° 8. 
+Incluye IGV.
+26 Afectación al IGV por ítem X X Según catálogo N.° 7 del Anexo N.° 8.
+27 Otros Cargos y descuentos por ítem Sólo de corresponder
+28 Total valor de venta - operaciones 
+gravadas 
+X X X Sumatoria del valor de venta por item de las
+operaciones gravadas con el IGV. Monto que
+incluye la deducción de descuentos, si los hubiere.
+En la representación impresa se podrá consignar la
+denominación "Op. gravada".
+29 Total valor de venta - operaciones 
+inafectas
+X X X Sumatoria del valor de venta por item de las
+operaciones inafectas con el IGV, incluidas las
+exportaciones. Monto que incluye la deducción de
+descuentos si los hubiere. En la representación
+impresa se podrá consignar la denominación "Op.
+inafecta". 
+30 Total valor de venta - operaciones 
+exoneradas 
+X X X Sumatoria del valor de venta por item de las
+operaciones exoneradas con el IGV. Monto que
+incluye la deducción de descuentos, si los hubiere.
+En la representación impresa se podrá consignar la
+denominación "Op. exonerada".
+31 Valor de venta por ítem X X Campo lleno.
+32 Sumatoria IGV X X Solo de corresponder. En la representacion impresa
+se podrá consignar " IGV"
+33 Sumatoria otros tributos Solo de corresponder. Monto total de tributo distinto
+al IGV comprendido en el comprobante electrónico.
+En la representacion impresa se podrá consignar "
+Otros tributos".
+34 Sumatoria otros cargos Solo de corresponder. Total de cargos del DAE que
+no forman parte del valor de venta. En la
+representacion impresa se podrá consignar " Otros
+cargos".
+35 Sumatoria de Descuentos Solo de corresponder. 
+36 Importe total de la venta, cesión en uso o 
+del servicio prestado
+X X X Campo lleno. Importe total del comprobante. En la representacion
+impresa se podrá consignar "IMPORTE TOTAL".
+37 Tipo de moneda en la cual se emite el 
+comprobante
+X X X Según catálogo N° 2 del Anexo N.° 14 En la representación impresa se podrá consignar el
+signo de la moneda o su descripción .
+DETALLE DEL ITEM
+RESUMEN DEL IMPORTE TOTAL DEL COMPROBANTE
+Deberá existir información en por lo 
+menos una de las casillas 24,25 o 26.
+Página 2

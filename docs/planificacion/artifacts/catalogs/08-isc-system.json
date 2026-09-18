@@ -1,0 +1,22 @@
+{
+  "catalog": "08",
+  "name": "Código de tipos de sistema de cálculo del ISC",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "01",
+      "description": "Sistema al valor (Apéndice IV, lit. A – T.U.O IGV e ISC)"
+    },
+    {
+      "code": "02",
+      "description": "Aplicación del Monto Fijo ( Sistema específico, bienes en el apéndice III, Apéndice IV, lit. B – T.U.O IGV e ISC)"
+    },
+    {
+      "code": "03",
+      "description": "Sistema de Precios de Venta al Público (Apéndice IV, lit. C – T.U.O IGV e ISC)"
+    }
+  ]
+}

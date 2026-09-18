@@ -1,0 +1,66 @@
+{
+  "catalog": "25.3",
+  "name": "Código de producto SUNAT",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "12142104",
+      "description": "Dióxido de carbono"
+    },
+    {
+      "code": "13111039",
+      "description": "Poli (tereftalato de etileno) sin adición de dióxido de titanio, en formas primarias"
+    },
+    {
+      "code": "13102020",
+      "description": "Envases o prefomas, de poli (tereftalato de etileno) (PET)"
+    },
+    {
+      "code": "15101502",
+      "description": "Kerosene"
+    },
+    {
+      "code": "15101504",
+      "description": "Combustible para Aviación"
+    },
+    {
+      "code": "15101509",
+      "description": "Combustible de uso marino (bunker)"
+    },
+    {
+      "code": "15111510",
+      "description": "Gas licuado de petróleo"
+    },
+    {
+      "code": "24122000",
+      "description": "Bombonas, botellas, frascos, bocales, tarros, envases tubulares, ampollas y demás recipientes para el transporte o envasado, de vidrio; bocales para conservas, de vidrio; tapones, tapas y demás dispositivos de cierre, de vidrio."
+    },
+    {
+      "code": "24122004",
+      "description": "Tapones, tapas, cápsulas y demás dispositivos de cierre"
+    },
+    {
+      "code": "24122004",
+      "description": "Tapones y tapas, cápsulas para botellas, tapones roscados, sobretapas, precintos y demás accesorios para envases, de metal Común."
+    },
+    {
+      "code": "50202201",
+      "description": "Cerveza de malta"
+    },
+    {
+      "code": "50202300",
+      "description": "Agua, incluida el agua mineral, natural o artificial y demás bebidas no alcohólicas"
+    },
+    {
+      "code": "50221002",
+      "description": "Harina de trigo o de morcajo (tranquillón)"
+    },
+    {
+      "code": "50221110",
+      "description": "Trigo y morcajo (tranquillón)."
+    }
+  ]
+}

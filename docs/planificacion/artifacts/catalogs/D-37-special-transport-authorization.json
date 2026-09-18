@@ -1,0 +1,75 @@
+{
+  "catalog": "D-37",
+  "name": "Entidades que emiten autorizaciones especiales para el traslado",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8); overlay docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-gre-2026-06-20.xlsx (sheet Catálogos)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "01",
+      "description": "Superintendencia Nacional de Control de Servicios de Seguridad, Armas, Municiones y Explosivos de Uso Civil",
+      "abreviatura": "SUCAMEC"
+    },
+    {
+      "code": "02",
+      "description": "Dirección General de Medicamentos Insumos y Drogas",
+      "abreviatura": "DIGEMID"
+    },
+    {
+      "code": "03",
+      "description": "Dirección General de Salud Ambiental",
+      "abreviatura": "DIGESA"
+    },
+    {
+      "code": "04",
+      "description": "Servicio Nacional de Sanidad Agraria",
+      "abreviatura": "SENASA"
+    },
+    {
+      "code": "05",
+      "description": "Servicio Nacional Forestal y de Fauna Silvestre",
+      "abreviatura": "SERFOR"
+    },
+    {
+      "code": "06",
+      "description": "Ministerio de Transportes y Comunicaciones",
+      "abreviatura": "MTC"
+    },
+    {
+      "code": "07",
+      "description": "Ministerio de la Producción",
+      "abreviatura": "PRODUCE"
+    },
+    {
+      "code": "08",
+      "description": "Ministerio del Ambiente",
+      "abreviatura": "MIN. AMBIENTE"
+    },
+    {
+      "code": "09",
+      "description": "Organismo Nacional de Sanidad Pesquera",
+      "abreviatura": "SANIPES"
+    },
+    {
+      "code": "10",
+      "description": "Municipalidad Metropolitana de Lima",
+      "abreviatura": "MML"
+    },
+    {
+      "code": "11",
+      "description": "Ministerio de Salud",
+      "abreviatura": "MINSA"
+    },
+    {
+      "code": "12",
+      "description": "Gobierno Regional",
+      "abreviatura": "GR"
+    },
+    {
+      "code": "13",
+      "description": "Organismo Supervisor de la Inversión en Energía y Minería",
+      "abreviatura": "OSINERGMIN"
+    }
+  ]
+}

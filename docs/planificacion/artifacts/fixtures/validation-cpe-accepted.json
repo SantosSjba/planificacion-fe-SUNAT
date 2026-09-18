@@ -1,0 +1,20 @@
+{
+  "id": "validation-cpe-accepted",
+  "document_kind": "validation",
+  "title": "Consulta validez CPE — mock aceptado",
+  "expects": {
+    "prevalidation": "pass",
+    "success": true,
+    "cpe_status": "1"
+  },
+  "notes": "Ver 28-spec-consulta-validez.md. En mock-cdr no llama SUNAT.",
+  "request": {
+    "company_id": "{{company_id}}",
+    "ruc": "{{issuer_ruc}}",
+    "document_type": "01",
+    "serie": "F001",
+    "number": "1",
+    "issue_date": "2026-09-17",
+    "total_amount": 118.0
+  }
+}

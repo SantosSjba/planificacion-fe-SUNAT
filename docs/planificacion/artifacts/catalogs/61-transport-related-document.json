@@ -1,0 +1,165 @@
+{
+  "catalog": "61",
+  "name": "Documentos relacionados aplicables a las GRE (versión 2.0)",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8); overlay docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-gre-2026-06-20.xlsx (sheet Catálogos)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "01",
+      "description": "Factura",
+      "gre_aplicable": "remitente, transportista"
+    },
+    {
+      "code": "03",
+      "description": "Boleta de Venta",
+      "gre_aplicable": "remitente, transportista"
+    },
+    {
+      "code": "04",
+      "description": "Liquidación de Compra",
+      "gre_aplicable": "remitente, transportista"
+    },
+    {
+      "code": "09",
+      "description": "Guía de Remisión Remitente",
+      "gre_aplicable": "remitente, transportista"
+    },
+    {
+      "code": "12",
+      "description": "Ticket o cinta emitido por máquina registradora",
+      "gre_aplicable": "remitente, transportista"
+    },
+    {
+      "code": "31",
+      "description": "Guía de Remisión Transportista",
+      "gre_aplicable": "solo transportista"
+    },
+    {
+      "code": "48",
+      "description": "Comprobante de Operaciones – Ley N° 29972",
+      "gre_aplicable": "remitente, transportista"
+    },
+    {
+      "code": "49",
+      "description": "Constancia de Depósito - IVAP (Ley 28211)",
+      "gre_aplicable": "solo remitente"
+    },
+    {
+      "code": "50",
+      "description": "Declaración Aduanera de Mercancías",
+      "gre_aplicable": "remitente, transportista"
+    },
+    {
+      "code": "52",
+      "description": "Declaración Simplificada (DS)",
+      "gre_aplicable": "remitente, transportista"
+    },
+    {
+      "code": "65",
+      "description": "Autorización de Circulación para transportar MATPEL – Callao",
+      "gre_aplicable": "solo transportista"
+    },
+    {
+      "code": "66",
+      "description": "Autorización de Circulación para transporte de carga y mercancías en Lima Metropolitana",
+      "gre_aplicable": "solo transportista"
+    },
+    {
+      "code": "67",
+      "description": "Permiso de Operación Especial para el servicio de transporte de MATPEL - MTC",
+      "gre_aplicable": "solo transportista"
+    },
+    {
+      "code": "68",
+      "description": "Habilitación Sanitaria de Transporte Terrestre de Productos Pesqueros y Acuícolas",
+      "gre_aplicable": "solo transportista"
+    },
+    {
+      "code": "69",
+      "description": "Permiso / Autorización de operación de transporte de mercancías",
+      "gre_aplicable": "solo transportista"
+    },
+    {
+      "code": "71",
+      "description": "Resolución de Adjudicación de bienes – SUNAT",
+      "gre_aplicable": "solo remitente"
+    },
+    {
+      "code": "72",
+      "description": "Resolución de Comiso de bienes – SUNAT",
+      "gre_aplicable": "solo remitente"
+    },
+    {
+      "code": "73",
+      "description": "Guía de Transporte Forestal o de Fauna - SERFOR",
+      "gre_aplicable": "solo remitente"
+    },
+    {
+      "code": "74",
+      "description": "Guía de Tránsito – SUCAMEC",
+      "gre_aplicable": "solo remitente"
+    },
+    {
+      "code": "75",
+      "description": "Autorización para operar como empresa de Saneamiento Ambiental – MINSA -",
+      "gre_aplicable": "solo remitente"
+    },
+    {
+      "code": "76",
+      "description": "Autorización para manejo y recojo de residuos sólidos peligrosos y no peligrosos",
+      "gre_aplicable": "solo remitente"
+    },
+    {
+      "code": "77",
+      "description": "Certificado fitosanitario la movilización de plantas, productos vegetales, y otros artículos reglamentados",
+      "gre_aplicable": "solo remitente"
+    },
+    {
+      "code": "78",
+      "description": "Registro Único de Usuarios y Transportistas de Alcohol Etílico",
+      "gre_aplicable": "solo remitente"
+    },
+    {
+      "code": "80",
+      "description": "Constancia de Depósito – Detracción",
+      "gre_aplicable": "remitente, transportista"
+    },
+    {
+      "code": "81",
+      "description": "Código de autorización emitida por el SCOP",
+      "gre_aplicable": "solo remitente"
+    },
+    {
+      "code": "82",
+      "description": "Declaración jurada de mudanza",
+      "gre_aplicable": "solo transportista"
+    },
+    {
+      "code": "91",
+      "description": "Manifiesto de carga (MC)",
+      "gre_aplicable": "solo remitente"
+    },
+    {
+      "code": "92",
+      "description": "Cita/Orden Entrega Mercancías del Terminal Portuario",
+      "gre_aplicable": "solo remitente"
+    },
+    {
+      "code": "93",
+      "description": "Documento ZOFRATACNA",
+      "gre_aplicable": "solo transportista"
+    },
+    {
+      "code": "94",
+      "description": "Solicitud traslado - ZED",
+      "gre_aplicable": "solo transportista"
+    },
+    {
+      "code": "95",
+      "description": "Solicitud de traslado - ZOFRATACNA",
+      "gre_aplicable": "solo transportista"
+    }
+  ]
+}

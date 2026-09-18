@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://factosys.local/schemas/invoice-create.json",
+  "title": "InvoiceCreate",
+  "description": "Borrador ejecutable alineado a 11-diccionario-json-ubl-factura.md y OpenAPI InvoiceCreate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["company_id", "serie", "operation_type", "issue_date", "currency", "customer", "lines"],
+  "properties": {
+    "company_id": { "type": "string", "format": "uuid" },
+    "serie": { "type": "string", "pattern": "^[Ff][A-Za-z0-9]{3}$" },
+    "number": { "type": "integer", "minimum": 1 },
+    "operation_type": { "type": "string", "minLength": 4, "maxLength": 4 },
+    "issue_date": { "type": "string", "format": "date" },
+    "issue_time": { "type": "string" },
+    "due_date": { "type": "string", "format": "date" },
+    "currency": { "type": "string", "minLength": 3, "maxLength": 3 },
+    "totals_mode": { "type": "string", "enum": ["auto", "strict"] },
+    "purchase_order": { "type": "string" },
+    "customer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identity_type", "identity_number", "name"],
+      "properties": {
+        "identity_type": { "type": "string" },
+        "identity_number": { "type": "string" },
+        "name": { "type": "string", "minLength": 1 },
+        "email": { "type": "string", "format": "email" },
+        "address": { "type": "object", "additionalProperties": true }
+      }
+    },
+    "lines": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "quantity", "unit_code", "description", "unit_value", "tax_affectation"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1 },
+          "quantity": { "type": "number", "exclusiveMinimum": 0 },
+          "unit_code": { "type": "string" },
+          "description": { "type": "string", "minLength": 1 },
+          "unit_value": { "type": "number" },
+          "unit_price": { "type": "number" },
+          "tax_affectation": { "type": "string" },
+          "igv_percent": { "type": "number" },
+          "tax_scheme_id": { "type": "string" },
+          "product_code": { "type": "string" },
+          "sunat_product_code": { "type": "string" }
+        }
+      }
+    },
+    "legends": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "text"],
+        "properties": {
+          "code": { "type": "string" },
+          "text": { "type": "string" }
+        }
+      }
+    },
+    "detraction": { "type": "object", "additionalProperties": true },
+    "payment_means": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+    "totals": { "type": "object", "additionalProperties": true }
+  }
+}

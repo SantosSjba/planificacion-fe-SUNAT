@@ -1,0 +1,34 @@
+{
+  "catalog": "10",
+  "name": "Códigos de tipo de nota de débito electrónica",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "01",
+      "description": "Intereses por mora"
+    },
+    {
+      "code": "02",
+      "description": "Aumento en el valor"
+    },
+    {
+      "code": "03",
+      "description": "Penalidades/ otros conceptos"
+    },
+    {
+      "code": "11",
+      "description": "Ajustes de operaciones de exportación"
+    },
+    {
+      "code": "12",
+      "description": "Ajustes afectos al IVAP"
+    },
+    {
+      "code": "13",
+      "description": "Penalidades"
+    }
+  ]
+}

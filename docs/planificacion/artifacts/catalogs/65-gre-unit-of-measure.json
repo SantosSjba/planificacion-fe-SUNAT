@@ -1,0 +1,1114 @@
+{
+  "catalog": "65",
+  "name": "Código de unidades de medida (para uso solo para la GRE en DAM o DS)",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8); overlay docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-gre-2026-06-20.xlsx (sheet Catálogos)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "126",
+      "description": "DOCENA POR 10**6"
+    },
+    {
+      "code": "12U",
+      "description": "DOCENA (12U)"
+    },
+    {
+      "code": "2U",
+      "description": "PAR"
+    },
+    {
+      "code": "2U6",
+      "description": "PAR POR 10**6"
+    },
+    {
+      "code": "AM",
+      "description": "AMPOLLA"
+    },
+    {
+      "code": "BAL",
+      "description": "BALDE"
+    },
+    {
+      "code": "BID",
+      "description": "BIDONES"
+    },
+    {
+      "code": "BLS",
+      "description": "BOLSA"
+    },
+    {
+      "code": "BOB",
+      "description": "BOBINAS"
+    },
+    {
+      "code": "BOT",
+      "description": "BOTELLAS"
+    },
+    {
+      "code": "BRR",
+      "description": "BARRILES"
+    },
+    {
+      "code": "CAJ",
+      "description": "CAJA"
+    },
+    {
+      "code": "CIL",
+      "description": "CILINDRO"
+    },
+    {
+      "code": "CM",
+      "description": "CENTIMETRO LINEAL"
+    },
+    {
+      "code": "CM2",
+      "description": "CENTIMETRO CUADRADO"
+    },
+    {
+      "code": "CM3",
+      "description": "CENTIMETRO CUBICO"
+    },
+    {
+      "code": "CON",
+      "description": "CONOS"
+    },
+    {
+      "code": "CRT",
+      "description": "CARTONES"
+    },
+    {
+      "code": "FDO",
+      "description": "FARDO"
+    },
+    {
+      "code": "FRC",
+      "description": "FRASCOS"
+    },
+    {
+      "code": "GAL",
+      "description": "US GALON (3,7843 L)"
+    },
+    {
+      "code": "GLE",
+      "description": "GALON INGLES (4,545956L)"
+    },
+    {
+      "code": "GR",
+      "description": "GRAMO"
+    },
+    {
+      "code": "GRU",
+      "description": "GRUESA"
+    },
+    {
+      "code": "HL",
+      "description": "HECTOLITRO"
+    },
+    {
+      "code": "HOJ",
+      "description": "HOJA"
+    },
+    {
+      "code": "JGS",
+      "description": "JUEGO"
+    },
+    {
+      "code": "KG",
+      "description": "KILOGRAMO"
+    },
+    {
+      "code": "KG3",
+      "description": "KILOGRAMO POR 10**3 (TM)"
+    },
+    {
+      "code": "KG6",
+      "description": "KILOGRAMO POR 10**6"
+    },
+    {
+      "code": "KGA",
+      "description": "KILOGRAMO INGREDIENTE ACTIVO"
+    },
+    {
+      "code": "KI",
+      "description": "QUILATE"
+    },
+    {
+      "code": "KI6",
+      "description": "QUILATE 10**6"
+    },
+    {
+      "code": "KIT",
+      "description": "KIT"
+    },
+    {
+      "code": "KL6",
+      "description": "KILOS X 10 EXP - 6 (MG)"
+    },
+    {
+      "code": "KL9",
+      "description": "KILOS X 10 EXP -9"
+    },
+    {
+      "code": "KM",
+      "description": "KILOMETRO"
+    },
+    {
+      "code": "KW3",
+      "description": "KILOVATIO HORA POR 10**3 (1000KWH)"
+    },
+    {
+      "code": "KW6",
+      "description": "KILOVATIO HORA POR 10**6"
+    },
+    {
+      "code": "KWH",
+      "description": "KILOVATIO HORA"
+    },
+    {
+      "code": "L",
+      "description": "LITRO"
+    },
+    {
+      "code": "L 6",
+      "description": "LITRO POR 10**6"
+    },
+    {
+      "code": "LAT",
+      "description": "LATAS"
+    },
+    {
+      "code": "LB",
+      "description": "LIBRAS (LB)"
+    },
+    {
+      "code": "M",
+      "description": "METRO"
+    },
+    {
+      "code": "M 6",
+      "description": "METRO POR 10**6"
+    },
+    {
+      "code": "M2",
+      "description": "METRO CUADRADO"
+    },
+    {
+      "code": "M26",
+      "description": "METRO CUADRADO POR 10**6"
+    },
+    {
+      "code": "M3",
+      "description": "METRO CUBICO"
+    },
+    {
+      "code": "M36",
+      "description": "METRO CUBICO POR 10**6"
+    },
+    {
+      "code": "MGA",
+      "description": "MILIGRAMO ACTIVO"
+    },
+    {
+      "code": "MGR",
+      "description": "MILIGRAMOS"
+    },
+    {
+      "code": "ML",
+      "description": "MILILITRO"
+    },
+    {
+      "code": "MLL",
+      "description": "MILLARES"
+    },
+    {
+      "code": "MM",
+      "description": "MILIMETRO"
+    },
+    {
+      "code": "MM2",
+      "description": "MILIMETRO CUADRADO"
+    },
+    {
+      "code": "MM3",
+      "description": "MILIMETRO CUBICO"
+    },
+    {
+      "code": "MU",
+      "description": "MUESTRAS"
+    },
+    {
+      "code": "MWH",
+      "description": "MEGAWATT HORA"
+    },
+    {
+      "code": "OZ",
+      "description": "ONZAS (OZ)"
+    },
+    {
+      "code": "PAI",
+      "description": "PAILAS"
+    },
+    {
+      "code": "PAL",
+      "description": "PALETAS"
+    },
+    {
+      "code": "PAQ",
+      "description": "PAQUETE"
+    },
+    {
+      "code": "PL",
+      "description": "PLACAS"
+    },
+    {
+      "code": "PLC",
+      "description": "PLANCHAS (PLC)"
+    },
+    {
+      "code": "PLG",
+      "description": "PLIEGO"
+    },
+    {
+      "code": "PS",
+      "description": "PIES"
+    },
+    {
+      "code": "PS2",
+      "description": "PIES CUADRADOS"
+    },
+    {
+      "code": "PS3",
+      "description": "PIES CUBICOS"
+    },
+    {
+      "code": "PST",
+      "description": "PIES TABLARES(MADERA)"
+    },
+    {
+      "code": "PUL",
+      "description": "PULGADAS (PUL)"
+    },
+    {
+      "code": "PZA",
+      "description": "PIEZAS (PZA)"
+    },
+    {
+      "code": "QQ",
+      "description": "QUINTAL METRICO (100 KG)"
+    },
+    {
+      "code": "QUT",
+      "description": "QUINTAL USA (100 LB)"
+    },
+    {
+      "code": "RAM",
+      "description": "RAMOS"
+    },
+    {
+      "code": "RES",
+      "description": "RESMA"
+    },
+    {
+      "code": "ROL",
+      "description": "ROLLOS (ROL)"
+    },
+    {
+      "code": "SAC",
+      "description": "SACO"
+    },
+    {
+      "code": "SET",
+      "description": "SET"
+    },
+    {
+      "code": "TAM",
+      "description": "TAMBOR"
+    },
+    {
+      "code": "TC",
+      "description": "TONELADA CORTA"
+    },
+    {
+      "code": "TCS",
+      "description": "TONELADA CORTA SECA"
+    },
+    {
+      "code": "TIR",
+      "description": "TIRAS"
+    },
+    {
+      "code": "TL",
+      "description": "TONELADA LARGA"
+    },
+    {
+      "code": "TLS",
+      "description": "TONELADA LARGA SECA"
+    },
+    {
+      "code": "TM",
+      "description": "TONELADAS"
+    },
+    {
+      "code": "TM3",
+      "description": "TONELADA CUBICA"
+    },
+    {
+      "code": "TMS",
+      "description": "TONELADA METRICA SECA"
+    },
+    {
+      "code": "TUB",
+      "description": "TUBOS"
+    },
+    {
+      "code": "U",
+      "description": "UNIDAD"
+    },
+    {
+      "code": "U 3",
+      "description": "UNIDAD POR 10**3"
+    },
+    {
+      "code": "U 6",
+      "description": "UNIDAD PO 10**6"
+    },
+    {
+      "code": "U2",
+      "description": "CIENTO DE UNIDADES"
+    },
+    {
+      "code": "U3",
+      "description": "MILES DE UNIDADES"
+    },
+    {
+      "code": "U6",
+      "description": "MILLON DE UNIDADES"
+    },
+    {
+      "code": "YD",
+      "description": "YARDA"
+    },
+    {
+      "code": "YD2",
+      "description": "YARDA CUADRADA"
+    },
+    {
+      "code": "UNI",
+      "description": "UNIDADES (UNI)"
+    },
+    {
+      "code": "AE",
+      "description": "AEROSOL"
+    },
+    {
+      "code": "AP",
+      "description": "AMPOULE, PROTECTED"
+    },
+    {
+      "code": "AT",
+      "description": "ATOMIZER"
+    },
+    {
+      "code": "ATD",
+      "description": "ATADOS"
+    },
+    {
+      "code": "BA",
+      "description": "BARREL"
+    },
+    {
+      "code": "BB",
+      "description": "BOBBIN"
+    },
+    {
+      "code": "BC",
+      "description": "BOTTLECRATE, BOTTLERACK"
+    },
+    {
+      "code": "BD",
+      "description": "BOARD"
+    },
+    {
+      "code": "BE",
+      "description": "BUNDLE"
+    },
+    {
+      "code": "BF",
+      "description": "BALLOON, NON-PROTECTED"
+    },
+    {
+      "code": "BG",
+      "description": "BAG"
+    },
+    {
+      "code": "BH",
+      "description": "BUNCH"
+    },
+    {
+      "code": "BI",
+      "description": "BIN"
+    },
+    {
+      "code": "BJ",
+      "description": "BUCKET"
+    },
+    {
+      "code": "BK",
+      "description": "BASKET"
+    },
+    {
+      "code": "BL",
+      "description": "BALE, COMPRESSED"
+    },
+    {
+      "code": "BLL",
+      "description": "BULLET"
+    },
+    {
+      "code": "BN",
+      "description": "BALE, NON-COMPRESSED"
+    },
+    {
+      "code": "BO",
+      "description": "BOTTLE, NON-PROTECTED, CYLINDRICAL"
+    },
+    {
+      "code": "BP",
+      "description": "BALLOON, PROTECTED"
+    },
+    {
+      "code": "BQ",
+      "description": "BOTTLE, PROTECTED CYLINDRICAL"
+    },
+    {
+      "code": "BR",
+      "description": "BAR"
+    },
+    {
+      "code": "BS",
+      "description": "BOTTLE, NON-PROTECTED, BULBOUS"
+    },
+    {
+      "code": "BT",
+      "description": "BOLT"
+    },
+    {
+      "code": "BU",
+      "description": "BUTT"
+    },
+    {
+      "code": "BUL",
+      "description": "BULTOS"
+    },
+    {
+      "code": "BV",
+      "description": "BOTTLE, PROTECTED BULBOUS"
+    },
+    {
+      "code": "BX",
+      "description": "BOX"
+    },
+    {
+      "code": "BY",
+      "description": "BOARD, IN BUNDLE/BUNCH/TRUSS"
+    },
+    {
+      "code": "BZ",
+      "description": "BARS, IN BUNDLE/BUNCH/TRUSS"
+    },
+    {
+      "code": "CA",
+      "description": "CAN, RECTANGULAR"
+    },
+    {
+      "code": "CB",
+      "description": "BEER CRATE"
+    },
+    {
+      "code": "CC",
+      "description": "CHURN"
+    },
+    {
+      "code": "CE",
+      "description": "CREEL"
+    },
+    {
+      "code": "CF",
+      "description": "COFFER"
+    },
+    {
+      "code": "CG",
+      "description": "CAGE"
+    },
+    {
+      "code": "CH",
+      "description": "CHEST"
+    },
+    {
+      "code": "CI",
+      "description": "CANISTER"
+    },
+    {
+      "code": "CJ",
+      "description": "COFFIN"
+    },
+    {
+      "code": "CK",
+      "description": "CASK"
+    },
+    {
+      "code": "CKD",
+      "description": "COMPLETELY KNOCKDOWN"
+    },
+    {
+      "code": "CL",
+      "description": "COIL"
+    },
+    {
+      "code": "CNT",
+      "description": "CIENTOS"
+    },
+    {
+      "code": "CO",
+      "description": "CARBOY, NON-PROTECTED"
+    },
+    {
+      "code": "CP",
+      "description": "CARBOY, PROTECTED"
+    },
+    {
+      "code": "CR",
+      "description": "CRATE"
+    },
+    {
+      "code": "CS",
+      "description": "CASE"
+    },
+    {
+      "code": "CT",
+      "description": "CARTON"
+    },
+    {
+      "code": "CTN",
+      "description": "CONTENEDOR (CTN)"
+    },
+    {
+      "code": "CU",
+      "description": "CUP"
+    },
+    {
+      "code": "CUB",
+      "description": "CUBETA"
+    },
+    {
+      "code": "CUN",
+      "description": "CUYETES"
+    },
+    {
+      "code": "CV",
+      "description": "COVER"
+    },
+    {
+      "code": "CX",
+      "description": "CAN, CYLINDRICAL"
+    },
+    {
+      "code": "CY",
+      "description": "CYLINDER"
+    },
+    {
+      "code": "CZ",
+      "description": "CANVAS"
+    },
+    {
+      "code": "DJ",
+      "description": "DEMIJOHN, NON-PROTECTED"
+    },
+    {
+      "code": "DOC",
+      "description": "DOCENA (DOC)"
+    },
+    {
+      "code": "DP",
+      "description": "DEMIJOHN, PROTECTED"
+    },
+    {
+      "code": "DPA",
+      "description": "DOCENA DE PARES"
+    },
+    {
+      "code": "DR",
+      "description": "DRUM"
+    },
+    {
+      "code": "EN",
+      "description": "ENVELOPE"
+    },
+    {
+      "code": "ENG",
+      "description": "ENGRADADOS"
+    },
+    {
+      "code": "ERJ",
+      "description": "ENREJADOS"
+    },
+    {
+      "code": "ESQ",
+      "description": "ESQUELETOS"
+    },
+    {
+      "code": "EST",
+      "description": "ESTIBAS"
+    },
+    {
+      "code": "FAR",
+      "description": "FARDOS"
+    },
+    {
+      "code": "FC",
+      "description": "FRUIT CRATE"
+    },
+    {
+      "code": "FD",
+      "description": "FRAMED CRATE"
+    },
+    {
+      "code": "FI",
+      "description": "FIRKIN"
+    },
+    {
+      "code": "FL",
+      "description": "FLASK"
+    },
+    {
+      "code": "FO",
+      "description": "FOOTLOCKER"
+    },
+    {
+      "code": "FP",
+      "description": "FILMPACK"
+    },
+    {
+      "code": "FR",
+      "description": "FRAME"
+    },
+    {
+      "code": "GB",
+      "description": "GAS BOTTLE"
+    },
+    {
+      "code": "GI",
+      "description": "GIRDER"
+    },
+    {
+      "code": "GRM",
+      "description": "GRAMOS"
+    },
+    {
+      "code": "GRN",
+      "description": "GRANEL"
+    },
+    {
+      "code": "GZ",
+      "description": "GIRDERS, IN BUNDLE/BUNCH/TRUSS"
+    },
+    {
+      "code": "HG",
+      "description": "HOGSHEAD"
+    },
+    {
+      "code": "HR",
+      "description": "HAMPER"
+    },
+    {
+      "code": "HUA",
+      "description": "HUACALES"
+    },
+    {
+      "code": "IN",
+      "description": "INGOT"
+    },
+    {
+      "code": "IZ",
+      "description": "INGOTS, IN BUNDLE/BUNCH/TRUSS"
+    },
+    {
+      "code": "JAB",
+      "description": "JABAS"
+    },
+    {
+      "code": "JC",
+      "description": "JERRICAN, RECTANGULAR"
+    },
+    {
+      "code": "JG",
+      "description": "JUG"
+    },
+    {
+      "code": "JR",
+      "description": "JAR"
+    },
+    {
+      "code": "JT",
+      "description": "JUTEBAG"
+    },
+    {
+      "code": "JY",
+      "description": "JERRICAN, CYLINDRICAL"
+    },
+    {
+      "code": "KGS",
+      "description": "KILOGRAMOS"
+    },
+    {
+      "code": "KLW",
+      "description": "KILOWATTS"
+    },
+    {
+      "code": "LBS",
+      "description": "LIBRAS (LBS)"
+    },
+    {
+      "code": "LG",
+      "description": "LOG"
+    },
+    {
+      "code": "LIT",
+      "description": "LITROS"
+    },
+    {
+      "code": "LOT",
+      "description": "LOTES"
+    },
+    {
+      "code": "LZ",
+      "description": "LOGS, IN BUNDLE/BUNCH/TRUSS"
+    },
+    {
+      "code": "MB",
+      "description": "MULTIPLY BAG"
+    },
+    {
+      "code": "MC",
+      "description": "MILK CRATE"
+    },
+    {
+      "code": "MS",
+      "description": "MULTIWALL SACK"
+    },
+    {
+      "code": "MT",
+      "description": "MAT"
+    },
+    {
+      "code": "MTS",
+      "description": "METROS LINEALES"
+    },
+    {
+      "code": "MT2",
+      "description": "METROS CUADRADOS"
+    },
+    {
+      "code": "MT3",
+      "description": "METROS CUBICOS"
+    },
+    {
+      "code": "MX",
+      "description": "MATCH BOX"
+    },
+    {
+      "code": "NE",
+      "description": "UNPACKED OR UNPACKAGED"
+    },
+    {
+      "code": "NS",
+      "description": "NEST"
+    },
+    {
+      "code": "NT",
+      "description": "NET"
+    },
+    {
+      "code": "ONZ",
+      "description": "ONZAS (ONZ)"
+    },
+    {
+      "code": "PA",
+      "description": "PACKET"
+    },
+    {
+      "code": "PAR",
+      "description": "PARES"
+    },
+    {
+      "code": "PC",
+      "description": "PARCEL"
+    },
+    {
+      "code": "PCH",
+      "description": "PLANCHAS (PCH)"
+    },
+    {
+      "code": "PG",
+      "description": "PLATE"
+    },
+    {
+      "code": "PGS",
+      "description": "PULGADAS (PGS)"
+    },
+    {
+      "code": "PG2",
+      "description": "PULGADAS CUADRADAS"
+    },
+    {
+      "code": "PH",
+      "description": "PITCHER"
+    },
+    {
+      "code": "PI",
+      "description": "PIPE"
+    },
+    {
+      "code": "PIE",
+      "description": "PIE"
+    },
+    {
+      "code": "PK",
+      "description": "PACKAGE"
+    },
+    {
+      "code": "PN",
+      "description": "PLANK"
+    },
+    {
+      "code": "PO",
+      "description": "POUCH"
+    },
+    {
+      "code": "PQT",
+      "description": "PAQUETES"
+    },
+    {
+      "code": "PT",
+      "description": "POT"
+    },
+    {
+      "code": "PTE",
+      "description": "POTES"
+    },
+    {
+      "code": "PTF",
+      "description": "PLATAFORMAS"
+    },
+    {
+      "code": "PU",
+      "description": "TRAY"
+    },
+    {
+      "code": "PY",
+      "description": "PLATES, IN BUNDLE/BUNCH/TRUSS"
+    },
+    {
+      "code": "PZ",
+      "description": "PIPES, IN BUNDLE/BUNCH/TRUSS"
+    },
+    {
+      "code": "PZS",
+      "description": "PIEZAS (PZS)"
+    },
+    {
+      "code": "QLT",
+      "description": "QUILATES"
+    },
+    {
+      "code": "RD",
+      "description": "ROD"
+    },
+    {
+      "code": "RG",
+      "description": "RING"
+    },
+    {
+      "code": "RL",
+      "description": "REEL"
+    },
+    {
+      "code": "RLL",
+      "description": "ROLLOS (RLL)"
+    },
+    {
+      "code": "RO",
+      "description": "ROLL"
+    },
+    {
+      "code": "RT",
+      "description": "REDNET"
+    },
+    {
+      "code": "RZ",
+      "description": "RODS, IN BUNDLE/BUNCH/TRUSS"
+    },
+    {
+      "code": "SA",
+      "description": "SACK"
+    },
+    {
+      "code": "SC",
+      "description": "SHALLOW CRATE"
+    },
+    {
+      "code": "SD",
+      "description": "SPINDLE"
+    },
+    {
+      "code": "SE",
+      "description": "SEA-CHEST"
+    },
+    {
+      "code": "SH",
+      "description": "SACHET"
+    },
+    {
+      "code": "SK",
+      "description": "SKELETON CASE"
+    },
+    {
+      "code": "SKI",
+      "description": "SKIDS"
+    },
+    {
+      "code": "SL",
+      "description": "SLIPSHEET"
+    },
+    {
+      "code": "SM",
+      "description": "SHEETMETAL"
+    },
+    {
+      "code": "ST",
+      "description": "SHEET"
+    },
+    {
+      "code": "SU",
+      "description": "SUITCASE"
+    },
+    {
+      "code": "SW",
+      "description": "SHRINKWRAPPED"
+    },
+    {
+      "code": "SZ",
+      "description": "SHEETS, IN BUNDLE/BUNCH/TRUSS"
+    },
+    {
+      "code": "TB",
+      "description": "TUB"
+    },
+    {
+      "code": "TD",
+      "description": "COLLAPSIBLE TUBE"
+    },
+    {
+      "code": "TK",
+      "description": "TANK, RECTANGULAR"
+    },
+    {
+      "code": "TN",
+      "description": "TIN"
+    },
+    {
+      "code": "TNM",
+      "description": "TONELADAS METRICAS"
+    },
+    {
+      "code": "TO",
+      "description": "TUN"
+    },
+    {
+      "code": "TR",
+      "description": "TRUNK"
+    },
+    {
+      "code": "TS",
+      "description": "TRUSS"
+    },
+    {
+      "code": "TU",
+      "description": "TUBE"
+    },
+    {
+      "code": "TY",
+      "description": "TANK, CYLINDRICAL"
+    },
+    {
+      "code": "TZ",
+      "description": "TUBES, IN BUNDLE/BUNCH/TRUSS"
+    },
+    {
+      "code": "VA",
+      "description": "VAT"
+    },
+    {
+      "code": "VEI",
+      "description": "VEHICULO"
+    },
+    {
+      "code": "VG",
+      "description": "BULK, GAS (AT 1031 MBAR AND 15ØC)"
+    },
+    {
+      "code": "VI",
+      "description": "VIAL"
+    },
+    {
+      "code": "VL",
+      "description": "BULK, LIQUID"
+    },
+    {
+      "code": "VO",
+      "description": "BULK, SOLID, LARGE PARTICLES (\"NODULES\")"
+    },
+    {
+      "code": "VP",
+      "description": "VACUUM-PACKED"
+    },
+    {
+      "code": "VQ",
+      "description": "BULK, LIQUEFIED GAS (AT ABNORMAL TEMPERATURE/PRESSURE)"
+    },
+    {
+      "code": "VR",
+      "description": "BULK, SOLID, GRANULAR PARTICLES (\"GRAINS\")"
+    },
+    {
+      "code": "VY",
+      "description": "BULK, SOLID, FINE PARTICLES (\"POWDERS\")"
+    },
+    {
+      "code": "WAT",
+      "description": "WATT"
+    },
+    {
+      "code": "WB",
+      "description": "WICKERBOTTLE"
+    },
+    {
+      "code": "YRD",
+      "description": "YARDAS"
+    },
+    {
+      "code": "Z1",
+      "description": "PALETA"
+    },
+    {
+      "code": "Z2",
+      "description": "CONTENEDOR (Z2)"
+    },
+    {
+      "code": "Z3",
+      "description": "UNIDADES (Z3)"
+    }
+  ]
+}

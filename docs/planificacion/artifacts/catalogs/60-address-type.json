@@ -1,0 +1,30 @@
+{
+  "catalog": "60",
+  "name": "Código de tipo de dirección",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "01",
+      "description": "Punto de venta"
+    },
+    {
+      "code": "02",
+      "description": "Producción"
+    },
+    {
+      "code": "03",
+      "description": "Extracción"
+    },
+    {
+      "code": "04",
+      "description": "Explotación"
+    },
+    {
+      "code": "05",
+      "description": "Otros"
+    }
+  ]
+}

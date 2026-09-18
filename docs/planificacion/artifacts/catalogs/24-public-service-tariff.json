@@ -1,0 +1,255 @@
+{
+  "catalog": "24",
+  "name": "Código de tarifa de servicios públicos",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "L001",
+      "description": "AT2",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L002",
+      "description": "MT2",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L003",
+      "description": "MT3",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L004",
+      "description": "MT4",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L005",
+      "description": "BT2",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L006",
+      "description": "BT3",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L007",
+      "description": "BT4",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L008",
+      "description": "BT5A",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L009",
+      "description": "BT5B",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L010",
+      "description": "BT6",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L011",
+      "description": "BT5C-AP",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L012",
+      "description": "BT5D",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L013",
+      "description": "BT5E",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L014",
+      "description": "BT7",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L015",
+      "description": "BT8",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L016",
+      "description": "BT5C",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L017",
+      "description": "MT2L",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L018",
+      "description": "MT2L_1 a MT2L21",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L019",
+      "description": "MT2A a MT2Z",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L020",
+      "description": "AT1",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "L021",
+      "description": "MT1",
+      "servicio_aplicable": "LUZ"
+    },
+    {
+      "code": "A011",
+      "description": "COMERCIAL",
+      "servicio_aplicable": "AGUA"
+    },
+    {
+      "code": "A012",
+      "description": "INDUSTRIAL",
+      "servicio_aplicable": "AGUA"
+    },
+    {
+      "code": "A013",
+      "description": "ESTATAL",
+      "servicio_aplicable": "AGUA"
+    },
+    {
+      "code": "A014",
+      "description": "DOMÉSTICO",
+      "servicio_aplicable": "AGUA"
+    },
+    {
+      "code": "A015",
+      "description": "SOCIAL",
+      "servicio_aplicable": "AGUA"
+    },
+    {
+      "code": "A016",
+      "description": "MULTIFAMILIAR INDIVIDUALIZADO",
+      "servicio_aplicable": "AGUA"
+    },
+    {
+      "code": "A017",
+      "description": "MULTIFAMILIAR NO INDIVIDUALIZADO",
+      "servicio_aplicable": "AGUA"
+    },
+    {
+      "code": "G001",
+      "description": "CAT – A1",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G002",
+      "description": "CAT – A2",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G003",
+      "description": "CAT – B",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G004",
+      "description": "CAT - C",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G005",
+      "description": "CAT – D",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G006",
+      "description": "CAT – E",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G007",
+      "description": "CAT – GE",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G008",
+      "description": "CAT – IP",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G009",
+      "description": "CAT – GNV",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G010",
+      "description": "CAT - A",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G011",
+      "description": "CAT - B1",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G012",
+      "description": "CAT - B2",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G013",
+      "description": "CAT - PESCA",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G014",
+      "description": "CAT - TIPO I",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G015",
+      "description": "CAT - TIPO II-A",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G016",
+      "description": "CAT - TIPO II-B",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G017",
+      "description": "CAT - TIPO III",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G018",
+      "description": "CAT - TIPO IV",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G019",
+      "description": "CAT - TIPO V",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G020",
+      "description": "CAT - TIPO VI",
+      "servicio_aplicable": "GAS"
+    },
+    {
+      "code": "G021",
+      "description": "CAT - TIPO VII",
+      "servicio_aplicable": "GAS"
+    }
+  ]
+}

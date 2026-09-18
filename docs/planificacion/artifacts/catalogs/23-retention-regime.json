@@ -1,0 +1,18 @@
+{
+  "catalog": "23",
+  "name": "Código de regimen de retenciones",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "01",
+      "description": "Tasa 3%"
+    },
+    {
+      "code": "02",
+      "description": "Tasa 6%"
+    }
+  ]
+}

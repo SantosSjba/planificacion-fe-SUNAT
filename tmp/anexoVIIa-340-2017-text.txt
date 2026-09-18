@@ -1,0 +1,1587 @@
+---PAGE 1---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+1 Versión del UBL Global M an3 "2.1" /Invoice/cbc:UBLVersionID
+M an3 "2.0" /Invoice/cbc:CustomizationID
+C "PE:SUNAT" @schemeAgencyName
+3 Fecha de emisión Global M an10 YYYY-MM-DD /Invoice/cbc:IssueDate
+4 Hora de emisión Global C an8 hh:mm:ss /Invoice/cbc:IssueTime
+M an2 (Catálogo No. 01) /Invoice/cbc:InvoiceTypeCode
+"PE:SUNAT" @listAgencyName
+"Tipo de Documento" @listName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo01"
+@listURI
+M an3 (Catálogo No. 02) /Invoice/cbc:DocumentCurrencyCode
+"ISO 4217 Alpha" @listID
+"Currency" @listName
+"United Nations 
+Economic Commission 
+for Europe"
+@listAgencyName
+7 Fecha de Vencimiento Global C an10 YYYY-MM-DD /invoice/cbc:DueDate
+8 Firma Digital Global M an..3000 - /Invoice/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/ds:Sign
+ature
+Invoice/cac:Signature
+n11  /Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:I
+D (Número de RUC)
+n1 "6" /Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:I
+D@schemeID (Tipo de documento de identidad)
+"Documento de 
+Identidad"
+@schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo06"
+@schemeURI
+10 Nombre Comercial Global C an..1500 /Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyName/
+cbc:Name
+11 Apellidos y nombres, 
+denominación o razón social
+Global M an..1500 /Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:Re
+gistrationName
+an..200 /Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:Re
+gistrationAddress/cac:AddressLine/cbc:Line
+(Dirección completa y detallada)
+an..25 /Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:Re
+gistrationAddress/cbc:CitySubdivisionName (Urbanización)
+an..30 /Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:Re
+gistrationAddress/cbc:CityName (Provincia)
+an6 (Catálogo No. 13) /Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:Re
+gistrationAddress/cbc:ID (Código de ubigeo)
+"PE:INEI" @schemeAgencyName
+"Ubigeos" @schemeName
+an..30 /Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:Re
+gistrationAddress/cbc:CountrySubentity (Departamento)
+an..30 /Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:Re
+gistrationAddress/cbc:District (Distrito)
+an2 (Catálogo No. 04) /Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:Re
+gistrationAddress/cac:Country/cbc:IdentificationCode (Código de país)
+"ISO 3166-1" @listID
+'"United Nations 
+Economic Commission 
+for Europe"
+@listAgencyName
+"Country" @listName
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+Datos de la Factura electrónica
+2 Versión de la estructura 
+del documento
+Global
+Datos de la Firma electrónica
+Datos del Emisor
+9 Número de RUC Global M
+C
+5 Tipo de documento Global
+C
+6 Tipo de moneda Global
+C
+12 Domicilio Fiscal Global C
+Pág. 1
+---PAGE 2---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+an..200 /Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/
+cac:AddressLine/cbc:Line (Dirección completa y detallada)
+an..25 /Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/
+cbc:CitySubdivisionName (Urbanización)
+an..30 /Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/
+cbc:CityName (Provincia)
+an6 (Catálogo No. 13) /Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/
+cbc:ID (Código de ubigeo)
+"PE:INEI" @schemeAgencyName
+"Ubigeos" @schemeName
+an..30 /Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/
+cbc:CountrySubentity (Departamento)
+an..30 /Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/
+cbc:District (Distrito)
+an2 (Catálogo No. 04) /Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/
+cac:Country/cbc:IdentificationCode (Código de país)
+"ISO 3166-1" @listID
+'"United Nations 
+Economic Commission 
+for Europe"
+@listAgencyName
+"Country" @listName
+M an4 n4 /Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:Re
+gistrationAddress/cbc:AddressTypeCode
+"PE:SUNAT" @schemeAgencyName
+"Establecimientos 
+anexos"
+@schemeName
+an..15 /Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc
+:ID (Número de documento)
+an1 (Catálogo No. 06) /Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc
+:ID@schemeID (Tipo de documento de identidad)
+"Documento de 
+Identidad"
+@schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo06"
+@schemeURI
+16 Apellidos y nombres, 
+denominación o razón social del 
+adquirente o usuario 
+Global M an..1500 /Invoice/cac:AccountingCustomerParty/cac:Party/
+cac:PartyLegalEntity/cbc:RegistrationName
+an..30 /Invoice/cac:DespatchDocumentReference/cbc:ID 
+(Número de documento)
+an2 (Catálogo No. 01) /Invoice/cac:DespatchDocumentReference/cbc:DocumentTypeCode 
+(Tipo de documento)
+"PE:SUNAT" @listAgencyName
+"Tipo de Documento" @listName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo01"
+@listURI
+an..30 /Invoice/cac:AdditionalDocumentReference/cbc:ID
+an2 (Catálogo No. 12) /Invoice/cac:AdditionalDocumentReference/cbc:DocumentTypeCode
+"PE:SUNAT" @listAgencyName
+"Documento 
+relacionado"
+@listName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo12"
+@listURI
+13 Dirección del lugar en el que se 
+entrega el bien, siempre que 
+este dato no obre como punto de 
+llegada en la guía de remisión - 
+remitente del emisor electrónico 
+y sea dentro del territorio 
+nacional.
+- Dirección completa y detallada
+- Urbanización
+- Provincia
+- Código de ubigeo
+- Departamento
+- Distrito
+- Código de país
+Global C
+15 Tipo y Número de documento de 
+identidad del adquirente o 
+usuario
+Global M
+C
+14 Código asignado por SUNAT para 
+el establecimiento anexo 
+declarado en el RUC
+Global
+C
+Datos del cliente o receptor
+18 Tipo y número de otro 
+documento relacionado
+Global C
+Documentos de referencia
+17 Tipo y número de la guía de 
+remisión relacionada
+Global C
+Pág. 2
+---PAGE 3---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+19 Número de orden del Ítem Ítem M n..3  /Invoice/cac:InvoiceLine/cbc:ID
+M an..3 (Catálogo No. 03) /Invoice/cac:InvoiceLine/cbc:InvoicedQuantity@unitCode
+"UN/ECE rec 20" @unitCodeListID
+'"United Nations 
+Economic Commission 
+for Europe"
+@unitCodeListAgencyName
+21 Cantidad de unidades por ítem Ítem M an..23 n(12,10) /Invoice/cac:InvoiceLine/cbc:InvoicedQuantity
+22 Código de producto Ítem C an..30 /Invoice/cac:InvoiceLine/cac:Item/cac:SellersItemIdentification/cbc:ID
+n..8 (Catálogo No. 25) /Invoice/cac:InvoiceLine/cac:Item/cac:CommodityClassification/
+cbc:ItemClassificationCode
+"UNSPSC" @listID
+"GS1 US" @listAgencyName
+"Item Classification" @listName
+Ítem /Invoice/cac:InvoiceLine/cac:Item/cac:StandardItemIdentification/cbc:ID
+"GTIN" @schemeID
+an..100 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/
+cbc:Name
+n4 "7000" /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/
+cbc:NameCode
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo55"
+@listURI
+an..15 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value
+26 Descripción detallada del 
+servicio prestado, bien vendido o 
+cedido en uso, indicando las 
+características.
+Ítem M an..500 /Invoice/cac:InvoiceLine/cac:Item/cbc:Description
+an..23 n(12,10) /Invoice/cac:InvoiceLine/cac:Price/cbc:PriceAmount
+an3 (Catálogo No. 02) @currencyID
+an..23 n(12,10) /Invoice/cac:InvoiceLine/cac:PricingReference/
+cac:AlternativeConditionPrice/cbc:PriceAmount (Valor)
+an3 (Catálogo No. 02) @currencyID
+"Tipo de Precio" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo16"
+@listURI
+30 Monto total de impuestos del 
+ítem
+Ítem M an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:TaxTotal/cbc:TaxAmount 
+(Monto total de impuestos por linea)
+an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/
+cbc:TaxableAmount (Monto base)
+an3 (Catálogo No. 02) @currencyID (Moneda base)
+an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount 
+(Monto de IGV de la línea)
+an3 (Catálogo No. 02) @currencyID
+an..9 n(3,5) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:
+Percent (Tasa del IGV)
+an2 (Catálogo No. 07) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/
+cbc:TaxExemptionReasonCode (Afectación al IGV e IVAP cuando 
+corresponda)
+"PE:SUNAT" @listAgencyName
+"Afectacion del IGV" @listName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo07"
+@listURI
+Datos del detalle o Ítem de la Factura
+20 Unidad de medida por ítem Ítem
+C
+23 Codigo producto de SUNAT Ítem C
+24 Código de producto GS1 C an..14
+25 Número de placa del vehículo 
+(Información Adicional - Gastos 
+art.37° Renta)
+Ítem C
+/Invoice/cac:InvoiceLine/cac:PricingReference/
+cac:AlternativeConditionPrice/cbc:PriceTypeCode (Código de precio)
+C
+31 Afectación al IGV por la línea
+Afectación IVAP por la línea
+Afectacion Otros Tributos
+Ítem M
+C
+27 Valor unitario por ítem Ítem M
+28
+29
+Precio de venta unitario por item Ítem M
+Valor referencial unitario por 
+ítem en operaciones no onerosas
+an2 (Catálogo No. 16)
+Pág. 3
+---PAGE 4---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+M an4 (Catálogo No. 05) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:
+TaxScheme/cbc:ID (Código del tributo)
+"Codigo de tributos" @schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo05"
+@schemeURI
+an..6 (Catálogo No. 05) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:
+TaxScheme/cbc:Name (Nombre de tributo)
+an3 (Catálogo No. 05) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:
+TaxScheme/cbc:TaxTypeCode (Código Internacional del Tributo)
+an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/
+cbc:TaxableAmount (Monto base)
+an3 (Catálogo No. 02) @currencyID
+an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/
+cbc:TaxAmount (Monto de ISC de la línea)
+an3 (Catálogo No. 02) @currencyID
+an..9 n(3,5) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:
+Percent (Tasa del tributo)
+an2 (Catálogo No. 08) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:
+TierRange (Tipo de sistema de ISC)
+an4 (Catálogo No. 05) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:
+TaxScheme/cbc:ID (Código del tributo)
+"Codigo de tributos" @schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo05"
+@schemeURI
+an..6 (Catálogo No. 05) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/
+cac:TaxScheme/cbc:Name (Nombre de tributo)
+an3 (Catálogo No. 05) /Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/
+cac:TaxScheme/cbc:TaxTypeCode (Código Internacional del Tributo)
+an..15  n(12,2) /Invoice/cac:InvoiceLine/cbc:LineExtensionAmount
+an3 (Catálogo No. 02) @currencyID
+an5 "true"/"false" /Invoice/cac:InvoiceLine/cac:Allowancecharge/cbc:ChargeIndicator 
+(Indicador de cargo/descuento)
+"PE:SUNAT" @listAgencyName
+"Cargo/descuento" @listName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo53"
+@listURI
+an..9 n(3,5) /Invoice/cac:InvoiceLine/cac:Allowancecharge/
+cbc:MultiplierFactorNumeric (Factor de cargo/descuento)
+an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:Allowancecharge/cbc:Amount 
+(Monto de cargo/descuento)
+an3 (Catálogo No. 02) @currencyID
+an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:Allowancecharge/cbc:BaseAmount 
+(Monto base del cargo/descuento)
+an3 (Catálogo No. 02) @currencyID
+35 Monto total de impuestos Global M an..15 n(12,2) /Invoice/cac:TaxTotal/cbc:TaxAmount
+an..15 n(12,2) /Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableAmount (Total Valor de 
+Venta)
+an3 (Catálogo No. 02) @currencyID
+an..15 "0.00" /Invoice/cac:TaxTotal/cac:TaxSubtotal/
+cbc:TaxAmount (Monto Total del concepto)
+an3 (Catálogo No. 02) @currencyID
+an4 (Catálogo No. 05) /Invoice/cac:TaxTotal/cac:TaxSubtotal/
+cac:TaxCategory/cac:TaxScheme/cbc:ID (Código del tributo)
+"Codigo de tributos" @schemeName
+"PE:SUNAT" @schemeAgencyName
+31 Afectación al IGV por la línea
+Afectación IVAP por la línea
+Afectacion Otros Tributos
+Ítem
+M
+32 Afectación del ISC por la línea Ítem C
+33 Valor de venta por ítem Ítem M
+34 Cargo/descuento por ítem Ítem C
+C
+an2 (Catálogo No. 53) /Invoice/cac:InvoiceLine/cac:Allowancecharge/
+cbc:AllowanceChargeReasonCode (Código de cargo/descuento)
+Totales de la Factura
+36
+37
+38
+Total valor de venta - 
+Exportación
+Total valor de venta - 
+operaciones inafectas
+Total valor de venta - 
+operaciones exoneradas
+Global M
+C
+Pág. 4
+---PAGE 5---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo05"
+@schemeURI
+an..6 (Catálogo No. 05) /Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:
+Name (Nombre de tributo)
+an3 (Catálogo No. 05) /Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:
+TaxTypeCode 
+(Código Internacional del Tributo)
+an..15 n(12,2) /Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableAmount (Total valor de 
+venta operaciones gratuitas)
+an3 (Catálogo No. 02) @currencyID 
+an..15 "0.00" /Invoice/cac:TaxTotal/cac:TaxSubtotal/
+cbc:TaxAmount (Monto Total del concepto)
+an3 (Catálogo No. 02) @currencyID
+an4 (Catálogo No. 05) /Invoice/cac:TaxTotal/cac:TaxSubtotal/
+cac:TaxCategory/cac:TaxScheme/cbc:ID (Código del tributo)
+"Codigo de tributos" @schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo05"
+@schemeURI
+an..6 (Catálogo No. 05) /Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:
+Name (Nombre de tributo)
+an3 (Catálogo No. 05) /Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:
+TaxTypeCode 
+(Código Internacional del Tributo)
+an..15 n(12,2) /Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableAmount (Total valor de 
+venta operaciones gravadas)
+an3 (Catálogo No. 02) @currencyID
+an..15 n(12,2) /Invoice/cac:TaxTotal/cac:TaxSubtotal/
+cbc:TaxAmount (Sumatoria de IGV o IVAP, según corresponda )
+an3 (Catálogo No. 02) @currencyID
+an4 (Catálogo No. 05) /Invoice/cac:TaxTotal/cac:TaxSubtotal/
+cac:TaxCategory/cac:TaxScheme/cbc:ID (Código del tributo)
+"Codigo de tributos" @schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo05"
+@schemeURI
+an..6 (Catálogo No. 05) /Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:
+Name (Nombre de tributo)
+an3 (Catálogo No. 05) /Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:
+TaxTypeCode 
+(Código Internacional del Tributo)
+an..15 n(12,2) /Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableAmount (Monto base)
+an3 (Catálogo No. 02) @currencyID (Moneda base)
+an..15 n(12,2) /Invoice/cac:TaxTotal/cac:TaxSubtotal/
+cbc:TaxAmount (Monto del Impuesto )
+an3 (Catálogo No. 02) @currencyID
+an4 (Catálogo No. 05) /Invoice/cac:TaxTotal/cac:TaxSubtotal/
+cac:TaxCategory/cac:TaxScheme/cbc:ID (Código del tributo)
+"Codigo de tributos" @schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo05"
+@schemeURI
+an..6 (Catálogo No. 05) /Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:
+Name (Nombre de tributo)
+an3 (Catálogo No. 05) /Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:
+TaxTypeCode 
+(Código Internacional del Tributo)
+36
+37
+38
+Total valor de venta - 
+Exportación
+Total valor de venta - 
+operaciones inafectas
+Total valor de venta - 
+operaciones exoneradas
+Global
+C
+40
+41
+Total valor de venta - 
+operaciones gravadas 
+(IGV o IVAP)
+Sumatoria IGV o IVAP
+Global M
+C
+M
+M
+39 Total valor de venta - 
+operaciones gratuitas
+Global C
+42
+43
+Sumatoria ISC
+Sumatoria Otros Tributos
+Global C
+Pág. 5
+---PAGE 6---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+an..5 "true"/"false" /Invoice/cac:AllowanceCharge/cbc:ChargeIndicator (Indicador de 
+cargo/descuento)
+an2 (Catálogo No. 53) /Invoice/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode (Código 
+del motivo del cargo/descuento)
+"PE:SUNAT" @listAgencyName
+"Cargo/descuento" @listName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o53"
+@listURI
+an..9 n(3,5) /Invoice/cac:AllowanceCharge/cbc:MultiplierFactorNumeric (Porcentaje 
+aplicado)
+an..15 n(12,2) /Invoice/cac:AllowanceCharge/cbc:Amount (Monto del cargo/descuento)
+an3 (Catálogo No. 02) @currencyID
+an..15 n(12,2) /Invoice/cac:AllowanceCharge/cbc:BaseAmount (Monto base del 
+cargo/descuento)
+an3 (Catálogo No. 02) @currencyID
+45 Total Descuentos Global C an..15 n(12,2) /Invoice/cac:LegalMonetaryTotal/cbc:AllowanceTotalAmount
+an..15 n(12,2) /Invoice/cac:LegalMonetaryTotal/cbc:ChargeTotalAmount
+an3 (Catálogo No. 02) @currencyID
+an..15  n(12,2) /Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount
+an3 (Catálogo No. 02) @currencyID
+an..15 n(12,2) /Invoice/cac:LegalMonetaryTotal/cbc:LineExtensionAmount
+an3 (Catálogo No. 02) @currencyID
+an..15 n(12,2) /Invoice/cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount
+an3 (Catálogo No. 02) @currencyID
+M an4 (Catálogo No. 51) /invoice/cbc:DocumentTypeCode@listID
+"Tipo de Operacion" @name
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o51"
+@listSchemeURI
+52 Número de la orden de compra Global C an..20 /Invoice/cac:OrderReference/cbc:ID
+an..5 "true" /Invoice/cac:AllowanceCharge/cbc:ChargeIndicator (Indicador de 
+cargo/descuento)
+an2 (Catálogo No. 53) /Invoice/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode (Código 
+del motivo del cargo/descuento)
+"PE:SUNAT" @listAgencyName
+"Cargo/descuento" @listName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o53"
+@listURI
+an..15 n(12,2) /Invoice/cac:AllowanceCharge/cbc:BaseAmount (Monto base del 
+cargo/descuento)
+an3 (Catálogo No. 02) @currencyID
+an..5 "true" /Invoice/cac:AllowanceCharge/cbc:ChargeIndicator (Indicador de 
+cargo/descuento)
+an2 (Catálogo No. 53) /Invoice/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode (Código 
+del motivo del cargo/descuento 51 o 52 o 53)
+"PE:SUNAT" @listAgencyName
+"Cargo/descuento" @listName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o53"
+@listURI
+an..9 n(3,5) /Invoice/cac:AllowanceCharge/cbc:MultiplierFactorNumeric (Factor del 
+cargo/descuento)
+an3 (Catálogo No. 02) @currencyID
+44 Cargos y Descuentos Globales Global C
+48 Total Valor de Venta Global C
+49 Total Precio de Venta Global C
+46 Total Otros Cargos Global C
+47 Importe total Global M
+Información Adicional
+50 Leyendas Global C an4 (Catálogo No. 52) /Invoice/cbc:Note@languageLocaleID (Código de la leyenda)
+an..40
+53 FISE (Ley 29852) Fondo Inclusión 
+Social Energético
+Global C
+Información Adicional - Percepciones
+/Invoice/cbc:Note  (Descripción de la leyenda)
+51 Tipo de operación 
+Global
+C
+n(12,2) /Invoice/cac:AllowanceCharge/cbc:Amount (Monto de la percepción)
+an..15 n(12,2) /Invoice/cac:AllowanceCharge/cbc:BaseAmount (Base imponible de la 
+percepción)
+an3 (Catálogo No. 02) @currencyID
+54 Importe de la percepción en 
+moneda nacional
+Global C
+an..15
+Pág. 6
+---PAGE 7---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+an..2 n2 /Invoice/cac:PrepaidPayment/cbc:ID (Identificador del pago)
+"Anticipo" @schemeName
+"PE:SUNAT" @schemeAgencyName
+an..15 n(12,2) /Invoice/cac:PrepaidPayment/cbc:PaidAmount (Monto anticipado)
+an3 (Catálogo No. 02) @currencyID
+an10 YYYY-MM-DD /Invoice/cac:PrepaidPayment/cbc:PaidDate (Fecha de pago)
+an..2 n2 /Invoice/cac:AdditionalDocumentReference/cbc:DocumentStatusCode 
+(Identificador del pago)
+"Anticipo" @listName
+"PE:SUNAT" @listAgencyName
+an..13 <Serie>-<Número> /Invoice/cac:AdditionalDocumentReference/cbc:ID (Serie y Número de 
+documento que se realizó el anticipo)
+an2 (Catálogo No. 12) /Invoice/cac:AdditionalDocumentReference/cbc:DocumentTypeCode (Tipo 
+de comprobante que se realizó el anticipo)
+"Documentos 
+Relacionados"
+@schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o12"
+@schemeURI
+an11 /Invoice/cac:AdditionalDocumentReference/cac:IssuerParty/cac:PartyIdentif
+ication/cbc:ID (Número de documento del emisor del anticipo)
+an1 (Catálogo No. 06) /Invoice/cac:AdditionalDocumentReference/cac:IssuerParty/cac:PartyIdentif
+ication/cbc:ID@schemeID (Tipo de documento del emisor del anticipo)
+"Documento de 
+Identidad"
+@schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo06"
+@schemeURI
+an..15 n(12,2) /Invoice/cac:LegalMonetaryTotal/cbc:PrepaidAmount
+an3 (Catálogo No. 02) @currencyID
+an2 (Catálogo No. 20) /Invoice/cac:Delivery/cac:Shipment/cbc:ID
+"Motivo de Traslado" @schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o20"
+@schemeURI
+n..16  /Invoice/cac:Delivery/cac:Shipment/cbc:GrossWeightMeasure
+an3 (Catálogo No. 03)  KGM /Invoice/cac:Delivery/cac:Shipment/cbc:GrossWeightMeasure@unitCode
+"UN/ECE rec 20" @unitCodeListID
+'"United Nations 
+Economic Commission 
+for Europe"
+@unitCodeListAgencyName
+an2 (Catálogo No. 18) /Invoice/cac:Delivery/cac:Shipment/cac:ShipmentStage/cbc:TransportMode
+Code
+"Modalidad de 
+Transporte"
+@listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o18"
+@listURI
+60 Fecha de inicio del traslado o 
+fecha de entrega de bienes al 
+transportista
+Global C an..10 YYYY-MM-DD /Invoice/cac:Delivery/cac:Shipment/cac:ShipmentStage/cac:TransitPeriod/c
+bc:StartDate
+Información Adicional  - Anticipos
+55 Información prepagado o 
+anticipado
+Global C
+56 Total Anticipos Global C
+Información Adicional - Factura Guía
+57 Código de motivo de traslado Global C
+58 Peso bruto total de la Factura Global C
+59 Modalidad de Transporte (FG 
+Remitente)
+Global C
+Pág. 7
+---PAGE 8---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+61 Datos del Transportista (FG 
+Remitente) o Transportista 
+contratante (FG Transportista) - 
+Número de documento de 
+identidad
+Global C n11 /Invoice/cac:Delivery/cac:Shipment/cac:ShipmentStage/cac:CarrierParty/cac
+:PartyIdentification/cbc:ID
+an2 (Catálogo No. 06) /Invoice/cac:Delivery/cac:Shipment/cac:ShipmentStage/cac:CarrierParty/cac
+:PartyIdentification/cbc:ID@schemeID (Tipo de documento de identidad)
+"Documento de 
+Identidad"
+@schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:
+catalogo06"
+@schemeURI
+63 Datos del Transportista (FG 
+Remitente) o Transportista 
+contratante (FG Transportista) - 
+Apellidos y nombres o razón 
+social
+Global C an..200 /Invoice/cac:Delivery/cac:Shipment/cac:ShipmentStage/cac:CarrierParty/cac
+PartyLegalEntity/cbc:RegistrationName
+64 Datos del Transportista (FG 
+Remitente) o Transportista 
+contratante (FG Transportista) - 
+Registro del MTC
+Global C /Invoice/cac:Delivery/cac:Shipment/cac:ShipmentStage/cac:CarrierParty/cac
+PartyLegalEntity/cbc:CompanyID
+65 Número de constancia de 
+inscripcion del vehiculo o 
+certificado de habilitación 
+vehicular
+Global C an..40 /Invoice/cac:Delivery/cac:Shipment/cac:ShipmentStage/cac:TransportMeans
+/cbc:RegistrationNationalityID
+66 Información de vehículo 
+principal - Número de placa
+Global C an..8 /Invoice/cac:Delivery/cac:Shipment/cac:ShipmentStage/cac:TransportMeans
+/cac:RoadTransport/cbc:LicensePlateID
+67 Información de vehículos 
+secundarios
+Global C an..8 /Invoice/cac:Delivery/cac:Shipment/cac:TransportHandlingUnit/cac:Transpo
+rtEquipment/cbc:ID
+68 Datos de conductores - Número 
+de documento de identidad
+Global C n11 /Invoice/cac:Delivery/cac:Shipment/cac:ShipmentStage/cac:DriverPerson/cb
+c:ID
+an2 (Catálogo No. 06) /Invoice/cac:Delivery/cac:Shipment/cac:ShipmentStage/cac:DriverPerson/cb
+c:ID@schemeID
+"Documento de 
+Identidad"
+@schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o06"
+@schemeURI
+an6 (Catálogo No. 13) /Invoice/cac:Delivery/cac:Shipment/cac:Delivery/cac:DeliveryAddress/cbc:ID
+"PE:INEI" @schemeAgencyName
+"Ubigeos" @schemeName
+71 Dirección punto de llegada - 
+Dirección completa y detallada
+Global C an..200 /Invoice/cac:Delivery/cac:Shipment/cac:Delivery/cac:DeliveryAddress/cac:A
+ddressLine/cbc:Line
+an6 (Catálogo No. 13) /Invoice/cac:Delivery/cac:Shipment/cac:OriginAddress/cbc:ID
+"PE:INEI" @schemeAgencyName
+"Ubigeos" @schemeName
+73 Dirección punto de partida - 
+Dirección completa y detallada
+Global C an..200 /Invoice/cac:Delivery/cac:Shipment/cac:OriginAddress/cac:AddressLine/cbc:
+Line
+74 Indicador de subcontratación Global C Boolean "true" / "false" /Invoice/cac:Delivery/cac:Shipment/cac:Delivery/cac:DeliveryParty/cbc:Mar
+kAttentionIndicator
+62 Datos del Transportista (FG 
+Remitente) o Transportista 
+contratante (FG Transportista) - 
+Tipo de documento de identidad
+Global C
+69 Datos de conductores - Tipo de 
+documento
+Global C
+70 Dirección punto de llegada - 
+Código de ubigeo
+Global C
+72 Dirección punto de partida - 
+Código de ubigeo
+Global C
+Pág. 8
+---PAGE 9---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+an..100 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an..20 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Número de asiento)
+an..20 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Información de manifiesto de pasajeros)
+an..11 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Número de documento de identidad del pasajero)
+an1 (Catálogo No. 06) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Tipo de documento de identidad del pasajero)
+an..200 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Nombres y apellidos del pasajero)
+an6 (Catálogo No. 13) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Ciudad o lugar de destino - Código de ubigeo)
+an..200 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Ciudad o lugar de destino - Dirección detallada)
+an6 (Catálogo No. 13) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Ciudad o lugar de origen - Código de ubigeo)
+an..200 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Ciudad o lugar de origen - Dirección detallada)
+an..100 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an10 YYYY-MM-DD /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cac:Usability
+Period/cbc:StartDate (Fecha de inicio)
+an..100 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an8 hh:mm:ss /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cac:Usability
+Period/cbc:StartDate (Fecha de inicio)
+an3 (Catálogo No. 54) /Invoice/cac:PaymentTerms/cbc:PaymentMeansID (Código de bien o 
+servicio)
+"Codigo de detraccion" @schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o54"
+@schemeURI
+85 Número de cta. en el Banco de la 
+Nación
+Global C an..100 /Invoice/cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID 
+an..9 n(3,5) /Invoice/cac:PaymentTerms/cbc:PaymentPercent
+Información Adicional  - Transporte terrestre de pasajeros
+75
+76
+77
+78
+79
+80
+81
+Numero de asiento
+Información de manifiesto de 
+pasajeros
+Número de documento de 
+identidad del pasajero
+Tipo de documento de identidad 
+del pasajero
+Nombres y apellidos del pasajero
+Ciudad o lugar de destino
+Ciudad o lugar de origen 
+Ítem C
+Información Adicional  - Detracciones
+84 Código del Bien o Servicio Sujeto 
+a Detracción
+Global C
+82 Fecha de inicio programado Ítem C
+83 Hora de inicio programado Ítem C
+/Invoice/cac:PaymentTerms/cbc:Amount (Monto de detraccion)86 Monto y Porcentaje de la 
+detracción
+Global C an..15 n(12,2)
+Pág. 9
+---PAGE 10---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an..15
+an..50
+an..100
+an..200
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Matrícula de la Embarcación Pesquera)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Nombre de la Embarcación Pesquera)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Descripción del Tipo de la Especie vendida)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Lugar de descarga)
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:ValueQu
+antity (Cantidad de la Especie vendida)
+an..3 (Catálogo No. 03) @unitCode (Unidad de Medida)
+"UN/ECE rec 20" @unitCodeListID
+'"United Nations 
+Economic Commission 
+for Europe"
+@unitCodeListAgencyName
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an10 YYYY-MM-DD /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cac:Usability
+Period/cbc:StartDate (Fecha de descarga)
+an6 (Catálogo No. 13) /Invoice/cac:InvoiceLine/cac:Delivery/cac:Despatch/cac:DespatchAddress/cb
+c:ID
+"PE:INEI" @schemeAgencyName
+"Ubigeos" @schemeName
+an..200 /Invoice/cac:InvoiceLine/cac:Delivery/cac:Despatch/cac:DespatchAddress/ca
+c:AddressLine/cbc:Line
+an6 (Catálogo No. 13) /Invoice/cac:InvoiceLine/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:
+ID (Código de Ubigeo)
+"PE:INEI" @schemeAgencyName
+"Ubigeos" @schemeName
+an..200 /Invoice/cac:InvoiceLine/cac:Delivery/cac:DeliveryLocation/cac:Address/cac:
+AddressLine/cbc:Line (Dirección detallada)
+95 Detalle del viaje Global C an..500 /Invoice/cac:InvoiceLine/cac:Delivery/cac:Despatch/cbc:Instructions
+an2 "01" /Invoice/cac:InvoiceLine/cac:Delivery/cac:DeliveryTerms/cbc:ID (Tipo valor 
+Referencial)
+an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:Delivery/cac:DeliveryTerms/cbc:Amount
+an2 "02" /Invoice/cac:InvoiceLine/cac:Delivery/cac:DeliveryTerms/cbc:ID (Tipo valor 
+Referencial)
+an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:Delivery/cac:DeliveryTerms/cbc:Amount
+an2 "03" /Invoice/cac:InvoiceLine/cac:Delivery/cac:DeliveryTerms/cbc:ID (Tipo valor 
+Referencial)
+an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:Delivery/cac:DeliveryTerms/cbc:Amount
+91 Cantidad de la Especie vendida Ítem C
+Detracciones - Recursos Hidrobiológicos
+87
+88
+89
+90
+Matrícula de la Embarcación 
+Pesquera
+Nombre de la Embarcación 
+Pesquera
+Descripción del Tipo de la 
+Especie vendida
+Lugar de descarga
+Ítem C
+94 Punto de destino
+- Código de ubigeo
+- Dirección detallada del destino
+Global C
+92 Fecha de descarga Ítem C
+Detracciones - Servicio de transporte de Carga
+96 Valor referencial del servicio de 
+transporte 
+Global C
+97 Valor referencial sobre la carga 
+efectiva
+Global C
+93 Punto de origen
+- Código de ubigeo
+- Dirección detallada del origen
+Global C
+98 Valor referencial sobre la carga 
+útil nominal
+Global C
+Pág. 10
+---PAGE 11---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+an6 (Catálogo No. 13) /Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cac:Pla
+nnedPickupTransportEvent/cac:Location/cbc:ID
+"PE:INEI" @schemeAgencyName
+"Ubigeos" @schemeName
+an6 (Catálogo No. 13) /Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cac:Pla
+nnedDeliveryTransportEvent/cac:Location/cbc:ID
+"PE:INEI" @schemeAgencyName
+"Ubigeos" @schemeName
+101 Descripción del tramo Ítem C an..100 /Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cbc:Car
+rierServiceInstructions
+102 Valor preliminar referencial 
+sobre la carga efectiva (Por el 
+tramo virtual recorrido)
+Ítem C an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cac:Del
+iveryTerms/cbc:Amount
+"Códigos del D.S. 058-
+2003-MTC y 
+modificatorias"
+/Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cac:Tra
+nsportHandlingUnit/cac:TransportEquipment/cbc:SizeTypeCode
+"PE:MTC" @listAgencyName
+"Configuracion 
+Vehicular"
+@listName
+an..14 "01" /Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cac:Tra
+nsportHandlingUnit/cac:MeasurementDimension/cbc:AttributeID (Tipo de 
+carga: Carga útil)
+an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cac:Tra
+nsportHandlingUnit/cac:MeasurementDimension/cbc:Measure (Valor de la 
+carga en TM)
+an3 "TNE" /Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cac:Tra
+nsportHandlingUnit/cac:MeasurementDimension/cbc:Measure@unitCode 
+(Unidad de medida)
+"UN/ECE rec 20" @unitCodeListID
+'"United Nations 
+Economic Commission 
+for Europe"
+@unitCodeListAgencyName
+an..14 "02" /Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cac:Tra
+nsportHandlingUnit/cac:MeasurementDimension/cbc:AttributeID (Tipo de 
+carga: Carga Efectiva)
+an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cac:Tra
+nsportHandlingUnit/cac:MeasurementDimension/cbc:Measure (Valor de la 
+carga en TM)
+an3 "TNE" /Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cac:Tra
+nsportHandlingUnit/cac:MeasurementDimension/cbc:Measure@unitCode 
+(Unidad de medida)
+"UN/ECE rec 20" @unitCodeListID
+'"United Nations 
+Economic Commission 
+for Europe"
+@unitCodeListAgencyName
+106 Valor Referencial por TM Item C an5 Importes del Anexo II del 
+D.S. 010-2006-MTC
+/Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cac:Tra
+nsportHandlingUnit/cac:TransportEquipment/cac:Delivery/cac:DeliveryTerm
+s/cbc:Amount
+107 Valor Preliminar Referencial por 
+Carga Útil Nominal (Tratándose 
+de más de 1 vehículo)
+Item C an..15 n(12,2) /Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cbc:De
+claredForCarriageValueAmount
+108 Indica factor de retorno de viaje Item C Boolean "true"/"false" /Invoice/cac:InvoiceLine/cac:Delivery/cac:Shipment/cac:Consigment/cac:Tra
+nsportHandlingUnit/cac:TransportEquipment/cbc:ReturnabilityIndicator
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+100
+Punto de destino del viaje
+Ítem C
+Detracciones - Servicio de transporte de Carga - Detalle del (os) Vehículo (s) 
+Detracciones - Servicio de transporte de Carga - Detalle de tramos (De corresponder)
+99 Punto de origen del viaje Ítem C
+105 Carga Efectiva en TM del 
+vehículo
+Ítem C
+Información Adicional  - Beneficio de hospedaje
+103 Configuracion vehicular del 
+vehículo
+Ítem C an..15
+104 Carga Util en TM del vehículo Ítem C
+109
+110
+111
+112
+113
+Número de documento del 
+huesped
+Código de tipo de documento de 
+identidad del huesped
+Código país de emisión del 
+pasaporte
+Apellidos y Nombres o 
+denominación o razón social del 
+huesped
+Código del país de residencia del 
+sujeto no domiciliado
+Ítem C
+Pág. 11
+---PAGE 12---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+an..20
+an1
+an2
+an..200
+an2
+(Catálogo No. 06)
+(Catálogo No. 04)
+(Catálogo No. 04)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Número de documento del huesped)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Código de tipo de documento de identidad del huesped)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Código país de emisión del pasaporte)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Apellidos y Nombres o denominación o razón social del huesped)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Código del país de residencia del sujeto no domiciliado)
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an10 YYYY-MM-DD /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cac:Usability
+Period/cbc:StartDate (Fecha)
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+n..4 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cac:Usability
+Period/cbc:DurationMeasure (Número de días de permanencia)
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an..200
+an..20
+an1
+an2
+(Catálogo No. 06)
+(Catálogo No. 04)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Apellidos y Nombres o denominación o razón social del huesped)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Número de documento del huesped)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Código de tipo de documento de identidad del huesped)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Código país de emisión del pasaporte)
+118 Número de Días de Permanencia Ítem C
+Información Adicional  - Paquete Turístico
+109
+110
+111
+112
+113
+Número de documento del 
+huesped
+Código de tipo de documento de 
+identidad del huesped
+Código país de emisión del 
+pasaporte
+Apellidos y Nombres o 
+denominación o razón social del 
+huesped
+Código del país de residencia del 
+sujeto no domiciliado
+Ítem C
+114
+115
+116
+117
+Fecha de Ingreso al país
+Fecha de Ingreso al 
+Establecimiento
+Fecha de salida del 
+Establecimiento
+Fecha de consumo
+Ítem C
+119
+120
+121
+122
+Apellidos y Nombres o 
+denominación o razón social del 
+huesped
+Número de documento del 
+huesped
+Código de tipo de documento de 
+identidad del huesped
+Código país de emisión del 
+pasaporte
+Ítem C
+Pág. 12
+---PAGE 13---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+n..20
+n..10
+an..30
+an..30
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Número de Expediente)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Código de unidad ejecutora)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value (N° 
+de contrato)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value (N° 
+de proceso de selección)
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an..50
+an10
+an10
+an..50
+an1
+an6
+an..200
+an..25
+an..30
+an..30
+an..30
+YYYY-MM-DD
+(Catálogo No. 26)
+(Catálogo No. 27)
+(Catálogo No. 13)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value (N° 
+de Contrato)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Fecha del otorgamiento del crédito)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Código del tipo de préstamo)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Número de la Partida Registral)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Código de indicador de primera vivienda)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Dirección - Código de ubigeo)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Dirección - Dirección completa y detallada)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Dirección - Urbanización)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Dirección - Provincia)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Dirección - Departamento)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an6
+an..200
+an6
+an..200
+(Catálogo No. 13)
+(Catálogo No. 13)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Lugar de origen - Código de Ubigeo)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Lugar de origen - Dirección detallada)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Lugar de destino - Código de Ubigeo)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Lugar de destino - Dirección detallada)
+123
+124
+125
+126
+Numero de Expediente
+Código de unidad ejecutora
+N° de contrato
+N° de proceso de selección
+Ítem C
+Información adicional  a nivel de ítem -  Gastos intereses hipotecarios primera vivienda
+Ventas Sector Público
+133
+134
+Lugar de origen
+Lugar de destino
+Ítem C
+127
+128
+129
+130
+131
+132
+N° de Contrato
+Fecha del otorgamiento del 
+crédito
+Tipo de préstamo
+Partida Regsitral
+Indicador de primera vivienda
+Dirección completa del predio
+Ítem C
+Migración de documentos autorizados - Carta Porte Aéreo
+Pág. 13
+---PAGE 14---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+135 Número de RUC del Agente de 
+Ventas
+Global C an11 /Invoice/cac:AccountingSupplierParty/cac:Party/cac:AgentParty/cac:PartyId
+entification/cbc:ID
+an1 (Catálogo No. 06) /Invoice/cac:AccountingSupplierParty/cac:Party/cac:AgentParty/cac:PartyId
+entification/cbc:ID@schemeID (Tipo de documento de identidad)
+"Documento de 
+Identidad"
+@schemeName
+"PE:SUNAT" @schemeAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o06"
+@schemeURI
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an..200
+an..20
+an1
+an6
+an..200
+an6
+an..200
+an..100
+(Catálogo No. 06)
+(Catálogo No. 13)
+(Catálogo No. 13)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Pasajero - Apellidos y nombres)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Pasajero - Número de documento de identidad)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Pasajero - Tipo de documento de identidad)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Servicio de transporte: Ciudad o lugar de origen - Código de ubigeo)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Servicio de transporte: Ciudad o lugar de origen - Dirección detallada)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Servicio de transporte: Ciudad o lugar de destino - Código de ubigeo)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Servicio de transporte: Ciudad o lugar de destino - Dirección detallada)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Servicio de transporte:Número de asiento)
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an10 YYYY-MM-DD /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cac:Usability
+Period/cbc:StartDate
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an8 hh:mm:ss /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cac:Usability
+Period/cbc:StartTime
+an3 (Catálogo No. 59) /Invoice/cac:PaymentMeans/cbc:PaymentMeansCode
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o59"
+@listURI
+Migración de documentos autorizados - BVME para transporte ferroviario de pasajeros
+136 Tipo de documento del Agente 
+de Ventas
+Global C
+137
+138
+139
+140
+141
+Pasajero - Apellidos y Nombres
+Pasajero - Tipo y número de 
+documento de identidad
+Servicio de transporte: Ciudad o 
+lugar de origen
+Servicio de transporte: Ciudad o 
+lugar de destino
+Servicio de transporte:Número 
+de asiento
+Ítem C
+144 Servicio de transporte: Forma de 
+pago
+Global C
+142 Servicio de transporte: Dia 
+programado de inicio de viaje
+Ítem C
+143 Servicio de transporte: Hora 
+programada de inicio de viaje
+Ítem C
+Pág. 14
+---PAGE 15---
+N°  DATO NIVEL
+CONDICIÓN 
+INFORMÁTICA 
+DEL CONCEPTO
+TIPO Y 
+LONGITUD
+FORMATO / VALOR
+TAG o Atributo UBL
+Anexo VII
+Anexo N.° 9: Estándar UBL 2.1
+a) Factura electrónica 
+145 Servicio de transporte: Número 
+de autorización de la transacción 
+y el sistema de tarjeta de crédito 
+y/o débito 
+Global C an..30 /Invoice/cac:PaymentMeans/cbc:PaymentID
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an..30
+an..10
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Decreto Supremo de aprobación del contrato)
+/Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value 
+(Area de contrato - Lote)
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an10 YYYY-MM-DD /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cac:Usability
+Period/cbc:StartDate
+an..100 /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Name 
+(Nombre del concepto)
+an4 (Catálogo No. 55) /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCo
+de (Código del concepto)
+"Propiedad del item" @listName
+"PE:SUNAT" @listAgencyName
+"urn:pe:gob:sunat:cpe:se
+e:gem:catalogos:catalog
+o55"
+@listURI
+an10 YYYY-MM-DD /Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cac:Usability
+Period/cbc:EndDate
+150 Fecha de Pago Global C an10 YYYY-MM-DD /Invoice/cbc:DueDate
+Migración de documentos autorizados - Pago de regalía petrolera
+149 Periodo de pago - Fecha de fin
+146
+147
+Decreto Supremo de aprobación 
+del contrato
+Area de contrato (Lote)
+Ítem C
+148 Periodo de pago - Fecha de inicio C
+Pág. 15

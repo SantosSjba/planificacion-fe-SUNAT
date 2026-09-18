@@ -1,0 +1,58 @@
+{
+  "catalog": "14",
+  "name": "Código de otros conceptos tributarios",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "1000",
+      "description": "Total valor de venta - operaciones exportadas"
+    },
+    {
+      "code": "1001",
+      "description": "Total valor de venta - operaciones gravadas"
+    },
+    {
+      "code": "1002",
+      "description": "Total valor de venta - operaciones inafectas"
+    },
+    {
+      "code": "1003",
+      "description": "Total valor de venta - operaciones exoneradas"
+    },
+    {
+      "code": "1004",
+      "description": "Total valor de venta – Operaciones gratuitas"
+    },
+    {
+      "code": "1005",
+      "description": "Sub total de venta"
+    },
+    {
+      "code": "2001",
+      "description": "Percepciones"
+    },
+    {
+      "code": "2002",
+      "description": "Retenciones"
+    },
+    {
+      "code": "2003",
+      "description": "Detracciones"
+    },
+    {
+      "code": "2004",
+      "description": "Bonificaciones"
+    },
+    {
+      "code": "2005",
+      "description": "Total descuentos"
+    },
+    {
+      "code": "3001",
+      "description": "FISE (Ley 29852) Fondo Inclusión Social Energético"
+    }
+  ]
+}

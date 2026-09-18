@@ -1,0 +1,26 @@
+{
+  "catalog": "27",
+  "name": "Indicador de primera vivienda",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "0",
+      "description": "Sin indicador"
+    },
+    {
+      "code": "1",
+      "description": "Calificado para crédito Mi Vivienda / Techo Propio"
+    },
+    {
+      "code": "2",
+      "description": "Libre disposición de la AFP"
+    },
+    {
+      "code": "3",
+      "description": "Calificado como primera vivienda de acuerdo a la información proporcionada por el cliente (para créditos otorgados a partir del 01.01.2013)"
+    }
+  ]
+}

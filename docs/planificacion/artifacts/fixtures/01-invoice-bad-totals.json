@@ -1,0 +1,41 @@
+{
+  "id": "01-invoice-bad-totals",
+  "document_kind": "invoice",
+  "title": "Totales strict incoherentes — debe fallar prevalidación",
+  "expects": {
+    "prevalidation": "fail",
+    "factosys_code": "FACTOSYS_VALIDATION",
+    "terminal_status": ["rejected"]
+  },
+  "request": {
+    "company_id": "{{company_id}}",
+    "serie": "F001",
+    "operation_type": "0101",
+    "issue_date": "2026-09-17",
+    "currency": "PEN",
+    "customer": {
+      "identity_type": "6",
+      "identity_number": "20123456789",
+      "name": "ACME SAC"
+    },
+    "lines": [
+      {
+        "id": 1,
+        "quantity": 1,
+        "unit_code": "NIU",
+        "description": "Servicio",
+        "unit_value": 100.0,
+        "unit_price": 118.0,
+        "tax_affectation": "10",
+        "igv_percent": 18,
+        "tax_scheme_id": "1000"
+      }
+    ],
+    "totals_mode": "strict",
+    "totals": {
+      "payable_amount": 1.0,
+      "tax_inclusive_amount": 1.0,
+      "igv": 0.0
+    }
+  }
+}

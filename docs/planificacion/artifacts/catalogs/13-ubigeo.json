@@ -1,0 +1,10 @@
+{
+  "catalog": "13",
+  "name": "Código de ubicación geográfica (UBIGEO)",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "missing",
+  "items": [],
+  "notes": "INEI UBIGEO — not embedded in Anexo N°8 / validation XLSX."
+}

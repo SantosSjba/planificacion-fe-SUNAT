@@ -1,0 +1,120 @@
+{
+  "catalog": "53",
+  "name": "Códigos de cargos, descuentos y otras deducciones",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "00",
+      "description": "Descuentos que afectan la base imponible del IGV/IVAP",
+      "nivel": "Item"
+    },
+    {
+      "code": "01",
+      "description": "Descuentos que no afectan la base imponible del IGV/IVAP",
+      "nivel": "Item"
+    },
+    {
+      "code": "02",
+      "description": "Descuentos globales que afectan la base imponible del IGV/IVAP",
+      "nivel": "Global"
+    },
+    {
+      "code": "03",
+      "description": "Descuentos globales que no afectan la base imponible del IGV/IVAP",
+      "nivel": "Global"
+    },
+    {
+      "code": "04",
+      "description": "Descuentos globales por anticipos gravados que afectan la base imponible del IGV/IVAP",
+      "nivel": "Global"
+    },
+    {
+      "code": "05",
+      "description": "Descuentos globales por anticipos exonerados",
+      "nivel": "Global"
+    },
+    {
+      "code": "06",
+      "description": "Descuentos globales por anticipos inafectos",
+      "nivel": "Global"
+    },
+    {
+      "code": "07",
+      "description": "Factor de compensación - Decreto de urgencia N. 010-2004",
+      "nivel": "Item"
+    },
+    {
+      "code": "20",
+      "description": "Anticipo de ISC",
+      "nivel": "Global"
+    },
+    {
+      "code": "45",
+      "description": "FISE",
+      "nivel": "Global"
+    },
+    {
+      "code": "46",
+      "description": "Recargo al consumo y/o propinas",
+      "nivel": "Global"
+    },
+    {
+      "code": "47",
+      "description": "Cargos que afectan la base imponible del IGV/IVAP",
+      "nivel": "Item"
+    },
+    {
+      "code": "48",
+      "description": "Cargos que no afectan la base imponible del IGV/IVAP",
+      "nivel": "Item"
+    },
+    {
+      "code": "49",
+      "description": "Cargos globales que afectan la base imponible del IGV/IVAP",
+      "nivel": "Global"
+    },
+    {
+      "code": "50",
+      "description": "Cargos globales que no afectan la base imponible del IGV/IVAP",
+      "nivel": "Global"
+    },
+    {
+      "code": "51",
+      "description": "Percepción venta interna",
+      "nivel": "Global"
+    },
+    {
+      "code": "52",
+      "description": "Percepción a la adquisición de combustible",
+      "nivel": "Global"
+    },
+    {
+      "code": "53",
+      "description": "Percepción realizada al agente de percepción con tasa especial",
+      "nivel": "Global"
+    },
+    {
+      "code": "54",
+      "description": "Factor de aportación - Decreto de urgencia N. 010-2004",
+      "nivel": "Item"
+    },
+    {
+      "code": "61",
+      "description": "Retención de renta por anticipos",
+      "nivel": "Global"
+    },
+    {
+      "code": "62",
+      "description": "Retención del IGV",
+      "nivel": "Global"
+    },
+    {
+      "code": "63",
+      "description": "Rentención de renta de segunda categoría",
+      "nivel": "Global"
+    }
+  ]
+}

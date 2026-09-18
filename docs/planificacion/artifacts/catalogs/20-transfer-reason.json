@@ -1,0 +1,66 @@
+{
+  "catalog": "20",
+  "name": "Código de motivo de traslado",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8); overlay docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-gre-2026-06-20.xlsx (sheet Catálogos)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "01",
+      "description": "Venta"
+    },
+    {
+      "code": "02",
+      "description": "Compra"
+    },
+    {
+      "code": "03",
+      "description": "Venta con entrega a terceros"
+    },
+    {
+      "code": "04",
+      "description": "Traslado entre establecimientos de la misma empresa"
+    },
+    {
+      "code": "05",
+      "description": "Consignación"
+    },
+    {
+      "code": "06",
+      "description": "Devolución"
+    },
+    {
+      "code": "07",
+      "description": "Recojo de bienes transformados"
+    },
+    {
+      "code": "08",
+      "description": "Importación"
+    },
+    {
+      "code": "09",
+      "description": "Exportación"
+    },
+    {
+      "code": "13",
+      "description": "Otros"
+    },
+    {
+      "code": "14",
+      "description": "Venta sujeta a confirmación del comprador"
+    },
+    {
+      "code": "17",
+      "description": "Traslado de bienes para transformación"
+    },
+    {
+      "code": "18",
+      "description": "Traslado emisor itinerante CP"
+    },
+    {
+      "code": "19",
+      "description": "Traslado de mercancía extranjera"
+    }
+  ]
+}

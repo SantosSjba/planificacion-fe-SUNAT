@@ -1,0 +1,190 @@
+{
+  "catalog": "15",
+  "name": "Códigos de elementos adicionales en la factura y boleta electrónica",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "1000",
+      "description": "Monto en Letras"
+    },
+    {
+      "code": "1002",
+      "description": "Leyenda \"TRANSFERENCIA GRATUITA DE UN BIEN Y/O SERVICIO PRESTADO GRATUITAMENTE\""
+    },
+    {
+      "code": "2000",
+      "description": "Leyenda “COMPROBANTE DE PERCEPCIÓN”"
+    },
+    {
+      "code": "2001",
+      "description": "Leyenda “BIENES TRANSFERIDOS EN LA AMAZONÍA REGIÓN SELVAPARA SER CONSUMIDOS EN LA MISMA\""
+    },
+    {
+      "code": "2002",
+      "description": "Leyenda “SERVICIOS PRESTADOS EN LA AMAZONÍA REGIÓN SELVA PARA SER CONSUMIDOS EN LA MISMA”"
+    },
+    {
+      "code": "2003",
+      "description": "Leyenda “CONTRATOS DE CONSTRUCCIÓN EJECUTADOS EN LA AMAZONÍA REGIÓN SELVA”"
+    },
+    {
+      "code": "2004",
+      "description": "Leyenda “Agencia de Viaje - Paquete turístico”"
+    },
+    {
+      "code": "2005",
+      "description": "Leyenda “Venta realizada por emisor itinerante”"
+    },
+    {
+      "code": "2006",
+      "description": "Leyenda: Operación sujeta a detracción"
+    },
+    {
+      "code": "2007",
+      "description": "Leyenda: Operación sujeta a IVAP"
+    },
+    {
+      "code": "2010",
+      "description": "Restitución Simplificado de Derechos Arancelarios"
+    },
+    {
+      "code": "3000",
+      "description": "Detracciones: CODIGO DE BB Y SS SUJETOS A DETRACCION"
+    },
+    {
+      "code": "3001",
+      "description": "Detracciones: NUMERO DE CTA EN EL BN"
+    },
+    {
+      "code": "3002",
+      "description": "Detracciones: Recursos Hidrobiológicos-Nombre y matrícula de la embarcación"
+    },
+    {
+      "code": "3003",
+      "description": "Detracciones: Recursos Hidrobiológicos-Tipo y cantidad de especie vendida"
+    },
+    {
+      "code": "3004",
+      "description": "Detracciones: Recursos Hidrobiológicos -Lugar de descarga"
+    },
+    {
+      "code": "3005",
+      "description": "Detracciones: Recursos Hidrobiológicos -Fecha de descarga"
+    },
+    {
+      "code": "3006",
+      "description": "Detracciones: Transporte Bienes vía terrestre – Numero Registro MTC"
+    },
+    {
+      "code": "3007",
+      "description": "Detracciones: Transporte Bienes vía terrestre – configuración vehicular"
+    },
+    {
+      "code": "3008",
+      "description": "Detracciones: Transporte Bienes vía terrestre – punto de origen"
+    },
+    {
+      "code": "3009",
+      "description": "Detracciones: Transporte Bienes vía terrestre – punto destino"
+    },
+    {
+      "code": "3010",
+      "description": "Detracciones: Transporte Bienes vía terrestre – valor referencial preliminar"
+    },
+    {
+      "code": "4000",
+      "description": "Beneficio hospedajes: Código País de emisión del pasaporte"
+    },
+    {
+      "code": "4001",
+      "description": "Beneficio hospedajes: Código País de residencia del sujeto no domiciliado"
+    },
+    {
+      "code": "4002",
+      "description": "Beneficio Hospedajes: Fecha de ingreso al país"
+    },
+    {
+      "code": "4003",
+      "description": "Beneficio Hospedajes: Fecha de ingreso al establecimiento"
+    },
+    {
+      "code": "4004",
+      "description": "Beneficio Hospedajes: Fecha de salida del establecimiento"
+    },
+    {
+      "code": "4005",
+      "description": "Beneficio Hospedajes: Número de días de permanencia"
+    },
+    {
+      "code": "4006",
+      "description": "Beneficio Hospedajes: Fecha de consumo"
+    },
+    {
+      "code": "4007",
+      "description": "Beneficio Hospedajes: Paquete turístico - Nombres y Apellidos del Huésped"
+    },
+    {
+      "code": "4008",
+      "description": "Beneficio Hospedajes: Paquete turístico – Tipo documento identidad del huésped"
+    },
+    {
+      "code": "4009",
+      "description": "Beneficio Hospedajes: Paquete turístico – Numero de documento identidad de huésped"
+    },
+    {
+      "code": "5000",
+      "description": "Proveedores Estado: Número de Expediente"
+    },
+    {
+      "code": "5001",
+      "description": "Proveedores Estado : Código de unidad ejecutora"
+    },
+    {
+      "code": "5002",
+      "description": "Proveedores Estado : N° de proceso de selección"
+    },
+    {
+      "code": "5003",
+      "description": "Proveedores Estado : N° de contrato"
+    },
+    {
+      "code": "6000",
+      "description": "Comercialización de Oro : Código Unico Concesión Minera"
+    },
+    {
+      "code": "6001",
+      "description": "Comercialización de Oro : N° declaración compromiso"
+    },
+    {
+      "code": "6002",
+      "description": "Comercialización de Oro : N° Reg. Especial .Comerci. Oro"
+    },
+    {
+      "code": "6003",
+      "description": "Comercialización de Oro : N° Resolución que autoriza Planta de Beneficio"
+    },
+    {
+      "code": "6004",
+      "description": "Comercialización de Oro : Ley Mineral (% concent. oro)"
+    },
+    {
+      "code": "6005",
+      "description": "Comercialización de Oro : Naturaleza del mineral"
+    },
+    {
+      "code": "6006",
+      "description": "Comercialización de Oro : Nombre del derecho minero"
+    },
+    {
+      "code": "7000",
+      "description": "Primera venta de mercancia identificable entre usuarios de la zona comercial"
+    },
+    {
+      "code": "7001",
+      "description": "Venta exonerada del IGV-ISC-IPM. Prohibida la venta fuera de la zona comercial de Tacna"
+    }
+  ]
+}

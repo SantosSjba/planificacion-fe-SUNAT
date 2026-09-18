@@ -1,0 +1,26 @@
+{
+  "catalog": "57",
+  "name": "Código de tipo de servicio públicos - telecomunicaciones",
+  "version": "cpe-2026-08-26+gre-2026-06-20",
+  "source": "docs/sunat-oficial/04-esquemas-validacion/reglas-validacion-cpe-2026-08-26.xlsx (sheet Catálogos / Anexo N°8)",
+  "exported_at": "2026-09-17",
+  "completeness": "full",
+  "items": [
+    {
+      "code": "1",
+      "description": "Servicios Portadores"
+    },
+    {
+      "code": "2",
+      "description": "Teleservicios o Servicios Finales"
+    },
+    {
+      "code": "3",
+      "description": "Servicios de Difusión"
+    },
+    {
+      "code": "4",
+      "description": "Servicios de valor añadido"
+    }
+  ]
+}
